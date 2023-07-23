@@ -1,0 +1,186 @@
+/* ---------------------------------------------------------media query------------------------------------------- */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1440px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1024.98px) {
+}
+
+@media only screen and (max-width: 991.98px) {
+  .card_lists .card_list {
+    margin-bottom: 4%;
+  }
+  #myChart2 {
+    margin: 3% 0;
+  }
+  .dropdown_filter .dropdown-toggle::after {
+    
+  }
+  .more_cards .card .info {
+    padding-bottom: 0;
+  }
+  .sidebar {
+    width: 100%;
+    margin-inline-start: 0%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0;
+    display: flex;
+  }
+  .sidebar .logout_sidebar {
+    display: block;
+  }
+  .sidebar .nav-pills {
+    width: 30%;
+    background-color: #fff;
+    padding: 2rem 1rem;
+  }
+  .sidebar .nav-pills .nav-item .nav-link.active span,
+  .sidebar .nav-pills .nav-item .nav-link span {
+    color: #9da6ba;
+    display: block;
+  }
+  .sidebar .nav-pills .nav-link {
+    display: flex;
+    align-items: center;
+    text-align: start;
+  }
+  .sidebar .nav-pills .nav-link img {
+    margin: 0 !important;
+  }
+  .sidebar .nav-pills .nav-link span {
+    display: block;
+    margin: 0 !important;
+    margin-inline-start: 1rem !important;
+  }
+  .sidebar .side_mobile {
+    width: 60%;
+    height: 100%;
+    min-height: 100vh;
+  }
+  .sidebar.open,
+  .sidebar.opened {
+    width: 0;
+  }
+  .sidebar ~ .index_cards,
+  .sidebar.open ~ .index_cards,
+  .sidebar.opened ~ .index_cards {
+    width: 100%;
+    margin-inline-start: 0%;
+    transition: 1s ease-in-out;
+  }
+  .navbar-toggler {
+    border: 1px solid #fff;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+  }
+  .card_topic_second .button .btn {
+    padding: 1%;
+  }
+  .search_topic form .input-group .form-control {
+    padding-inline-start: 8%;
+  }
+  .dropdown_filter .dropdown-toggle{
+    margin-bottom: 2%;
+  }
+  .detials_clerck .date_shape {
+    width: unset;
+    height: unset;
+    margin-bottom: 10%;
+  }
+  .card_income .card_income_list {
+    padding: 1.25rem;
+    margin-bottom: 2%;
+  }
+ 
+}
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 768.98px) {
+  .card_topic_second .button .btn {
+    padding: 1%;
+  }
+}
+
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 425px) {
+  .table-responsive {
+    overflow-x: scroll;
+    width: 135%;
+  }
+  .table-responsive thead tr td {
+    font-size: 0.8rem;
+  }
+  .form_topic {
+    padding-inline-end: 0;
+  }
+  .form_topic .btn.first {
+    width: 100%;
+  }
+  .modal_assistant .content .button{
+    flex-direction: column;
+  }
+  .modal_assistant .content .button .first , .modal_assistant .content .button .second{
+width: 100%;
+margin-bottom: 2%;
+  }
+  .main_topic .btn.first{
+    width: 40%;
+  }
+  .button .edit ,.button .delete ,.button .show {
+    font-size: .6rem;
+  }
+  .table_topic tbody tr td .btn {
+    padding: 0.175rem 0.3rem;
+}
+.table_scroll{
+overflow: scroll;
+}
+.nav_topic{
+  border: unset ;
+}
+.cards_consultant .card_consulatant{
+  width: 100%;
+}
+.cards_consultant .card_consulatant .header_consultant .info .button .btn{
+  padding: .5rem;
+}
+.remove-icon, .remove-sysyem-btn ,.add-phone-btn, .add-image-btn, .add-sysyem-btn{
+  margin-top: 30px;
+  width: unset;
+  height: unset;
+}
+.sidebar .nav-pills {
+  width: 57%;
+}
+.course_main_topic {
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.course_main_topic .button {
+  justify-content: flex-start;
+  width: 100%;
+}
+.course_main_topic .button .btn {
+  width: 40%;
+}
+.dropdown_filter .dropdown-toggle {
+  margin-bottom: 4%;
+}
+.nav_topic .nav-item {
+  width: 100%;
+}
+.main_topic h4 span {
+  display: block;
+  margin-top: 4%;
+  width: 70%;
+}
+.detials_clerck .content .img {
+  width: 54px;
+}
+
+}
