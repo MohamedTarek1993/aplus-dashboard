@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Index</title>
+    <title> الكورسات</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -42,7 +42,7 @@
         " id="menu">
                 <div class="image_logo">
                     <img src="image/logo.png" alt="logo_sidebar" class="logo" />
-                </div> 
+                </div>
 
                 <h5>محتوي النظام</h5>
                 <li class="nav-item">
@@ -334,225 +334,224 @@
             </ul>
             <!---------------------- finish nav -------------------------------------------->
             <!---------------------- start content -------------------------------------------->
+            <div class="content_page">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_topic">
+                            <h4> الكورسات </h4>
+                            <a class="btn first" href="add-course.html"> <i class="bi bi-plus"></i> اضافة كورس جديد </a>
+                        </div>
+                    </div>
+                    <!-- search and filter section -->
+                    <div class="row">
+                        <div class="col-lg-5 col-md-7 col-12 ">
+                            <div class="search_topic">
+                                <form>
+                                    <div class="input-group">
+                                        <input class="form-control" type="text"
+                                            placeholder="ابحث باسم الكورس, المادة , المدرس .......">
+                                        <span class="icon_search"><i class="bi bi-search"></i></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-5 col-12 ">
+                            <form class="form_topic" style="padding-inline-end: 0; margin-top: 0;">
 
-            <div class="container">
-                <!-- start cards section -->
-                <div class="card_lists">
-                    <div class="row px-5">
-                        <!-- start card -->
-                        <div class="col-lg-4 col-12">
+                                <!-- input group -->
+                                <div class="input-group">
+                                    <select required class="selectpicker" multiple data-selected-text-format="count > 1"
+                                        data-icon="bi bi-trash" data-live-search="true"
+                                        data-placeholder=" كل المراحل التعليمية">
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <!-- input group -->
+                            </form>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <form class="form_topic" style="padding-inline-end: 0; margin-top: 0;">
+
+                                <!-- input group -->
+                                <div class="input-group">
+                                    <select required class="selectpicker" multiple data-selected-text-format="count > 1"
+                                        data-icon="bi bi-trash" data-live-search="true" data-placeholder="  الفرقة">
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <!-- input group -->
+                            </form>
+                        </div>
+                        <div class="col-lg-1 col-md-6 col-12">
+                            <div class="button  w-100">
+                                <button class="btn second w-75"><i class="bi bi-funnel"></i></button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--  filter results section -->
+                    <div class="row">
+                        <div class=" col-lg-3 col-md-6 col-12">
+                            <!-- input group -->
+                            <div class="input-group">
+                                <select required class="selectpicker" multiple data-selected-text-format="count > 1"
+                                    data-icon="bi bi-trash" data-live-search="true" data-placeholder="المادة">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <!-- input group -->
+                        </div>
+                        <div class=" col-lg-3 col-md-6 col-12">
+                            <!-- input group -->
+                            <div class="input-group">
+                                <select required class="selectpicker" multiple data-selected-text-format="count > 1"
+                                    data-icon="bi bi-trash" data-live-search="true" data-placeholder="المعلم">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <!-- input group -->
+                        </div>
+                        <div class=" col-lg-3 col-md-6 col-12">
+                            <!-- input group -->
+                            <div class="input-group">
+                                <select required class="selectpicker" multiple data-selected-text-format="count > 1"
+                                    data-icon="bi bi-trash" data-live-search="true"
+                                    data-placeholder="الكورسات الأكثر انضمام">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <!-- input group -->
+                        </div>
+                        <div class=" col-lg-3 col-md-6 col-12">
+                            <!-- input group -->
+                            <div class="input-group">
+                                <select required class="selectpicker" multiple data-selected-text-format="count > 1"
+                                    data-icon="bi bi-trash" data-live-search="true" data-placeholder=" تكلفة الكورس  ">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <!-- input group -->
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <!-- paid course -->
+                        <div class="col-lg-4 col-md-6 col-12">
                             <div class="card_list">
-                                <div class="info">
-                                    <h6>القضايا</h6>
-                                    <div class="counter" data-target="250">250</div>
-                                    <span> جميع القضايا لديك</span>
-                                </div>
                                 <div class="img">
-                                    <img src="image/card1.png" alt="card">
+                                    <img src="image/course1.png" alt="">
                                 </div>
-                            </div>
-                        </div>
-                        <!-- finish card -->
-                        <!-- start card -->
-                        <div class="col-lg-4  col-12">
-                            <div class="card_list">
-                                <div class="info">
-                                    <h6>المهام</h6>
-                                    <div class="counter" data-target="50">50</div>
-                                    <span> جميع المهام الحالية و المنتهية</span>
-                                </div>
-                                <div class="img">
-                                    <img src="image/card2.png" alt="card">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- finish card -->
 
-                        <!-- start card -->
-                        <div class="col-lg-4  col-12">
-                            <div class="card_list">
-                                <div class="info">
-                                    <h6>العملاء</h6>
-                                    <div class="counter" data-target="40">40</div>
-                                    <span> جميع العملاء لديك</span>
-                                </div>
-                                <div class="img">
-                                    <img src="image/card3.png" alt="card">
-                                </div>
+                                <h5>المراجعة النهائية للأناتومي - د. حسن (سيمستر 2)</h5>
+                                <p>د/ محمد عادل , مادة المحاسبة المالية</p>
+
                             </div>
                         </div>
-                        <!-- finish card -->
-
+                        <!-- paid course -->
 
                     </div>
+
+                    <!-- start clerks card -->
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6  col-12">
+                            <!-- progress card -->
+                            <div class="card_topic_second">
+                                <a href="detials-case.html">
+                                    <div class="header_card">
+                                        <div class="text">
+                                            <h5>المراجعة النهائية للأناتومي - د. حسن (سيمستر 2)</h5>
+                                            <span>د/ محمد عادل , مادة المحاسبة المالية</span>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <ul class="info">
+                                        <li><i class="bi bi-person-badge"></i> الفرقة الأولى , كلية التجارة جامعة طنطا</li>
+                                        <li><i class="bi bi-collection"></i> 200 طالب منضم</li>
+                                    </ul>
+                                   
+                                </a>
+                            </div>
+                            <!-- progress card -->
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <!-- new card -->
+                            <div class="card_topic_second">
+                                <a href="detials-case.html">
+                                    <div class="header_card">
+                                        <div class="text">
+                                            <h5> قضية الضرائب المرفوعة من السيد/ أحمد ابراهيم</h5>
+                                            <span>قضية أموال عامة</span>
+                                        </div>
+                                        <div class=" badge bg-primary"> قضية جديدة</div>
+                                    </div>
+                                    <ul class="info">
+                                        <li><i class="bi bi-person"></i> العميل: <strong>احمد عادل</strong></li>
+                                        <li><i class="bi bi-calendar"></i> الجلسة القادمة: <strong> 22 مارس -
+                                                8:30 م</strong></li>
+                                    </ul>
+                                    <div class="button w-100">
+                                        <a class="btn first w-100" href="detials-case.html"> عرض التفاصيل</a>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- new card -->
+                        </div>
+
+                        <div class="col-lg-4  col-md-6 col-12">
+                            <!-- finshed card -->
+                            <div class="card_topic_second">
+                                <a href="detials-case.html">
+                                    <div class="header_card">
+                                        <div class="text">
+                                            <h5> قضية الضرائب المرفوعة من السيد/ أحمد ابراهيم</h5>
+                                            <span>قضية أموال عامة</span>
+                                        </div>
+                                        <div class=" badge bg-danger"> قضية منتهية</div>
+                                    </div>
+                                    <ul class="info">
+                                        <li><i class="bi bi-person"></i> العميل: <strong>احمد عادل</strong></li>
+                                        <li><i class="bi bi-calendar"></i> الجلسة القادمة: <strong> 22 مارس -
+                                                8:30 م</strong></li>
+                                    </ul>
+                                    <div class="button w-100">
+                                        <a class="btn first w-100" href="detials-case.html"> عرض التفاصيل</a>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- finshed card -->
+                        </div>
+                    </div>
+                    <!-- finish clerks card -->
+                    <!-- pagination -->
+                    <nav class="pagination_section">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                    <!-- pagination -->
+
                 </div>
-                <!-- finish cards section -->
-                <!-- start charts section -->
-                <div class="charts_section">
-                    <div class="row px-5">
-                        <div class="col-lg-6 col-12">
-                            <canvas id="myChart2"></canvas>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <!-- <canvas id="myChart1"></canvas> -->
-                            <canvas id="myChart1"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <!-- finish charts  section -->
-                <div class="row">
-                    <div class="col-lg-8 col-12">
-                        <!-- start table section -->
-                        <div class=" row_filter">
-                            <div class="row pb-5">
-                                <div class="col-lg-9 col-md-6 col-12">
-                                    <div class="main_topic">
-                                        <h4> القضايا </h4>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-12">
-                                    <div class="dropdown dropdown_filter">
-                                        <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            اليوم
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">الشهر</a></li>
-                                            <li><a class="dropdown-item" href="#">السنة </a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <table class="table-responsive table_height table_topic">
-                                <thead>
-                                    <tr>
-                                        <td> اسم القضية </td>
-                                        <td> فريق العمل</td>
-                                        <td> العميل</td>
-                                        <td> تاريخ القضية</td>
-                                        <td>حالة القضية</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-
-                                        <td>
-                                            قضية الضرائب المرفوعة من السيد/ أحمد ابراهيم
-                                        </td>
-                                        <td> احمد سامي و احمد محسن</td>
-                                        <td>احمد محسن</td>
-                                        <td>22 مارس,2023</td>
-                                        <td>
-                                            <span class="badge bg-primary"> جديدة</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            قضية الضرائب المرفوعة من السيد/ أحمد ابراهيم
-                                        </td>
-                                        <td> احمد سامي و احمد محسن</td>
-                                        <td>احمد محسن</td>
-                                        <td>22 مارس,2023</td>
-                                        <td>
-                                            <span class="badge bg-warning"> جاري العمل عليها</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            قضية الضرائب المرفوعة من السيد/ أحمد ابراهيم
-                                        </td>
-                                        <td> احمد سامي و احمد محسن</td>
-                                        <td>احمد محسن</td>
-                                        <td>22 مارس,2023</td>
-                                        <td>
-                                            <span class="badge bg-danger"> منتهية</span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <!-- pagination -->
-                            <nav class="pagination_section">
-                                <ul class="pagination justify-content-center">
-                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                </ul>
-                            </nav>
-                            <!-- pagination -->
-
-
-                        </div>
-                        <!-- start table section -->
-                    </div>
-
-                    <div class="col-lg-4 col-12">
-                        <div class="more_cards">
-                            <div class="main_topic">
-                                <h4>الاستشارات</h4>
-                            </div>
-                            <!-- start card -->
-                            <div class="card">
-                                <div class="info">
-                                    <div class="img">
-                                        <img src="../image/person.png" alt="person">
-                                    </div>
-                                    <div class="teaxt">
-                                        <h6> استشارة فيديو اونلاين</h6>
-                                        <ul>
-                                            <li><i class="bi bi-person"></i>أحمد عادل , someone@gmail.com</li>
-                                            <li><i class="bi bi-calendar"></i> السبت, 22مايو - 8:30 ص</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- finish card -->
-
-                            <!-- start card -->
-                            <div class="card">
-                                <div class="info">
-                                    <div class="img">
-                                        <img src="../image/person.png" alt="person">
-                                    </div>
-                                    <div class="teaxt">
-                                        <h6> استشارة فيديو اونلاين</h6>
-                                        <ul>
-                                            <li><i class="bi bi-person"></i>أحمد عادل , someone@gmail.com</li>
-                                            <li><i class="bi bi-calendar"></i> السبت, 22مايو - 8:30 ص</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- finish card -->
-
-                            <!-- start card -->
-                            <div class="card">
-                                <div class="info">
-                                    <div class="img">
-                                        <img src="../image/person.png" alt="person">
-                                    </div>
-                                    <div class="teaxt">
-                                        <h6> استشارة فيديو اونلاين</h6>
-                                        <ul>
-                                            <li><i class="bi bi-person"></i>أحمد عادل , someone@gmail.com</li>
-                                            <li><i class="bi bi-calendar"></i> السبت, 22مايو - 8:30 ص</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- finish card -->
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
-
             <!---------------------- finish  content -------------------------------------------->
         </section>
         <!---------------------- finish main content -------------------------------------------->
