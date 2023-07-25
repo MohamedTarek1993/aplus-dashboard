@@ -22,7 +22,7 @@
     <!-- ? Favicon -->
 </head>
 
-<body onclick="hideNotification(event)">
+<body>
     <!---------------------- start loader -------------------------------------------->
     <!-- <div id="preloader"></div> -->
     <!---------------------- finish loader -------------------------------------------->
@@ -445,99 +445,66 @@
                             <!-- input group -->
                         </div>
                     </div>
-
-
-
                     <div class="row">
-                        <!-- paid course -->
+                        <!-- paied course  -->
                         <div class="col-lg-4 col-md-6 col-12">
-                            <div class="card_list">
+                            <div class="card_course ">
                                 <div class="img">
-                                    <img src="image/course1.png" alt="">
+                                    <img src="image/course1.png" alt="person">
                                 </div>
-
-                                <h5>المراجعة النهائية للأناتومي - د. حسن (سيمستر 2)</h5>
-                                <p>د/ محمد عادل , مادة المحاسبة المالية</p>
-
-                            </div>
-                        </div>
-                        <!-- paid course -->
-
-                    </div>
-
-                    <!-- start clerks card -->
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6  col-12">
-                            <!-- progress card -->
-                            <div class="card_topic_second">
-                                <a href="detials-case.html">
-                                    <div class="header_card">
-                                        <div class="text">
-                                            <h5>المراجعة النهائية للأناتومي - د. حسن (سيمستر 2)</h5>
-                                            <span>د/ محمد عادل , مادة المحاسبة المالية</span>
+                                <div class="d-flex position-relative">
+                                    <a class="section_z" href="detials-course.html">
+                                        <div class="info">
+                                            <span class="badge bg-warning">مدفوع</span>
+                                            <h5> المراجعة النهائية للأناتومي - د. حسن (سيمستر 2)</h5>
+                                            <h6> د/ محمد عادل , مادة المحاسبة المالية</h6>
+                                            <li><i class="bi bi-box2"></i> الفرقة الأولى , كلية التجارة جامعة طنطا</li>
+                                            <li><i class="bi bi-collection"></i> 200 طالب منضم</li>
                                         </div>
-                                        
+                                    </a>
+                                    <div class="edit">
+                                        <span onclick="toggleMenu('drop-menu-info')"><i
+                                                class="bi bi-three-dots-vertical"></i></span>
                                     </div>
-                                    
-                                    <ul class="info">
-                                        <li><i class="bi bi-person-badge"></i> الفرقة الأولى , كلية التجارة جامعة طنطا</li>
-                                        <li><i class="bi bi-collection"></i> 200 طالب منضم</li>
+                                    <ul id="drop-menu-info" class="drop_menu_info">
+                                        <li><a href="edit-course.html">تعديل الكورس</a></li>
+                                        <li><a href="detials-course.html"> عرض التفاصيل</a></li>
+                                        <li><a onclick="deleteion()"> حذف الكورس</a></li>
                                     </ul>
-                                   
-                                </a>
+                                </div>
                             </div>
-                            <!-- progress card -->
                         </div>
-
+                          <!-- paied course  -->
+                           <!-- free course  -->
                         <div class="col-lg-4 col-md-6 col-12">
-                            <!-- new card -->
-                            <div class="card_topic_second">
-                                <a href="detials-case.html">
-                                    <div class="header_card">
-                                        <div class="text">
-                                            <h5> قضية الضرائب المرفوعة من السيد/ أحمد ابراهيم</h5>
-                                            <span>قضية أموال عامة</span>
+                            <div class="card_course ">
+                                <div class="img">
+                                    <img src="image/course2.png" alt="person">
+                                </div>
+                                <div class="d-flex position-relative">
+                                    <a class="section_z" href="detials-course.html">
+                                        <div class="info">
+                                            <span class="badge bg-success">مجاني</span>
+                                            <h5> المراجعة النهائية للأناتومي - د. حسن (سيمستر 2)</h5>
+                                            <h6> د/ محمد عادل , مادة المحاسبة المالية</h6>
+                                            <li><i class="bi bi-box2"></i> الفرقة الأولى , كلية التجارة جامعة طنطا</li>
+                                            <li><i class="bi bi-collection"></i> 200 طالب منضم</li>
                                         </div>
-                                        <div class=" badge bg-primary"> قضية جديدة</div>
+                                    </a>
+                                    <div class="edit">
+                                        <span onclick="toggleMenu('drop-menu-info')"><i
+                                                class="bi bi-three-dots-vertical"></i></span>
                                     </div>
-                                    <ul class="info">
-                                        <li><i class="bi bi-person"></i> العميل: <strong>احمد عادل</strong></li>
-                                        <li><i class="bi bi-calendar"></i> الجلسة القادمة: <strong> 22 مارس -
-                                                8:30 م</strong></li>
+                                    <ul id="drop-menu-info" class="drop_menu_info">
+                                        <li><a href="edit-course.html">تعديل الكورس</a></li>
+                                        <li><a href="detials-course.html"> عرض التفاصيل</a></li>
+                                        <li><a onclick="deleteion()"> حذف الكورس</a></li>
                                     </ul>
-                                    <div class="button w-100">
-                                        <a class="btn first w-100" href="detials-case.html"> عرض التفاصيل</a>
-                                    </div>
-                                </a>
+                                </div>
                             </div>
-                            <!-- new card -->
                         </div>
-
-                        <div class="col-lg-4  col-md-6 col-12">
-                            <!-- finshed card -->
-                            <div class="card_topic_second">
-                                <a href="detials-case.html">
-                                    <div class="header_card">
-                                        <div class="text">
-                                            <h5> قضية الضرائب المرفوعة من السيد/ أحمد ابراهيم</h5>
-                                            <span>قضية أموال عامة</span>
-                                        </div>
-                                        <div class=" badge bg-danger"> قضية منتهية</div>
-                                    </div>
-                                    <ul class="info">
-                                        <li><i class="bi bi-person"></i> العميل: <strong>احمد عادل</strong></li>
-                                        <li><i class="bi bi-calendar"></i> الجلسة القادمة: <strong> 22 مارس -
-                                                8:30 م</strong></li>
-                                    </ul>
-                                    <div class="button w-100">
-                                        <a class="btn first w-100" href="detials-case.html"> عرض التفاصيل</a>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- finshed card -->
-                        </div>
+                          <!-- free course  -->
                     </div>
-                    <!-- finish clerks card -->
                     <!-- pagination -->
                     <nav class="pagination_section">
                         <ul class="pagination justify-content-center">
@@ -549,7 +516,6 @@
                         </ul>
                     </nav>
                     <!-- pagination -->
-
                 </div>
             </div>
             <!---------------------- finish  content -------------------------------------------->
@@ -565,166 +531,40 @@
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/main.js"></script>
     <!-- main js -->
-    <!-- chart tabel -->
-    <script src="js/chart.min.js"></script>
-    <!-- chart tabel -->
-    <!-- counter -->
 
-    <script src="../js/counterup.min.js"></script>
-    <script src="../js/waypoints.min.js"></script>
-    <script>
-        $('.counter').counterUp({
-            delay: 20,
-            time: 3000
-        });
-    </script>
 
-    <!-- counter -->
     <!-- sweet alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- sweet alert -->
-    <!-- charts -->
+    <!-- show / hide edit menu in card -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const ctx = document.getElementById("myChart1").getContext("2d");
-            const labels = ['تفاعل الطلاب', ' الكورسات'];
-            const data = {
-                labels: labels,
-                datasets: [{
-                    label: 'My Dataset',
-                    data: [12, 19],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)', // Color for Branch 1
-                        'rgba(54, 162, 235, 0.2)',  // Color for Branch 2
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',    // Border color for Branch 1
-                        'rgba(54, 162, 235, 1)',    // Border color for Branch 2
+        function toggleMenu(menuId) {
+            var menu = document.getElementById(menuId);
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
 
-                    ],
-                    borderWidth: 1
-                }]
-            };
-            const config = {
-                type: 'doughnut',
-                data: data,
-                options: {
-                    responsive: true,
-                    animations: {
-                        tension: {
-                            duration: 4000,
-                            easing: 'linear',
-                            from: 1,
-                            to: 0,
-                            loop: true
-                        }
-                    },
-                    interaction: {
-                        intersect: false
-                    },
-                    scales: {
-                        x: {
-                            stacked: true
-                        },
-                        y: {
-                            stacked: true
-                        }
-                    }
-                }
-            };
-            const myChart = new Chart(ctx, config);
+        document.addEventListener('click', function (event) {
+            var menu = document.getElementById('drop-menu-info');
+            var target = event.target;
+
+            if (!target.matches('.bi-three-dots-vertical')) {
+                menu.style.display = 'none';
+            }
         });
     </script>
-    <!-- chart tabel1 -->
-    <script>
-        const zy = document.getElementById("myChart2").getContext('2d');
-        const labels3 = [
-            '5 Jan',
-            '10 Jan',
-            '15 Jan',
-            '20 Jan',
-            '25 Jan',
-            '30 Jan',
-            '5 Feb',
-            '10 Feb',
-            '15 Feb',
-            '20 Feb',
-
-        ];
-        const data3 = {
-            labels: labels3,
-            datasets: [
-                {
-                    label: 'المحقق',
-                    data: [80, 81, 56, 55, 40, 80, 30, 20, 70, 60],
-                    backgroundColor: [
-                        'rgba(85, 66, 264, 1)',
-
-                    ],
-                    borderColor: [
-                        'rgba(85, 66, 264, 1)',
-                    ],
-                    borderWidth: 1,
-                    barPercentage: 1,
-                    barThickness: 15,
-                    // maxBarThickness: 8,
-                    minBarLength: 6,
-                }]
-        };
-        const config3 = {
-            type: 'line',
-            data: data3,
-
-            options: {
-                animations: {
-                    tension: {
-                        duration: 4000,
-                        easing: 'linear',
-                        from: 1,
-                        to: 0,
-                        loop: true
-                    }
-                },
-                responsive: true,
-                interaction: {
-                    intersect: false,
-                },
-                scales: {
-                    x: {
-                        stacked: true,
-                    },
-                    y: {
-                        stacked: true
-                    }
-                }
-            },
-        };
-        const myChart3 = new Chart(zy, config3);
+    <!-- show / hide edit menu in card -->
+    
+<script>
+    $(document).ready(function() {
+      // Handle click event for the radio button
+      $('.radio-button').on('click', function() {
+        // Remove "active" class from all radio buttons
+        $('.radio-button').removeClass('active');
+        // Add "active" class to the clicked radio button
+        $(this).addClass('active');
+      });
+    });
     </script>
-    <!--chart tabel1-->
-    <!-- charts -->
-
-    <!-- convert class unread to read -->
-    <script>
-        function convertToRead(element) {
-            element.classList.remove("unread");
-            element.classList.add("read");
-        }
-    </script>
-    <script>
-
-        function showNotification() {
-            var notificationList = document.querySelector('.notfication_list');
-            notificationList.classList.add('show-notification');
-            event.stopPropagation();
-        }
-        function hideNotification(event) {
-            var notificationList = document.querySelector('.notfication_list');
-            notificationList.classList.remove('show-notification');
-        }
-
-    </script>
-    <!-- convert class unread to read -->
 </body>
 
 </html>

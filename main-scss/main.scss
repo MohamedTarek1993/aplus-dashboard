@@ -65,7 +65,9 @@ ul {
 .modal-header .btn-close {
   margin: 0;
 }
-
+span{
+  font-family: 'light';
+}
 p {
   margin-bottom: 0;
   // word-break: break-all;
@@ -836,13 +838,15 @@ input {
         }
       }
     }
-h5{
-  color: #CFDBE2;
-  font-size: 1.2rem;
-  font-family: 'bold';
-  text-align: center;
-  padding-inline-start: 2%;
-}
+
+    h5 {
+      color: #CFDBE2;
+      font-size: 1.2rem;
+      font-family: 'bold';
+      text-align: center;
+      padding-inline-start: 2%;
+    }
+
     .nav-item {
       width: 100%;
       margin: 0.3rem 0;
@@ -1492,6 +1496,7 @@ h5{
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba($color: #000000, $alpha: 0.05);
   z-index: 1000;
+  background-color: var(--color-white);
 
   li {
     text-align: center;
@@ -3133,14 +3138,16 @@ p.terms {
     height: 200px;
   }
 }
-.table_scroll_full{
+
+.table_scroll_full {
   overflow-x: auto;
   overflow-y: auto;
 }
+
 .table_calender {
   // border-collapse: collapse;
   width: max-content;
- 
+
 
   th {
     background-color: #F2F4F8;
@@ -3149,7 +3156,8 @@ p.terms {
     padding: 10px;
     color: var(--color-pargraph);
     font-family: 'regular';
-    width: 150px; /* Adjust the width as needed */
+    width: 150px;
+    /* Adjust the width as needed */
     min-width: 150px;
     max-width: 150px;
     word-wrap: break-word;
@@ -3158,7 +3166,8 @@ p.terms {
   td {
     text-align: center;
     padding: 10px;
-    width: 200px; /* Adjust the width as needed */
+    width: 200px;
+    /* Adjust the width as needed */
     min-width: 150px;
     max-width: 350px;
     word-wrap: break-word;
@@ -3176,19 +3185,22 @@ p.terms {
     background-color: #F1F7FF;
     position: relative;
     padding: 20px;
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  align-items: flex-start;
-  h6{
-    color: var(--color-text);
-    font-size: 1rem;
-    margin: 2% 0;
-  }
-  p{
-    color: var(--color-pargraph);
-    font-size: .8rem;
-  }
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h6 {
+      color: var(--color-text);
+      font-size: 1rem;
+      margin: 2% 0;
+    }
+
+    p {
+      color: var(--color-pargraph);
+      font-size: .8rem;
+    }
+
     &::before {
       content: "";
       height: 100%;
@@ -3201,21 +3213,26 @@ p.terms {
   }
 
   .calender_badge.task {
-    background-color: rgba(13, 110, 253 , .15);
+    background-color: rgba(13, 110, 253, .15);
+
     &::before {
       background-color: rgba(13, 110, 253);
     }
   }
+
   .calender_badge.case {
-    background-color: rgba(166, 112, 46 , .15);
+    background-color: rgba(166, 112, 46, .15);
+
     &::before {
       background-color: var(--color-primary);
     }
   }
-  .calender_badge.consultant{
-    background-color: rgba(220,53,69 ,.15);
+
+  .calender_badge.consultant {
+    background-color: rgba(220, 53, 69, .15);
+
     &::before {
-      background-color: #DC3545 ;
+      background-color: #DC3545;
     }
   }
 }
@@ -3260,6 +3277,63 @@ p.terms {
   height: 600px;
 }
 
+.card_course {
+  border-radius: 8px;
+  border: 0.7px solid rgba($color: #4F4F4F, $alpha: 0.2);
+  position: relative;
 
+  .img {
+    width: 100%;
+    height: 200px;
 
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+.section_z{
+  display: inline-block;
+}
+  .info {
+    padding: 2% 4%;
+    width: 90%;
+    display: inline-block;
 
+    h5 {
+      font-size: 1rem;
+      color: var(--color-text);
+      font-family: 'regular';
+      margin: 8px 0;
+    }
+
+    h6 {
+      font-size: .9rem;
+      color: var(--color-pargraph);
+      font-family: 'light';
+    }
+
+    li {
+      color: var(--color-text-sec);
+      margin-inline-end: 1%;
+      margin-bottom: 1%;
+      font-size: .7rem;
+      font-family: 'light';
+      color: var(--color-text);
+
+      i {
+        font-size: 1rem;
+        color: var(--color-primary);
+      }
+    }
+  }
+  .edit {
+    width: 10%;
+    display: inline-block;
+
+    i {
+      cursor: pointer;
+    }
+  }
+}
