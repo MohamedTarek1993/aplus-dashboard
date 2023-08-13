@@ -3,6 +3,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 /* start answer */
 .answer{
     display: flex;
@@ -70,50 +71,159 @@ margin-top: 67px;
 .modal-content {
     background-color: #fff !important;
 }
-.modal-body .body-mod{
-display: flex;
-    justify-content: flex-start;
+/* model one */
+.modal-body .parnt{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    border-bottom: 1px solid white;
 
 }
-.modal-body .body-mod .pc-modal{
+.modal-body .parnt img{
     width: 11%;
 }
-.modal-body .body-mod .text-mod h6{
-    font-size: 15px;
-        font-weight: bold;
-    }
-.modal-body .body-mod .text-mod p {
-font-size: 11px;
-    font-weight: 200;
+.modal-body .parnt h4{
+    font-size: 13px;
+    font-family:bold ;
 }
-.modal-body .body-mod .boton-1{
-font-size: 11px;
-    width: 123px;
-    padding: 8px;
+.modal-body .parnt p{
+    font-size: 9px;
+    color: #5E6E77;
+    font-family:"Regular" ;
 }
-.modal-body .body-mod .boton-2{
-    font-size: 11px;
-        width: 58px;
-        padding: 8px;
+.modal-body .parnt .botton .datels{
+    border: 1px solid #06456B;
+    color: #06456B;
+    font-size: 10px;
+    font-weight: 700;
+    font-family:bold ;
+
+}
+.modal-body .parnt .botton .datels:hover{
+    background-color: #06456B;
+    color: white;
+}
+.modal-body .parnt .botton .blok{
+    border:1px solid #E31E25;
+    color: #E31E25;
+    font-size: 10px;
+    font-weight: 700;
+    font-family:bold ;
+
+}
+.modal-body .parnt .botton .blok:hover{
+    background-color: #E31E25;
+    color: white;
+}
+.modal-body  .down{
+    padding:10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:10px
+}
+.modal-body .down .kind h6{
+    font-size: 10px;
+    color: #5E6E77;
+   
+}
+.modal-body .down .kind h4{
+    font-size: 12px;
+    font-family:"Regular" ;
+}
+.modal-body .down .kind a{
+    color: #06456B;
+    font-family:"bold" ;
+    text-decoration: underline;
+}
+.modal-header h1{
+    font-family:"bold" ;
+}
+/* model one */
+
+   
+
+/* model two */
+.body-mod-1 h6 {
+    font-size: 12px;
+    width: 66%;
+    color: #5E6E77;
+    font-family: "Regular";
+    line-height: 21px;
+
+}
+.text-mod-1{
+    padding: 10px;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-top: 14px
+
+}
+.text-mod-1 h5{
+    font-size: 10px;
+    margin-top: 5px;
+    font-family: 'bold';
 }
 
-.modal-footer .text-mod-1{
-display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 46px;
+   
+.text-mod-1 p{
+    background-color: white;
+    font-size: 8px;
+    border-radius: 10px;
+    padding: 5px;
+    color: #06456B;
+    font-family: 'regular';
 }
-    
-        .modal-footer .text-mod-1 h6{
-        font-size: 11px;
-        color: #5E6E77;
-        }
- .modal-footer .text-mod-1 h4 {
-font-size: 11px;
+.text-mod-1 i {
+    padding-right: 10px;
 }
-.modal-footer .text-mod-1{
-    padding-top: 20px;
+.text-mod-1 a{
+    font-size: 9px;
+    text-decoration: underline;
+    font-family: 'bold';
+}
+.modal-body .text-mod-2 .t-2{
+    text-align: center;
+    padding: 11px;
+}
+.modal-body .text-mod-2 .t-2 img{
+    width: 14%;
+}
+.modal-body .form-group label{
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'bold';
+}
+.modal-body .form-group .send-now{
+    margin-top: 20px;
+    background-color: #E6AB2F;
+    color: white;
+    width: 100%;
+    font-family: 'regular';
+}
+/* model two */
+h2#messageModal{
+    font-family: bold;
+}
+button.swal2-confirm.swal2-styled {
+    background-color: #E6AB2F;
+    font-family: 'regular';
+}
+button.swal2-cancel.swal2-styled {
+    border:1px solid #E6AB2F;
+    color: #E6AB2F;
+    background-color: white;
+    font-family: 'regular';
+}
+.swal2-html-container {
+    font-family: 'regular' !important;
+    font-size: 0.8rem !important;
+    color: #5E6E77 !important;
+}
+.icon_search-pop{
+    position: absolute;
+    top: 39px;
+
 }
