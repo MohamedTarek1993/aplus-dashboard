@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> تفاصيل الكورس/المذكرات</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="main-scss/main.min.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css"> -->
+
+    <!-- responsive -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="image/logo.png" type="image" />
+    <!-- ? Favicon -->
+</head>
+
+<body>
+    <!---------------------- start loader -------------------------------------------->
+    <!-- <div id="preloader"></div> -->
+    <!---------------------- finish loader -------------------------------------------->
+    <!---------------------- start scroll-up -------------------------------------------->
+    <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
+    <!---------------------- finish scroll-up -------------------------------------------->
+
+    <main class="d-flex sidemobile p-0">
+        <!---------------------- start sidebar -------------------------------------------->
+
+        <section class="sidebar open">
+            <ul class="
+          nav nav-pills
+          flex-column
+          mb-sm-auto mb-0
+          align-items-center align-items-sm-start
+        " id="menu">
+                <div class="image_logo">
+                    <img src="image/logo.png" alt="logo_sidebar" class="logo" />
+                </div>
+
+                <h5>محتوي النظام</h5>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link align-middle">
+                        <img src="image/home-icon.png" alt="icon" />
+                        <span>الرئيسية</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link align-middle">
+                        <img src="/image/course-icon.png" alt="icon" />
+                        <span>الكورسات</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="exams.html" class="nav-link align-middle">
+                        <img src="image/exam-icon.png" alt="icon" />
+                        <span> الامتحانات</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="groups.html" class="nav-link align-middle">
+                        <img src="image/groups-icon.png" alt="icon" />
+                        <span> الجروبات</span>
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="question-banks.html" class="nav-link align-middle">
+                        <img src="image/icon-bank.png" alt="icon" />
+                        <span>بنك الأسألة</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#submenulibrary" data-bs-toggle="collapse"
+                        class="nav-link accordion-button align-middle collapsed">
+                        <img src="image/exam-icon.png" alt="icon" />
+                        <span> بنك اسالة المرحلة الاساسية </span>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </a>
+                    <ul class="collapse flex-column" id="submenulibrary" data-bs-parent="#menu">
+                        <div class="close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <li>
+                            <a href="unites-main-bank.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> الوحدات </span></a>
+                        </li>
+                        <li>
+                            <a href="lessons-main-bank.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> الدروس </span></a>
+                        </li>
+                        <li>
+                            <a href="parts-main-bank.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> القطع </span></a>
+                        </li>
+                        <li>
+                            <a href="sec-bank-main-bank.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> بنك اسالة ثانوي </span></a>
+                        </li>
+                        <li>
+                            <a href="sec-exam-main-bank.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> امتحانات ثانوي </span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="celander.html" class="nav-link align-middle">
+                        <img src="image/book-icon.png" alt="icon" />
+                        <span> المواد الدراسية</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#submenuAccountant" data-bs-toggle="collapse"
+                        class="nav-link accordion-button align-middle collapsed">
+                        <img src="image/scan-barcode-icon.png" alt="icon" />
+                        <span> أكود الشراء</span>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </a>
+                    <ul class="collapse flex-column" id="submenuAccountant" data-bs-parent="#menu">
+                        <div class="close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+
+                        <li>
+                            <a href="extract-code-books.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> استخراج اكواد للمذكرات</span></a>
+                        </li>
+                        <li>
+                            <a href="extract-code-courses.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> استخراج اكواد للكورسات</span></a>
+                        </li>
+                        <li>
+                            <a href="extract-code-practice.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> استخراج اكواد للتدريبات</span></a>
+
+                        </li>
+
+                    </ul>
+                </li>
+                <h5> مستخدمي النظام</h5>
+                <li class="nav-item">
+                    <a href="teachers.html" class="nav-link align-middle">
+                        <img src="image/teacher-icon.png" alt="icon" />
+                        <span> المدرسين</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="students.html" class="nav-link align-middle">
+                        <img src="image/student-icon.png" alt="icon" />
+                        <span> الطلبة</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="lesson-center.html" class="nav-link align-middle">
+                        <img src="image/house-icon.png" alt="icon" />
+                        <span> سناتر الدروس</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="director.html" class="nav-link align-middle">
+                        <img src="image/director-icon.png" alt="icon" />
+                        <span> مديري النظام</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="powers.html" class="nav-link align-middle">
+                        <img src="image/powers-icon.png" alt="icon" />
+                        <span> الصلاحيات</span>
+                    </a>
+                </li>
+
+
+                <h5> اعدادات النظام</h5>
+
+                <li class="nav-item">
+                    <a href="country.html" class="nav-link align-middle">
+                        <img src="image/country-icon.png" alt="icon" />
+                        <span> الدول</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="governorate.html" class="nav-link align-middle">
+                        <img src="image/country-icon.png" alt="icon" />
+                        <span> المحافظات</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="city.html" class="nav-link align-middle">
+                        <img src="image/country-icon.png" alt="icon" />
+                        <span> المدن</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="university.html" class="nav-link align-middle">
+                        <img src="image/buildings-icon.png" alt="icon" />
+                        <span> الجامعات</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="colleage.html" class="nav-link align-middle">
+                        <img src="image/colleage-icon.png" alt="icon" />
+                        <span> الكليات</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="main-edu.html" class="nav-link align-middle">
+                        <img src="image/main-edu-icon.png" alt="icon" />
+                        <span> التعليم الاساسي</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="study-teams.html" class="nav-link align-middle">
+                        <img src="image/format-circle.png" alt="icon" />
+                        <span> الفرق الدراسية</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="point-settings.html" class="nav-link align-middle">
+                        <img src="image/buy-crypto-icon.png" alt="icon" />
+                        <span> اعدادات النقاط</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="slider.html" class="nav-link align-middle">
+                        <img src="image/slider-icon.png" alt="icon" />
+                        <span> الاسلايدر</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="notfication-seting.html" class="nav-link align-middle">
+                        <img src="image/notification-bing-icon.png" alt="icon" />
+                        <span> اعدادات الاشعارات</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="general-settengs.html" class="nav-link align-middle">
+                        <img src="image/powers-icon.png" alt="icon" />
+                        <span> الاعدادات العامة</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link align-middle">
+                        <img src="image/logout-icon.png" alt="icon" />
+                        <span> تسجيل الخروج</span>
+                    </a>
+                </li>
+
+
+            </ul>
+        </section>
+        <!---------------------- end sidebar -------------------------------------------->
+        <!---------------------- start main content -------------------------------------------->
+
+        <section class="index_cards">
+            <!---------------------- start nav -------------------------------------------->
+            <nav class="nav_top navbar">
+                <div class="container">
+                    <div class="menu">
+                        <i class="bi bi-list"></i>
+                    </div>
+                    <div class="info">
+                        <div class="notfication" onclick="showNotification()">
+                            <i class="bi bi-bell"></i>
+                            <span class="alerts">
+                                3
+                            </span>
+                        </div>
+
+                        <div class="img">
+                            <img src="../image/person.png" alt="person">
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn  btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                محمد طارق
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li> <a href="settings.html">اعدادات الحساب</a> </li>
+                                <li onclick="acceptAlert()"> تسجيل الخروج </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </nav>
+            <ul class="notfication_list">
+                <h2>الأشعارات</h2>
+                <i class="bi bi-x close-icon" onclick="hideNotification()"></i>
+
+                <li class="unread" onclick="convertToRead(this)">
+                    <div class="info">
+                        <h6> text</h6>
+                        <span> 22/6/1993</span>
+                    </div>
+                    <div class="delete">
+                        <i class="bi bi-trash"></i>
+                    </div>
+                </li>
+                <li class="read">
+                    <div class="info">
+                        <h6> text</h6>
+                        <span> 22/6/1993</span>
+                    </div>
+                    <div class="delete">
+                        <i class="bi bi-trash"></i>
+                    </div>
+                </li>
+            </ul>
+            <!---------------------- finish nav -------------------------------------------->
+            <!---------------------- start content -------------------------------------------->
+            <div class="content_page">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_topic">
+                            <h4> تفاصيل الكورس /المذكرات </h4>
+                            <a class="btn first" href="add-course.html"> <i class="bi bi-plus"></i> اضافة مذكرة جديدة
+                            </a>
+                        </div>
+                    </div>
+                    <!-- search and filter section -->
+                    <div class="row">
+                        <div class="col-lg-9 col-md-7 col-12 ">
+                            <div class="search_topic">
+                                <form>
+                                    <div class="input-group">
+                                        <input class="form-control" type="text"
+                                            placeholder="ابحث باسم الطالب, رقم الهاتف..........">
+                                        <span style="  height: 60%;" class="icon_search"><i
+                                                class="bi bi-search"></i></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-5 col-12 ">
+                            <form class="form_topic" style="padding-inline-end: 0; margin-top: 0;">
+
+                                <!-- input group -->
+                                <div class="input-group">
+                                    <select required class="selectpicker" multiple data-selected-text-format="count > 1"
+                                        data-icon="bi bi-trash" data-live-search="true"
+                                        data-placeholder=" كل الابواب  ">
+                                        <option value="1"> 1</option>
+                                        <option value="2"> 2</option>
+                                        <option value="3"> 3</option>
+                                    </select>
+                                </div>
+                            </form>
+                            <!-- input group -->
+                        </div>
+                    </div>
+                    <!-- start table -->
+                    <div class="table">
+                        <table class="table-responsive table_expenses table_topic">
+                            <thead>
+                                <tr>
+                                    <td> </td>
+                                    <td > الكود </td>
+                                    <td> اسم المذكرة</td>
+                                    <td> الباب الدراسي</td>
+                                    <td> الوصف</td>
+                                    <td> الحالة السعرية
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- outcome list -->
+                                <tr>
+                                    <td></td>
+                                    <td>2154202 # </td>
+                                    <td> مذكرةمراجعة 1 </td>
+                                    <td>Endocrine -مراجعة سريعة </td>
+                                    <td>فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث يتم شرح الجزء الاول
+                                        والاكبر من </td>
+                                    <td>مجاني</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn  dropdown-toggle-1" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="bi bi-three-dots-vertical"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#detailsSubscribeModal"> تفاصيل المذكره</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">  حذف المذكره </a></li>
+                                                
+                                            </ul>
+                                    </td>
+                                </tr>
+                                <!-- outcome list -->
+
+                                <!-- outcome list -->
+                                <tr>
+                                    <td></td>
+                                    <td>2154202 # </td>
+                                    <td> مذكرةمراجعة 1 </td>
+                                    <td>Endocrine -مراجعة سريعة </td>
+                                    <td>فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث يتم شرح الجزء الاول
+                                        والاكبر من </td>
+                                    <td>مجاني</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn  dropdown-toggle-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="bi bi-three-dots-vertical"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#detailsSubscribeModal">
+                                                        تفاصيل المذكره</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#"> حذف المذكره </a></li>
+                                
+                                            </ul>
+                                    </td>
+                                </tr>
+                                <!-- outcome list -->
+
+                                <!-- outcome list -->
+                                <tr>
+                                    <td></td>
+                                    <td>2154202 # </td>
+                                    <td> مذكرةمراجعة 1 </td>
+                                    <td>Endocrine -مراجعة سريعة </td>
+                                    <td>فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث يتم شرح الجزء الاول
+                                        والاكبر من </td>
+                                    <td>مجاني</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn  dropdown-toggle-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="bi bi-three-dots-vertical"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#detailsSubscribeModal">
+                                                        تفاصيل المذكره</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#"> حذف المذكره </a></li>
+                                
+                                            </ul>
+                                    </td>
+                                </tr>
+                                <!-- outcome list -->
+
+                                <!-- outcome list -->
+                                <tr>
+                                    <td></td>
+                                    <td>2154202 # </td>
+                                    <td> مذكرةمراجعة 1 </td>
+                                    <td>Endocrine -مراجعة سريعة </td>
+                                    <td>فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث يتم شرح الجزء الاول
+                                        والاكبر من </td>
+                                    <td>مجاني</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn  dropdown-toggle-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="bi bi-three-dots-vertical"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#detailsSubscribeModal">
+                                                        تفاصيل المذكره</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#"> حذف المذكره </a></li>
+                                
+                                            </ul>
+                                    </td>
+                                </tr>
+                                <!-- outcome list -->
+
+                                <!-- outcome list -->
+                                    <tr>
+                                        <td></td>
+                                        <td>2154202 # </td>
+                                        <td> مذكرةمراجعة 1 </td>
+                                        <td>Endocrine -مراجعة سريعة </td>
+                                        <td>فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث يتم شرح الجزء الاول
+                                            والاكبر من </td>
+                                        <td>مجاني</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="btn  dropdown-toggle-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="bi bi-three-dots-vertical"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#detailsSubscribeModal">
+                                                            تفاصيل المذكره</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#"> حذف المذكره </a></li>
+                                    
+                                                </ul>
+                                        </td>
+                                    </tr>
+                                <!-- outcome list -->
+
+                                <!-- outcome list -->
+                                    <tr>
+                                        <td></td>
+                                        <td>2154202 # </td>
+                                        <td> مذكرةمراجعة 1 </td>
+                                        <td>Endocrine -مراجعة سريعة </td>
+                                        <td>فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث يتم شرح الجزء الاول
+                                            والاكبر من </td>
+                                        <td>مجاني</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="btn  dropdown-toggle-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="bi bi-three-dots-vertical"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#detailsSubscribeModal">
+                                                            تفاصيل المذكره</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#"> حذف المذكره </a></li>
+                                    
+                                                </ul>
+                                        </td>
+                                    </tr>
+                                <!-- outcome list -->
+
+                                <!-- outcome list -->
+                                <tr>
+                                    <td></td>
+                                    <td>2154202 # </td>
+                                    <td> مذكرةمراجعة 1 </td>
+                                    <td>Endocrine -مراجعة سريعة </td>
+                                    <td>فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث يتم شرح الجزء الاول
+                                        والاكبر من </td>
+                                    <td>مجاني</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn  dropdown-toggle-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="bi bi-three-dots-vertical"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#detailsSubscribeModal">
+                                                        تفاصيل المذكره</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="#"> حذف المذكره </a></li>
+                                
+                                            </ul>
+                                    </td>
+                                </tr>
+                                <!-- outcome list -->
+
+                                <!-- outcome list -->
+                                    <tr>
+                                        <td></td>
+                                        <td>2154202 # </td>
+                                        <td> مذكرةمراجعة 1 </td>
+                                        <td>Endocrine -مراجعة سريعة </td>
+                                        <td>فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث يتم شرح الجزء الاول
+                                            والاكبر من </td>
+                                        <td>مجاني</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="btn  dropdown-toggle-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="bi bi-three-dots-vertical"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#detailsSubscribeModal">
+                                                            تفاصيل المذكره</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#"> حذف المذكره </a></li>
+                                    
+                                                </ul>
+                                        </td>
+                                    </tr>
+                                <!-- outcome list -->
+                                <!-- Modal -->
+                                <div class="modal fade" id="detailsSubscribeModal" tabindex="-1"
+                                    aria-labelledby="detailsSubscribeModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="detailsSubscribeModalLabel">Modal
+                                                    title</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-8" style="padding-top: 20px; color: #626E7D;">
+
+                            <p>عرض 1 - 30 من اجمالى 59</p>
+                        </div>
+                        <div class="col-4">
+                            <nav class="pagination_section">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">التالي </a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- end table -->
+
+
+
+                    <script src="js/jquery-3.7.1.min.js"></script>
+                    <script src="js/all.min.js"></script>
+                    <script src="js/bootstrap.min.js"></script>
+                    <script src="js/bootstrap-select.min.js"></script>
+                    <script src="js/main.js"></script>
+                    <!-- main js -->
+
+
+                    <!-- sweet alert -->
+                    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+                    <!-- sweet alert -->
+                    <!-- show / hide edit menu in card -->
+                    <script>
+                        function toggleMenu(menuId) {
+                            var menu = document.getElementById(menuId);
+                            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+                        }
+
+                        document.addEventListener('click', function (event) {
+                            var menu = document.getElementById('drop-menu-info');
+                            var target = event.target;
+
+                            if (!target.matches('.bi-three-dots-vertical')) {
+                                menu.style.display = 'none';
+                            }
+                        });
+                    </script>
+                    <!-- show / hide edit menu in card -->
+
+                    <script>
+                        $(document).ready(function () {
+                            // Handle click event for the radio button
+                            $('.radio-button').on('click', function () {
+                                // Remove "active" class from all radio buttons
+                                $('.radio-button').removeClass('active');
+                                // Add "active" class to the clicked radio button
+                                $(this).addClass('active');
+                            });
+                        });
+                    </script>
+</body>
+
+</html>

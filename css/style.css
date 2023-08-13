@@ -1,0 +1,119 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* start answer */
+.answer{
+    display: flex;
+}
+.answer .answer-1{
+    margin-top: 20px;
+}
+.answer .form-control{
+margin-top: 7px;
+}
+.answer .cheek{
+    margin-top: 21px;
+        margin-right: 15px;
+}
+.answer .cheek-1{
+    margin-top: 19px;
+}
+.answer .galary{
+margin-top: 20px;
+    margin-right: 13px
+}
+.answer .form-group{
+    margin-top: 17px;
+}
+.input-group{
+    padding-top: 30px;
+}
+/* end answer */
+/* start table */
+
+
+.tbody,
+td,
+tfoot,
+th,
+thead,
+tr{
+    padding: 1rem 0;
+}
+
+/* end table */
+/* start text */
+.text{
+    padding: 30px;
+}
+.tabl{
+    background-color: white;
+}
+/* end text */
+.table_expenses tbody tr .button{
+margin-top: 67px;
+    width: 70px;
+}
+.tabl .cheek{
+    margin-left: 10px;
+}
+.dropdown-toggle-1::after{
+    display: none;
+
+}
+ .dropdown-item {
+    text-align: start;
+    font-size: 15px;
+}
+.modal-content {
+    background-color: #fff !important;
+}
+.modal-body .body-mod{
+display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid white;
+
+}
+.modal-body .body-mod .pc-modal{
+    width: 11%;
+}
+.modal-body .body-mod .text-mod h6{
+    font-size: 15px;
+        font-weight: bold;
+    }
+.modal-body .body-mod .text-mod p {
+font-size: 11px;
+    font-weight: 200;
+}
+.modal-body .body-mod .boton-1{
+font-size: 11px;
+    width: 123px;
+    padding: 8px;
+}
+.modal-body .body-mod .boton-2{
+    font-size: 11px;
+        width: 58px;
+        padding: 8px;
+}
+
+.modal-footer .text-mod-1{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+}
+    
+        .modal-footer .text-mod-1 h6{
+        font-size: 11px;
+        color: #5E6E77;
+        }
+ .modal-footer .text-mod-1 h4 {
+font-size: 11px;
+}
+.modal-footer .text-mod-1{
+    padding-top: 20px;
+}
