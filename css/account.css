@@ -1,0 +1,66 @@
+.content_page form .account .form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.content_page form .account .form-group .img-acount{
+    position: absolute;
+    padding-inline-start: 3%;
+    margin: 3px;
+}
+.content_page form .account .form-group img{
+    width: 20px;
+}
+.content_page form .account h5{
+    font-family: 'medium';
+}
+.content_page form .account .form-group input{
+    border-radius: 2px;
+    padding-inline-start: 10%;
+    appearance: auto;
+}
+.content_page form .account .form-group label{
+    margin-bottom: .8rem;
+    font-family: 'regular';
+}
+.content_page form .account .form-control{
+    appearance: auto;
+    padding-inline-start: 3%;
+}
+.content_page form .account .form-group .option{
+    font-family: 'regular';
+}
+.content_page form .account .form-group .select{
+    border-radius: 2px;
+    padding-inline-start: 4%;
+    background-color: rgba(0,0,0,0);
+    color: var(--color-pargraph);
+    font-family: "regular";
+    border: 1px solid #9a9a9a;
+    border-radius: 8px !important;
+}
+
+/* .form-control select{
+    border-radius: 2px;
+    padding-inline-start: 4%;
+    background-color: rgba(0,0,0,0);
+    color: var(--color-pargraph);
+    font-family: "regular";
+    border: 1px solid #9a9a9a;
+    border-radius: 8px !important;
+} */
+
+ /* .content_page form .account .btn{
+    width: 40%;
+    margin: 1rem 0 2rem;
+    border-radius: 10px;
+    font-family: 'semibold';
+}
+.content_page form .account .btn:hover{
+color: white;
+}  */
+
+
+/* .form-control {
+    border-radius: 2px;
+    padding-inline-start: 13%;
+} */
