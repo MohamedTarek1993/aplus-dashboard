@@ -2,7 +2,10 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
+  }
+  html {
+    scroll-behavior: smooth;
+  }
 
 /* start answer */
 .answer{
@@ -227,3 +230,158 @@ button.swal2-cancel.swal2-styled {
     top: 39px;
 
 }
+a.btn.nas{
+    border:1px solid #E31E25;
+   
+   color: #E31E25;
+   font-family: 'regular';
+ 
+}
+a.btn.nas:hover{
+    background-color: #E31E25;
+    color: white;
+}
+.final-exam h4{
+    font-family: bold;
+    font-size: 1.3rem;
+}
+.final-exam p {
+    font-family: 'regular';
+
+}
+.head-exsam .push-exsam > p {
+    font-family: 'regular';
+    font-size: 0.8rem;
+    padding: 0.3rem 0;
+
+}
+.head-exsam {
+    display: flex;
+}
+.head-exsam .push-exsam{
+    padding: 0.2rem;
+    margin-right: 3rem;
+    margin-top: 0.2rem;
+    color: #E6AB2F;
+    background-color: #e6ac2f1f;
+    
+    height: 2rem;
+    border-radius: 12px;
+}
+.time{
+    display: flex;
+    padding: 1.5rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time .time-exam {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.time .time-exam h5{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-family: 'bold';
+}
+.time .time-exam p{
+    font-size: 1rem;
+    font-family: 'regular';
+  color: #5E6E77;
+}
+.time .total-exam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time .student-exam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time .dgree-exam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time .total-exam h5{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-family: 'bold';
+
+}
+.time .total-exam p{
+    font-size: 1rem;
+    font-family: 'regular';
+  color: #5E6E77;
+
+}
+.time .student-exam h5{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-family: 'bold';
+}
+.time .student-exam p{
+    font-size: 1rem;
+    font-family: 'regular';
+  color: #5E6E77;
+
+}
+.time .dgree-exam h5{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-family: 'bold';
+}
+.time .dgree-exam p{
+    font-size: 1rem;
+    font-family: 'regular';
+  color: #5E6E77;
+}
+.time a{
+    text-decoration: underline;
+}
+i.bi.bi-search.nas{
+    position: absolute;
+    right: 1rem;
+    top: 0.6rem;
+}
+.table .qu-ex h3{
+    padding: 1.3rem 0;
+    font-family: bold;
+    font-size: 1.3rem;
+}
+button.btn.first.nas-1 {
+    border: 1px solid #E6AB2F;
+    color: #E6AB2F;
+    width: 40%;
+}
+button.btn.first.nas-2 {
+    border:1px solid #E6AB2F;
+    color: #E6AB2F;
+    width: 40%;
+}
+button.btn.first.nas-1:hover {
+background-color: #E6AB2F;
+color: white;
+}
+button.btn.first.nas-2:hover {
+    background-color: #E6AB2F;
+    color: white;
+    }
+   
+    .table>:not(caption)>*>*{
+        border-bottom: 0 solid;
+    }
+    tbody, td, tfoot, th, thead, tr{
+        border-bottom: 0 solid;
+    }
+    tbody, td, tfoot, th, thead, tr{
+        border-bottom: 0 solid;
+    }
+    .modal-body .button-mod {
+        display: flex;
+        justify-content: space-around;
+    }
+    
