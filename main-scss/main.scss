@@ -1209,6 +1209,7 @@ input {
       .form-control {
         border-radius: 12px;
         border: 0.5px solid #BFBFBF;
+        padding-inline-start: 2rem;
 
         &::placeholder {
           font-size: 12px;
@@ -1219,13 +1220,12 @@ input {
 
       .icon_search {
         position: absolute;
-        right: 7px;
-        height: 100%;
+        right: 1rem;
+        top: 3.3rem;
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 100;
-        cursor: pointer;
 
         i {
           color: var(--color-pargraph);

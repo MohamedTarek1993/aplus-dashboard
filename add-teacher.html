@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>اضافة سؤال جديد-1</title>
+    <title>اضافة مدرس جديد</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -352,139 +352,49 @@
           <div class="container">
             <div class="row">
               <div class="main_topic">
-                <h4>اضافة سؤال جديد</h4>
+                <h4>اضافة مدرس جديد</h4>
               </div>
               <form class="form_topic">
                 <div class="row">
                   <!-- start input -->
                   <div class="col-12">
                     <div class="input-group">
-                      <label class="form-label"> نوع السؤال </label>
-                      <select
-                        required
-                        class="selectpicker"
-                        data-placeholder=" اختياري "
-                        data-selected-text-format="count > 1"
-                        data-icon="bi bi-trash"
-                        data-live-search="true"
-                      >
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                  </div>
-                  <!-- finish input -->
-
-                  <!-- start input -->
-
-                  <div class="col-12">
-                    <div class="input-group">
-                      <label class="form-label"> نص السؤال</label>
+                      <label class="form-label"> اسم المدرس</label>
                       <textarea
                         class="form-control"
-                        placeholder=" ادخل نص السؤال "
+                        placeholder="     اسم المدرس كاملا "
                       ></textarea>
                     </div>
                   </div>
                   <!-- finish input -->
-                  <div class="col-12">
-                    <div class="input-group pt-4">
-                      <label class="form-label"> رفع صورة معبرة</label>
-                      <div
-                        class="file-upload-wrapper"
-                        data-text="اسحب الصورة التى تريد اضافتها  او قم بفتحها من هنا"
-                      >
-                        <input
-                          required
-                          name="file-upload-field form-control"
-                          type="file"
-                          class="file-upload-field"
-                          value=""
-                        />
-                      </div>
+                  <div class="col-6">
+                    <div class="input-group">
+                      <label class="form-label"> رقم الهاتف</label>
+                      <textarea
+                        class="form-control"
+                        placeholder=" ادخل رقم الهاتف "
+                      ></textarea>
                     </div>
                   </div>
-                  <!-- start cheek box -->
-                  <div class="text">
-                    <h3>الاجابات</h3>
-                    <p>ادخل الاجابات وقم بتحديد الاجابة الصحيحة بينهم</p>
-                  </div>
-                  <div class="answer">
-                    <div class="answer-1">
-                      <input
+                  <div class="col-6">
+                    <div class="input-group">
+                      <label class="form-label"> البريد الالكترونى</label>
+                      <textarea
                         class="form-control"
-                        placeholder="ادخل الجابة الاولى"
-                      />
-                      <input
-                        class="form-control"
-                        placeholder="ادخل الجابة الثانية"
-                      />
-                      <input
-                        class="form-control"
-                        placeholder="ادخل الجابة الثالثة"
-                      />
-                      <input
-                        class="form-control"
-                        placeholder="ادخل الجابة الرابعة"
-                      />
-                    </div>
-                    <div class="cheek">
-                      <div class="cheek-1">
-                        <input type="checkbox" />
-                      </div>
-                      <div class="cheek-1">
-                        <input type="checkbox" />
-                      </div>
-                      <div class="cheek-1">
-                        <input type="checkbox" />
-                      </div>
-                      <div class="cheek-1">
-                        <input type="checkbox" />
-                      </div>
-                    </div>
-                    <div class="galary">
-                      <div class="form-group">
-                        <label for="answer1"
-                          ><img src="image/gallery.png" alt=""
-                        /></label>
-                        <input class="file" id="answer1" type="file" hidden />
-                      </div>
-                      <div class="form-group">
-                        <label for="answer1"
-                          ><img src="image/gallery.png" alt=""
-                        /></label>
-                        <input class="file" id="answer1" type="file" hidden />
-                      </div>
-                      <div class="form-group">
-                        <label for="answer1"
-                          ><img src="image/gallery.png" alt=""
-                        /></label>
-                        <input class="file" id="answer1" type="file" hidden />
-                      </div>
-                      <div class="form-group">
-                        <label for="answer1"
-                          ><img src="image/gallery.png" alt=""
-                        /></label>
-                        <input class="file" id="answer1" type="file" hidden />
-                      </div>
+                        placeholder="       ex: someone@gmail.com "
+                      ></textarea>
                     </div>
                   </div>
-                  <!-- end cheek box -->
 
-                  <div class="col-6">
+                  <!-- start input -->
+
+                  <div class="col-12">
                     <div class="input-group">
-                      <label class="form-label"> الدرجات </label>
-                      <input class="form-control" />
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="input-group">
-                      <label class="form-label"> ترتيب السؤال </label>
+                      <label class="form-label"> المدينة </label>
                       <select
                         required
                         class="selectpicker"
-                        data-placeholder="ادخل الترتيب "
+                        data-placeholder=" اختر المدينة "
                         data-selected-text-format="count > 1"
                         data-icon="bi bi-trash"
                         data-live-search="true"
@@ -495,14 +405,153 @@
                       </select>
                     </div>
                   </div>
-
-                  <!-- start input -->
-
-                  <!-- finish input -->
-
-                  <div class="col-12">
-                    <a href="#" class="btn first"> حفظ</a>
+                </div>
+                <div class="col-12">
+                  <div class="input-group">
+                    <label class="form-label">  نوع التعليم</label>
+                    <select
+                    required
+                    class="selectpicker"
+                    data-placeholder="  اختر نوع التعليم "
+                    data-selected-text-format="count > 1"
+                    data-icon="bi bi-trash"
+                    data-live-search="true"
+                  >
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  
                   </div>
+                </div>
+                <div class="col-12">
+                  <div class="input-group">
+                    <label class="form-label"> المواد الدراسية</label>
+                    <select
+                    required
+                    class="selectpicker"
+                    data-placeholder="    اختر مادة أو اكثر "
+                    data-selected-text-format="count > 1"
+                    data-icon="bi bi-trash"
+                    data-live-search="true"
+                  >
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                    <div class="input-group">
+                      <label class="form-label">  كلمة المرور</label>
+                      <textarea
+                        class="form-control"
+                        placeholder=" كلمة المرور "
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="input-group">
+                      <label class="form-label">  تأكيد كلمة المرور</label>
+                      <textarea
+                        class="form-control"
+                        placeholder=" كلمة المرور "
+                      ></textarea>
+                    </div>
+                  </div>
+                
+                <!-- finish input -->
+                <div class="col-12">
+                  <div class="input-group pt-4">
+                    <label class="form-label"> رفع صورة معبرة</label>
+
+                    <div
+                      class="file-upload-wrapper"
+                      data-text="الصورة التى تريد اضافتها  او قم بفتحها من هنا"
+                    >
+                      <input
+                        required
+                        name="file-upload-field form-control"
+                        type="file"
+                        class="file-upload-field"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- start cheek box -->
+                <div class="text">
+                  <h3>الاجابات</h3>
+                  <p>ادخل الاجابات وقم بتحديد الاجابة الصحيحة بينهم</p>
+                </div>
+                <div class="answer">
+                  <div class="answer-1">
+                    <input
+                      class="form-control"
+                      placeholder="ادخل الجابة الاولى"
+                    />
+                    <input
+                      class="form-control"
+                      placeholder="ادخل الجابة الثانية"
+                    />
+                    <input
+                      class="form-control"
+                      placeholder="ادخل الجابة الثالثة"
+                    />
+                    <input
+                      class="form-control"
+                      placeholder="ادخل الجابة الرابعة"
+                    />
+                  </div>
+                  <div class="cheek">
+                    <div class="cheek-1">
+                      <input type="checkbox" />
+                    </div>
+                    <div class="cheek-1">
+                      <input type="checkbox" />
+                    </div>
+                    <div class="cheek-1">
+                      <input type="checkbox" />
+                    </div>
+                    <div class="cheek-1">
+                      <input type="checkbox" />
+                    </div>
+                  </div>
+                  <div class="galary">
+                    <div class="form-group">
+                      <label for="answer1"
+                        ><img src="image/gallery.png" alt=""
+                      /></label>
+                      <input class="file" id="answer1" type="file" hidden />
+                    </div>
+                    <div class="form-group">
+                      <label for="answer1"
+                        ><img src="image/gallery.png" alt=""
+                      /></label>
+                      <input class="file" id="answer1" type="file" hidden />
+                    </div>
+                    <div class="form-group">
+                      <label for="answer1"
+                        ><img src="image/gallery.png" alt=""
+                      /></label>
+                      <input class="file" id="answer1" type="file" hidden />
+                    </div>
+                    <div class="form-group">
+                      <label for="answer1"
+                        ><img src="image/gallery.png" alt=""
+                      /></label>
+                      <input class="file" id="answer1" type="file" hidden />
+                    </div>
+                  </div>
+                </div>
+                <!-- end cheek box -->
+
+                <!-- start input -->
+
+                <!-- finish input -->
+
+                <div class="col-12">
+                  <a href="#" class="btn first save"> حفظ</a>
                 </div>
               </form>
             </div>
