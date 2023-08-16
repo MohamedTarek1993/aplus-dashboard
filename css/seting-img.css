@@ -13,7 +13,7 @@
 }
 
 .content_page form h6 {
-    margin: 2rem 0 1rem;
+    margin: 2rem 0 0;
     font-family: 'medium';
 }
 .content_page form h5 {
@@ -46,18 +46,6 @@ form .file-upload-wrapper {
         padding: 3rem 0;
     }
 }
-
-.content_page form .btn{
-        width: 40%;
-        color: white;
-        margin: 1rem 0 2rem;
-        border-radius: 10px;
-        font-family: 'regular';
-}
-.content_page form .btn:hover{
-    background-color:#053B5C;
-    transition: .9s;
-}
 .content_page form .form-group .select2{
     border-radius: 2px;
     padding-inline-start:0;
@@ -68,6 +56,28 @@ form .file-upload-wrapper {
     border-radius: 8px !important;
 }
 
+
+ .content_page form .safe{
+        width: 20%;
+        color: white;
+        margin: 1rem 0 2rem;
+        border-radius: 10px;
+        font-family: 'regular';
+}
+.content_page form .safe:hover{
+    background-color:#053B5C;
+    transition: .9s;
+} 
+
+/* .content_page form .account .form-group .select2{
+    border-radius: 2px;
+    padding-inline-start:0;
+    background-color: rgba(0,0,0,0);
+    color: var(--color-pargraph);
+    font-family: "regular";
+    border: 1px solid #9a9a9a;
+    border-radius: 8px !important;
+} */
 
 /* small laptop */
 @media (max-width: 1500px) {}
