@@ -79,7 +79,7 @@ tr{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    width: 100%;
 }
 .modal-body .parnt img{
     width: 11%;
@@ -590,7 +590,88 @@ button.btn.first.nas-2:hover {
         position: absolute;
      }
      .text-card-team h6 {
-        font-size: 1.2r;
+        font-size: 0.8rem;
+        font-family: 'regular';
 
      }
+     h5.card-title.nas {
+        font-size: 0.8rem;
+        font-family: 'regular';
+        padding: 1rem 0;
+     }
+     .text-card-team h4 {
+        font-size: 1rem;
+        padding: 1rem 0;
+        font-family: 'regular';
+     }
+     h6.push-text {
+        padding: 0.6rem 1.3rem;
+    font-size: 0.8rem;
+    background-color: #e6ac2f21;
+    width: fit-content;
+    border-radius: 19px;
+    color: #E6AB2F;
+    font-family: 'regular';
+      
+     }
+     .card.nas-1{
+        border-radius: 1rem;
+     }
+     h6.free-text{
+        padding: 0.6rem 1.3rem;
+        font-size: 0.8rem;
+        background-color: #06446b25;
+        width: fit-content;
+        border-radius: 19px;
+        color: 06456B;
+        font-family: 'regular';
+     }
+     .card.nas-2 {
+       margin-top: 1rem;
+       border-radius: 1rem;
+     }
      /* end details centers */
+     /* start lesons */
+     i.bi.bi-search {
+        position: absolute;
+     }
+     /* end lesons */
+     /* tables */
+     p.table-text{
+        width: 56%;
+        TEXT-ALIGN: START;
+        MARGIN: 0 AUTO;
+     }
+     p.tabl-text-1 {
+        margin: auto 0;
+    width: 267%;
+     }
+     p.table-text-2 {
+        margin: auto 39px;
+   
+    width: 45%;
+}
+p.table-text-3 {
+    width: 227%;
+}
+p.table-doors {
+    width: 66%;
+    margin: auto;
+    text-align: start;
+}
+p.table-doors-1 {
+    margin: auto 53px;
+    width: 66%;
+}
+p.table-doors-2 {
+    width: 113%;
+}
+p.table-doors-3 {
+    width: 100%;
+    margin-left: 12rem;
+}
+p.table-doors-4 {
+    margin-left: 3rem;
+}
+ /* tables */
+ 

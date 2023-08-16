@@ -5,8 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> اضافة درس جديد
-    </title>
+    <title> اضافة باب جديد</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -14,6 +13,7 @@
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="main-scss/main.min.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css"> -->
 
     <!-- responsive -->
@@ -339,7 +339,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="main_topic">
-                            <h4> اضافة درس جديد </h4>
+                            <h4 style="font-family: bold;"> اضافة باب جديد </h4>
 
                         </div>
                         <form class="form_topic">
@@ -348,8 +348,8 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="input-group">
-                                        <label class="form-label"> اسم درس </label>
-                                        <input required type="text" class="form-control" placeholder="  اكتب اسم درس">
+                                        <label class="form-label"> اسم الباب </label>
+                                        <input required type="text" class="form-control" placeholder="  اكتب اسم الباب">
                                     </div>
                                 </div>
                             </div>
@@ -359,8 +359,14 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="input-group">
-                                        <label class="form-label"> الترتيب </label>
-                                        <input required type="number" class="form-control">
+                                        <label class="form-label"> المادة</label>
+                                        <select required class="selectpicker" data-placeholder="اختر المادة"
+                                            data-selected-text-format="count > 1" data-icon="bi bi-trash"
+                                            data-live-search="true">
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -369,11 +375,17 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="input-group">
+                                        <label class="form-label"> الترتيب </label>
+                                        <input required type="number" class="form-control">
+                                    </div>
+                               
+                                <div class="col-12">
+                                    <div class="input-group">
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="checkbox" id="inlineCheckbox5"
                                                 value="option2" onchange="togglePrice()">
                                             <label class="form-check-label" for="inlineCheckbox2"> اضافة سعر
-                                                للكورس</label>
+                                                للباب</label>
                                         </div>
 
                                     </div>
@@ -393,23 +405,32 @@
 
                                 </div>
                             </div>
+
+
                             <!-- start input -->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="input-group">
-                                        <label class="form-label"> وصف درس</label>
-                                        <textarea class="form-control" placeholder="اكتب وصف درس"></textarea>
+                                        <label class="form-label"> وصف الباب</label>
+                                        <textarea class="form-control" placeholder="اكتب وصف للباب"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <!-- finish input -->
+
+
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <button type="button" class="btn first">الاضافة والحفظ</button>
+                                    <button type="button" class="btn first">حفظ</button>
                                 </div>
                             </div>
+
                         </form>
+
+
                     </div>
+
+
                 </div>
             </div>
             <!---------------------- finish  content -------------------------------------------->

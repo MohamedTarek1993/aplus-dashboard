@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>السناتر</title>
+    <title>بنك اسألة ثانوي</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -13,13 +13,8 @@
     <link rel="stylesheet" href="main-scss/main.min.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
-      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css"> -->
+
     <!-- responsive -->
 
     <!-- ? Favicon -->
@@ -356,472 +351,207 @@
           <div class="container">
             <div class="row">
               <div class="main_topic">
-                <h4>السناتر</h4>
-                <a class="btn first" href="add-new-exam.html">
-                  <i class="bi bi-plus"></i> اضافة سنتر جديد
-                </a>
+                <h4>بنك اسألة ثانوي</h4>
+                <button class="btn first">
+                  <i class="bi bi-plus"></i> اضافة سؤال جديد
+                </button>
               </div>
             </div>
-            <!-- search and filter section -->
-            <div class="row">
-              <div class="col-lg-9 col-md-4 col-12">
-                <div class="search_topic">
-                  <form>
-                    <div class="input-group">
-                      <input
-                        class="form-control"
-                        type="text"
-                        placeholder="  ابحث باسم السنتر ,  المدرس , المادة ...... .........."
-                      />
-                      <span class="icon_search"
-                        ><i class="bi bi-search nas-1"></i
-                      ></span>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-12">
-                <form
-                  class="form_topic"
-                  style="padding-inline-end: 0; margin-top: 0"
-                >
+            <div class="col-lg-12 col-md-4 col-12">
+              <div class="search_topic">
+                <form>
                   <div class="input-group">
-                    <select
-                      required
-                      class="selectpicker"
-                      multiple
-                      data-selected-text-format="count > 1"
-                      data-icon="bi bi-trash"
-                      data-live-search="true"
-                      data-placeholder="    المدينة : كل المدن   "
-                    >
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="  ابحث باسم السؤال ... ...... .........."
+                    />
+                    <span class="icon_search"
+                      ><i class="bi bi-search nas-1"></i
+                    ></span>
                   </div>
                 </form>
               </div>
             </div>
-            <!-- start table -->
             <div class="table">
               <table class="table-responsive table_expenses table_topic">
                 <thead>
                   <tr>
-                    <td></td>
-                    <td>الكود</td>
-                    <td>اسم السنتر</td>
-                    <td>رقم الهاتف</td>
-                    <td>الايميل</td>
-                    <td>المدينة</td>
-                    <td>المدرسين</td>
-                    <td>عدد الطلاب</td>
-                    <td>التحكم</td>
+                    <td>نص السؤال</td>
+                    <td>الصورة</td>
+
+                    <td>الاجابة 1</td>
+
+                    <td>الاجابة 2</td>
+                    <td>الاجابة 3</td>
+                    <td>الاجابة 4</td>
 
                     <td></td>
                   </tr>
                 </thead>
+
                 <tbody>
                   <!-- outcome list -->
                   <tr>
-                    <td></td>
-                    <td>2154202 #</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      describes the structure and<br />
+                      organization of plant cells, tissues<br />
+                      and organs in relation to their<br />
+                      development and function.
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
+                    <td><img src="image/map.png" alt="" /></td>
+                    <td><span class="text-success"> Plant Anatomy </span></td>
+                    <td>Pharmacognosy</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
+                      Medical<br />
+                      Ethnobotany
                     </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
+                    <td>Phytochemistery</td>
+                    <td class="button" style="margin-top: 31%">
                       <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
+                        <i class="bi bi-pencil"></i
                       ></a>
 
                       <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
+                        <i class="bi bi-trash3"></i>
                       </button>
                     </td>
                   </tr>
-                  <!-- outcome list -->
-
-                  <!-- outcome list -->
                   <tr>
-                    <td></td>
-                    <td>2154202 #</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      describes the structure and<br />
+                      organization of plant cells, tissues<br />
+                      and organs in relation to their<br />
+                      development and function.
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
+                    <td><img src="image/map.png" alt="" /></td>
+                    <td><span class="text-success"> Plant Anatomy </span></td>
+                    <td>Pharmacognosy</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
+                      Medical<br />
+                      Ethnobotany
                     </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
+                    <td>Phytochemistery</td>
+                    <td class="button" style="margin-top: 31%">
                       <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
+                        <i class="bi bi-pencil"></i
                       ></a>
 
                       <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
+                        <i class="bi bi-trash3"></i>
                       </button>
                     </td>
                   </tr>
-                  <!-- outcome list -->
-
-                  <!-- outcome list -->
                   <tr>
-                    <td></td>
-                    <td>2154202 #</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      describes the structure and<br />
+                      organization of plant cells, tissues<br />
+                      and organs in relation to their<br />
+                      development and function.
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
+                    <td><img src="image/map.png" alt="" /></td>
+                    <td><span class="text-success"> Plant Anatomy </span></td>
+                    <td>Pharmacognosy</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
+                      Medical<br />
+                      Ethnobotany
                     </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
+                    <td>Phytochemistery</td>
+                    <td class="button" style="margin-top: 31%">
                       <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
+                        <i class="bi bi-pencil"></i
                       ></a>
 
                       <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
+                        <i class="bi bi-trash3"></i>
                       </button>
                     </td>
                   </tr>
-                  <!-- outcome list -->
-
-                  <!-- outcome list -->
                   <tr>
-                    <td></td>
-                    <td>2154202 #</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      describes the structure and<br />
+                      organization of plant cells, tissues<br />
+                      and organs in relation to their<br />
+                      development and function.
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
+                    <td><img src="image/map.png" alt="" /></td>
+                    <td><span class="text-success"> Plant Anatomy </span></td>
+                    <td>Pharmacognosy</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
+                      Medical<br />
+                      Ethnobotany
                     </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
+                    <td>Phytochemistery</td>
+                    <td class="button" style="margin-top: 31%">
                       <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
+                        <i class="bi bi-pencil"></i
                       ></a>
 
                       <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
+                        <i class="bi bi-trash3"></i>
                       </button>
                     </td>
                   </tr>
-                  <!-- outcome list -->
-
-                  <!-- outcome list -->
                   <tr>
-                    <td></td>
-                    <td>2154202 #</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      describes the structure and<br />
+                      organization of plant cells, tissues<br />
+                      and organs in relation to their<br />
+                      development and function.
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
+                    <td><img src="image/map.png" alt="" /></td>
+                    <td><span class="text-success"> Plant Anatomy </span></td>
+                    <td>Pharmacognosy</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
+                      Medical<br />
+                      Ethnobotany
                     </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
+                    <td>Phytochemistery</td>
+                    <td class="button" style="margin-top: 31%">
                       <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
+                        <i class="bi bi-pencil"></i
                       ></a>
 
                       <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
+                        <i class="bi bi-trash3"></i>
                       </button>
                     </td>
                   </tr>
                   <!-- outcome list -->
-
-                  <!-- outcome list -->
-                  <tr>
-                    <td></td>
-                    <td>2154202 #</td>
-                    <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
-                    </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
-                    <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
-                    </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
-                      ></a>
-
-                      <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <!-- outcome list -->
-
-                  <!-- outcome list -->
-                  <tr>
-                    <td></td>
-                    <td>2154202 #</td>
-                    <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
-                    </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
-                    <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
-                    </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
-                      ></a>
-
-                      <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <!-- outcome list -->
-
-                  <!-- outcome list -->
-                  <tr>
-                    <td></td>
-                    <td>2154202 #</td>
-                    <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
-                    </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
-                    <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
-                    </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
-                      ></a>
-
-                      <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <!-- outcome list -->
-                  <!-- Modal -->
-                  <div
-                    class="modal fade"
-                    id="detailsSubscribeModal"
-                    tabindex="-1"
-                    aria-labelledby="detailsSubscribeModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1
-                            class="modal-title fs-5"
-                            id="detailsSubscribeModalLabel"
-                          >
-                            Modal title
-                          </h1>
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                          ></button>
-                        </div>
-                        <div class="modal-body"></div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                          <button type="button" class="btn btn-primary">
-                            Save changes
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </tbody>
               </table>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-8" style="padding-top: 20px; color: #626e7d">
-              <p>عرض 1 - 30 من اجمالى 59</p>
-            </div>
-            <div class="col-4">
-              <nav class="pagination_section">
-                <ul class="pagination justify-content-center">
-                  <li class="page-item">
-                    <a class="page-link" href="#">السابق</a>
-                  </li>
-                  <li class="page-item active">
-                    <a class="page-link" href="#">1</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">التالي </a>
-                  </li>
-                </ul>
-              </nav>
+
+              <div class="row">
+                <div class="col-8" style="padding-top: 20px; color: #626e7d">
+                  <p>عرض 1 - 30 من اجمالى 59</p>
+                </div>
+                <div class="col-4">
+                  <nav class="pagination_section">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item">
+                        <a class="page-link" href="#">السابق</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">التالي </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-
-    <!-- end table -->
-
-    <script>
-      function blockAlert() {
-        Swal.fire({
-          html:
-            '<img src="image/block.png" alt="add">' +
-            '<h5 class="swal2-title"> هل أنت متأكد من حظر  الامتحان ؟</h5>' +
-            '<p class="swal2-html-container"> فى حالة الضغط على تأكيد الحظر سيتم حظر الامتحان من المنصة نهائيا وحذ جميع الأسألة التى يحتويها الامتحان </p>',
-
-          showCancelButton: true,
-
-          confirmButtonText: "تأكيد الحظر",
-          confirmButtonAriaLabel: "Thumbs up, great!",
-          cancelButtonText: "الغاء",
-          cancelButtonAriaLabel: "Thumbs down",
-        });
-      }
-    </script>
-    <!-- sweet alert -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
-      integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- sweet alert -->
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/all.min.js"></script>
