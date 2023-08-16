@@ -57,7 +57,7 @@ tr{
 }
 /* end text */
 .table_expenses tbody tr .button{
-margin-top: 67px;
+/* margin-top: 67px; */
     width: 70px;
 }
 .tabl .cheek{
@@ -352,6 +352,7 @@ i.bi.bi-search.nas{
     font-family: bold;
     font-size: 1.3rem;
 }
+/* button */
 button.btn.first.nas-1 {
     border: 1px solid #E6AB2F;
     color: #E6AB2F;
@@ -370,6 +371,7 @@ button.btn.first.nas-2:hover {
     background-color: #E6AB2F;
     color: white;
     }
+    /* button */
    
     .table>:not(caption)>*>*{
         border-bottom: 0 solid;
@@ -384,4 +386,211 @@ button.btn.first.nas-2:hover {
         display: flex;
         justify-content: space-around;
     }
+    /* button */
+    a.btn.first.nas{
+        background-color: white;
+        border: 1px solid #E6AB2F;
+        color: #E6AB2F;
+
+    }
+    a.btn.first.nas:hover{
+        background-color: #E6AB2F;
+        color: white;
+
+    }
+    /* button */
+    .main_topic h4{
+        font-family: bold;
+    }
+    .text h3{
+        font-family: 'bold';
+    }
+    .text p{
+        font-family: 'regular';
+    }
+    /* button */
+    a.btn.first.save {
+        margin-top: 4rem;
+        background-color: white;
+        border: 1px solid #E6AB2F;
+        color: #E6AB2F;
+
+    }
+    a.btn.first.save:hover{
+        background-color: #E6AB2F;
+        color: white;
+    }
+    /* button */
+    .table_topic tbody tr td img.name-teacher{
+        width: 30px;
+        height: 30px;
+        margin-left: 1rem
+    }
+    i.bi.bi-pencil.nas{
+        margin-bottom: 1rem;
+    }
+    span.nas{
+        padding-left: 1rem;
+        background-color: #F7F7F7;
+        padding: 0.5rem;
+        border-radius: 2rem;
+    }
     
+    /* search icon */
+    i.bi.bi-search.nas-1{
+        position: absolute;
+        right: -7px;
+    }
+     /* search icon */
+     .button .eye{
+        font-size: 18px;
+    padding-left: 15px;
+     }
+   
+     span.name{
+        padding: 0.5rem;
+        margin-right: 1.2rem;
+        background-color: #F7F7F7;
+        border-radius: 100px;
+     }
+     span.number{
+        margin-right: 0.8rem;
+     }
+     /* start details centers */
+     .card.nas {
+        width: 16rem;
+        border-radius: 11px;
+        border: 0 solid white;
+     }
+     .ditals {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .ditals h3{
+        font-family: 'bold';
+        font-size: 1.2rem;
+     }
+     .button-centers {
+        margin-left: 10px;
+
+     }
+     button.btn.btn-edit{
+        border: 1px solid #E6AB2F;
+        color: #E6AB2F;
+        font-family: 'regular';
+       
+     }
+     button.btn.btn-bolk{
+        border: 1px solid #ff0000;
+        color: #ff0000;
+        font-family: 'regular';
+     }
+     button.btn.btn-edit:hover{
+       background-color: #E6AB2F;
+       color: #F7F7F7;
+     }
+     button.btn.btn-bolk:hover{
+        background-color:#ff0000;
+        color: #F7F7F7;
+     }
+     span.edit-icon {
+        margin-left: 0.5rem
+     }
+     p.card-text {
+        font-size: 0.8rem;
+       color: #5E6E77;
+       font-family: 'regular';
+       
+
+     }
+     h5.card-title{
+        font-family: 'regular';
+     }
+     .card-tele {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .card-tele a {
+        font-size: 0.6rem;
+        font-family: 'regular';
+     }
+     span.tele-icon {
+        font-size: 0.7rem;
+        margin-left: 0.3rem;
+        
+     }
+     span.email-icon {
+        font-size: 0.7rem;
+        margin-left: 0.3rem;
+     }
+     img.card-img-top.nas{
+        width: 70px;
+     }
+     .parnt {
+        border-radius: 11px;
+        padding: 0.4rem;
+        width: 16rem;
+        margin-top: 15px;
+       background-color: white;
+        
+        display: flex;
+        justify-content: space-around;
+       
+     }
+     .parnt .text-card h6 {
+        font-family: 'regular';
+
+
+     }
+.parnt .text-card p{
+    font-family: 'bold';
+        font-size: 0.7rem;
+     }
+     span.arwo-icon {
+        font-size: 1.2rem;
+        color: #E6AB2F;
+        right: 50px;
+        margin-right: 112px;
+    }
+
+     .text-card-main {
+        margin-left: 40px;
+     }
+     .text-card-main h6{
+        font-family: 'regular';
+     }
+     .text-card-main p{
+        font-family: 'bold';
+     }
+     .corses {
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+     }
+     .corses h5 {
+        font-family: 'bold';
+        font-size: 1.1rem;
+    }
+     
+     button.btn.btn-add {
+        border: 1px solid #06456B;
+        color: #06456B;
+        font-family: 'regular';
+     }
+     button.btn.btn-add:hover {
+       background-color:#06456B ;
+        color: white;
+     }
+     i.bi.bi-search.nas-centers {
+        position: absolute;
+     }
+     .text-card-team h6 {
+        font-size: 1.2r;
+
+     }
+     /* end details centers */
