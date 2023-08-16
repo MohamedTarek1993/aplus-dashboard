@@ -8,11 +8,11 @@
     <title> الكورسات</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="main-scss/main.min.css" />
-    <link rel="stylesheet" href="css/seting-notifcation.css" />
+    <link rel="stylesheet" href="css/town.css" />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css"> -->
 
     <!-- responsive -->
@@ -319,119 +319,169 @@
                     <form>
                         <div class="row">
                             <!-- <h4>اعدادات الاشعارات</h4>  -->
-                            <h4>اعدادات الاشعارات</h4>
-                            <div class="form-group">
-                                <!-- <label for="formGroupExampleInput">Google play</label> -->
-                                <input type="text" class="form-control" id="formGroupExampleInput"
-                                    placeholder="ابحث هنا...">
-                                <div class="search">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
+                            <div class="col-lg-12">
+                                <div class="add-slider">
+                                    <h4>المدن </h4>
+                                    <a href="add-town.html">    <button  type="button" class="btn btn-warning"> <span
+                                        style=" font-size: 25px;">+</span> اضافه دوله جديده  </button> </a>
                                 </div>
                             </div>
+
+                            <div class="col-lg-6 col-md-9 col-7">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="formGroupExampleInput"
+                                        placeholder="ابحث هنا...">
+                                    <div class="search">
+                                        <i class="fa-solid fa-magnifying-glass" style="color: #626E7D;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-5">
+                                <div class="form-group " style="margin: 1rem 0 1.5rem;">
+                                    <!-- <label for="inputtext"> </label> -->
+                                    <select id="inputState" class="form-control select2 selectpicker">
+                                        <option selected> كل المحافظات</option>
+                                        <option> ...</option>
+                                        <option>....</option>
+                                        <option> .....</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-5">
+                                <div class="form-group " style="margin: 1rem 0 1.5rem;">
+                                    <!-- <label for="inputtext"> </label> -->
+                                    <select id="inputState" class="form-control select2 selectpicker">
+                                        <option selected> كل الدول</option>
+                                        <option> ...</option>
+                                        <option>....</option>
+                                        <option> .....</option>
+                                    </select>
+                                </div>
+                            </div>
+
                             <div class="table-responsive">
                                 <table class="table_expenses bor table_topic">
                                     <thead>
                                         <tr>
-                                            <td>العنوان</td>
-                                            <td>النص</td>
-                                            <td>الاتاحه</td>
-                                            <td>الحاله</td>
-                                            <td>النوع</td>
-                                            <td> الصوره</td>
-                                            <td> </td>
-
+                                            <td class="col-2">الكود</td>
+                                            <td class="col-2">المدينه</td>
+                                            <td class="col-6">المحافظه</td>
+                                            <td class="col-2">التحكم</td>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <!-- outcome list -->
                                         <tr>
-                                            <td>أضافة حصة جديده</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
-                                            </td>
-                                            <td>غير مجاني</td>
-                                            <td><span class=""> 1</span></td>
-                                            <td>حصة</td>
-                                            <td></td>
-                                            <td> <a href="seting-img.html" title="go to seting-notefaction"> <i
-                                                        class="fa-solid fa-pen"></i> </a> </td>
-                                                    </td>
-                                        </tr>
-                                        <tr>
-                                            <td>أضافة حصة جديده</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
-                                            </td>
-                                            <td>غير مجاني</td>
-                                            <td><span class=""> 1</span></td>
-                                            <td>حصة</td>
-                                            <td></td>
-                                            <td> <a href="seting-img.html" title="go to seting-notefaction"> <i
-                                                class="fa-solid fa-pen"></i> </a> </td>
+                                            <td> 2154202 #</td>
+                                            <td> المحلة الكبرى</td>
+                                            <td><span class="" style="color: black;"> محافظة الغربية</span></td>
+                                            <td>
+
+                                                <a href="add-town.html" title="go to seting-notefaction">
+                                                    <i class="fa-solid fa-pen">
+                                                    </i>
+                                                </a>
+                                                <button type="button" class="btn"><i style="color: red;"
+                                                        class="fa-solid fa-trash"></i> </button>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>أضافة حصة جديده</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
-                                            </td>
-                                            <td>غير مجاني</td>
-                                            <td><span class=""> 1</span></td>
-                                            <td>حصة</td>
-                                            <td></td>
-                                            <td> <a href="seting-img.html" title="go to seting-notefaction"> <i
-                                                class="fa-solid fa-pen"></i> </a> </td>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>أضافة حصة جديده</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
-                                            </td>
-                                            <td>غير مجاني</td>
-                                            <td><span class=""> 1</span></td>
-                                            <td>حصة</td>
-                                            <td></td>
-                                            <td> <a href="seting-img.html" title="go to seting-notefaction"> <i
-                                                class="fa-solid fa-pen"></i> </a> </td>
+                                            <td> 2154202 #</td>
+                                           <td>المنصورة</td>
+                                            <td><span class="" style="color: black;"> محافظة الدقهلية</span></td>
+                                            <td>
+
+                                                <a href="add-town.html" title="go to seting-notefaction">
+                                                    <i class="fa-solid fa-pen">
+                                                    </i>
+                                                </a>
+                                                <button type="button" class="btn"><i style="color: red;"
+                                                        class="fa-solid fa-trash"></i> </button>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>أضافة حصة جديده</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
-                                            </td>
-                                            <td>غير مجاني</td>
-                                            <td><span class=""> 1</span></td>
-                                            <td>حصة</td>
-                                            <td></td>
-                                            <td> <a href="seting-img.html" title="go to seting-notefaction"> <i
-                                                class="fa-solid fa-pen"></i> </a> </td>
+                                            <td> 2154202 #</td>
+                                           <td>المنصورة</td>
+                                            <td><span class="" style="color: black;"> محافظة الدقهلية</span></td>
+                                            <td>
+
+                                                <a href="add-town.html" title="go to seting-notefaction">
+                                                    <i class="fa-solid fa-pen">
+                                                    </i>
+                                                </a>
+                                                <button type="button" class="btn"><i style="color: red;"
+                                                        class="fa-solid fa-trash"></i> </button>
+
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>أضافة حصة جديده</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
+                                            <td> 2154202 #</td>
+                                            <td>المنصورة</td>
+                                            <td><span class="" style="color: black;"> محافظة الدقهلية</span></td>
+                                            <td>
+
+                                                <a href="add-town.html" title="go to seting-notefaction">
+                                                    <i class="fa-solid fa-pen">
+                                                    </i>
+                                                </a>
+                                                <button type="button" class="btn"><i style="color: red;"
+                                                        class="fa-solid fa-trash"></i> </button>
                                             </td>
-                                            <td>غير مجاني</td>
-                                            <td><span class=""> 1</span></td>
-                                            <td>حصة</td>
-                                            <td></td>
-                                            <td> <a href="seting-img.html" title="go to seting-notefaction"> <i
-                                                class="fa-solid fa-pen"></i> </a> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2154202 #</td>
+                                            <td>المنصورة</td>
+                                            <td><span class="" style="color: black;"> محافظة الدقهلية</span></td>
+                                            <td>
+
+                                                <a href="add-town.html" title="go to seting-notefaction">
+                                                    <i class="fa-solid fa-pen">
+                                                    </i>
+                                                </a>
+                                                <button type="button" class="btn"><i style="color: red;"
+                                                        class="fa-solid fa-trash"></i> </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2154202 #</td>
+                                            <td>المنصورة</td>
+                                            <td><span class="" style="color: black;"> محافظة الدقهلية</span></td>
+                                            <td>
+
+                                                <a href="add-town.html" title="go to seting-notefaction">
+                                                    <i class="fa-solid fa-pen">
+                                                    </i>
+                                                </a>
+                                                <button type="button" class="btn"><i style="color: red;"
+                                                        class="fa-solid fa-trash"></i> </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2154202 #</td>
+                                            <td>المنصورة</td>
+                                            <td><span class="" style="color: black;"> محافظة الدقهلية</span></td>
+                                            <td>
+
+                                                <a href=""add-town.html" title="go to seting-notefaction">
+                                                    <i class="fa-solid fa-pen">
+                                                    </i>
+                                                </a>
+                                                <button type="button" class="btn"><i style="color: red;"
+                                                        class="fa-solid fa-trash"></i> </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2154202 #</td>
+                                            <td>المنصورة</td>
+                                            <td><span class="" style="color: black;"> محافظة الدقهلية</span></td>
+                                            <td>
+
+                                                <a href="add-town.html" title="go to seting-notefaction">
+                                                    <i class="fa-solid fa-pen">
+                                                    </i>
+                                                </a>
+                                                <button type="button" class="btn"><i style="color: red;"
+                                                        class="fa-solid fa-trash"></i> </button>
                                             </td>
                                         </tr>
                                         <!-- outcome list -->
@@ -444,20 +494,20 @@
                                 </div>
                                 <div class="col-4">
                                     <nav class="pagination_section">
-                                        <ul class="pagination justify-content-center">
+                                        <ul class="pagination "> <!-- justify-content-end -->
                                             <li class="page-item">
                                                 <a class="page-link" style="width: 80px;" href="#"> <i
                                                         style=" padding: 0px 2px;"
                                                         class="fa-solid fa-chevron-right"></i> السابق </a>
                                             </li>
                                             <li class="page-item active">
-                                                <a class="page-link" href="#">1</a>
+                                                <a class="page-link" href="#">3</a>
                                             </li>
                                             <li class="page-item">
                                                 <a class="page-link" href="#">2</a>
                                             </li>
                                             <li class="page-item">
-                                                <a class="page-link" href="#">3</a>
+                                                <a class="page-link" href="#">1</a>
                                             </li>
                                             <li class="page-item">
                                                 <a class="page-link" style="width: 80px;" href="#"> التالي <i
@@ -469,8 +519,9 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
                 </div>
+                </form>
+            </div>
             </div>
             <!---------------------- finish  content -------------------------------------------->
         </section>
