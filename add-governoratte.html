@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="main-scss/main.min.css" />
-    <link rel="stylesheet" href="css/town.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css"> -->
 
     <!-- responsive -->
@@ -211,13 +211,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="university.html" class="nav-link align-middle">
+                    <a href="universities.html" class="nav-link align-middle">
                         <img src="image/buildings-icon.png" alt="icon" />
                         <span> الجامعات</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="colleage.html" class="nav-link align-middle">
+                    <a href="colleges.html" class="nav-link align-middle">
                         <img src="image/colleage-icon.png" alt="icon" />
                         <span> الكليات</span>
                     </a>
@@ -318,210 +318,29 @@
                 <div class="container">
                     <form>
                         <div class="row">
-                            <!-- <h4>اعدادات الاشعارات</h4>  -->
-                            <div class="col-lg-12">
-                                <div class="add-slider">
-                                    <h4>المدن </h4>
-                                    <a href="add-town.html">    <button  type="button" class="btn btn-warning"> <span
-                                        style=" font-size: 25px;">+</span> اضافه دوله جديده  </button> </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 col-md-9 col-7">
+                            <h4> اضافة محافظة جديدة</h4>
+                            <div class="col-lg-8 col-md-10 col-12">
                                 <div class="form-group">
+                                    <label for="formGroupExampleInput"> اسم المحافظة</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput"
-                                        placeholder="ابحث هنا...">
-                                    <div class="search">
-                                        <i class="fa-solid fa-magnifying-glass" style="color: #626E7D;"></i>
-                                    </div>
+                                        placeholder="ادخل اسم المحافظة">
                                 </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-5">
-                                <div class="form-group " style="margin: 1rem 0 1.5rem;">
-                                    <!-- <label for="inputtext"> </label> -->
+                                <div class="form-group ">
+                                    <label for="inputtext"> الدولة </label>
                                     <select id="inputState" class="form-control select2 selectpicker">
-                                        <option selected> كل المحافظات</option>
-                                        <option> ...</option>
-                                        <option>....</option>
-                                        <option> .....</option>
+                                        <option selected> اختر الدولة</option>
+                                        <option> ,,,</option>
+                                        <option>...</option>
+                                        <option>...</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-5">
-                                <div class="form-group " style="margin: 1rem 0 1.5rem;">
-                                    <!-- <label for="inputtext"> </label> -->
-                                    <select id="inputState" class="form-control select2 selectpicker">
-                                        <option selected> كل الدول</option>
-                                        <option> ...</option>
-                                        <option>....</option>
-                                        <option> .....</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="table-responsive">
-                                <table class="table_expenses bor table_topic">
-                                    <thead>
-                                        <tr>
-                                            <td class="col-2">الكود</td>
-                                            <td class="col-2">المدينه</td>
-                                            <td class="col-6">المحافظه</td>
-                                            <td class="col-2">التحكم</td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <!-- outcome list -->
-                                        <tr>
-                                            <td> 2154202 #</td>
-                                            <td> المحلة الكبرى</td>
-                                            <td><span class="" style="color: black;"> محافظة الغربية</span></td>
-                                            <td>
-
-                                                <a href="add-town.html" title="go to seting-notefaction">
-                                                    <i class="fa-solid fa-pen">
-                                                    </i>
-                                                </a>
-                                                <button type="button" class="btn"><i style="color: red;"
-                                                        class="fa-solid fa-trash"></i> </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td> 2154202 #</td>
-                                           <td>المنصورة</td>
-                                            <td><span class="" style="color: black;"> محافظة الدقهلية</span></td>
-                                            <td>
-
-                                                <a href="add-town.html" title="go to seting-notefaction">
-                                                    <i class="fa-solid fa-pen">
-                                                    </i>
-                                                </a>
-                                                <button type="button" class="btn"><i style="color: red;"
-                                                        class="fa-solid fa-trash"></i> </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td> 2154202 #</td>
-                                           <td>المنصورة</td>
-                                            <td><span class="" style="color: black;"> محافظة الدقهلية</span></td>
-                                            <td>
-
-                                                <a href="add-town.html" title="go to seting-notefaction">
-                                                    <i class="fa-solid fa-pen">
-                                                    </i>
-                                                </a>
-                                                <button type="button" class="btn"><i style="color: red;"
-                                                        class="fa-solid fa-trash"></i> </button>
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td> 2154202 #</td>
-                                            <td>المنصورة</td>
-                                            <td><span class="" style="color: black;"> محافظة الدقهلية</span></td>
-                                            <td>
-
-                                                <a href="add-town.html" title="go to seting-notefaction">
-                                                    <i class="fa-solid fa-pen">
-                                                    </i>
-                                                </a>
-                                                <button type="button" class="btn"><i style="color: red;"
-                                                        class="fa-solid fa-trash"></i> </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td> 2154202 #</td>
-                                            <td>المنصورة</td>
-                                            <td><span class="" style="color: black;"> محافظة الدقهلية</span></td>
-                                            <td>
-
-                                                <a href="add-town.html" title="go to seting-notefaction">
-                                                    <i class="fa-solid fa-pen">
-                                                    </i>
-                                                </a>
-                                                <button type="button" class="btn"><i style="color: red;"
-                                                        class="fa-solid fa-trash"></i> </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td> 2154202 #</td>
-                                            <td>المنصورة</td>
-                                            <td><span class="" style="color: black;"> محافظة الدقهلية</span></td>
-                                            <td>
-
-                                                <a href="add-town.html" title="go to seting-notefaction">
-                                                    <i class="fa-solid fa-pen">
-                                                    </i>
-                                                </a>
-                                                <button type="button" class="btn"><i style="color: red;"
-                                                        class="fa-solid fa-trash"></i> </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td> 2154202 #</td>
-                                            <td>المنصورة</td>
-                                            <td><span class="" style="color: black;"> محافظة الدقهلية</span></td>
-                                            <td>
-
-                                                <a href=""add-town.html" title="go to seting-notefaction">
-                                                    <i class="fa-solid fa-pen">
-                                                    </i>
-                                                </a>
-                                                <button type="button" class="btn"><i style="color: red;"
-                                                        class="fa-solid fa-trash"></i> </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td> 2154202 #</td>
-                                            <td>المنصورة</td>
-                                            <td><span class="" style="color: black;"> محافظة الدقهلية</span></td>
-                                            <td>
-
-                                                <a href="add-town.html" title="go to seting-notefaction">
-                                                    <i class="fa-solid fa-pen">
-                                                    </i>
-                                                </a>
-                                                <button type="button" class="btn"><i style="color: red;"
-                                                        class="fa-solid fa-trash"></i> </button>
-                                            </td>
-                                        </tr>
-                                        <!-- outcome list -->
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="row foot">
-                                <div class="col-8" style="padding-top: 20px; color: #626e7d">
-                                    <p>عرض 1 - 30 من اجمالى 59</p>
-                                </div>
-                                <div class="col-4">
-                                    <nav class="pagination_section">
-                                        <ul class="pagination "> <!-- justify-content-end -->
-                                            <li class="page-item">
-                                                <a class="page-link" style="width: 80px;" href="#"> <i
-                                                        style=" padding: 0px 2px;"
-                                                        class="fa-solid fa-chevron-right"></i> السابق </a>
-                                            </li>
-                                            <li class="page-item active">
-                                                <a class="page-link" href="#">3</a>
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">2</a>
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">1</a>
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link" style="width: 80px;" href="#"> التالي <i
-                                                        style="padding: 0px 2px;" class="fa-solid fa-chevron-left"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
+                        <!-- finish input -->
+                        <div class="col-lg-12">
+                            <button type="button" class="btn save btn-warning">حفظ</button>
                         </div>
+
+                    </form>
                 </div>
-                </form>
-            </div>
             </div>
             <!---------------------- finish  content -------------------------------------------->
         </section>
@@ -547,11 +366,11 @@
 
 
     <!-- upload file -->
-    <!-- <script>
-            $("form").on("change", ".file-upload-field", function () {
-                $(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, ''));
-            });
-        </script> -->
+    <script>
+        $("form").on("change", ".file-upload-field", function () {
+            $(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, ''));
+        });
+    </script>
     <!-- upload file -->
 </body>
 

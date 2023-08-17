@@ -1,15 +1,42 @@
-.content_page form h4 {
+
+ .content_page form h4 {
     font-family: 'bold';
     margin: 1.5rem 0 2rem;
 }
-
-
 .content_page form .form-group label {
-    margin: .8rem 0;
+    margin: 0.8rem 0;
     font-family: 'regular';
 }
 .content_page form .form-group .input{
     font-family: 'regular';
+}
+.content_page form .form-group .select2{
+    border-radius: 2px;
+    padding-inline-start:0;
+    background-color: rgba(0,0,0,0);
+    color: var(--color-pargraph);
+    font-family: "regular";
+    border: 1px solid #9a9a9a;
+    border-radius: 8px !important;
+}
+ .content_page form .save {
+        width: 25%;
+        margin: 2rem 0;
+        border-radius: 10px;
+        font-family: 'regular';
+    }
+    .content_page form .save:hover{
+        background-color: #053B5C;
+        color: white;
+        transition: .5s;
+        box-shadow: none;
+    }
+
+.bootstrap-select>.dropdown-toggle {
+    background-color: rgba(0,0,0,0);
+    border: unset;
+    font-size: .8rem;
+    padding: 0.75rem;
 }
 
 .content_page form h6 {
@@ -20,14 +47,13 @@
 margin-bottom: 1rem;
 font-family: 'medium';
 }
-
-.content_page .input-group {
-    position: relative;
-}
 .input-group .data-text{
     font-family: 'medium';
 }
 
+.content_page .input-group {
+    position: relative;
+}
 form .file-upload-wrapper {
     position: relative;
     width: 100%;
@@ -45,17 +71,117 @@ form .file-upload-wrapper {
         left: 35%;
         padding: 3rem 0;
     }
+} 
+
+.content_page form .account .form-group .icon-account{
+    position: absolute;
+    top: 59px;
+    right: 0.5rem;
+    color: #AEBBC3;
+}
+.content_page form .account .form-group .img-acount {
+    position: absolute;
+    top: 3.7rem;
+    right: 0.5rem;
+    color: #AEBBC3;
+}
+.content_page form .account .form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.content_page form .account .form-group input {
+    border-radius: 2px;
+    padding-inline-start: 2rem;
+    appearance: auto;
 }
 
-.content_page form .btn{
-        width: 40%;
-        margin: 1rem 0 2rem;
-        border-radius: 10px;
-        font-family: 'semibold';
+
+/* sting notificon */
+.content_page form .form-group {
+    position: relative;
+    margin: .5rem 0;
 }
-.content_page form .btn:hover{
+.content_page form .form-group .search {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+.content_page form .form-group input {
+     padding-inline-start: 10px; 
+    margin-bottom: 1.5rem;
+}
+.content_page form table td {
+    text-align: start;
+    padding-inline-start: 20px;
+}
+.content_page form table .text {
+    padding: 2rem;
+    padding: 1rem;
+    width: 40%;
+    text-align: start;
+}
+img.table-img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* slider table */
+.content_page form .add-slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.content_page form .add-slider .btn{
+    width: fit-content;
     color: white;
+    font-family: 'regular';
 }
+.content_page form .add-slider .btn:hover{
+    background-color:#053B5C;
+    transition: .9s;
+}
+
+
+
+/* governrare */
+
+.content_page form .add-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content_page form .form-group .search {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.content_page form .form-group input {
+    padding-inline-start: 40px;
+    margin-bottom: 1.5rem;
+}
+
+.content_page form .form-group input {
+    padding-inline-start: 40px;
+    margin: 0;
+    /* margin: 1rem 0 1.5rem; */
+    font-family: 'light';
+}
+.content_page form table thead td {
+    background-color: #EDF5F9;
+    height: 60px;
+}
+
+.content_page form table td {
+    text-align: center;
+    padding-inline-start: 20px;
+    font-family: 'regular';
+    height: 55px;
+}
+
+
 
 
 
