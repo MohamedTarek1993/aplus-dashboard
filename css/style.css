@@ -18,22 +18,22 @@
 margin-top: 7px;
 }
 .answer .cheek{
-    margin-top: 21px;
-        margin-right: 15px;
+    margin-top: 11px;
+    margin-right: 15px
 }
 .answer .cheek-1{
-    margin-top: 19px;
+    margin-top: 28px;
 }
 .answer .galary{
-margin-top: 20px;
-    margin-right: 13px
+    margin-top: 10px;
+    margin-right: 13px;
 }
 .answer .form-group{
-    margin-top: 17px;
+    margin-top: 26px;
 }
-.input-group{
+/* .input-group{
     padding-top: 30px;
-}
+} */
 /* end answer */
 /* start table */
 
@@ -225,11 +225,7 @@ button.swal2-cancel.swal2-styled {
     font-size: 0.8rem !important;
     color: #5E6E77 !important;
 }
-.icon_search-pop{
-    position: absolute;
-    top: 39px;
 
-}
 a.btn.nas{
     border:1px solid #E31E25;
    
@@ -342,11 +338,7 @@ a.btn.nas:hover{
 .time a{
     text-decoration: underline;
 }
-/* i.bi.bi-search.nas{
-    position: absolute;
-    right: 1rem;
-    top: 0.6rem;
-} */
+
 .table .qu-ex h3{
     padding: 1.3rem 0;
     font-family: bold;
@@ -436,12 +428,8 @@ button.btn.first.nas-2:hover {
         border-radius: 2rem;
     }
     
-    /* search icon */
-    /* i.bi.bi-search.nas-1{
-        position: absolute;
-        right: -7px;
-    } */
-     /* search icon */
+    
+     
      .button .eye{
         font-size: 18px;
     padding-left: 15px;
@@ -586,9 +574,7 @@ button.btn.first.nas-2:hover {
        background-color:#06456B ;
         color: white;
      }
-     /* i.bi.bi-search.nas-centers {
-        position: absolute;
-     } */
+    
      .text-card-team h6 {
         font-size: 0.8rem;
         font-family: 'regular';
@@ -631,13 +617,7 @@ button.btn.first.nas-2:hover {
        border-radius: 1rem;
      }
      /* end details centers */
-     /* start lesons */
-     i.bi.bi-search {
-        position: absolute;
-        bottom: 0.6rem;
-        right: 0.2rem;
-     }
-     /* end lesons */
+     
      /* tables */
      p.table-text{
         width: 56%;
