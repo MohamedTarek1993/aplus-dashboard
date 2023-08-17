@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>السناتر</title>
+    <title>قطع</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -356,9 +356,9 @@
           <div class="container">
             <div class="row">
               <div class="main_topic">
-                <h4>السناتر</h4>
+                <h4>القطع</h4>
                 <a class="btn first" href="add-new-exam.html">
-                  <i class="bi bi-plus"></i> اضافة سنتر جديد
+                  <i class="bi bi-plus"></i> اضافة قطعة جديدة
                 </a>
               </div>
             </div>
@@ -371,10 +371,10 @@
                       <input
                         class="form-control"
                         type="text"
-                        placeholder="  ابحث باسم السنتر ,  المدرس , المادة ...... .........."
+                        placeholder="  ابحث باسم المدرس , المادة ... .........."
                       />
                       <span class="icon_search"
-                        ><i class="bi bi-search nas-1"></i
+                        ><i class="bi bi-search"></i
                       ></span>
                     </div>
                   </form>
@@ -385,6 +385,7 @@
                   class="form_topic"
                   style="padding-inline-end: 0; margin-top: 0"
                 >
+                  <!-- input group -->
                   <div class="input-group">
                     <select
                       required
@@ -393,7 +394,7 @@
                       data-selected-text-format="count > 1"
                       data-icon="bi bi-trash"
                       data-live-search="true"
-                      data-placeholder="    المدينة : كل المدن   "
+                      data-placeholder="  المادة   "
                     >
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -401,6 +402,16 @@
                     </select>
                   </div>
                 </form>
+                <!-- input group -->
+              </div>
+              <div class="col-lg-3 col-md-4 col-12">
+                <form
+                  class="form_topic"
+                  style="padding-inline-end: 0; margin-top: 0"
+                >
+                  <!-- input group -->
+                </form>
+                <!-- input group -->
               </div>
             </div>
             <!-- start table -->
@@ -410,14 +421,9 @@
                   <tr>
                     <td></td>
                     <td>الكود</td>
-                    <td>اسم السنتر</td>
-                    <td>رقم الهاتف</td>
-                    <td>الايميل</td>
-                    <td>المدينة</td>
-                    <td>المدرسين</td>
-                    <td>عدد الطلاب</td>
+                    <td><p class="table-text-3">عنوان القطعة</p></td>
+                    <td>المحتوي</td>
                     <td>التحكم</td>
-
                     <td></td>
                   </tr>
                 </thead>
@@ -425,30 +431,29 @@
                   <!-- outcome list -->
                   <tr>
                     <td></td>
-                    <td>2154202 #</td>
+                    <td><p class="table-text-2">2154202 #</p></td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      <p class="tabl-text-1">
+                        تدريب رقم 1 3 | ادارة التغير | الثالث ثانوي
+                      </p>
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
+                      <p class="table-text">
+                        قال اللأمام الدكتور (أحمد الطيب) بمناسبة اليوم العالمي
+                        للغة العربية: ”أحيي كل أب عربي وأم عربية، وكل معلم
+                        ومعلمة متخصص في علوم اللغة العربية، وأناشدهم جميًعا أن
+                        يحرسوا لغتهم العربية، وعلينا - نحن العرب - أن نشعر
+                        بالفخر والعزة بهذه اللغة التي اصطفاها اللة لتحمل رسالته
+                        الأخيرة إلى الناس جميًعا، ولتكون سيدة لغات العالم قاطبة،
+                        واعلموا أن قضية اللغة العربية بالنسبة للعرب والمسلمين هي
+                        قضية هوية وبقاء، يحتفل العالم يوم الثامن عرش من ديسمبر
+                        من كل عام باليوم العالمي للغة العربية، كونه اليوم الذي
+                        أصدرت فيه الجمعية العامة للأمم المتحدة قرارها رقم
+                        (3190),الذي أقرت بموجبه إدخال اللغة العربية ضمن اللغات
+                        الرسمية والعالمية“. تعديل
+                      </p>
                     </td>
-                    <td>2000</td>
                     <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
                       <a class="btn edit" href="edit-educational-lesson.html">
                         <i class="bi bi-pencil nas"></i
                       ></a>
@@ -465,28 +470,27 @@
                     <td></td>
                     <td>2154202 #</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      <p class="tabl-text-1">
+                        تدريب رقم 1 3 | ادارة التغير | الثالث ثانوي
+                      </p>
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
+                      <p class="table-text">
+                        قال اللأمام الدكتور (أحمد الطيب) بمناسبة اليوم العالمي
+                        للغة العربية: ”أحيي كل أب عربي وأم عربية، وكل معلم
+                        ومعلمة متخصص في علوم اللغة العربية، وأناشدهم جميًعا أن
+                        يحرسوا لغتهم العربية، وعلينا - نحن العرب - أن نشعر
+                        بالفخر والعزة بهذه اللغة التي اصطفاها اللة لتحمل رسالته
+                        الأخيرة إلى الناس جميًعا، ولتكون سيدة لغات العالم قاطبة،
+                        واعلموا أن قضية اللغة العربية بالنسبة للعرب والمسلمين هي
+                        قضية هوية وبقاء، يحتفل العالم يوم الثامن عرش من ديسمبر
+                        من كل عام باليوم العالمي للغة العربية، كونه اليوم الذي
+                        أصدرت فيه الجمعية العامة للأمم المتحدة قرارها رقم
+                        (3190),الذي أقرت بموجبه إدخال اللغة العربية ضمن اللغات
+                        الرسمية والعالمية“. تعديل
+                      </p>
                     </td>
-                    <td>2000</td>
                     <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
                       <a class="btn edit" href="edit-educational-lesson.html">
                         <i class="bi bi-pencil nas"></i
                       ></a>
@@ -503,28 +507,27 @@
                     <td></td>
                     <td>2154202 #</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      <p class="tabl-text-1">
+                        تدريب رقم 1 3 | ادارة التغير | الثالث ثانوي
+                      </p>
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
+                      <p class="table-text">
+                        قال اللأمام الدكتور (أحمد الطيب) بمناسبة اليوم العالمي
+                        للغة العربية: ”أحيي كل أب عربي وأم عربية، وكل معلم
+                        ومعلمة متخصص في علوم اللغة العربية، وأناشدهم جميًعا أن
+                        يحرسوا لغتهم العربية، وعلينا - نحن العرب - أن نشعر
+                        بالفخر والعزة بهذه اللغة التي اصطفاها اللة لتحمل رسالته
+                        الأخيرة إلى الناس جميًعا، ولتكون سيدة لغات العالم قاطبة،
+                        واعلموا أن قضية اللغة العربية بالنسبة للعرب والمسلمين هي
+                        قضية هوية وبقاء، يحتفل العالم يوم الثامن عرش من ديسمبر
+                        من كل عام باليوم العالمي للغة العربية، كونه اليوم الذي
+                        أصدرت فيه الجمعية العامة للأمم المتحدة قرارها رقم
+                        (3190),الذي أقرت بموجبه إدخال اللغة العربية ضمن اللغات
+                        الرسمية والعالمية“. تعديل
+                      </p>
                     </td>
-                    <td>2000</td>
                     <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
                       <a class="btn edit" href="edit-educational-lesson.html">
                         <i class="bi bi-pencil nas"></i
                       ></a>
@@ -541,180 +544,27 @@
                     <td></td>
                     <td>2154202 #</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      <p class="tabl-text-1">
+                        تدريب رقم 1 3 | ادارة التغير | الثالث ثانوي
+                      </p>
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
+                      <p class="table-text">
+                        قال اللأمام الدكتور (أحمد الطيب) بمناسبة اليوم العالمي
+                        للغة العربية: ”أحيي كل أب عربي وأم عربية، وكل معلم
+                        ومعلمة متخصص في علوم اللغة العربية، وأناشدهم جميًعا أن
+                        يحرسوا لغتهم العربية، وعلينا - نحن العرب - أن نشعر
+                        بالفخر والعزة بهذه اللغة التي اصطفاها اللة لتحمل رسالته
+                        الأخيرة إلى الناس جميًعا، ولتكون سيدة لغات العالم قاطبة،
+                        واعلموا أن قضية اللغة العربية بالنسبة للعرب والمسلمين هي
+                        قضية هوية وبقاء، يحتفل العالم يوم الثامن عرش من ديسمبر
+                        من كل عام باليوم العالمي للغة العربية، كونه اليوم الذي
+                        أصدرت فيه الجمعية العامة للأمم المتحدة قرارها رقم
+                        (3190),الذي أقرت بموجبه إدخال اللغة العربية ضمن اللغات
+                        الرسمية والعالمية“. تعديل
+                      </p>
                     </td>
-                    <td>2000</td>
                     <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
-                      ></a>
-
-                      <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <!-- outcome list -->
-
-                  <!-- outcome list -->
-                  <tr>
-                    <td></td>
-                    <td>2154202 #</td>
-                    <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
-                    </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
-                    <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
-                    </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
-                      ></a>
-
-                      <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <!-- outcome list -->
-
-                  <!-- outcome list -->
-                  <tr>
-                    <td></td>
-                    <td>2154202 #</td>
-                    <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
-                    </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
-                    <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
-                    </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
-                      ></a>
-
-                      <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <!-- outcome list -->
-
-                  <!-- outcome list -->
-                  <tr>
-                    <td></td>
-                    <td>2154202 #</td>
-                    <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
-                    </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
-                    <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
-                    </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
-                      ></a>
-
-                      <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <!-- outcome list -->
-
-                  <!-- outcome list -->
-                  <tr>
-                    <td></td>
-                    <td>2154202 #</td>
-                    <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
-                    </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
-                    <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
-                      </div>
-                    </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
                       <a class="btn edit" href="edit-educational-lesson.html">
                         <i class="bi bi-pencil nas"></i
                       ></a>
