@@ -342,11 +342,11 @@ a.btn.nas:hover{
 .time a{
     text-decoration: underline;
 }
-i.bi.bi-search.nas{
+/* i.bi.bi-search.nas{
     position: absolute;
     right: 1rem;
     top: 0.6rem;
-}
+} */
 .table .qu-ex h3{
     padding: 1.3rem 0;
     font-family: bold;
@@ -437,10 +437,10 @@ button.btn.first.nas-2:hover {
     }
     
     /* search icon */
-    i.bi.bi-search.nas-1{
+    /* i.bi.bi-search.nas-1{
         position: absolute;
         right: -7px;
-    }
+    } */
      /* search icon */
      .button .eye{
         font-size: 18px;
@@ -586,9 +586,9 @@ button.btn.first.nas-2:hover {
        background-color:#06456B ;
         color: white;
      }
-     i.bi.bi-search.nas-centers {
+     /* i.bi.bi-search.nas-centers {
         position: absolute;
-     }
+     } */
      .text-card-team h6 {
         font-size: 0.8rem;
         font-family: 'regular';
@@ -634,6 +634,8 @@ button.btn.first.nas-2:hover {
      /* start lesons */
      i.bi.bi-search {
         position: absolute;
+        bottom: 0.6rem;
+        right: 0.2rem;
      }
      /* end lesons */
      /* tables */
@@ -645,6 +647,7 @@ button.btn.first.nas-2:hover {
      p.tabl-text-1 {
         margin: auto 0;
     width: 267%;
+    
      }
      p.table-text-2 {
         margin: auto 39px;
@@ -674,4 +677,53 @@ p.table-doors-4 {
     margin-left: 3rem;
 }
  /* tables */
+ /* teacher */
+ .head-teacher {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 13px;
+ }
+ .num-teacher {
+    padding-top: 18px;
+    display: flex;
+    gap: 13px;
+    justify-content: center;
+    align-items: center;
+    
+
+ }
+ .active-now {
+    padding: 0.4rem;
+    background-color: rgb(0 128 0 / 14%);
+    color: green;
+    border-radius: 24px;
+    font-family: 'regular';
+    font-size: 0.7rem;
+ 
+ }
+ .ditals-teacher h4 {
+    font-family: bold;
+ }
+ .ditals-teacher p {
+    font-family: 'regular';
+    font-size: 0.7rem;
+    
+ }
+ span.icon-techer {
+    padding: 0 0.7rem;
+    font-family: 'regular';
+ }
+ .under-line {
+    display: flex;
+    gap: 32px;
+    font-family: 'regular';
+    align-items: center;
+ }
+ .under-line h6 {
+    padding: 0.8rem;
+    background-color: #F7F7F7;
+    font-size: 0.7rem;
+    border-radius: 50px;
+ }
  
