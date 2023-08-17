@@ -357,8 +357,8 @@
             <div class="row">
               <div class="main_topic">
                 <h4>المواد الدراسية</h4>
-                <a class="btn first" href="add-new-exam.html">
-                  <i class="bi bi-plus"></i> اضافة مادة جديدة 
+                <a class="btn first" href="#">
+                  <i class="bi bi-plus"></i> اضافة مادة جديدة
                 </a>
               </div>
             </div>
@@ -373,14 +373,14 @@
                         type="text"
                         placeholder="  ابحث باسم المدرس , المادة ... .........."
                       />
-                      <span style="height: 60%" class="icon_search"
-                        ><i class="bi bi-search nas-1"></i
+                      <span class="icon_search"
+                        ><i class="bi bi-search"></i
                       ></span>
                     </div>
                   </form>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-12">
+              <div class="col-lg-2 col-md-4 col-12">
                 <form
                   class="form_topic"
                   style="padding-inline-end: 0; margin-top: 0"
@@ -394,7 +394,7 @@
                       data-selected-text-format="count > 1"
                       data-icon="bi bi-trash"
                       data-live-search="true"
-                      data-placeholder="  نوع التعليم : جامعي   "
+                      data-placeholder="  الجامعة   "
                     >
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -404,7 +404,7 @@
                 </form>
                 <!-- input group -->
               </div>
-              <div class="col-lg-3 col-md-4 col-12">
+              <div class="col-lg-2 col-md-4 col-12">
                 <form
                   class="form_topic"
                   style="padding-inline-end: 0; margin-top: 0"
@@ -418,11 +418,35 @@
                       data-selected-text-format="count > 1"
                       data-icon="bi bi-trash"
                       data-live-search="true"
-                      data-placeholder="  كل المواد الدراسية   "
+                      data-placeholder="  الكلية   "
                     >
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
+                    </select>
+                  </div>
+                </form>
+                <!-- input group -->
+              </div>
+              <div class="col-lg-2 col-md-4 col-12">
+                <form
+                  class="form_topic"
+                  style="padding-inline-end: 0; margin-top: 0"
+                >
+                  <!-- input group -->
+                  <div class="input-group">
+                    <select
+                      required
+                      class="selectpicker"
+                      multiple
+                      data-selected-text-format="count > 1"
+                      data-icon="bi bi-trash"
+                      data-live-search="true"
+                      data-placeholder="  نوع التعليم   "
+                    >
+                      <option value="1">تعليم اساسي</option>
+                      <option value="2">تعليم جامعي</option>
+                      <option value="3">الكل</option>
                     </select>
                   </div>
                 </form>
@@ -436,13 +460,10 @@
                   <tr>
                     <td></td>
                     <td>الكود</td>
-                    <td>اسم المدرس</td>
-                    <td>رقم الهاتف</td>
-                    <td>الايميل</td>
-                    <td>المواد</td>
-                    <td>تاريخ الانضمام</td>
+                    <td>المادة</td>
+                    <td>نوع التعليم</td>
+                    <td>المراحل التعليمية</td>
                     <td>التحكم</td>
-
                     <td></td>
                   </tr>
                 </thead>
@@ -451,20 +472,13 @@
                   <tr>
                     <td></td>
                     <td>2154202 #</td>
+                    <td>( Botany ) Medicinal Plants</td>
+                    <td>أساسي</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
+                      <span class="nas-1"><a href="#">+4</a></span>
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td><span class="nas">علم النفس والاجتماع</span>
-                        <span class="nas-1"><a href="#">+4</a></span></td>
-                    <td>22 مايو, 2023</td>
-                    <td class="button">
-                       <span class="eye"> <a href="#"><i class="bi bi-eye"></i></a></span>
+                    <td class="button" style="margin-right: 6rem">
                       <a class="btn edit" href="edit-educational-lesson.html">
                         <i class="bi bi-pencil nas"></i
                       ></a>
@@ -480,21 +494,13 @@
                   <tr>
                     <td></td>
                     <td>2154202 #</td>
+                    <td>( Botany ) Medicinal Plants</td>
+                    <td>أساسي</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
+                      <span class="nas-1"><a href="#">+4</a></span>
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td><span class="nas">علم النفس والاجتماع</span>
-                        <span class="nas-1"><a href="#">+4</a></span></td>
-                    <td>22 مايو, 2023</td>
-                    <td class="button">
-                        <span class="eye"> <a href="#"><i class="bi bi-eye"></i></a></span>
-
+                    <td class="button" style="margin-right: 6rem">
                       <a class="btn edit" href="edit-educational-lesson.html">
                         <i class="bi bi-pencil nas"></i
                       ></a>
@@ -510,21 +516,13 @@
                   <tr>
                     <td></td>
                     <td>2154202 #</td>
+                    <td>( Botany ) Medicinal Plants</td>
+                    <td>أساسي</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
+                      <span class="nas-1"><a href="#">+4</a></span>
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td><span class="nas">علم النفس والاجتماع</span>
-                        <span class="nas-1"><a href="#">+4</a></span></td>
-                    <td>22 مايو, 2023</td>
-                    <td class="button">
-                        <span class="eye"> <a href="#"><i class="bi bi-eye"></i></a></span>
-
+                    <td class="button" style="margin-right: 6rem">
                       <a class="btn edit" href="edit-educational-lesson.html">
                         <i class="bi bi-pencil nas"></i
                       ></a>
@@ -540,21 +538,13 @@
                   <tr>
                     <td></td>
                     <td>2154202 #</td>
+                    <td>( Botany ) Medicinal Plants</td>
+                    <td>أساسي</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
+                      <span class="nas-1"><a href="#">+4</a></span>
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td><span class="nas">علم النفس والاجتماع</span>
-                        <span class="nas-1"><a href="#">+4</a></span></td>
-                    <td>22 مايو, 2023</td>
-                    <td class="button">
-                        <span class="eye"> <a href="#"><i class="bi bi-eye"></i></a></span>
-
+                    <td class="button" style="margin-right: 6rem">
                       <a class="btn edit" href="edit-educational-lesson.html">
                         <i class="bi bi-pencil nas"></i
                       ></a>
@@ -570,21 +560,13 @@
                   <tr>
                     <td></td>
                     <td>2154202 #</td>
+                    <td>( Botany ) Medicinal Plants</td>
+                    <td>أساسي</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
+                      <span class="nas-1"><a href="#">+4</a></span>
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td><span class="nas">علم النفس والاجتماع</span>
-                        <span class="nas-1"><a href="#">+4</a></span></td>
-                    <td>22 مايو, 2023</td>
-                    <td class="button">
-                        <span class="eye"> <a href="#"><i class="bi bi-eye"></i></a></span>
-
+                    <td class="button" style="margin-right: 6rem">
                       <a class="btn edit" href="edit-educational-lesson.html">
                         <i class="bi bi-pencil nas"></i
                       ></a>
@@ -600,21 +582,13 @@
                   <tr>
                     <td></td>
                     <td>2154202 #</td>
+                    <td>( Botany ) Medicinal Plants</td>
+                    <td>أساسي</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
+                      <span class="nas-1"><a href="#">+4</a></span>
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td><span class="nas">علم النفس والاجتماع</span>
-                        <span class="nas-1"><a href="#">+4</a></span></td>
-                    <td>22 مايو, 2023</td>
-                    <td class="button">
-                        <span class="eye"> <a href="#"><i class="bi bi-eye"></i></a></span>
-
+                    <td class="button" style="margin-right: 6rem">
                       <a class="btn edit" href="edit-educational-lesson.html">
                         <i class="bi bi-pencil nas"></i
                       ></a>
@@ -630,21 +604,13 @@
                   <tr>
                     <td></td>
                     <td>2154202 #</td>
+                    <td>( Botany ) Medicinal Plants</td>
+                    <td>أساسي</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
+                      <span class="nas-1"><a href="#">+4</a></span>
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td><span class="nas">علم النفس والاجتماع</span>
-                        <span class="nas-1"><a href="#">+4</a></span></td>
-                    <td>22 مايو, 2023</td>
-                    <td class="button">
-                        <span class="eye"> <a href="#"><i class="bi bi-eye"></i></a></span>
-
+                    <td class="button" style="margin-right: 6rem">
                       <a class="btn edit" href="edit-educational-lesson.html">
                         <i class="bi bi-pencil nas"></i
                       ></a>
@@ -660,21 +626,13 @@
                   <tr>
                     <td></td>
                     <td>2154202 #</td>
+                    <td>( Botany ) Medicinal Plants</td>
+                    <td>أساسي</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
+                      <span class="nas-1"><a href="#">+4</a></span>
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td><span class="nas">علم النفس والاجتماع</span>
-                        <span class="nas-1"><a href="#">+4</a></span></td>
-                    <td>22 مايو, 2023</td>
-                    <td class="button">
-                        <span class="eye"> <a href="#"><i class="bi bi-eye"></i></a></span>
-
+                    <td class="button" style="margin-right: 6rem">
                       <a class="btn edit" href="edit-educational-lesson.html">
                         <i class="bi bi-pencil nas"></i
                       ></a>
