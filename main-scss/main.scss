@@ -18,7 +18,7 @@
 @font-face {
   font-family: "regular";
   src: url("../fonts/alfont_com_Somar-Regular.otf");
-}
+} 
 
 @font-face {
   font-family: "medium";
@@ -1174,17 +1174,18 @@ input {
   .btn.first {
     background-color: var(--color-primary);
     border: 1px solid var(--color-primary);
-    width: 15%;
+    width: fit-content;
     color: var(--color-white);
-    font-size: 1rem;
+    font-size: 0.8rem;
+    padding: .75rem 2rem;
     border-radius: 8px;
-    transition: .25s all ease-in-out;
+    transition: .7s ease-in-out;
     font-family: 'light';
-    padding: 7px 0;
 
     &:hover {
       background-color: var(--color-white);
       color: var(--color-primary);
+      transition: .7s ease-in-out;
     }
   }
 }
