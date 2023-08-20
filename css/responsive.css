@@ -104,10 +104,6 @@
 
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 425px) {
-  .table-responsive {
-    overflow-x: scroll;
-    width: 135%;
-  }
   .table-responsive thead tr td {
     font-size: 0.8rem;
   }
