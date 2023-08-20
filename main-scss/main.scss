@@ -532,6 +532,7 @@ form {
 
 .form-group .bootstrap-select {
   border: 1px solid #9a9a9a;
+  
 }
 
 //selectpicker
@@ -1610,7 +1611,7 @@ input {
   .bootstrap-select {
     background-color: var(--body-color);
     border: unset;
-    padding: 0;
+    padding: 0.5rem;
     padding-inline-start: 4%;
   }
 
@@ -1879,7 +1880,7 @@ input {
 
   thead {
     tr {
-      td {
+      th {
         font-size: 1rem;
         color: var(--color-text);
         font-family: 'regular';
