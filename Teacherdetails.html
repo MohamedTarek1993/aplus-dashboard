@@ -412,19 +412,436 @@
           </div>
         </div>
         <div class="content_page">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">الكورسات</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">النشاطات</button>
-                </li>
-              
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
-                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="home-tab-pane"
+                aria-selected="true"
+              >
+                الكورسات
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="profile-tab-pane"
+                aria-selected="false"
+              >
+                النشاطات
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home-tab-pane"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+              tabindex="0"
+            >
+              <div class="head-name">
+                <h4>الكورسات</h4>
               </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                  <div class="search_topic">
+                    <form>
+                      <div class="input-group">
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="  ابحث باسم الباب , المادة ... ...... .........."
+                        />
+                        <span class="icon_search"
+                          ><i class="bi bi-search"></i
+                        ></span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12">
+                  <div class="input-group">
+                    <select
+                      required
+                      class="selectpicker"
+                      multiple
+                      data-selected-text-format="count > 1"
+                      data-icon="bi bi-trash"
+                      data-live-search="true"
+                      data-placeholder=" المرحلة: كل المراحل  "
+                    >
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12">
+                  <div class="input-group">
+                    <select
+                      required
+                      class="selectpicker"
+                      multiple
+                      data-selected-text-format="count > 1"
+                      data-icon="bi bi-trash"
+                      data-live-search="true"
+                      data-placeholder=" حالة الكورس: الكل  "
+                    >
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="table-responsive">
+                <table class="table-responsive table_expenses table_topic">
+                  <thead>
+                    <tr>
+                      <td></td>
+                      <td>الكود</td>
+                      <td>اسم الكورس</td>
+                      <td>المرحلة</td>
+                      <td>حالة الكورس</td>
+                      <td>الطلاب المنضمين</td>
+                      <td>المشاهدات</td>
+                      <td>التحكم</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- outcome list -->
+                    <tr>
+                      <td></td>
+                      <td>2154202 #</td>
+                      <td>
+                        مراجعة اللغة الإنجليزية<br />
+                        مع فتحي مجدي
+                      </td>
+                      <td>
+                        الفرقة الاولى -<br />
+                        كلية تجارة عربي - قسم محاسبة
+                      </td>
+                      <td><p class="active-tab">
+                        نشط الآن
+                      </p></td>
+                      <td>600</td>
+                      <td>220</td>
+
+                      <td class="button" style="margin-right: 5rem">
+                        <a class="btn edit" href="#">
+                          <i class="bi bi-eye"></i>
+                         </a>
+
+                        <button
+                          onclick="deleteion()"
+                          class="btn delete"
+                          href="#"
+                        >
+                          <i class="bi bi-trash3"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <!-- outcome list -->
+
+                    <!-- outcome list -->
+                    <tr>
+                      <td></td>
+                      <td>2154202 #</td>
+                      <td>
+                        مراجعة اللغة الإنجليزية<br />
+                        مع فتحي مجدي
+                      </td>
+                      <td>
+                        الفرقة الاولى -<br />
+                        كلية تجارة عربي - قسم محاسبة
+                      </td>
+                      <td><p class="active-tab">
+                        نشط الآن
+                      </p></td>
+                      <td>600</td>
+                      <td>220</td>
+
+                      <td class="button" style="margin-right: 5rem">
+                        <a class="btn edit" href="#">
+                          <i class="bi bi-eye"></i>
+                         </a>
+
+                        <button
+                          onclick="deleteion()"
+                          class="btn delete"
+                          href="#"
+                        >
+                          <i class="bi bi-trash3"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <!-- outcome list -->
+
+                    <!-- outcome list -->
+                    <tr>
+                      <td></td>
+                      <td>2154202 #</td>
+                      <td>
+                        مراجعة اللغة الإنجليزية<br />
+                        مع فتحي مجدي
+                      </td>
+                      <td>
+                        الفرقة الاولى -<br />
+                        كلية تجارة عربي - قسم محاسبة
+                      </td>
+                      <td><p class="active-tab">
+                        نشط الآن
+                      </p></td>
+                      <td>600</td>
+                      <td>220</td>
+
+                      <td class="button" style="margin-right: 5rem">
+                        <a class="btn edit" href="#">
+                          <i class="bi bi-eye"></i>
+                         </a>
+                        <button
+                          onclick="deleteion()"
+                          class="btn delete"
+                          href="#"
+                        >
+                          <i class="bi bi-trash3"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <!-- outcome list -->
+
+                    <!-- outcome list -->
+                    <tr>
+                      <td></td>
+                      <td>2154202 #</td>
+                      <td>
+                        مراجعة اللغة الإنجليزية<br />
+                        مع فتحي مجدي
+                      </td>
+                      <td>
+                        الفرقة الاولى -<br />
+                        كلية تجارة عربي - قسم محاسبة
+                      </td>
+                      <td><p class="active-tab">
+                        نشط الآن
+                      </p></td>
+                      <td>600</td>
+                      <td>220</td>
+
+                      <td class="button" style="margin-right: 5rem">
+                        <a class="btn edit" href="#">
+                          <i class="bi bi-eye"></i>
+                         </a>
+
+                        <button
+                          onclick="deleteion()"
+                          class="btn delete"
+                          href="#"
+                        >
+                          <i class="bi bi-trash3"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <!-- outcome list -->
+
+                    <!-- outcome list -->
+                    <tr>
+                      <td></td>
+                      <td>2154202 #</td>
+                      <td>
+                        مراجعة اللغة الإنجليزية<br />
+                        مع فتحي مجدي
+                      </td>
+                      <td>
+                        الفرقة الاولى -<br />
+                        كلية تجارة عربي - قسم محاسبة
+                      </td>
+                      <td><p class="active-tab">
+                        نشط الآن
+                      </p></td>
+                      <td>600</td>
+                      <td>220</td>
+
+                      <td class="button" style="margin-right: 5rem">
+                        <a class="btn edit" href="#">
+                          <i class="bi bi-eye"></i>
+                         </a>
+
+                        <button
+                          onclick="deleteion()"
+                          class="btn delete"
+                          href="#"
+                        >
+                          <i class="bi bi-trash3"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <!-- outcome list -->
+
+                    <!-- outcome list -->
+                    <tr>
+                      <td></td>
+                      <td>2154202 #</td>
+                      <td>
+                        مراجعة اللغة الإنجليزية<br />
+                        مع فتحي مجدي
+                      </td>
+                      <td>
+                        الفرقة الاولى -<br />
+                        كلية تجارة عربي - قسم محاسبة
+                      </td>
+                      <td><p class="active-tab">
+                        نشط الآن
+                      </p></td>
+                      <td>600</td>
+                      <td>220</td>
+
+                      <td class="button" style="margin-right: 5rem">
+                        <a class="btn edit" href="#">
+                          <i class="bi bi-eye"></i>
+                         </a>
+
+                        <button
+                          onclick="deleteion()"
+                          class="btn delete"
+                          href="#"
+                        >
+                          <i class="bi bi-trash3"></i>
+                        </button>
+                      </td>
+                    </tr>
+
+                    <!-- outcome list -->
+                    <tr>
+                      <td></td>
+                      <td>2154202 #</td>
+                      <td>
+                        مراجعة اللغة الإنجليزية<br />
+                        مع فتحي مجدي
+                      </td>
+                      <td>
+                        الفرقة الاولى -<br />
+                        كلية تجارة عربي - قسم محاسبة
+                      </td>
+                      <td><p class="active-tab">
+                        نشط الآن
+                      </p></td>
+                      <td>600</td>
+                      <td>220</td>
+
+                      <td class="button" style="margin-right: 5rem">
+                        <a class="btn edit" href="#">
+                          <i class="bi bi-eye"></i>
+                         </a>
+
+                        <button
+                          onclick="deleteion()"
+                          class="btn delete"
+                          href="#"
+                        >
+                          <i class="bi bi-trash3"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <!-- outcome list -->
+
+                    <!-- outcome list -->
+                    <tr>
+                      <td></td>
+                      <td>2154202 #</td>
+                      <td>
+                        مراجعة اللغة الإنجليزية<br />
+                        مع فتحي مجدي
+                      </td>
+                      <td>
+                        الفرقة الاولى -<br />
+                        كلية تجارة عربي - قسم محاسبة
+                      </td>
+                      <td><p class="active-tab">
+                        نشط الآن
+                      </p></td>
+                      <td>600</td>
+                      <td>220</td>
+
+                      <td class="button" style="margin-right: 5rem">
+                        <a class="btn edit" href="#">
+                          <i class="bi bi-eye"></i>
+                         </a>
+
+                        <button
+                          onclick="deleteion()"
+                          class="btn delete"
+                          href="#"
+                        >
+                          <i class="bi bi-trash3"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="detailsSubscribeModal"
+                      tabindex="-1"
+                      aria-labelledby="detailsSubscribeModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1
+                              class="modal-title fs-5"
+                              id="detailsSubscribeModalLabel"
+                            >
+                              Modal title
+                            </h1>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body"></div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Save changes
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile-tab-pane"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+              tabindex="0"
+            >
+              ...
+            </div>
+          </div>
         </div>
 
         <!-- <div class="row">

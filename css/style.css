@@ -706,4 +706,18 @@ p.table-doors-4 {
     font-size: 0.7rem;
     border-radius: 50px;
  }
- 
+ /* tabs */
+ .head-name {
+    padding: 1.5rem 0;
+    font-family: 'regular';
+    
+ }
+ p.active-tab {
+    background-color: #00800029;
+    color: green;
+    padding: 0.4rem;
+    border-radius: 50px;
+}
+button.btn.dropdown-toggle.bs-placeholder.btn-light {
+    padding: 0;
+}
