@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Index</title>
+    <title> الكورسات</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -22,7 +22,7 @@
     <!-- ? Favicon -->
 </head>
 
-<body onclick="hideNotification(event)">
+<body>
     <!---------------------- start loader -------------------------------------------->
     <!-- <div id="preloader"></div> -->
     <!---------------------- finish loader -------------------------------------------->
@@ -42,7 +42,7 @@
         " id="menu">
                 <div class="image_logo">
                     <img src="image/logo.png" alt="logo_sidebar" class="logo" />
-                </div> 
+                </div>
 
                 <h5>محتوي النظام</h5>
                 <li class="nav-item">
@@ -292,225 +292,190 @@
             </ul>
             <!---------------------- finish nav -------------------------------------------->
             <!---------------------- start content -------------------------------------------->
+            <div class="content_page">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_topic">
+                            <h4> الكورسات </h4>
+                            <a class="btn first" href="add-course.html"> <i class="bi bi-plus"></i> اضافة كورس جديد </a>
+                        </div>
+                    </div>
+                    <!-- search and filter section -->
+                    <div class="row">
+                        <div class="col-lg-5 col-md-7 col-12 ">
+                            <div class="search_topic">
+                                <form>
+                                    <div class="input-group">
+                                        <input class="form-control" type="text"
+                                            placeholder="ابحث باسم الكورس, المادة , المدرس .......">
+                                        <span class="icon_search"><i class="bi bi-search"></i></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-5 col-12 ">
+                            <form class="form_topic" style="padding-inline-end: 0; margin-top: 0;">
 
-            <div class="container">
-                <!-- start cards section -->
-                <div class="card_lists">
-                    <div class="row px-5">
-                        <!-- start card -->
-                        <div class="col-lg-4 col-12">
-                            <div class="card_list">
-                                <div class="info">
-                                    <h6>القضايا</h6>
-                                    <div class="counter" data-target="250">250</div>
-                                    <span> جميع القضايا لديك</span>
+                                <!-- input group -->
+                                <div class="input-group">
+                                    <select required class="selectpicker" multiple data-selected-text-format="count > 1"
+                                        data-icon="bi bi-trash" data-live-search="true"
+                                        data-placeholder=" كل المراحل التعليمية">
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
                                 </div>
+                                <!-- input group -->
+                            </form>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <form class="form_topic" style="padding-inline-end: 0; margin-top: 0;">
+
+                                <!-- input group -->
+                                <div class="input-group">
+                                    <select required class="selectpicker" multiple data-selected-text-format="count > 1"
+                                        data-icon="bi bi-trash" data-live-search="true" data-placeholder="  الفرقة">
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <!-- input group -->
+                            </form>
+                        </div>
+                        <div class="col-lg-1 col-md-6 col-12">
+                            <div class="button  w-100">
+                                <button class="btn second w-75"><i class="bi bi-funnel"></i></button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--  filter results section -->
+                    <div class="row">
+                        <div class=" col-lg-3 col-md-6 col-12">
+                            <!-- input group -->
+                            <div class="input-group">
+                                <select required class="selectpicker" multiple data-selected-text-format="count > 1"
+                                    data-icon="bi bi-trash" data-live-search="true" data-placeholder="المادة">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <!-- input group -->
+                        </div>
+                        <div class=" col-lg-3 col-md-6 col-12">
+                            <!-- input group -->
+                            <div class="input-group">
+                                <select required class="selectpicker" multiple data-selected-text-format="count > 1"
+                                    data-icon="bi bi-trash" data-live-search="true" data-placeholder="المعلم">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <!-- input group -->
+                        </div>
+                        <div class=" col-lg-3 col-md-6 col-12">
+                            <!-- input group -->
+                            <div class="input-group">
+                                <select required class="selectpicker" multiple data-selected-text-format="count > 1"
+                                    data-icon="bi bi-trash" data-live-search="true"
+                                    data-placeholder="الكورسات الأكثر انضمام">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <!-- input group -->
+                        </div>
+                        <div class=" col-lg-3 col-md-6 col-12">
+                            <!-- input group -->
+                            <div class="input-group">
+                                <select required class="selectpicker" multiple data-selected-text-format="count > 1"
+                                    data-icon="bi bi-trash" data-live-search="true" data-placeholder=" تكلفة الكورس  ">
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <!-- input group -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- paied course  -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card_course ">
                                 <div class="img">
-                                    <img src="image/card1.png" alt="card">
+                                    <img src="image/course1.png" alt="person">
+                                </div>
+                                <div class="d-flex position-relative">
+                                    <a class="section_z" href="detials-course.html">
+                                        <div class="info">
+                                            <span class="badge bg-warning">مدفوع</span>
+                                            <h5> المراجعة النهائية للأناتومي - د. حسن (سيمستر 2)</h5>
+                                            <h6> د/ محمد عادل , مادة المحاسبة المالية</h6>
+                                            <li><i class="bi bi-box2"></i> الفرقة الأولى , كلية التجارة جامعة طنطا</li>
+                                            <li><i class="bi bi-collection"></i> 200 طالب منضم</li>
+                                        </div>
+                                    </a>
+                                    <div class="edit">
+                                        <span onclick="toggleMenu('drop-menu-info')"><i
+                                                class="bi bi-three-dots-vertical"></i></span>
+                                    </div>
+                                    <ul id="drop-menu-info" class="drop_menu_info">
+                                        <li><a href="edit-course.html">تعديل الكورس</a></li>
+                                        <li><a href="detials-course.html"> عرض التفاصيل</a></li>
+                                        <li><a onclick="deleteion()"> حذف الكورس</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- finish card -->
-                        <!-- start card -->
-                        <div class="col-lg-4  col-12">
-                            <div class="card_list">
-                                <div class="info">
-                                    <h6>المهام</h6>
-                                    <div class="counter" data-target="50">50</div>
-                                    <span> جميع المهام الحالية و المنتهية</span>
-                                </div>
+                          <!-- paied course  -->
+                           <!-- free course  -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card_course ">
                                 <div class="img">
-                                    <img src="image/card2.png" alt="card">
+                                    <img src="image/course2.png" alt="person">
+                                </div>
+                                <div class="d-flex position-relative">
+                                    <a class="section_z" href="detials-course.html">
+                                        <div class="info">
+                                            <span class="badge bg-success">مجاني</span>
+                                            <h5> المراجعة النهائية للأناتومي - د. حسن (سيمستر 2)</h5>
+                                            <h6> د/ محمد عادل , مادة المحاسبة المالية</h6>
+                                            <li><i class="bi bi-box2"></i> الفرقة الأولى , كلية التجارة جامعة طنطا</li>
+                                            <li><i class="bi bi-collection"></i> 200 طالب منضم</li>
+                                        </div>
+                                    </a>
+                                    <div class="edit">
+                                        <span onclick="toggleMenu('drop-menu-info')"><i
+                                                class="bi bi-three-dots-vertical"></i></span>
+                                    </div>
+                                    <ul id="drop-menu-info" class="drop_menu_info">
+                                        <li><a href="edit-course.html">تعديل الكورس</a></li>
+                                        <li><a href="detials-course.html"> عرض التفاصيل</a></li>
+                                        <li><a onclick="deleteion()"> حذف الكورس</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- finish card -->
-
-                        <!-- start card -->
-                        <div class="col-lg-4  col-12">
-                            <div class="card_list">
-                                <div class="info">
-                                    <h6>العملاء</h6>
-                                    <div class="counter" data-target="40">40</div>
-                                    <span> جميع العملاء لديك</span>
-                                </div>
-                                <div class="img">
-                                    <img src="image/card3.png" alt="card">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- finish card -->
-
-
+                          <!-- free course  -->
                     </div>
+                    <!-- pagination -->
+                    <nav class="pagination_section">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                    <!-- pagination -->
                 </div>
-                <!-- finish cards section -->
-                <!-- start charts section -->
-                <div class="charts_section">
-                    <div class="row px-5">
-                        <div class="col-lg-6 col-12">
-                            <canvas id="myChart2"></canvas>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <!-- <canvas id="myChart1"></canvas> -->
-                            <canvas id="myChart1"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <!-- finish charts  section -->
-                <div class="row">
-                    <div class="col-lg-8 col-12">
-                        <!-- start table section -->
-                        <div class=" row_filter">
-                            <div class="row pb-5">
-                                <div class="col-lg-9 col-md-6 col-12">
-                                    <div class="main_topic">
-                                        <h4> القضايا </h4>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-12">
-                                    <div class="dropdown dropdown_filter">
-                                        <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            اليوم
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">الشهر</a></li>
-                                            <li><a class="dropdown-item" href="#">السنة </a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <table class="table-responsive table_height table_topic">
-                                <thead>
-                                    <tr>
-                                        <td> اسم القضية </td>
-                                        <td> فريق العمل</td>
-                                        <td> العميل</td>
-                                        <td> تاريخ القضية</td>
-                                        <td>حالة القضية</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-
-                                        <td>
-                                            قضية الضرائب المرفوعة من السيد/ أحمد ابراهيم
-                                        </td>
-                                        <td> احمد سامي و احمد محسن</td>
-                                        <td>احمد محسن</td>
-                                        <td>22 مارس,2023</td>
-                                        <td>
-                                            <span class="badge bg-primary"> جديدة</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            قضية الضرائب المرفوعة من السيد/ أحمد ابراهيم
-                                        </td>
-                                        <td> احمد سامي و احمد محسن</td>
-                                        <td>احمد محسن</td>
-                                        <td>22 مارس,2023</td>
-                                        <td>
-                                            <span class="badge bg-warning"> جاري العمل عليها</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            قضية الضرائب المرفوعة من السيد/ أحمد ابراهيم
-                                        </td>
-                                        <td> احمد سامي و احمد محسن</td>
-                                        <td>احمد محسن</td>
-                                        <td>22 مارس,2023</td>
-                                        <td>
-                                            <span class="badge bg-danger"> منتهية</span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <!-- pagination -->
-                            <nav class="pagination_section">
-                                <ul class="pagination justify-content-center">
-                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                </ul>
-                            </nav>
-                            <!-- pagination -->
-
-
-                        </div>
-                        <!-- start table section -->
-                    </div>
-
-                    <div class="col-lg-4 col-12">
-                        <div class="more_cards">
-                            <div class="main_topic">
-                                <h4>الاستشارات</h4>
-                            </div>
-                            <!-- start card -->
-                            <div class="card">
-                                <div class="info">
-                                    <div class="img">
-                                        <img src="../image/person.png" alt="person">
-                                    </div>
-                                    <div class="teaxt">
-                                        <h6> استشارة فيديو اونلاين</h6>
-                                        <ul>
-                                            <li><i class="bi bi-person"></i>أحمد عادل , someone@gmail.com</li>
-                                            <li><i class="bi bi-calendar"></i> السبت, 22مايو - 8:30 ص</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- finish card -->
-
-                            <!-- start card -->
-                            <div class="card">
-                                <div class="info">
-                                    <div class="img">
-                                        <img src="../image/person.png" alt="person">
-                                    </div>
-                                    <div class="teaxt">
-                                        <h6> استشارة فيديو اونلاين</h6>
-                                        <ul>
-                                            <li><i class="bi bi-person"></i>أحمد عادل , someone@gmail.com</li>
-                                            <li><i class="bi bi-calendar"></i> السبت, 22مايو - 8:30 ص</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- finish card -->
-
-                            <!-- start card -->
-                            <div class="card">
-                                <div class="info">
-                                    <div class="img">
-                                        <img src="../image/person.png" alt="person">
-                                    </div>
-                                    <div class="teaxt">
-                                        <h6> استشارة فيديو اونلاين</h6>
-                                        <ul>
-                                            <li><i class="bi bi-person"></i>أحمد عادل , someone@gmail.com</li>
-                                            <li><i class="bi bi-calendar"></i> السبت, 22مايو - 8:30 ص</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- finish card -->
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
-
             <!---------------------- finish  content -------------------------------------------->
         </section>
         <!---------------------- finish main content -------------------------------------------->
@@ -524,166 +489,40 @@
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/main.js"></script>
     <!-- main js -->
-    <!-- chart tabel -->
-    <script src="js/chart.min.js"></script>
-    <!-- chart tabel -->
-    <!-- counter -->
 
-    <script src="../js/counterup.min.js"></script>
-    <script src="../js/waypoints.min.js"></script>
-    <script>
-        $('.counter').counterUp({
-            delay: 20,
-            time: 3000
-        });
-    </script>
 
-    <!-- counter -->
     <!-- sweet alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- sweet alert -->
-    <!-- charts -->
+    <!-- show / hide edit menu in card -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const ctx = document.getElementById("myChart1").getContext("2d");
-            const labels = ['تفاعل الطلاب', ' الكورسات'];
-            const data = {
-                labels: labels,
-                datasets: [{
-                    label: 'My Dataset',
-                    data: [12, 19],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)', // Color for Branch 1
-                        'rgba(54, 162, 235, 0.2)',  // Color for Branch 2
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',    // Border color for Branch 1
-                        'rgba(54, 162, 235, 1)',    // Border color for Branch 2
+        function toggleMenu(menuId) {
+            var menu = document.getElementById(menuId);
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
 
-                    ],
-                    borderWidth: 1
-                }]
-            };
-            const config = {
-                type: 'doughnut',
-                data: data,
-                options: {
-                    responsive: true,
-                    animations: {
-                        tension: {
-                            duration: 4000,
-                            easing: 'linear',
-                            from: 1,
-                            to: 0,
-                            loop: true
-                        }
-                    },
-                    interaction: {
-                        intersect: false
-                    },
-                    scales: {
-                        x: {
-                            stacked: true
-                        },
-                        y: {
-                            stacked: true
-                        }
-                    }
-                }
-            };
-            const myChart = new Chart(ctx, config);
+        document.addEventListener('click', function (event) {
+            var menu = document.getElementById('drop-menu-info');
+            var target = event.target;
+
+            if (!target.matches('.bi-three-dots-vertical')) {
+                menu.style.display = 'none';
+            }
         });
     </script>
-    <!-- chart tabel1 -->
-    <script>
-        const zy = document.getElementById("myChart2").getContext('2d');
-        const labels3 = [
-            '5 Jan',
-            '10 Jan',
-            '15 Jan',
-            '20 Jan',
-            '25 Jan',
-            '30 Jan',
-            '5 Feb',
-            '10 Feb',
-            '15 Feb',
-            '20 Feb',
-
-        ];
-        const data3 = {
-            labels: labels3,
-            datasets: [
-                {
-                    label: 'المحقق',
-                    data: [80, 81, 56, 55, 40, 80, 30, 20, 70, 60],
-                    backgroundColor: [
-                        'rgba(85, 66, 264, 1)',
-
-                    ],
-                    borderColor: [
-                        'rgba(85, 66, 264, 1)',
-                    ],
-                    borderWidth: 1,
-                    barPercentage: 1,
-                    barThickness: 15,
-                    // maxBarThickness: 8,
-                    minBarLength: 6,
-                }]
-        };
-        const config3 = {
-            type: 'line',
-            data: data3,
-
-            options: {
-                animations: {
-                    tension: {
-                        duration: 4000,
-                        easing: 'linear',
-                        from: 1,
-                        to: 0,
-                        loop: true
-                    }
-                },
-                responsive: true,
-                interaction: {
-                    intersect: false,
-                },
-                scales: {
-                    x: {
-                        stacked: true,
-                    },
-                    y: {
-                        stacked: true
-                    }
-                }
-            },
-        };
-        const myChart3 = new Chart(zy, config3);
+    <!-- show / hide edit menu in card -->
+    
+<script>
+    $(document).ready(function() {
+      // Handle click event for the radio button
+      $('.radio-button').on('click', function() {
+        // Remove "active" class from all radio buttons
+        $('.radio-button').removeClass('active');
+        // Add "active" class to the clicked radio button
+        $(this).addClass('active');
+      });
+    });
     </script>
-    <!--chart tabel1-->
-    <!-- charts -->
-
-    <!-- convert class unread to read -->
-    <script>
-        function convertToRead(element) {
-            element.classList.remove("unread");
-            element.classList.add("read");
-        }
-    </script>
-    <script>
-
-        function showNotification() {
-            var notificationList = document.querySelector('.notfication_list');
-            notificationList.classList.add('show-notification');
-            event.stopPropagation();
-        }
-        function hideNotification(event) {
-            var notificationList = document.querySelector('.notfication_list');
-            notificationList.classList.remove('show-notification');
-        }
-
-    </script>
-    <!-- convert class unread to read -->
 </body>
 
 </html>
