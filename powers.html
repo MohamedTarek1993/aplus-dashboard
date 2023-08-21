@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>المواد الدراسية</title>
+    <title>الصلاحيات</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -302,103 +302,13 @@
           <div class="container">
             <div class="row">
               <div class="main_topic">
-                <h4>المواد الدراسية</h4>
-                <a class="btn first" href="Add a new course.html">
-                  <i class="bi bi-plus"></i> اضافة مادة جديدة
+                <h4>الصلاحيات</h4>
+                <a class="btn first" href="add-powers.html">
+                  <i class="bi bi-plus"></i> اضافة صلاحيات جديدة
                 </a>
               </div>
             </div>
-            <!-- search and filter section -->
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="search_topic">
-                  <form>
-                    <div class="input-group">
-                      <input
-                        class="form-control"
-                        type="text"
-                        placeholder="  ابحث باسم المدرس , المادة ... .........."
-                      />
-                      <span class="icon_search"
-                        ><i class="bi bi-search subject"></i
-                      ></span>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-2 col-12">
-                <form
-                  class="form_topic"
-                  style="padding-inline-end: 0; margin-top: 0"
-                >
-                  <!-- input group -->
-                  <div class="input-group">
-                    <select
-                      required
-                      class="selectpicker"
-                      multiple
-                      data-selected-text-format="count > 1"
-                      data-icon="bi bi-trash"
-                      data-live-search="true"
-                      data-placeholder="  الجامعة   "
-                    >
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
-                  </div>
-                </form>
-                <!-- input group -->
-              </div>
-              <div class="col-lg-2 col-md-2 col-12">
-                <form
-                  class="form_topic"
-                  style="padding-inline-end: 0; margin-top: 0"
-                >
-                  <!-- input group -->
-                  <div class="input-group">
-                    <select
-                      required
-                      class="selectpicker"
-                      multiple
-                      data-selected-text-format="count > 1"
-                      data-icon="bi bi-trash"
-                      data-live-search="true"
-                      data-placeholder="  الكلية   "
-                    >
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
-                  </div>
-                </form>
-                <!-- input group -->
-              </div>
-              <div class="col-lg-2 col-md-2 col-12">
-                <form
-                  class="form_topic"
-                  style="padding-inline-end: 0; margin-top: 0"
-                >
-                  <!-- input group -->
-                  <div class="input-group">
-                    <select
-                      required
-                      class="selectpicker"
-                      multiple
-                      data-selected-text-format="count > 1"
-                      data-icon="bi bi-trash"
-                      data-live-search="true"
-                      data-placeholder="  نوع التعليم   "
-                    >
-                      <option value="1">تعليم اساسي</option>
-                      <option value="2">تعليم جامعي</option>
-                      <option value="3">الكل</option>
-                    </select>
-                  </div>
-                </form>
-                <!-- input group -->
-              </div>
-            </div>
+          
             <!-- start table -->
             <div class="table-responsive">
               <table class=" table_expenses table_topic">
@@ -406,9 +316,8 @@
                   <tr>
                     
                     <td>الكود</td>
-                    <td>المادة</td>
-                    <td>نوع التعليم</td>
-                    <td>المراحل التعليمية</td>
+                    <td>الاسم</td>
+                    <td>تاريخ الاضافة</td>
                     <td>التحكم</td>
                   
                   </tr>
@@ -418,19 +327,15 @@
                   <tr>
                    
                     <td>2154202 #</td>
-                    <td>( Botany ) Medicinal Plants</td>
-                    <td>أساسي</td>
-                    <td>
-                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
-                      <span class="nas-1"><a href="#">+4</a></span>
-                    </td>
+                    <td>STUDENT </td>
+                    <td>2023-03-23 22:23:04</td>
                     <td class="button" >
-                      <a class="btn edit" href="Add a new course.html">
-                        <i class="bi bi-pencil nas"></i
+                      <a class="btn edit" href="add-powers.html">
+                        <i class="bi bi-pencil"></i
                       ></a>
 
                       <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
+                        <i class="bi bi-trash3"></i>
                       </button>
                     </td>
                   </tr>
@@ -440,19 +345,15 @@
                   <tr>
                    
                     <td>2154202 #</td>
-                    <td>( Botany ) Medicinal Plants</td>
-                    <td>أساسي</td>
-                    <td>
-                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
-                      <span class="nas-1"><a href="#">+4</a></span>
-                    </td>
+                    <td>STUDENT </td>
+                    <td>2023-03-23 22:23:04</td>
                     <td class="button" >
-                      <a class="btn edit" href="Add a new course.html">
-                        <i class="bi bi-pencil nas"></i
+                      <a class="btn edit" href="add-powers.html">
+                        <i class="bi bi-pencil"></i
                       ></a>
 
                       <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
+                        <i class="bi bi-trash3"></i>
                       </button>
                     </td>
                   </tr>
@@ -462,19 +363,15 @@
                   <tr>
                    
                     <td>2154202 #</td>
-                    <td>( Botany ) Medicinal Plants</td>
-                    <td>أساسي</td>
-                    <td>
-                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
-                      <span class="nas-1"><a href="#">+4</a></span>
-                    </td>
+                    <td>STUDENT </td>
+                    <td>2023-03-23 22:23:04</td>
                     <td class="button" >
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
+                      <a class="btn edit" href="add-powers.html">
+                        <i class="bi bi-pencil"></i
                       ></a>
 
                       <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
+                        <i class="bi bi-trash3"></i>
                       </button>
                     </td>
                   </tr>
@@ -484,19 +381,15 @@
                   <tr>
                    
                     <td>2154202 #</td>
-                    <td>( Botany ) Medicinal Plants</td>
-                    <td>أساسي</td>
-                    <td>
-                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
-                      <span class="nas-1"><a href="#">+4</a></span>
-                    </td>
+                    <td>STUDENT </td>
+                    <td>2023-03-23 22:23:04</td>
                     <td class="button" >
-                      <a class="btn edit" href="Add a new course.html">
-                        <i class="bi bi-pencil nas"></i
+                      <a class="btn edit" href="add-powers.html">
+                        <i class="bi bi-pencil"></i
                       ></a>
 
                       <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
+                        <i class="bi bi-trash3"></i>
                       </button>
                     </td>
                   </tr>
@@ -506,19 +399,15 @@
                   <tr>
                    
                     <td>2154202 #</td>
-                    <td>( Botany ) Medicinal Plants</td>
-                    <td>أساسي</td>
-                    <td>
-                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
-                      <span class="nas-1"><a href="#">+4</a></span>
-                    </td>
+                    <td>STUDENT </td>
+                    <td>2023-03-23 22:23:04</td>
                     <td class="button" >
-                      <a class="btn edit" href="Add a new course.html">
-                        <i class="bi bi-pencil nas"></i
+                      <a class="btn edit" href="add-powers.html">
+                        <i class="bi bi-pencil"></i
                       ></a>
 
                       <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
+                        <i class="bi bi-trash3"></i>
                       </button>
                     </td>
                   </tr>
@@ -528,19 +417,15 @@
                   <tr>
                    
                     <td>2154202 #</td>
-                    <td>( Botany ) Medicinal Plants</td>
-                    <td>أساسي</td>
-                    <td>
-                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
-                      <span class="nas-1"><a href="#">+4</a></span>
-                    </td>
+                    <td>STUDENT </td>
+                    <td>2023-03-23 22:23:04</td>
                     <td class="button" >
-                      <a class="btn edit" href="Add a new course.html">
-                        <i class="bi bi-pencil nas"></i
+                      <a class="btn edit" href="add-powers.html">
+                        <i class="bi bi-pencil"></i
                       ></a>
 
                       <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
+                        <i class="bi bi-trash3"></i>
                       </button>
                     </td>
                   </tr>
@@ -550,19 +435,15 @@
                   <tr>
                    
                     <td>2154202 #</td>
-                    <td>( Botany ) Medicinal Plants</td>
-                    <td>أساسي</td>
-                    <td>
-                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
-                      <span class="nas-1"><a href="#">+4</a></span>
-                    </td>
+                    <td>STUDENT </td>
+                    <td>2023-03-23 22:23:04</td>
                     <td class="button" >
-                      <a class="btn edit" href="Add a new course.html">
-                        <i class="bi bi-pencil nas"></i
+                      <a class="btn edit" href="add-powers.html">
+                        <i class="bi bi-pencil"></i
                       ></a>
 
                       <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
+                        <i class="bi bi-trash3"></i>
                       </button>
                     </td>
                   </tr>
@@ -572,19 +453,15 @@
                   <tr>
                    
                     <td>2154202 #</td>
-                    <td>( Botany ) Medicinal Plants</td>
-                    <td>أساسي</td>
-                    <td>
-                      <span class="nas">الفرقة الأولى-الصيدلة-المنصورة </span>
-                      <span class="nas-1"><a href="#">+4</a></span>
-                    </td>
+                    <td>STUDENT </td>
+                    <td>2023-03-23 22:23:04</td>
                     <td class="button" >
-                      <a class="btn edit" href="Add a new course.html">
-                        <i class="bi bi-pencil nas"></i
+                      <a class="btn edit" href="add-powers.html">
+                        <i class="bi bi-pencil"></i
                       ></a>
 
                       <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
+                        <i class="bi bi-trash3"></i>
                       </button>
                     </td>
                   </tr>
