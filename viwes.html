@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ar" dir="ltr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> سجل المشاهدات</title>
+    <title>سجل المشاهدات</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -13,7 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="main-scss/main.min.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css"> -->
 
     <!-- responsive -->
@@ -21,9 +20,9 @@
     <!-- ? Favicon -->
     <link rel="icon" href="image/logo.png" type="image" />
     <!-- ? Favicon -->
-</head>
+  </head>
 
-<body>
+  <body>
     <!---------------------- start loader -------------------------------------------->
     <!-- <div id="preloader"></div> -->
     <!---------------------- finish loader -------------------------------------------->
@@ -32,438 +31,430 @@
     <!---------------------- finish scroll-up -------------------------------------------->
 
     <main class="d-flex sidemobile p-0">
-        <!---------------------- start sidebar -------------------------------------------->
+      <!---------------------- start sidebar -------------------------------------------->
 
-        <section class="sidebar open">
-            <ul class="
-          nav nav-pills
-          flex-column
-          mb-sm-auto mb-0
-          align-items-center align-items-sm-start
-        " id="menu">
-                <div class="image_logo">
-                    <img src="image/logo.png" alt="logo_sidebar" class="logo" />
-                </div>
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="image_logo">
+            <img src="image/logo.png" alt="logo_sidebar" class="logo" />
+          </div>
 
-                <h5>محتوي النظام</h5>
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link align-middle">
-                        <img src="image/home-icon.png" alt="icon" />
-                        <span>الرئيسية</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="courses.html" class="nav-link align-middle">
-                        <img src="/image/course-icon.png" alt="icon" />
-                        <span>الكورسات</span>
-                    </a>
-                </li>
+          <h5>محتوي النظام</h5>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link align-middle">
+              <img src="image/home-icon.png" alt="icon" />
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="courses.html" class="nav-link align-middle">
+              <img src="/image/course-icon.png" alt="icon" />
+              <span>الكورسات</span>
+            </a>
+          </li>
 
-                <li class="nav-item">
-                    <a href="exams.html" class="nav-link align-middle">
-                        <img src="image/exam-icon.png" alt="icon" />
-                        <span> الامتحانات</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="groups.html" class="nav-link align-middle">
-                        <img src="image/groups-icon.png" alt="icon" />
-                        <span> الجروبات</span>
-                    </a>
-                </li>
+          <li class="nav-item">
+            <a href="exams.html" class="nav-link align-middle">
+              <img src="image/exam-icon.png" alt="icon" />
+              <span> الامتحانات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="groups.html" class="nav-link align-middle">
+              <img src="image/groups-icon.png" alt="icon" />
+              <span> الجروبات</span>
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a href="question-banks.html" class="nav-link align-middle">
+              <img src="image/icon-bank.png" alt="icon" />
+              <span>بنك الأسألة</span>
+            </a>
+          </li>
 
-                <li class="nav-item">
-                    <a href="question-banks.html" class="nav-link align-middle">
-                        <img src="image/icon-bank.png" alt="icon" />
-                        <span>بنك الأسألة</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#submenulibrary" data-bs-toggle="collapse"
-                        class="nav-link accordion-button align-middle collapsed">
-                        <img src="image/exam-icon.png" alt="icon" />
-                        <span> بنك اسالة المرحلة الاساسية </span>
-                        <i class="fa-solid fa-angle-up"></i>
-                    </a>
-                    <ul class="collapse flex-column" id="submenulibrary" data-bs-parent="#menu">
-                        <div class="close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                        <li>
-                            <a href="unites-main-bank.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> الوحدات </span></a>
-                        </li>
-                        <li>
-                            <a href="lessons-main-bank.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> الدروس </span></a>
-                        </li>
-                        <li>
-                            <a href="parts-main-bank.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> القطع </span></a>
-                        </li>
-                        <li>
-                            <a href="sec-bank-main-bank.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> بنك اسالة ثانوي </span></a>
-                        </li>
-                        <li>
-                            <a href="sec-exam-main-bank.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> امتحانات ثانوي </span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="celander.html" class="nav-link align-middle">
-                        <img src="image/book-icon.png" alt="icon" />
-                        <span> المواد الدراسية</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#submenuAccountant" data-bs-toggle="collapse"
-                        class="nav-link accordion-button align-middle collapsed">
-                        <img src="image/scan-barcode-icon.png" alt="icon" />
-                        <span> أكود الشراء</span>
-                        <i class="fa-solid fa-angle-up"></i>
-                    </a>
-                    <ul class="collapse flex-column" id="submenuAccountant" data-bs-parent="#menu">
-                        <div class="close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-
-                        <li>
-                            <a href="extract-code-books.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> استخراج اكواد للمذكرات</span></a>
-                        </li>
-                        <li>
-                            <a href="extract-code-courses.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> استخراج اكواد للكورسات</span></a>
-                        </li>
-                        <li>
-                            <a href="extract-code-practice.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> استخراج اكواد للتدريبات</span></a>
-
-                        </li>
-
-                    </ul>
-                </li>
-                <h5> مستخدمي النظام</h5>
-                <li class="nav-item">
-                    <a href="teachers.html" class="nav-link align-middle">
-                        <img src="image/teacher-icon.png" alt="icon" />
-                        <span> المدرسين</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="students.html" class="nav-link align-middle">
-                        <img src="image/student-icon.png" alt="icon" />
-                        <span> الطلبة</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="lesson-center.html" class="nav-link align-middle">
-                        <img src="image/house-icon.png" alt="icon" />
-                        <span> سناتر الدروس</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="director.html" class="nav-link align-middle">
-                        <img src="image/director-icon.png" alt="icon" />
-                        <span> مديري النظام</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="powers.html" class="nav-link align-middle">
-                        <img src="image/powers-icon.png" alt="icon" />
-                        <span> الصلاحيات</span>
-                    </a>
-                </li>
-
-
-                <h5> اعدادات النظام</h5>
-
-                <li class="nav-item">
-                    <a href="country.html" class="nav-link align-middle">
-                        <img src="image/country-icon.png" alt="icon" />
-                        <span> الدول</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="governorate.html" class="nav-link align-middle">
-                        <img src="image/country-icon.png" alt="icon" />
-                        <span> المحافظات</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="city.html" class="nav-link align-middle">
-                        <img src="image/country-icon.png" alt="icon" />
-                        <span> المدن</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="universities.html" class="nav-link align-middle">
-                        <img src="image/buildings-icon.png" alt="icon" />
-                        <span> الجامعات</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="colleges.html" class="nav-link align-middle">
-                        <img src="image/colleage-icon.png" alt="icon" />
-                        <span> الكليات</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="main-edu.html" class="nav-link align-middle">
-                        <img src="image/main-edu-icon.png" alt="icon" />
-                        <span> التعليم الاساسي</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="study-teams.html" class="nav-link align-middle">
-                        <img src="image/format-circle.png" alt="icon" />
-                        <span> الفرق الدراسية</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="point-settings.html" class="nav-link align-middle">
-                        <img src="image/buy-crypto-icon.png" alt="icon" />
-                        <span> اعدادات النقاط</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="slider.html" class="nav-link align-middle">
-                        <img src="image/slider-icon.png" alt="icon" />
-                        <span> الاسلايدر</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="notfication-seting.html" class="nav-link align-middle">
-                        <img src="image/notification-bing-icon.png" alt="icon" />
-                        <span> اعدادات الاشعارات</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="general-settengs.html" class="nav-link align-middle">
-                        <img src="image/powers-icon.png" alt="icon" />
-                        <span> الاعدادات العامة</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link align-middle">
-                        <img src="image/logout-icon.png" alt="icon" />
-                        <span> تسجيل الخروج</span>
-                    </a>
-                </li>
-
-
+          <li class="nav-item">
+            <a
+              href="#submenulibrary"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="image/exam-icon.png" alt="icon" />
+              <span> بنك اسالة المرحلة الاساسية </span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenulibrary"
+              data-bs-parent="#menu"
+            >
+              <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <li>
+                <a href="unites-main-bank.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> الوحدات </span></a
+                >
+              </li>
+              <li>
+                <a href="lessons-main-bank.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> الدروس </span></a
+                >
+              </li>
+              <li>
+                <a href="parts-main-bank.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> القطع </span></a
+                >
+              </li>
+              <li>
+                <a href="sec-bank-main-bank.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> بنك اسالة ثانوي </span></a
+                >
+              </li>
+              <li>
+                <a href="sec-exam-main-bank.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> امتحانات ثانوي </span></a
+                >
+              </li>
             </ul>
-        </section>
-        <!---------------------- end sidebar -------------------------------------------->
-        <!---------------------- start main content -------------------------------------------->
+          </li>
+          <li class="nav-item">
+            <a href="celander.html" class="nav-link align-middle">
+              <img src="image/book-icon.png" alt="icon" />
+              <span> المواد الدراسية</span>
+            </a>
+          </li>
 
-        <section class="index_cards">
-            <!---------------------- start nav -------------------------------------------->
-            <nav class="nav_top navbar">
-                <div class="container">
-                    <div class="menu">
-                        <i class="bi bi-list"></i>
-                    </div>
-                    <div class="info">
-                        <div class="notfication" onclick="showNotification()">
-                            <i class="bi bi-bell"></i>
-                            <span class="alerts">
-                                3
-                            </span>
-                        </div>
+          <li class="nav-item">
+            <a
+              href="#submenuAccountant"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="image/scan-barcode-icon.png" alt="icon" />
+              <span> أكود الشراء</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuAccountant"
+              data-bs-parent="#menu"
+            >
+              <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
 
-                        <div class="img">
-                            <img src="../image/person.png" alt="person">
-                        </div>
-                        <div class="btn-group">
-                            <button class="btn  btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                محمد طارق
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li> <a href="settings.html">اعدادات الحساب</a> </li>
-                                <li onclick="acceptAlert()"> تسجيل الخروج </li>
-                            </ul>
-                        </div>
-
-
-                    </div>
-
-                </div>
-            </nav>
-            <ul class="notfication_list">
-                <h2>الأشعارات</h2>
-                <i class="bi bi-x close-icon" onclick="hideNotification()"></i>
-
-                <li class="unread" onclick="convertToRead(this)">
-                    <div class="info">
-                        <h6> text</h6>
-                        <span> 22/6/1993</span>
-                    </div>
-                    <div class="delete">
-                        <i class="bi bi-trash"></i>
-                    </div>
-                </li>
-                <li class="read">
-                    <div class="info">
-                        <h6> text</h6>
-                        <span> 22/6/1993</span>
-                    </div>
-                    <div class="delete">
-                        <i class="bi bi-trash"></i>
-                    </div>
-                </li>
+              <li>
+                <a href="extract-code-books.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للمذكرات</span></a
+                >
+              </li>
+              <li>
+                <a href="extract-code-courses.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للكورسات</span></a
+                >
+              </li>
+              <li>
+                <a href="extract-code-practice.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للتدريبات</span></a
+                >
+              </li>
             </ul>
-            <!---------------------- finish nav -------------------------------------------->
-            <!---------------------- start content -------------------------------------------->
-            <div class="content_page">
-                <div class="container">
-                    <div class="main_topic">
+          </li>
+          <h5>مستخدمي النظام</h5>
+          <li class="nav-item">
+            <a href="teachers.html" class="nav-link align-middle">
+              <img src="image/teacher-icon.png" alt="icon" />
+              <span> المدرسين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="students.html" class="nav-link align-middle">
+              <img src="image/student-icon.png" alt="icon" />
+              <span> الطلبة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="lesson-center.html" class="nav-link align-middle">
+              <img src="image/house-icon.png" alt="icon" />
+              <span> سناتر الدروس</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="director.html" class="nav-link align-middle">
+              <img src="image/director-icon.png" alt="icon" />
+              <span> مديري النظام</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="powers.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الصلاحيات</span>
+            </a>
+          </li>
 
+          <h5>اعدادات النظام</h5>
 
-                        <h4>سجل المشاهدات</h4>
+          <li class="nav-item">
+            <a href="country.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> الدول</span>
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a href="governorate.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المحافظات</span>
+            </a>
+          </li>
 
-                        <a href="#" class="btn  first"> العوده لتفاصيل الطالب</a>
+          <li class="nav-item">
+            <a href="city.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المدن</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="universities.html" class="nav-link align-middle">
+              <img src="image/buildings-icon.png" alt="icon" />
+              <span> الجامعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="colleges.html" class="nav-link align-middle">
+              <img src="image/colleage-icon.png" alt="icon" />
+              <span> الكليات</span>
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a href="main-edu.html" class="nav-link align-middle">
+              <img src="image/main-edu-icon.png" alt="icon" />
+              <span> التعليم الاساسي</span>
+            </a>
+          </li>
 
-                    </div>
-                    <table class="table-responsive table_expenses table_topic">
-                        <thead>
-                            <tr>
-                                <td class="w-25"> وقت الدخول </td>
-                                <td> وقت الخروج </td>
-                                <td> المدة التى قضاها</td>
-                                <td> مدة المشاهدة</td>
-                                <td> استكمال الحصة
-                                </td>
+          <li class="nav-item">
+            <a href="study-teams.html" class="nav-link align-middle">
+              <img src="image/format-circle.png" alt="icon" />
+              <span> الفرق الدراسية</span>
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a href="point-settings.html" class="nav-link align-middle">
+              <img src="image/buy-crypto-icon.png" alt="icon" />
+              <span> اعدادات النقاط</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="slider.html" class="nav-link align-middle">
+              <img src="image/slider-icon.png" alt="icon" />
+              <span> الاسلايدر</span>
+            </a>
+          </li>
 
-                            </tr>
-                        </thead>
-                        <tbody>
+          <li class="nav-item">
+            <a href="notfication-seting.html" class="nav-link align-middle">
+              <img src="image/notification-bing-icon.png" alt="icon" />
+              <span> اعدادات الاشعارات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="general-settengs.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الاعدادات العامة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <img src="image/logout-icon.png" alt="icon" />
+              <span> تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!---------------------- end sidebar -------------------------------------------->
+      <!---------------------- start main content -------------------------------------------->
 
-                            <tr>
-                                <td>8:30:30 م </td>
-                                <td>8:30:30 م </td>
-                                <td>5:00 دقائق </td>
-                                <td> 30 ثانية</td>
-                                <td><span class="text-success acshn complete">
-                                        <i class="bi bi-check-circle-fill"></i>
-                                        مكتمل
+      <section class="index_cards">
+        <!---------------------- start nav -------------------------------------------->
+        <nav class="nav_top navbar">
+          <div class="container">
+            <div class="menu">
+              <i class="bi bi-list"></i>
+            </div>
+            <div class="info">
+              <div class="notfication" onclick="showNotification()">
+                <i class="bi bi-bell"></i>
+                <span class="alerts"> 3 </span>
+              </div>
 
-                                    </span></td>
-                            </tr>
+              <div class="img">
+                <img src="../image/person.png" alt="person" />
+              </div>
+              <div class="btn-group">
+                <button
+                  class="btn btn-sm dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  محمد طارق
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="settings.html">اعدادات الحساب</a></li>
+                  <li onclick="acceptAlert()">تسجيل الخروج</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <ul class="notfication_list">
+          <h2>الأشعارات</h2>
+          <i class="bi bi-x close-icon" onclick="hideNotification()"></i>
 
-                        </tbody>
-                        <tbody>
+          <li class="unread" onclick="convertToRead(this)">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+          <li class="read">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+        </ul>
+        <!---------------------- finish nav -------------------------------------------->
+        <!---------------------- start content -------------------------------------------->
+        <div class="content_page">
+          <div class="container">
+            <div class="main_topic">
+              <h4>سجل المشاهدات</h4>
 
-                            <tr>
-                                <td>8:30:30 م </td>
-                                <td>8:30:30 م </td>
-                                <td>5:00 دقائق </td>
-                                <td> 30 ثانية</td>
-                                <td><span class=" text-danger acshn complete">
-                                        <i class="bi bi-x-circle"></i>
-                                        غير مكتمل
+              <a href="#" class="btn first"> العوده لتفاصيل الطالب</a>
+            </div>
+            <div class="table-responsive">
+                <table class="table table_expenses table_topic">
+                <thead>
+                    <tr>
+                        <th>وقت الدخول</th>
+                        <th>وقت الخروج</th>
+                        <th>المدة التى قضاها</th>
+                        <th>مدة المشاهدة</th>
+                        <th>استكمال الحصة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>8:30:30 م</td>
+                    <td>8:30:30 م</td>
+                    <td>5:00 دقائق</td>
+                    <td>30 ثانية</td>
+                    <td>
+                        <span class="text-success acshn complete">
+                        <i class="bi bi-check-circle-fill"></i>
+                        مكتمل
+                        </span>
+                    </td>
+                    </tr>
 
-                                    </span></td>
-                            </tr>
+                    <tr>
+                    <td>8:30:30 م</td>
+                    <td>8:30:30 م</td>
+                    <td>5:00 دقائق</td>
+                    <td>30 ثانية</td>
+                    <td>
+                        <span class="text-danger acshn complete">
+                        <i class="bi bi-x-circle"></i>
+                        غير مكتمل
+                        </span>
+                    </td>
+                    </tr>
 
-                        </tbody>
-                        <tbody>
+                    <tr>
+                    <td>8:30:30 م</td>
+                    <td>8:30:30 م</td>
+                    <td>5:00 دقائق</td>
+                    <td>30 ثانية</td>
+                    <td>
+                        <span class="text-success acshn complete">
+                        <i class="bi bi-check-circle-fill"></i>
+                        مكتمل
+                        </span>
+                    </td>
+                    </tr>
 
-                            <tr>
-                                <td>8:30:30 م </td>
-                                <td>8:30:30 م </td>
-                                <td>5:00 دقائق </td>
-                                <td> 30 ثانية</td>
-                                <td><span class="text-success acshn complete">
-                                        <i class="bi bi-check-circle-fill"></i>
-                                        مكتمل
+                    <tr>
+                    <td>8:30:30 م</td>
+                    <td>8:30:30 م</td>
+                    <td>5:00 دقائق</td>
+                    <td>30 ثانية</td>
+                    <td>
+                        <span class="text-danger acshn complete">
+                        <i class="bi bi-x-circle"></i>
+                        غير مكتمل
+                        </span>
+                    </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
 
-                                    </span></td>
-                            </tr>
+            <!---------------------- end content -------------------------------------------->
 
-                        </tbody>
-                        <tbody>
+            <!-- main js -->
 
-                            <tr>
-                                <td>8:30:30 م </td>
-                                <td>8:30:30 م </td>
-                                <td>5:00 دقائق </td>
-                                <td> 30 ثانية</td>
-                                <td><span class="text-danger acshn complete">
-                                        <i class="bi bi-x-circle"></i>
-                                        غير مكتمل
+            <script src="js/jquery-3.7.1.min.js"></script>
+            <script src="js/all.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/bootstrap-select.min.js"></script>
+            <script src="js/main.js"></script>
+            <!-- main js -->
 
-                                    </span></td>
-                            </tr>
+            <!-- sweet alert -->
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <!-- sweet alert -->
 
-                        </tbody>
-                    </table>
+            <!-- show / hide  course price -->
+            <script>
+              function togglePrice() {
+                var checkbox = document.getElementById("inlineCheckbox5");
+                var hiddenRow = document.getElementById("coursePrice");
 
-
-
-
-
-
-
-
-                    <!---------------------- end content -------------------------------------------->
-
-                    <!-- main js -->
-
-                    <script src="js/jquery-3.7.1.min.js"></script>
-                    <script src="js/all.min.js"></script>
-                    <script src="js/bootstrap.min.js"></script>
-                    <script src="js/bootstrap-select.min.js"></script>
-                    <script src="js/main.js"></script>
-                    <!-- main js -->
-
-
-                    <!-- sweet alert -->
-                    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-                    <!-- sweet alert -->
-
-                    <!-- show / hide  course price -->
-                    <script>
-
-                        function togglePrice() {
-                            var checkbox = document.getElementById('inlineCheckbox5');
-                            var hiddenRow = document.getElementById('coursePrice');
-
-                            if (checkbox.checked) {
-                                // Show the hidden row
-                                hiddenRow.classList.remove('course_price');
-                            } else {
-                                // Hide and remove the row
-                                hiddenRow.classList.add('course_price');
-                            }
-                        }
-                    </script>
-                    <!-- show / hide  course price -->
-
-
-</body>
-
+                if (checkbox.checked) {
+                  // Show the hidden row
+                  hiddenRow.classList.remove("course_price");
+                } else {
+                  // Hide and remove the row
+                  hiddenRow.classList.add("course_price");
+                }
+              }
+            </script>
+            <!-- show / hide  course price -->
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

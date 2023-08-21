@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>عرض وتعديل السؤال</title>
+    <title>اختر سؤال</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="main-scss/main.min.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="main-scss/main.scss">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css"> -->
 
@@ -340,127 +339,261 @@
                 <div class="container">
                     <div class="row">
                         <div class="main_topic">
-                            <h4> عرض وتعديل السؤال </h4>
+                            <h4> اختر سؤال او اكثر لاضافته من الاسالة التالية </h4>
+                            <a href="#" class="btn  first"> الاختيار عشوائي</a>
                         </div>
-                        <form class="form_topic">
-                            <div class="row">
-                                <!-- start input -->
-                                <div class="col-12">
-                                    <div class="input-group">
-                                        <label class="form-label"> نوع السؤال </label>
-                                        <select required class="selectpicker" data-placeholder=" اختياري "
-                                            data-selected-text-format="count > 1" data-icon="bi bi-trash"
-                                            data-live-search="true">
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <!-- finish input -->
+                    </div>
+                    <div class="table table-responsive ">
+                        <table class="table_expenses table_topic">
+                            <thead>
+                                <tr>
+                                 <td></td>
+                                    <td> نص السؤال </td>
+                                    <td> الصورة</td>
+                                    <td> الاجابة 1</td>
+                                    <td> الاجابة 2</td>
+                                    <td> الاجابة 3</td>
+                                    <td> الاجابة 4</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- outcome list -->
+                                <tr>
 
-
-                                <!-- start input -->
-
-                                <div class="col-12">
-                                    <div class="input-group">
-                                        <label class="form-label"> نص السؤال</label>
-                                        <textarea class="form-control" placeholder=" ادخل نص السؤال "></textarea>
-                                    </div>
-                                </div>
-                                <!-- finish input -->
-                                <div class="col-12">
-                                    <div class="input-group pt-4">
-                                        <label class="form-label"> رفع صورة معبرة</label>
-                                        <div class="file-upload-wrapper"
-                                            data-text="اسحب الصورة التى تريد اضافتها  او قم بفتحها من هنا">
-                                            <input required name="file-upload-field form-control" type="file"
-                                                class="file-upload-field" value="" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- start cheek box -->
-                                <div class="text">
-                                    <h3>الاجابات</h3>
-                                    <p>ادخل الاجابات وقم بتحديد الاجابة الصحيحة بينهم</p>
-                                </div>
-                                <div class="answer">
-                                    <div class="answer-1">
-                                        <input class="form-control" placeholder="ادخل الجابة الاولى">
-                                        <input class="form-control" placeholder="ادخل الجابة الثانية">
-                                        <input class="form-control" placeholder="ادخل الجابة الثالثة">
-                                        <input class="form-control" placeholder="ادخل الجابة الرابعة">
-                                    </div>
-                                    <div class="cheek">
-                                        <div class="cheek-1">
+                                    <td>
+                                        <div class="chek">
                                             <input type="checkbox">
                                         </div>
-                                        <div class="cheek-1">
+                                    </td>
+                                    <td> describes the structure and organization<br> of plant cells, tissues and organs
+                                        in relation to <br>their development and
+                                        function. </td>
+                                    <td> <img src="image/map.png" alt=""> </td>
+                                    <td><span class="text-success">
+                                            Plant Anatomy
+                                        </span></td>
+                                    <td>Pharmacognosy </td>
+                                    <td>Medical Ethnobotany </td>
+                                    <td>Phytochemistery</td>
+
+
+                                </tr>
+                                <!-- outcome list -->
+
+                                <!-- outcome list -->
+                                <tr>
+
+                                    <td>
+                                        <div class="chek">
                                             <input type="checkbox">
                                         </div>
-                                        <div class="cheek-1">
+                                    </td>
+                                    <td> describes the structure and organization<br> of plant cells, tissues and organs
+                                        in relation to <br>their development and
+                                        function. </td>
+                                    <td> <img src="image/map.png" alt=""> </td>
+                                    <td><span class="text-success">
+                                            Plant Anatomy
+                                        </span></td>
+                                    <td>Pharmacognosy </td>
+                                    <td>Medical Ethnobotany </td>
+                                    <td>Phytochemistery </td>
+
+
+                                </tr>
+                                <!-- outcome list -->
+
+                                <!-- outcome list -->
+                                <tr>
+
+                                    <td>
+                                        <div class="chek">
                                             <input type="checkbox">
                                         </div>
-                                        <div class="cheek-1">
+                                    </td>
+                                    <td> describes the structure and organization<br> of plant cells, tissues and organs
+                                        in relation to <br>their development and
+                                        function. </td>
+                                    <td> <img src="image/map.png" alt=""> </td>
+                                    <td><span class="text-success">
+                                            Plant Anatomy
+                                        </span></td>
+                                    <td>Pharmacognosy </td>
+                                    <td>Medical Ethnobotany </td>
+                                    <td>Phytochemistery </td>
+
+
+                                </tr>
+                                <!-- outcome list -->
+
+                                <!-- outcome list -->
+                                <tr>
+
+                                    <td>
+                                        <div class="chek">
                                             <input type="checkbox">
                                         </div>
+                                    </td>
+                                    <td> describes the structure and organization<br> of plant cells, tissues and organs
+                                        in relation to <br>their development and
+                                        function. </td>
+                                    <td> <img src="image/map.png" alt=""> </td>
+                                    <td><span class="text-success">
+                                            Plant Anatomy
+                                        </span></td>
+                                    <td>Pharmacognosy </td>
+                                    <td>Medical Ethnobotany </td>
+                                    <td>Phytochemistery </td>
+
+
+                                </tr>
+                                <!-- outcome list -->
+
+                                <!-- outcome list -->
+                                <tr>
+
+                                    <td>
+                                        <div class="chek">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td> describes the structure and organization<br> of plant cells, tissues and organs
+                                        in relation to <br>their development and
+                                        function. </td>
+                                    <td> <img src="image/map.png" alt=""> </td>
+                                    <td><span class="text-success">
+                                            Plant Anatomy
+                                        </span></td>
+                                    <td>Pharmacognosy </td>
+                                    <td>Medical Ethnobotany </td>
+                                    <td>Phytochemistery </td>
+
+
+                                </tr>
+                                <!-- outcome list -->
+
+                                <!-- outcome list -->
+                                <tr>
+
+                                    <td>
+                                        <div class="chek">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td> describes the structure and organization<br> of plant cells, tissues and organs
+                                        in relation to <br>their development and
+                                        function. </td>
+                                    <td> <img src="image/map.png" alt=""> </td>
+                                    <td><span class="text-success">
+                                            Plant Anatomy
+                                        </span></td>
+                                    <td>Pharmacognosy </td>
+                                    <td>Medical Ethnobotany </td>
+                                    <td>Phytochemistery </td>
+
+
+                                </tr>
+                                <!-- outcome list -->
+
+                                <!-- outcome list -->
+                                <tr>
+
+                                    <td>
+                                        <div class="chek">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td> describes the structure and organization<br> of plant cells, tissues and organs
+                                        in relation to <br>their development and
+                                        function. </td>
+                                    <td> <img src="image/map.png" alt=""> </td>
+                                    <td><span class="text-success">
+                                            Plant Anatomy
+                                        </span></td>
+                                    <td>Pharmacognosy </td>
+                                    <td>Medical Ethnobotany </td>
+                                    <td>Phytochemistery </td>
+
+
+                                </tr>
+                                <!-- outcome list -->
+
+                                <!-- outcome list -->
+                                <tr>
+
+                                    <td>
+                                        <div class="chek">
+                                            <input type="checkbox">
+                                        </div>
+                                    </td>
+                                    <td> describes the structure and organization<br> of plant cells, tissues and organs
+                                        in relation to <br>their development and
+                                        function. </td>
+                                    <td> <img src="image/map.png" alt=""> </td>
+                                    <td><span class="text-success">
+                                            Plant Anatomy
+                                        </span></td>
+                                    <td>Pharmacognosy </td>
+                                    <td>Medical Ethnobotany </td>
+                                    <td>Phytochemistery </td>
+                                </tr>
+                                <!-- outcome list -->
+                                <!-- Modal -->
+                                <div class="modal fade" id="detailsSubscribeModal" tabindex="-1"
+                                    aria-labelledby="detailsSubscribeModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="detailsSubscribeModalLabel">Modal
+                                                    title</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
                                     </div>
-
                                 </div>
-                                <!-- end cheek box -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="col-8 col-md-12 col-12" style="padding-top: 20px; color: #626E7D;">
 
-
-                                <div class="col-6">
-                                    <div class="input-group">
-                                        <label class="form-label"> الدرجات </label>
-                                        <input class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="input-group">
-                                        <label class="form-label"> ترتيب السؤال </label>
-                                        <select required class="selectpicker" data-placeholder="ادخل الترتيب "
-                                            data-selected-text-format="count > 1" data-icon="bi bi-trash"
-                                            data-live-search="true">
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-
-
-
-
-
-
-                                <!-- start input -->
-
-                                <!-- finish input -->
-
-                                <div class="col-12">
-                                    <a href="#" class="btn  first"> حفظ التغييرات</a>
-                                </div>
-                            </div>
-                        </form>
-
-
-
+                            <p>عرض 1 - 30 من اجمالى 59</p>
+                        </div>
+                        <div class="col-4 col-md-12 col-12">
+                            <nav class="pagination_section">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">التالي </a></li>
+                                </ul>
+                            </nav>
+                        </div>
 
                     </div>
 
-
                 </div>
             </div>
-            <!---------------------- finish  content -------------------------------------------->
+
         </section>
-        <!---------------------- finish main content -------------------------------------------->
     </main>
-    <!---------------------- finish footer -------------------------------------------->
 
 
-    <!-- main js -->
+
+
+
+
+
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/all.min.js"></script>
@@ -473,33 +606,35 @@
     <!-- sweet alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- sweet alert -->
-    <!-- show / hide  course -->
+    <!-- show / hide edit menu in card -->
     <script>
-
-        function togglePrice() {
-            var checkbox5 = document.getElementById('radio5');
-            var checkbox4 = document.getElementById('radio4');
-            var hiddenRow = document.getElementById('coursePrice');
-
-            if (checkbox5.checked) {
-                // Show the hidden row
-                hiddenRow.classList.remove('course_price');
-
-            } else if (checkbox4.checked) {
-                // Hide and remove the row
-                hiddenRow.classList.add('course_price');
-            }
+        function toggleMenu(menuId) {
+            var menu = document.getElementById(menuId);
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
         }
-    </script>
-    <!-- show / hide  course -->
-    <!-- upload file -->
-    <script>
-        $("form").on("change", ".file-upload-field", function () {
-            $(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, ''));
+
+        document.addEventListener('click', function (event) {
+            var menu = document.getElementById('drop-menu-info');
+            var target = event.target;
+
+            if (!target.matches('.bi-three-dots-vertical')) {
+                menu.style.display = 'none';
+            }
         });
     </script>
-    <!-- upload file -->
+    <!-- show / hide edit menu in card -->
 
+    <script>
+        $(document).ready(function () {
+            // Handle click event for the radio button
+            $('.radio-button').on('click', function () {
+                // Remove "active" class from all radio buttons
+                $('.radio-button').removeClass('active');
+                // Add "active" class to the clicked radio button
+                $(this).addClass('active');
+            });
+        });
+    </script>
 </body>
 
 </html>

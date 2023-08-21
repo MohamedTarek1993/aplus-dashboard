@@ -20,7 +20,7 @@
     border-radius: 8px !important;
 }
  .content_page form .save {
-        width: 25%;
+        width: 22%;
         margin: 2rem 0;
         border-radius: 10px;
         font-family: 'regular';
@@ -36,7 +36,8 @@
     background-color: rgba(0,0,0,0);
     border: unset;
     font-size: .8rem;
-    padding: 0.75rem;
+     padding: 0.85rem; 
+   
 }
 
 .content_page form h6 {
@@ -65,13 +66,17 @@ form .file-upload-wrapper {
     left: 50%;
     padding: 1rem 0;
 }
-
 @media (max-width: 600px) {
+    form .file-upload-wrapper {
+        padding: 70px;
+    }
+}
+ @media (max-width: 600px) {
     .content_page .input-group .img-seting {
         left: 35%;
-        padding: 3rem 0;
+        padding: 2.5rem 0;
     }
-} 
+}  
 
 .content_page form .account .form-group .icon-account{
     position: absolute;
@@ -163,15 +168,20 @@ img.table-img {
     margin-bottom: 1.5rem;
 }
 
+.content_page form .form-group .control-search{
+    padding-inline-start: 30px;
+}
+
 .content_page form .form-group input {
     padding-inline-start: 40px;
     margin: 0;
+    padding: 11px 10px;
     /* margin: 1rem 0 1.5rem; */
     font-family: 'light';
 }
 .content_page form table thead td {
     background-color: #EDF5F9;
-    height: 60px;
+    padding: 2rem;
 }
 
 .content_page form table td {
@@ -181,7 +191,38 @@ img.table-img {
     height: 55px;
 }
 
+.content_page form .form-group::placeholder{
+    padding-inline-start: 40px;
+}
+.content_page form .pagination{
+    display: flex;
+    justify-content: end;
+    margin: 0 -20px;
+}
 
+@media (max-width: 600px) {
+    .content_page form .foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content_page form .foot p{
+        padding: 20px 0; 
+        text-align: center;
+    }
+    .content_page form .pagination{
+        justify-content: center;
+    }
+}
+@media (max-width: 600px) {
+    .content_page form .add-slider{
+        flex-direction: column; 
+    }
+    .content_page form .add-slider .btn {
+    flex-direction: row;
+    margin-bottom: 1rem;
+    }
+}
 
 
 

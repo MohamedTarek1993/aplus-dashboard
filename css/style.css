@@ -18,22 +18,22 @@
 margin-top: 7px;
 }
 .answer .cheek{
-    margin-top: 21px;
-        margin-right: 15px;
+    margin-top: 11px;
+    margin-right: 15px
 }
 .answer .cheek-1{
-    margin-top: 19px;
+    margin-top: 28px;
 }
 .answer .galary{
-margin-top: 20px;
-    margin-right: 13px
+    margin-top: 10px;
+    margin-right: 13px;
 }
 .answer .form-group{
-    margin-top: 17px;
+    margin-top: 26px;
 }
-.input-group{
+/* .input-group{
     padding-top: 30px;
-}
+} */
 /* end answer */
 /* start table */
 
@@ -56,10 +56,7 @@ tr{
     background-color: white;
 }
 /* end text */
-.table_expenses tbody tr .button{
-/* margin-top: 67px; */
-    width: 70px;
-}
+
 .tabl .cheek{
     margin-left: 10px;
 }
@@ -225,11 +222,7 @@ button.swal2-cancel.swal2-styled {
     font-size: 0.8rem !important;
     color: #5E6E77 !important;
 }
-.icon_search-pop{
-    position: absolute;
-    top: 39px;
 
-}
 a.btn.nas{
     border:1px solid #E31E25;
    
@@ -273,12 +266,14 @@ a.btn.nas:hover{
     padding: 1.5rem 0;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .time .time-exam {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+   
 }
 .time .time-exam h5{
     font-size: 1rem;
@@ -342,11 +337,7 @@ a.btn.nas:hover{
 .time a{
     text-decoration: underline;
 }
-/* i.bi.bi-search.nas{
-    position: absolute;
-    right: 1rem;
-    top: 0.6rem;
-} */
+
 .table .qu-ex h3{
     padding: 1.3rem 0;
     font-family: bold;
@@ -436,12 +427,8 @@ button.btn.first.nas-2:hover {
         border-radius: 2rem;
     }
     
-    /* search icon */
-    /* i.bi.bi-search.nas-1{
-        position: absolute;
-        right: -7px;
-    } */
-     /* search icon */
+    
+     
      .button .eye{
         font-size: 18px;
     padding-left: 15px;
@@ -586,9 +573,7 @@ button.btn.first.nas-2:hover {
        background-color:#06456B ;
         color: white;
      }
-     /* i.bi.bi-search.nas-centers {
-        position: absolute;
-     } */
+    
      .text-card-team h6 {
         font-size: 0.8rem;
         font-family: 'regular';
@@ -631,52 +616,8 @@ button.btn.first.nas-2:hover {
        border-radius: 1rem;
      }
      /* end details centers */
-     /* start lesons */
-     i.bi.bi-search {
-        position: absolute;
-        bottom: 0.6rem;
-        right: 0.2rem;
-     }
-     /* end lesons */
-     /* tables */
-     p.table-text{
-        width: 56%;
-        TEXT-ALIGN: START;
-        MARGIN: 0 AUTO;
-     }
-     p.tabl-text-1 {
-        margin: auto 0;
-    width: 267%;
-    
-     }
-     p.table-text-2 {
-        margin: auto 39px;
-   
-    width: 45%;
-}
-p.table-text-3 {
-    width: 227%;
-}
-p.table-doors {
-    width: 66%;
-    margin: auto;
-    text-align: start;
-}
-p.table-doors-1 {
-    margin: auto 53px;
-    width: 66%;
-}
-p.table-doors-2 {
-    width: 113%;
-}
-p.table-doors-3 {
-    width: 100%;
-    margin-left: 12rem;
-}
-p.table-doors-4 {
-    margin-left: 3rem;
-}
- /* tables */
+     
+     
  /* teacher */
  .head-teacher {
     display: flex;
@@ -726,4 +667,293 @@ p.table-doors-4 {
     font-size: 0.7rem;
     border-radius: 50px;
  }
- 
+ /* tabs */
+ .head-name {
+    padding: 1.5rem 0;
+    font-family: 'regular';
+    
+ }
+ td {
+    font-family: 'regular';
+    
+ }
+ p.active-tab {
+    background-color: #00800029;
+    color: green;
+    padding: 0.4rem;
+    border-radius: 50px;
+}
+button.btn.dropdown-toggle.bs-placeholder.btn-light {
+    padding: 0.4rem;
+}
+.bootstrap-select .dropdown-menu li a {
+    font-size: 0.6rem;
+
+}
+.head-activities {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button.btn.btn-warning.log-in {
+    color: white;
+    font-family: 'regular';
+    transition: 0.7s;
+}
+button.btn.btn-warning.log-in:hover {
+background-color: white;
+color: #E6AB2F;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-color: transparent;
+    border-bottom: 2px solid #E6AB2F;
+    font-family: 'regular';
+}
+.nav-link {
+    color: black;
+}
+.nav-link:hover {
+    color: #E6AB2F;
+    border: 0px solid white;
+   
+}
+.nav-link:hover .active {
+    font-family: bold;
+}
+
+
+
+
+
+/* search */
+span.icon_search.unversty {
+    top: 0.8rem !important;
+}
+span.icon_search.teacher.ditals {
+    top: -0.3rem;
+}
+span.icon_search.teacherditals-1 {
+    top: 0.7rem !important;
+}
+.table_expenses tbody tr .button {
+    text-align: center;
+}
+i.bi.bi-search.teachers {
+    position: absolute;
+    top: -2.5rem;
+}
+i.bi.bi-search.subject {
+    position: absolute;
+    top: -2.5rem;
+}
+i.bi.bi-search.student-join {
+    position: absolute;
+    top: -2.5rem;
+}
+i.bi.bi-search.Secondaryquestionbank {
+    position: absolute;
+    top: -2.5rem;
+}
+i.bi.bi-search.que-lesons {
+    position: absolute;
+    top: -2.5rem;
+}
+i.bi.bi-search.pise {
+    position: absolute;
+    top: -2.5rem;
+}
+
+i.bi.bi-search.Notesdetails {
+    position: absolute;
+    top: -2.5rem;
+
+}
+i.bi.bi-search.lessons {
+    position: absolute;
+    top: -2.5rem;
+}
+i.bi.bi-search.exam{
+    position: absolute;
+    top: -2.5rem;
+
+}
+i.bi.bi-search.educationalstages {
+    position: absolute;
+    top: -2.5rem;
+}
+i.bi.bi-search.doors {
+    position: absolute;
+    top: -2.5rem;
+
+}
+i.bi.bi-search.colleges{
+    position: absolute;
+    top: -2.5rem;
+}
+i.bi.bi-search.centers{
+    position: absolute;
+    top: -2.5rem;
+}
+i.bi.bi-search.bank-que{
+    position: absolute;
+    top: -2.5rem;
+}
+
+
+
+/* responsive  */
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .main_topic h4 {
+        font-size: 0.8rem;
+    }
+    a.btn.first {
+        font-size: 0.5rem !important;
+        width: 36% !important;
+        padding: 0.5rem !important;
+    }
+    .table-responsive thead tr th {
+        font-size: 0.7rem;
+        min-width: 100px;
+    }
+   
+    .table_topic tbody tr td {
+        font-size: 0.6rem;
+        min-width: 100px;
+    }
+    a.page-link {
+        font-size: 0.7rem !important;
+
+    }
+    .table-doors-2 {
+        margin: 0;
+
+    }
+    .active-now {
+        margin-right: -62px;
+    font-size: 0.6rem;
+    text-align: center;
+    }
+    .ditals-teacher h4 {
+        font-size: 0.8rem;
+    }
+    .ditals-teacher p {
+        font-size: 0.6rem;
+    }
+    button.btn.btn-add {
+        font-size: 0.6rem;
+    }
+    button.btn.btn-bolk {
+        font-size: 0.6rem;
+    }
+    button.btn.btn-edit {
+        font-size: 0.6rem;
+    }
+    .under-line h6 {
+        font-size: 0.5rem;
+        padding: 2px;
+    }
+    .name-teacher img {
+        width: 80%;
+    }
+    .head-name h4 {
+        font-size: 1rem;
+    }
+    .head-activities h4 {
+        font-size: 1rem;
+
+    }
+    button.btn.btn-warning.log-in {
+        font-size: 0.6rem;
+    }
+    span.nas {
+        font-size: 0.4rem;
+    }
+    button.btn.first {
+        font-size: 0.5rem !important;
+        width: 36% !important;
+        padding: 0.5rem !important;
+    }
+    .main_topic h4 {
+        font-size: 0.8rem !important;
+    }
+    h1#detailsSubscribeModalLabel {
+        font-size: 0.7rem !important;
+    }
+    .text-pro h4 {
+        font-size: 0.7rem !important;
+    }
+    .text-pro p {
+        font-size: 0.5rem !important;
+    }
+    button.btn.datels {
+        font-size: 0.5rem !important;
+        margin: 0.5rem;;
+    }
+    button.btn.blok {
+        font-size: 0.5rem !important;
+        margin: 0.5rem;;
+    }
+    .parnt img {
+        margin-left: 14px;
+    }
+   
+    .kind h4 {
+        font-size: 0.4rem !important;
+    }
+    td img {
+        width: 95px!important;
+    }
+    .final-exam h4 {
+        font-size: 0.8rem;
+
+    }
+    .final-exam p {
+        font-size: 0.6rem;
+
+    }
+    .head-exsam .push-exsam > p {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    a.btn.nas {
+        font-size: 0.6rem;
+    }
+    .time .time-exam p {
+        font-size: 0.6rem;
+
+    }
+    .time .time-exam h5 {
+        font-size: 0.7rem;
+
+    }
+    .time-exam img {
+        width:8%;
+
+    }
+    .time .total-exam p {
+        font-size: 0.6rem;
+
+    }
+    .time .student-exam p {
+        font-size: 0.7rem;
+
+    }
+    .time .dgree-exam p {
+        font-size: 0.7rem;
+
+    }
+    img.name-teacher {
+        width: 25%!important;
+    }
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media  (max-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media  (max-width: 1500px) {}
+   
