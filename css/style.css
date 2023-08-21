@@ -799,6 +799,108 @@ i.bi.bi-search.bank-que{
     position: absolute;
     top: -2.5rem;
 }
+i.bi.bi-search.detialsexam {
+    position: absolute;
+    top: -2rem;
+    RIGHT: 0.2rem;
+}
+/* exam-details */
+.main-deatils{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+}
+.examination h4 {
+    font-size: 1.2rem;
+    font-family: bold;
+}
+.examination p {
+    color: #5e6e777d;
+    font-family: 'regular'; 
+}
+.details {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 15px;
+}
+
+.details .date {
+    padding-top: 1.3rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+   
+}
+.details .date img {
+    padding-left: 0.5rem;
+    width:16%;
+}
+
+.details .date p {
+    font-size:  0.7rem;
+    font-family: 'regular';
+    color: #5e6e777d;
+    
+}
+.details .date h6 {
+    padding-top: 5px;
+    font-size: 0.8rem;;
+    font-family: 'bold';
+}
+.card-star {
+    background-color: #E6AB2F;
+    text-align: center;
+    border-radius: 23px;
+    padding: 0.5rem 4rem;
+}
+
+.card-star img {
+    padding: 1rem;
+    width: 80px;
+}
+.card-star h6 {
+    font-family: 'regular';
+}
+.card-star h4 {
+    font-family: bold;
+}
+.mid-cards {
+    background-color: #F7F7F7;
+    width: fit-content;
+    padding:1.5rem 3rem;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    /* flex-wrap: wrap; */
+    border-radius: 15px;
+}
+.cards-total {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.total-cards h6 {
+    font-family: 'regular';
+}
+.total-cards h4 {
+    font-family: 'bold';
+    font-size: 1.4rem;
+}
+.Questions-answers {
+    padding-top: 2.5rem;
+}
+.card-Questions {
+    padding-top: 1.5rem;
+    display: flex;
+    gap: 34px;
+}
+
+   
+
 
 
 
@@ -946,6 +1048,9 @@ i.bi.bi-search.bank-que{
     }
     img.name-teacher {
         width: 25%!important;
+    }
+    .examination h4 {
+
     }
 
 }
