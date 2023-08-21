@@ -1,5 +1,5 @@
 
- .content_page form h4 {
+.content_page form h4 {
     font-family: 'bold';
     margin: 1.5rem 0 2rem;
 }
@@ -181,14 +181,15 @@ img.table-img {
 }
 .content_page form table thead td {
     background-color: #EDF5F9;
-    padding: 2rem;
+    padding: 2rem 2rem;
 }
 
 .content_page form table td {
     text-align: center;
     padding-inline-start: 20px;
     font-family: 'regular';
-    height: 55px;
+    /* height: 55px; */
+    padding: 1.5rem 0;
 }
 
 .content_page form .form-group::placeholder{
