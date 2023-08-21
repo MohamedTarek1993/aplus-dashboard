@@ -266,12 +266,14 @@ a.btn.nas:hover{
     padding: 1.5rem 0;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .time .time-exam {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+   
 }
 .time .time-exam h5{
     font-size: 1rem;
@@ -749,7 +751,54 @@ i.bi.bi-search.student-join {
     position: absolute;
     top: -2.5rem;
 }
+i.bi.bi-search.Secondaryquestionbank {
+    position: absolute;
+    top: -2.5rem;
+}
+i.bi.bi-search.que-lesons {
+    position: absolute;
+    top: -2.5rem;
+}
+i.bi.bi-search.pise {
+    position: absolute;
+    top: -2.5rem;
+}
 
+i.bi.bi-search.Notesdetails {
+    position: absolute;
+    top: -2.5rem;
+
+}
+i.bi.bi-search.lessons {
+    position: absolute;
+    top: -2.5rem;
+}
+i.bi.bi-search.exam{
+    position: absolute;
+    top: -2.5rem;
+
+}
+i.bi.bi-search.educationalstages {
+    position: absolute;
+    top: -2.5rem;
+}
+i.bi.bi-search.doors {
+    position: absolute;
+    top: -2.5rem;
+
+}
+i.bi.bi-search.colleges{
+    position: absolute;
+    top: -2.5rem;
+}
+i.bi.bi-search.centers{
+    position: absolute;
+    top: -2.5rem;
+}
+i.bi.bi-search.bank-que{
+    position: absolute;
+    top: -2.5rem;
+}
 
 
 
@@ -827,7 +876,7 @@ i.bi.bi-search.student-join {
         padding: 0.5rem !important;
     }
     .main_topic h4 {
-        font-size: 0.6rem;
+        font-size: 0.8rem !important;
     }
     h1#detailsSubscribeModalLabel {
         font-size: 0.7rem !important;
@@ -852,6 +901,51 @@ i.bi.bi-search.student-join {
    
     .kind h4 {
         font-size: 0.4rem !important;
+    }
+    td img {
+        width: 95px!important;
+    }
+    .final-exam h4 {
+        font-size: 0.8rem;
+
+    }
+    .final-exam p {
+        font-size: 0.6rem;
+
+    }
+    .head-exsam .push-exsam > p {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    a.btn.nas {
+        font-size: 0.6rem;
+    }
+    .time .time-exam p {
+        font-size: 0.6rem;
+
+    }
+    .time .time-exam h5 {
+        font-size: 0.7rem;
+
+    }
+    .time-exam img {
+        width:8%;
+
+    }
+    .time .total-exam p {
+        font-size: 0.6rem;
+
+    }
+    .time .student-exam p {
+        font-size: 0.7rem;
+
+    }
+    .time .dgree-exam p {
+        font-size: 0.7rem;
+
+    }
+    img.name-teacher {
+        width: 25%!important;
     }
 
 }

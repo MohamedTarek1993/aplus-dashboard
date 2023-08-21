@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>السناتر</title>
+    <title>تفاصيل الكورس/المذكرات</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="main-scss/main.min.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css"> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
@@ -356,35 +357,36 @@
           <div class="container">
             <div class="row">
               <div class="main_topic">
-                <h4>السناتر</h4>
-                <a class="btn first" href="add-new-exam.html">
-                  <i class="bi bi-plus"></i> اضافة سنتر جديد
+                <h4>تفاصيل الكورس /المذكرات</h4>
+                <a class="btn first" href="add-course.html">
+                  <i class="bi bi-plus"></i> اضافة مذكرة جديدة
                 </a>
               </div>
             </div>
             <!-- search and filter section -->
             <div class="row">
-              <div class="col-lg-9 col-md-4 col-12">
+              <div class="col-lg-9 col-md-7 col-12">
                 <div class="search_topic">
                   <form>
                     <div class="input-group">
                       <input
                         class="form-control"
                         type="text"
-                        placeholder="  ابحث باسم السنتر ,  المدرس , المادة ...... .........."
+                        placeholder="ابحث باسم الطالب, رقم الهاتف.........."
                       />
                       <span class="icon_search"
-                        ><i class="bi bi-search centers"></i
+                        ><i class="bi bi-search Notesdetails"></i
                       ></span>
                     </div>
                   </form>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 col-12">
+              <div class="col-lg-3 col-md-5 col-12">
                 <form
                   class="form_topic"
                   style="padding-inline-end: 0; margin-top: 0"
                 >
+                  <!-- input group -->
                   <div class="input-group">
                     <select
                       required
@@ -393,7 +395,7 @@
                       data-selected-text-format="count > 1"
                       data-icon="bi bi-trash"
                       data-live-search="true"
-                      data-placeholder="    المدينة : كل المدن   "
+                      data-placeholder=" كل الابواب  "
                     >
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -401,57 +403,60 @@
                     </select>
                   </div>
                 </form>
+                <!-- input group -->
               </div>
             </div>
             <!-- start table -->
             <div class="table table-responsive">
-              <table class=" table_expenses table_topic">
+              <table class="table_expenses table_topic">
                 <thead>
                   <tr>
                     <td>الكود</td>
-                    <td>اسم السنتر</td>
-                    <td>رقم الهاتف</td>
-                    <td>الايميل</td>
-                    <td>المدينة</td>
-                    <td>المدرسين</td>
-                    <td>عدد الطلاب</td>
-                    <td>التحكم</td>
+                    <td>اسم المذكرة</td>
+                    <td>الباب الدراسي</td>
+                    <td>الوصف</td>
+                    <td>الحالة السعرية</td>
+                    <td></td>
                   </tr>
                 </thead>
                 <tbody>
                   <!-- outcome list -->
                   <tr>
                     <td>2154202 #</td>
+                    <td>مذكرةمراجعة 1</td>
+                    <td>Endocrine -مراجعة سريعة</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث
+                      يتم شرح الجزء الاول والاكبر من
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
+                    <td>مجاني</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle-1"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              تفاصيل المذكره</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              onclick="blockAlert()"
+                            >
+                              حذف المذكره
+                            </a>
+                          </li>
+                        </ul>
                       </div>
-                    </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
-                      ></a>
-
-                      <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
-                      </button>
                     </td>
                   </tr>
                   <!-- outcome list -->
@@ -459,36 +464,40 @@
                   <!-- outcome list -->
                   <tr>
                     <td>2154202 #</td>
+                    <td>مذكرةمراجعة 1</td>
+                    <td>Endocrine -مراجعة سريعة</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث
+                      يتم شرح الجزء الاول والاكبر من
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
+                    <td>مجاني</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle-1"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              تفاصيل المذكره</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              onclick="blockAlert()"
+                            >
+                              حذف المذكره
+                            </a>
+                          </li>
+                        </ul>
                       </div>
-                    </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
-                      ></a>
-
-                      <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
-                      </button>
                     </td>
                   </tr>
                   <!-- outcome list -->
@@ -496,36 +505,40 @@
                   <!-- outcome list -->
                   <tr>
                     <td>2154202 #</td>
+                    <td>مذكرةمراجعة 1</td>
+                    <td>Endocrine -مراجعة سريعة</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث
+                      يتم شرح الجزء الاول والاكبر من
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
+                    <td>مجاني</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle-1"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              تفاصيل المذكره</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              onclick="blockAlert()"
+                            >
+                              حذف المذكره
+                            </a>
+                          </li>
+                        </ul>
                       </div>
-                    </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
-                      ></a>
-
-                      <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
-                      </button>
                     </td>
                   </tr>
                   <!-- outcome list -->
@@ -533,36 +546,40 @@
                   <!-- outcome list -->
                   <tr>
                     <td>2154202 #</td>
+                    <td>مذكرةمراجعة 1</td>
+                    <td>Endocrine -مراجعة سريعة</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث
+                      يتم شرح الجزء الاول والاكبر من
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
+                    <td>مجاني</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle-1"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              تفاصيل المذكره</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              onclick="blockAlert()"
+                            >
+                              حذف المذكره
+                            </a>
+                          </li>
+                        </ul>
                       </div>
-                    </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
-                      ></a>
-
-                      <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
-                      </button>
                     </td>
                   </tr>
                   <!-- outcome list -->
@@ -570,36 +587,40 @@
                   <!-- outcome list -->
                   <tr>
                     <td>2154202 #</td>
+                    <td>مذكرةمراجعة 1</td>
+                    <td>Endocrine -مراجعة سريعة</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث
+                      يتم شرح الجزء الاول والاكبر من
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
+                    <td>مجاني</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle-1"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              تفاصيل المذكره</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              onclick="blockAlert()"
+                            >
+                              حذف المذكره
+                            </a>
+                          </li>
+                        </ul>
                       </div>
-                    </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
-                      ></a>
-
-                      <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
-                      </button>
                     </td>
                   </tr>
                   <!-- outcome list -->
@@ -607,36 +628,40 @@
                   <!-- outcome list -->
                   <tr>
                     <td>2154202 #</td>
+                    <td>مذكرةمراجعة 1</td>
+                    <td>Endocrine -مراجعة سريعة</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث
+                      يتم شرح الجزء الاول والاكبر من
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
+                    <td>مجاني</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle-1"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              تفاصيل المذكره</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              onclick="blockAlert()"
+                            >
+                              حذف المذكره
+                            </a>
+                          </li>
+                        </ul>
                       </div>
-                    </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
-                      ></a>
-
-                      <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
-                      </button>
                     </td>
                   </tr>
                   <!-- outcome list -->
@@ -644,36 +669,40 @@
                   <!-- outcome list -->
                   <tr>
                     <td>2154202 #</td>
+                    <td>مذكرةمراجعة 1</td>
+                    <td>Endocrine -مراجعة سريعة</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث
+                      يتم شرح الجزء الاول والاكبر من
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
+                    <td>مجاني</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle-1"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              تفاصيل المذكره</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              onclick="blockAlert()"
+                            >
+                              حذف المذكره
+                            </a>
+                          </li>
+                        </ul>
                       </div>
-                    </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
-                      ></a>
-
-                      <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
-                      </button>
                     </td>
                   </tr>
                   <!-- outcome list -->
@@ -681,36 +710,40 @@
                   <!-- outcome list -->
                   <tr>
                     <td>2154202 #</td>
+                    <td>مذكرةمراجعة 1</td>
+                    <td>Endocrine -مراجعة سريعة</td>
                     <td>
-                      <img
-                        class="name-teacher"
-                        src="image/nameteacher.png"
-                        alt=""
-                      />محمد ابراهيم
+                      فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث
+                      يتم شرح الجزء الاول والاكبر من
                     </td>
-                    <td>010245451421</td>
-                    <td>someone@gmail.com</td>
-                    <td>المنصورة</td>
+                    <td>مجاني</td>
                     <td>
-                      <div
-                        class="d-flex align-items-center justify-content-row"
-                      >
-                        <span class="name"> Dr. Ahmed Kamel </span>
-                        <span class="number"><a href="#">+4</a></span>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle-1"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              تفاصيل المذكره</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              onclick="blockAlert()"
+                            >
+                              حذف المذكره
+                            </a>
+                          </li>
+                        </ul>
                       </div>
-                    </td>
-                    <td>2000</td>
-                    <td class="button">
-                      <span class="eye">
-                        <a href="#"><i class="bi bi-eye nas"></i></a
-                      ></span>
-                      <a class="btn edit" href="edit-educational-lesson.html">
-                        <i class="bi bi-pencil nas"></i
-                      ></a>
-
-                      <button onclick="deleteion()" class="btn delete" href="#">
-                        <i class="bi bi-trash3 nas"></i>
-                      </button>
                     </td>
                   </tr>
                   <!-- outcome list -->
@@ -738,7 +771,7 @@
                             aria-label="Close"
                           ></button>
                         </div>
-                        <div class="modal-body"></div>
+                        <div class="modal-body">...</div>
                         <div class="modal-footer">
                           <button
                             type="button"
@@ -757,27 +790,35 @@
                 </tbody>
               </table>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-8 col-md-12 col-12" style="padding-top: 20px; color: #626e7d">
-              <p>عرض 1 - 30 من اجمالى 59</p>
-            </div>
-            <div class="col-4 col-md-12 col-12">
-              <nav class="pagination_section">
-                <ul class="pagination justify-content-center">
-                  <li class="page-item">
-                    <a class="page-link" href="#">السابق</a>
-                  </li>
-                  <li class="page-item active">
-                    <a class="page-link" href="#">1</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">التالي </a>
-                  </li>
-                </ul>
-              </nav>
+
+            <div class="row">
+              <div
+                class="col-8 col-md-12 col-12"
+                style="padding-top: 20px; color: #626e7d"
+              >
+                <p>عرض 1 - 30 من اجمالى 59</p>
+              </div>
+              <div class="col-4 col-md-12 col-12">
+                <nav class="pagination_section">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a class="page-link" href="#">السابق</a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">التالي </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </div>
         </div>
@@ -791,26 +832,24 @@
         Swal.fire({
           html:
             '<img src="image/block.png" alt="add">' +
-            '<h5 class="swal2-title"> هل أنت متأكد من حظر  الامتحان ؟</h5>' +
-            '<p class="swal2-html-container"> فى حالة الضغط على تأكيد الحظر سيتم حظر الامتحان من المنصة نهائيا وحذ جميع الأسألة التى يحتويها الامتحان </p>',
+            '<h5 class="swal2-title">   هل أنت متأكد من حذف  المذكره ؟</h5>' +
+            '<p class="swal2-html-container"> </p>',
 
           showCancelButton: true,
-
-          confirmButtonText: "تأكيد الحظر",
+          focusConfirm: false,
+          confirmButtonText: "تأكيد الحذف",
           confirmButtonAriaLabel: "Thumbs up, great!",
           cancelButtonText: "الغاء",
           cancelButtonAriaLabel: "Thumbs down",
         });
       }
     </script>
-    <!-- sweet alert -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
       integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- sweet alert -->
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/all.min.js"></script>
