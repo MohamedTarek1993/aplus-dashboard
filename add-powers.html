@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> الكورسات</title>
+    <title> اضافة صلاحية جديدة</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="main-scss/main.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css"> -->
 
     <!-- responsive -->
@@ -276,138 +277,26 @@
                 <div class="container">
                     <form>
                         <div class="row">
-                            <div class="col-lg-12">
-                                <div class="add-slider">
-                                    <h4>الاسلايدر</h4>
-                                    <a href="add-slider.html"> <button type="button"
-                                            class="btn btn-warning  add-slider"> <span
-                                                style=" font-size: 25px;">+</span> اضافه سلايدر جديده </button> </a>
+                            <h4> اضافة صلاحية جديدة</h4>
+                            <div class="col-lg-8 col-md-10 col-12">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput"> اسم الصلاحية</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput"
+                                        placeholder="ادخل الاسم">
                                 </div>
-
-                            </div>
-
-                            <div class="form-group ">
-                                <input type="text" style="padding-inline-start: 30px;" class="form-control" id="formGroupExampleInput"
-                                    placeholder="ابحث هنا...">
-                                <div class="search">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                <div class="form-group ">
+                                    <label for="inputtext"> اختر الصلاحيات </label>
+                                    <select id="inputState" class="form-control select2 selectpicker">
+                                        <option selected> اختر الصلاحية</option>
+                                        <option> ,,,</option>
+                                        <option>...</option>
+                                        <option>...</option>
+                                    </select>
                                 </div>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table_expenses bor table_topic">
-                                    <thead>
-                                        <tr>
-                                            <td>العنوان</td>
-                                            <td>الوصف</td>
-                                            <td>النوع</td>
-                                            <td>الرابط</td>
-                                            <td>المرحله</td>
-                                            <td> </td>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <!-- outcome list -->
-                                        <tr>
-                                            <td>اشترك الآن</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
-                                            </td>
-                                            <td>رئيسي</td>
-                                            <td><span class="" style="color: black;"> 1</span></td>
-
-                                            <td>الفرقة الاولى - تجارة - المنصورة</td>
-                                            <td>
-                                                <a href="add-slider.html">
-                                                    <i class="fa-solid fa-pen text-success">
-                                                    </i>
-                                                </a>
-                                                <button type="button" class="btn"><i style="color: red;"
-                                                        class="fa-solid fa-trash"></i> </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>اشترك الآن</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
-                                            </td>
-                                            <td>رئيسي</td>
-                                            <td><span class="" style="color: black;"> 1</span></td>
-                                            <td>الفرقة الاولى - تجارة - المنصورة</td>
-                                            <td>
-                                                <a href="add-slider.html" >
-                                                    <i class="fa-solid fa-pen text-success">
-                                                    </i>
-                                                </a>
-                                                <button type="button" class="btn"><i style="color: red;"
-                                                        class="fa-solid fa-trash"></i> </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>اشترك الآن</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
-                                            </td>
-                                            <td>رئيسي</td>
-                                            <td><span class="" style="color: black;"> 1</span></td>
-                                            <td>الفرقة الاولى - تجارة - المنصورة</td>
-                                            <td>
-                                                <a href="add-slider.html" >
-                                                    <i class="fa-solid fa-pen text-success">
-                                                    </i>
-                                                </a>
-                                                <button type="button" class="btn"><i style="color: red;"
-                                                        class="fa-solid fa-trash"></i> </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>اشترك الآن</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
-                                            </td>
-                                            <td>رئيسي</td>
-                                            <td><span class="" style="color: black;"> 1</span></td>
-                                            <td>الفرقة الاولى - تجارة - المنصورة</td>
-                                            <td>
-                                                <a href="add-slider.html" >
-                                                    <i class="fa-solid fa-pen text-success">
-                                                    </i>
-                                                </a>
-                                                <button type="button" class="btn"><i style="color: red;"
-                                                        class="fa-solid fa-trash"></i> </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>اشترك الآن</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
-                                            </td>
-                                            <td>رئيسي</td>
-                                            <td><span class="" style="color: black;"> 1</span></td>
-                                            <td>الفرقة الاولى - تجارة - المنصورة</td>
-                                            <td>
-                                                <a href="add-slider.html" >
-                                                    <i class="fa-solid fa-pen text-success">
-                                                    </i>
-                                                </a>
-                                                <button type="button" class="btn"><i style="color: red;"
-                                                        class="fa-solid fa-trash"></i> </button>
-                                            </td>
-                                        </tr>
-                                        <!-- outcome list -->
-                                    </tbody>
-                                </table>
-                            </div>
+                             
+                        <!-- finish input -->
+                        <div class="col-lg-12">
+                            <button type="button" class="btn save btn-warning">حفظ</button>
                         </div>
                     </form>
                 </div>
@@ -436,11 +325,11 @@
 
 
     <!-- upload file -->
-    <!-- <script>
-            $("form").on("change", ".file-upload-field", function () {
-                $(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, ''));
-            });
-        </script> -->
+    <script>
+        $("form").on("change", ".file-upload-field", function () {
+            $(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, ''));
+        });
+    </script>
     <!-- upload file -->
 </body>
 

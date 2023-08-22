@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> الكورسات</title>
+    <title> الطلاب</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -64,7 +64,12 @@
                         <span> الامتحانات</span>
                     </a>
                 </li>
-               
+                <li class="nav-item">
+                    <a href="groups.html" class="nav-link align-middle">
+                        <img src="image/groups-icon.png" alt="icon" />
+                        <span> الجروبات</span>
+                    </a>
+                </li>
 
 
                 <li class="nav-item">
@@ -74,9 +79,46 @@
                     </a>
                 </li>
 
-                
                 <li class="nav-item">
-                    <a href="subjects.html" class="nav-link align-middle">
+                    <a href="#submenulibrary" data-bs-toggle="collapse"
+                        class="nav-link accordion-button align-middle collapsed">
+                        <img src="image/exam-icon.png" alt="icon" />
+                        <span> بنك اسالة المرحلة الاساسية </span>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </a>
+                    <ul class="collapse flex-column" id="submenulibrary" data-bs-parent="#menu">
+                        <div class="close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <li>
+                            <a href="unites-main-bank.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> الوحدات </span></a>
+                        </li>
+                        <li>
+                            <a href="lessons-main-bank.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> الدروس </span></a>
+                        </li>
+                        <li>
+                            <a href="parts-main-bank.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> القطع </span></a>
+                        </li>
+                        <li>
+                            <a href="sec-bank-main-bank.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> بنك اسالة ثانوي </span></a>
+                        </li>
+                        <li>
+                            <a href="sec-exam-main-bank.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> امتحانات ثانوي </span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="celander.html" class="nav-link align-middle">
                         <img src="image/book-icon.png" alt="icon" />
                         <span> المواد الدراسية</span>
                     </a>
@@ -95,17 +137,17 @@
                         </div>
 
                         <li>
-                            <a href="code-book.html" class="nav-link">
+                            <a href="extract-code-books.html" class="nav-link">
                                 <i class="fa-solid fa-circle dot"></i>
                                 <span> استخراج اكواد للمذكرات</span></a>
                         </li>
                         <li>
-                            <a href="code-corse.html" class="nav-link">
+                            <a href="extract-code-courses.html" class="nav-link">
                                 <i class="fa-solid fa-circle dot"></i>
                                 <span> استخراج اكواد للكورسات</span></a>
                         </li>
                         <li>
-                            <a href="code-training.html" class="nav-link">
+                            <a href="extract-code-practice.html" class="nav-link">
                                 <i class="fa-solid fa-circle dot"></i>
                                 <span> استخراج اكواد للتدريبات</span></a>
 
@@ -115,7 +157,7 @@
                 </li>
                 <h5> مستخدمي النظام</h5>
                 <li class="nav-item">
-                    <a href="teacher.html" class="nav-link align-middle">
+                    <a href="teachers.html" class="nav-link align-middle">
                         <img src="image/teacher-icon.png" alt="icon" />
                         <span> المدرسين</span>
                     </a>
@@ -127,13 +169,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="lesons.html" class="nav-link align-middle">
+                    <a href="lesson-center.html" class="nav-link align-middle">
                         <img src="image/house-icon.png" alt="icon" />
                         <span> سناتر الدروس</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="Systemadministrators.html" class="nav-link align-middle">
+                    <a href="director.html" class="nav-link align-middle">
                         <img src="image/director-icon.png" alt="icon" />
                         <span> مديري النظام</span>
                     </a>
@@ -196,26 +238,26 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="seting-point.html" class="nav-link align-middle">
+                    <a href="point-settings.html" class="nav-link align-middle">
                         <img src="image/buy-crypto-icon.png" alt="icon" />
                         <span> اعدادات النقاط</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="slider-table.html" class="nav-link align-middle">
+                    <a href="slider.html" class="nav-link align-middle">
                         <img src="image/slider-icon.png" alt="icon" />
                         <span> الاسلايدر</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="seting-notifcation.html" class="nav-link align-middle">
+                    <a href="notfication-seting.html" class="nav-link align-middle">
                         <img src="image/notification-bing-icon.png" alt="icon" />
                         <span> اعدادات الاشعارات</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="setting.html" class="nav-link align-middle">
+                    <a href="general-settengs.html" class="nav-link align-middle">
                         <img src="image/powers-icon.png" alt="icon" />
                         <span> الاعدادات العامة</span>
                     </a>
@@ -276,51 +318,87 @@
                 <div class="container">
                     <form>
                         <div class="row">
+                            <!-- <h4>اعدادات الاشعارات</h4>  -->
                             <div class="col-lg-12">
                                 <div class="add-slider">
-                                    <h4>الاسلايدر</h4>
-                                    <a href="add-slider.html"> <button type="button"
-                                            class="btn btn-warning  add-slider"> <span
-                                                style=" font-size: 25px;">+</span> اضافه سلايدر جديده </button> </a>
-                                </div>
-
-                            </div>
-
-                            <div class="form-group ">
-                                <input type="text" style="padding-inline-start: 30px;" class="form-control" id="formGroupExampleInput"
-                                    placeholder="ابحث هنا...">
-                                <div class="search">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <h4>الطلاب </h4>
+                                    <a href="add-student.html">    <button  type="button" class="btn btn-warning"> <span
+                                        style=" font-size: 25px;">+</span> اضافه طالب جديد  </button> </a>
                                 </div>
                             </div>
-                            <div class="table-responsive">
+
+                            <div class="col-lg-6 col-md-9 col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="formGroupExampleInput" style="  padding: 13px 40px;"
+                                        placeholder="ابحث باسم الجامعة, الدولة, المدينة ...">
+                                    <div class="search">
+                                        <i class="fa-solid fa-magnifying-glass" style="color: #626E7D;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-12">
+                                <div class="form-group">
+                                    <!-- <label for="inputtext"> </label> -->
+                                    <select id="inputState" class="form-control select2 selectpicker">
+                                        <option selected> اختر المدينه</option>
+                                        <option> ...</option>
+                                        <option>....</option>
+                                        <option> .....</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-12">
+                                <div class="form-group ">
+                                    <!-- <label for="inputtext"> </label> -->
+                                    <select id="inputState" class="form-control select2 selectpicker">
+                                        <option selected> كل المراحل التعليميه</option>
+                                        <option> ...</option>
+                                        <option>....</option>
+                                        <option> .....</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="table-responsive mt-3">
                                 <table class="table_expenses bor table_topic">
                                     <thead>
                                         <tr>
-                                            <td>العنوان</td>
-                                            <td>الوصف</td>
-                                            <td>النوع</td>
-                                            <td>الرابط</td>
-                                            <td>المرحله</td>
-                                            <td> </td>
-
+                                            <td class="col-2">الكود </td>
+                                            <td class="col-2"> اسم الطالب  </td>
+                                            <td class="col-2"> رقم الهاتف </td>
+                                            <td class="col-2"> المرحله التعليميه </td>
+                                            <td class="col-2"> تاريخ الانضمام </td>
+                                            <td class="col-2"> الانضمام </td>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <!-- outcome list -->
                                         <tr>
-                                            <td>اشترك الآن</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
-                                            </td>
-                                            <td>رئيسي</td>
-                                            <td><span class="" style="color: black;"> 1</span></td>
-
-                                            <td>الفرقة الاولى - تجارة - المنصورة</td>
+                                            <td> 2154202 #</td>
+                                            <td> محمد ابراهيم</td>
+                                            <td> 010245451421</td>
+                                            <td>الفرقة الاولى , حاسبات ومعلومات</td>
+                                            <td>22 مايو, 2023</td>                                       
                                             <td>
-                                                <a href="add-slider.html">
+                                                <a href="#"><i class="fa-regular fa-eye" style="margin: 0 0.3rem;"></i></a>
+                                                <a href="add-student.html" >
+                                                    <i class="fa-solid fa-pen text-success">
+                                                    </i>
+                                                </a>
+                                               
+                                                <button type="button" class="btn"><i style="color: red;"
+                                                        class="fa-solid fa-trash"></i> </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2154202 #</td>
+                                            <td> محمد ابراهيم</td>
+                                            <td> 010245451421</td>
+                                            <td>الفرقة الاولى , حاسبات ومعلومات</td>
+                                            <td>22 مايو, 2023</td>                                       
+                                            <td>
+                                                <a href="#"><i class="fa-regular fa-eye" style="margin: 0 0.3rem;"></i></a>
+                                                <a href="add-student.html" >
                                                     <i class="fa-solid fa-pen text-success">
                                                     </i>
                                                 </a>
@@ -329,17 +407,14 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>اشترك الآن</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
-                                            </td>
-                                            <td>رئيسي</td>
-                                            <td><span class="" style="color: black;"> 1</span></td>
-                                            <td>الفرقة الاولى - تجارة - المنصورة</td>
+                                            <td> 2154202 #</td>
+                                            <td> محمد ابراهيم</td>
+                                            <td> 010245451421</td>
+                                            <td>الفرقة الاولى , حاسبات ومعلومات</td>
+                                            <td>22 مايو, 2023</td>                                       
                                             <td>
-                                                <a href="add-slider.html" >
+                                                <a href="#"><i class="fa-regular fa-eye" style="margin: 0 0.3rem;"></i></a>
+                                                <a href="add-student.html" >
                                                     <i class="fa-solid fa-pen text-success">
                                                     </i>
                                                 </a>
@@ -348,17 +423,14 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>اشترك الآن</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
-                                            </td>
-                                            <td>رئيسي</td>
-                                            <td><span class="" style="color: black;"> 1</span></td>
-                                            <td>الفرقة الاولى - تجارة - المنصورة</td>
+                                            <td> 2154202 #</td>
+                                            <td> محمد ابراهيم</td>
+                                            <td> 010245451421</td>
+                                            <td>الفرقة الاولى , حاسبات ومعلومات</td>
+                                            <td>22 مايو, 2023</td>                                       
                                             <td>
-                                                <a href="add-slider.html" >
+                                                <a href="#"><i class="fa-regular fa-eye" style="margin: 0 0.3rem;"></i></a>
+                                                <a href="add-student.html" >
                                                     <i class="fa-solid fa-pen text-success">
                                                     </i>
                                                 </a>
@@ -367,17 +439,14 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>اشترك الآن</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
-                                            </td>
-                                            <td>رئيسي</td>
-                                            <td><span class="" style="color: black;"> 1</span></td>
-                                            <td>الفرقة الاولى - تجارة - المنصورة</td>
+                                            <td> 2154202 #</td>
+                                            <td> محمد ابراهيم</td>
+                                            <td> 010245451421</td>
+                                            <td>الفرقة الاولى , حاسبات ومعلومات</td>
+                                            <td>22 مايو, 2023</td>                                       
                                             <td>
-                                                <a href="add-slider.html" >
+                                                <a href="#"><i class="fa-regular fa-eye" style="margin: 0 0.3rem;"></i></a>
+                                                <a href="add-student.html" >
                                                     <i class="fa-solid fa-pen text-success">
                                                     </i>
                                                 </a>
@@ -386,17 +455,46 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>اشترك الآن</td>
-                                            <td class="text">
-                                                تم اضافة حصة ({n_param2}) في كورس ({n_param1}) ادخل دلوقتي ومتخليش
-                                                الدروس
-                                                تتراكم عليك
-                                            </td>
-                                            <td>رئيسي</td>
-                                            <td><span class="" style="color: black;"> 1</span></td>
-                                            <td>الفرقة الاولى - تجارة - المنصورة</td>
+                                            <td> 2154202 #</td>
+                                            <td> محمد ابراهيم</td>
+                                            <td> 010245451421</td>
+                                            <td>الفرقة الاولى , حاسبات ومعلومات</td>
+                                            <td>22 مايو, 2023</td>                                       
                                             <td>
-                                                <a href="add-slider.html" >
+                                                <a href="#"><i class="fa-regular fa-eye" style="margin: 0 0.3rem;"></i></a>
+                                                <a href="add-student.html" >
+                                                    <i class="fa-solid fa-pen text-success">
+                                                    </i>
+                                                </a>
+                                                <button type="button" class="btn"><i style="color: red;"
+                                                        class="fa-solid fa-trash"></i> </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2154202 #</td>
+                                            <td> محمد ابراهيم</td>
+                                            <td> 010245451421</td>
+                                            <td>الفرقة الاولى , حاسبات ومعلومات</td>
+                                            <td>22 مايو, 2023</td>                                       
+                                            <td>
+                                                <a href="#"><i class="fa-regular fa-eye" style="margin: 0 0.3rem;"></i></a>
+                                                <a href="add-student.html" >
+                                                    <i class="fa-solid fa-pen text-success">
+                                                    </i>
+                                                </a>
+                                                <button type="button" class="btn"><i style="color: red;"
+                                                        class="fa-solid fa-trash"></i> </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2154202 #</td>
+                                            <td> محمد ابراهيم</td>
+                                            <td> 010245451421</td>
+                                            <td>الفرقة الاولى , حاسبات ومعلومات</td>
+                                            <td>22 مايو, 2023</td>                                       
+                                            <td>
+                                                <a href="#"><i class="fa-regular fa-eye"style="margin: 0 0.3rem;"></i></a>   
+                                                <a href="add-student.html" >
                                                     <i class="fa-solid fa-pen text-success">
                                                     </i>
                                                 </a>
@@ -408,9 +506,37 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <div class="row foot">
+                                <div class="col-8" style="padding-top: 20px; color: #626e7d">
+                                    <p>عرض 1 - 30 من اجمالى 59</p>
+                                </div>
+                                <div class="col-4">
+                                    <nav class="pagination_section">
+                                        <ul class="pagination "> <!-- justify-content-end -->
+                                            <li class="page-item">
+                                                <a class="page-link" style="width: 80px;" href="#"> السابق </a>
+                                            </li>
+                                            <li class="page-item active">
+                                                <a class="page-link" href="#">3</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">1</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" style="width: 80px;" href="#"> التالي 
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
                         </div>
-                    </form>
                 </div>
+                </form>
+            </div>
             </div>
             <!---------------------- finish  content -------------------------------------------->
         </section>
