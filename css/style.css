@@ -132,6 +132,7 @@ tr {
 }
 .modal-header h1 {
   font-family: "bold";
+  font-size: 0.8rem !important;
 }
 /* model one */
 
@@ -691,7 +692,6 @@ button.btn.btn-warning.log-in:hover {
   border-color: transparent;
   border-bottom: 2px solid #e6ab2f !important;
   font-family: "bold";
- 
 }
 .nav-link:hover .active {
   font-family: bold;
@@ -920,23 +920,23 @@ i.bi.bi-search.detialsexam {
   flex-wrap: wrap;
 }
 .text-student h6 {
-    color: #5e6e776b;
-    font-family: "regular";
-    font-size: 0.8rem;
+  color: #5e6e776b;
+  font-family: "regular";
+  font-size: 0.8rem;
 }
 
 .text-student h4 {
-    font-family: "bold";
-    font-size: 1.4rem;
+  font-family: "bold";
+  font-size: 1.4rem;
 }
 .text-student p {
-    width: 64%;
-    font-family: "regular";
-    font-size: 0.8rem;
+  width: 64%;
+  font-family: "regular";
+  font-size: 0.8rem;
 }
 
 .active-student h6 {
-    margin-right: -21rem;
+  margin-right: -21rem;
   color: green;
   background-color: rgba(0, 128, 0, 0.103);
   width: fit-content;
@@ -946,131 +946,287 @@ i.bi.bi-search.detialsexam {
   font-size: 0.8rem;
 }
 .main-student {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .btn-wahts {
-    background-color: white;
-    color: green;
-    border: 1px solid green;
+  background-color: white;
+  color: green;
+  border: 1px solid green;
 }
 .btn-wahts:hover {
-    background-color: green;
-    color: white;
+  background-color: green;
+  color: white;
 }
 .under-text {
-    display: flex;
-    gap: 66px;
-    margin-right: 87px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 66px;
+  margin-right: 87px;
+  flex-wrap: wrap;
 }
 .under-text .device p {
-    color: #5e6e7770;
-    font-size: 0.6rem;
-    font-family: "regular";
-    
+  color: #5e6e7770;
+  font-size: 0.6rem;
+  font-family: "regular";
 }
 .under-text .device h6 {
-    font-size: 0.7rem;
-    font-family: "regular";
-    padding-top: 0.6rem;
+  font-size: 0.7rem;
+  font-family: "regular";
+  padding-top: 0.6rem;
 }
 .main-ranking {
-    background-color: white;
-    width: fit-content;
-    padding: 1.2rem 1rem;
-    border-radius: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  background-color: white;
+  width: fit-content;
+  padding: 1.2rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .text-ranking h5 {
-    width: 114px;
-    font-size: 0.9rem;
-    font-family: "regular";
+  width: 114px;
+  font-size: 0.9rem;
+  font-family: "regular";
 }
 .text-ranking h6 {
-    font-size: 1rem;
-    font-family: "bold";
+  font-size: 1rem;
+  font-family: "bold";
 }
 .ranhing-main {
-    display: flex;
-     gap: 11px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 11px;
+  flex-wrap: wrap;
 }
 .text-ranking h4 {
-    font-size: 0.8rem;
-    font-family: "regular";
+  font-size: 0.8rem;
+  font-family: "regular";
 }
 .text-ranking h3 {
-    width: 135px;
-    font-size: 0.8rem;
-    font-family: "regular";
+  width: 135px;
+  font-size: 0.8rem;
+  font-family: "regular";
 }
 .text-ranking a {
-    color: #06456B;
-    text-decoration: underline;
+  color: #06456b;
+  text-decoration: underline;
 }
 .text-ranking a:hover {
-    color:blue;
+  color: blue;
 }
 .head-namestudent {
-    padding: 2rem 0.5rem;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+  padding: 2rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 p.block {
-    background-color: rgba(255, 0, 0, 0.116);
+  background-color: rgba(255, 0, 0, 0.116);
   color: red;
   padding: 0.4rem;
   border-radius: 50px;
-
 }
 p.active-tab-student {
-    background-color: rgba(0, 128, 0, 0.11);
-    color: green;
-    padding: 0.4rem 1rem;
-    border-radius: 50px;
-    width: fit-content;
-    margin-right: 3.2rem;
+  background-color: rgba(0, 128, 0, 0.11);
+  color: green;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  width: fit-content;
+  margin-right: 3.2rem;
 }
 p.Subscription.activation {
-    background-color: green;
-    color: white;
-    padding: 0.75rem 0.5rem;
-    font-size: 0.65rem;
+  background-color: green;
+  color: white;
+  padding: 0.75rem 0.5rem;
+  font-size: 0.65rem;
 }
 .Subscription.activation i {
-    padding-right: 0.2rem;
-    margin-inline-end: 0.4rem;
+  padding-right: 0.2rem;
+  margin-inline-end: 0.4rem;
 }
 p.Subscription.clos {
-    background-color: red;
-    color: white;
-    padding: 0.75rem 0.5rem;
-    font-size: 0.65rem;
-} 
+  background-color: red;
+  color: white;
+  padding: 0.75rem 0.5rem;
+  font-size: 0.65rem;
+}
 .Subscription.clos i {
-    padding-right: 0.2rem;
-    margin-inline-end: 0.4rem;
+  padding-right: 0.2rem;
+  margin-inline-end: 0.4rem;
 }
 .btn-register {
-    background-color: #06456B;
-    color: white;
-    padding: 0.5rem !important;
+  background-color: #06456b;
+  color: white;
+  padding: 0.5rem !important;
 }
 .btn-register:hover {
   background-color: white;
-  color: #06456B;
-  border: 1px solid #06456B;
-
+  color: #06456b;
+  border: 1px solid #06456b;
 }
 .head-activities {
   font-family: bold;
 }
+/* modal whats app */
+button.btn.send-massage {
+  margin-top: 25px;
+  background-color: white;
+  border: 1px solid #e6ab2f;
+  color: #e6ab2f;
+  font-family: "regular";
+  font-size: 0.7rem;
+  padding: 0.8rem 3rem;
+}
+
+button.btn.send-massage:hover {
+  background-color: #e6ab2f;
+  border: 1px solid #e6ab2f;
+  color: white;
+}
+.massage {
+  margin-top: 20px;
+}
+.wahtsapp {
+  font-family: "regular";
+  color: #5E6E77;
+  font-size: 0.7rem;
+}
+/* modal charge */
+label.form-label.charge {
+  color: black !important;
+}
+button.btn.charge {
+  
+  background-color: white;
+  border: 1px solid #e6ab2f;
+  color: #e6ab2f;
+  font-family: "regular";
+  font-size: 0.7rem;
+  padding: 0.8rem 3rem;
+}
+button.btn.charge:hover {
+  background-color: #e6ab2f;
+  border: 1px solid #e6ab2f;
+  color: white;
+}
+.charge {
+ 
+  font-family: "regular";
+  color: #5E6E77;
+  font-size: 0.7rem;
+}
+.Subscriptions {
+  font-family: "regular";
+  color: #5E6E77;
+  font-size: 0.7rem;
+}
+label.form-label.Subscriptions {
+  margin-top: 17px;
+  color: black !important;
+  font-size: 0.8rem;
+}
+/* Student stats */
+.Studentstats {
+  display: flex;
+  gap: 44px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.main-ranking-1 {
+  background-color: white;
+  width: 322px;
+  padding: 0.5rem 1rem;
+
+}
+.main-ranking-1 .ranking {
+  display: flex;
+    gap: 24px;
+}
+ .text-ranking-1 h5 {
+  font-family: "regular";
+  font-size: 0.8rem;
+}
+.main-ranking-1 {
+  padding: 1.5rem 3rem !important;
+  border-radius: 15px;
+}
+.text-ranking-1 h6 {
+  font-family: bold;
+}
+/* Studentperformance */
+.text-Studentperformance h4 {
+  font-family: "bold";
+  font-size: 1.2rem;
+}
+.main-cricle {
+  padding: 2.1rem 5rem;
+  border: 1px solid #d6d6d652;
+  width: fit-content;
+
+}
+
+.text-cricle h5 {
+  font-size: 0.6rem;
+  font-family:"regular" ;
+}
+.text-cricle span {
+  margin-inline-end: 10px;
+}
+.cricle h5 {
+
+}
+.cricle h6 {
+  
+font-size: 0.8rem;
+font-family:"bold" ;
+}
+
+.main-cricle h5 {
+  margin-inline-start: -70px;
+  font-size: 0.8rem;
+  font-family: "bold";
+}
+.main-cricle {
+  position: relative;
+}
+.rate {
+  text-align: center;
+  position: absolute;
+  left: 204px;
+  top: 195px
+  
+}
+.rate h6 {
+  font-family: "regular";
+  color: #5e6e77a9;
+}
+.rate h4 {
+  font-family: "bold";
+}
+.line {
+  height: 254px;
+  width: 340px;
+}
+.input-group.nas {
+  margin-top: -15px;
+    width: 258px;
+}
+.dropdown-item .text {
+  padding: 0 !important;
+}
+canvas#line {
+  height: 210px !important;
+    width: 378px !important;
+}
+canvas#myChart1 {
+  height: 286px !important;
+  width: 300px !important;
+}
+
+
 
 /* responsive  */
 /* Extra small devices (phones, 600px and down) */
