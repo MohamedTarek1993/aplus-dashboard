@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تفاصيل الطالب</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="main-scss/main.min.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- responsive -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="image/logo.png" type="image" />
+    <!-- ? Favicon -->
+  </head>
+
+  <body>
+    <!---------------------- start loader -------------------------------------------->
+    <!-- <div id="preloader"></div> -->
+    <!---------------------- finish loader -------------------------------------------->
+    <!---------------------- start scroll-up -------------------------------------------->
+    <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
+    <!---------------------- finish scroll-up -------------------------------------------->
+
+    <main class="d-flex sidemobile p-0">
+      <!---------------------- start sidebar -------------------------------------------->
+
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="image_logo">
+            <img src="image/logo.png" alt="logo_sidebar" class="logo" />
+          </div>
+
+          <h5>محتوي النظام</h5>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link align-middle">
+              <img src="image/home-icon.png" alt="icon" />
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="courses.html" class="nav-link align-middle">
+              <img src="/image/course-icon.png" alt="icon" />
+              <span>الكورسات</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="exams.html" class="nav-link align-middle">
+              <img src="image/exam-icon.png" alt="icon" />
+              <span> الامتحانات</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="bank-que.html" class="nav-link align-middle">
+              <img src="image/icon-bank.png" alt="icon" />
+              <span>بنك الأسألة</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="subjects.html" class="nav-link align-middle">
+              <img src="image/book-icon.png" alt="icon" />
+              <span> المواد الدراسية</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="#submenuAccountant"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="image/scan-barcode-icon.png" alt="icon" />
+              <span> أكود الشراء</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuAccountant"
+              data-bs-parent="#menu"
+            >
+              <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+
+              <li>
+                <a href="code-book.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للمذكرات</span></a
+                >
+              </li>
+              <li>
+                <a href="code-corse.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للكورسات</span></a
+                >
+              </li>
+              <li>
+                <a href="code-training.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للتدريبات</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <h5>مستخدمي النظام</h5>
+          <li class="nav-item">
+            <a href="teacher.html" class="nav-link align-middle">
+              <img src="image/teacher-icon.png" alt="icon" />
+              <span> المدرسين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="students.html" class="nav-link align-middle">
+              <img src="image/student-icon.png" alt="icon" />
+              <span> الطلبة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="lesons.html" class="nav-link align-middle">
+              <img src="image/house-icon.png" alt="icon" />
+              <span> سناتر الدروس</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Systemadministrators.html" class="nav-link align-middle">
+              <img src="image/director-icon.png" alt="icon" />
+              <span> مديري النظام</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="powers.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الصلاحيات</span>
+            </a>
+          </li>
+
+          <h5>اعدادات النظام</h5>
+
+          <li class="nav-item">
+            <a href="country.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> الدول</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="governorate.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المحافظات</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="city.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المدن</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="university.html" class="nav-link align-middle">
+              <img src="image/buildings-icon.png" alt="icon" />
+              <span> الجامعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="colleage.html" class="nav-link align-middle">
+              <img src="image/colleage-icon.png" alt="icon" />
+              <span> الكليات</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="main-edu.html" class="nav-link align-middle">
+              <img src="image/main-edu-icon.png" alt="icon" />
+              <span> التعليم الاساسي</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="study-teams.html" class="nav-link align-middle">
+              <img src="image/format-circle.png" alt="icon" />
+              <span> الفرق الدراسية</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="seting-point.html" class="nav-link align-middle">
+              <img src="image/buy-crypto-icon.png" alt="icon" />
+              <span> اعدادات النقاط</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="slider-table.html" class="nav-link align-middle">
+              <img src="image/slider-icon.png" alt="icon" />
+              <span> الاسلايدر</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="seting-notifcation.html" class="nav-link align-middle">
+              <img src="image/notification-bing-icon.png" alt="icon" />
+              <span> اعدادات الاشعارات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الاعدادات العامة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <img src="image/logout-icon.png" alt="icon" />
+              <span> تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!---------------------- end sidebar -------------------------------------------->
+      <!---------------------- start main content -------------------------------------------->
+
+      <section class="index_cards">
+        <!---------------------- start nav -------------------------------------------->
+        <nav class="nav_top navbar">
+          <div class="container">
+            <div class="menu">
+              <i class="bi bi-list"></i>
+            </div>
+            <div class="info">
+              <div class="notfication" onclick="showNotification()">
+                <i class="bi bi-bell"></i>
+                <span class="alerts"> 3 </span>
+              </div>
+
+              <div class="img">
+                <img src="../image/person.png" alt="person" />
+              </div>
+              <div class="btn-group">
+                <button
+                  class="btn btn-sm dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  محمد طارق
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="settings.html">اعدادات الحساب</a></li>
+                  <li onclick="acceptAlert()">تسجيل الخروج</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <ul class="notfication_list">
+          <h2>الأشعارات</h2>
+          <i class="bi bi-x close-icon" onclick="hideNotification()"></i>
+
+          <li class="unread" onclick="convertToRead(this)">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+          <li class="read">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+        </ul>
+        <!---------------------- finish nav -------------------------------------------->
+        <!---------------------- start content -------------------------------------------->
+        <div class="container">
+          <div class="main_topic">
+            <h4>تفاصيل الطالب</h4>
+          </div>
+        </div>
+        <div class="content_page">
+          <div class="main-student">
+            <div class="student">
+              <div class="img-student">
+                <img src="image/profile-student.png" alt="" />
+              </div>
+              <div class="text-student">
+                <h4>أحمد ابراهيم</h4>
+                <h6>010215478412 , المنصورة</h6>
+                <p>
+                  الفرقة الرابعة-شعبة المحاسبة و إدارة الاعمال-معهد مصر العالي
+                  للتجارة والحاسبات (السلاب)
+                </p>
+              </div>
+              <div class="active-student">
+                <h6>نشط الآن</h6>
+              </div>
+            </div>
+            <div class="botton">
+              <button type="button" class="btn btn-edit mx-2">
+                <span><i class="bi bi-pencil-fill"></i></span>تعديل
+              </button>
+              <button type="button" class="btn btn-wahts mx-2">
+                <span><i class="bi bi-whatsapp"></i></span>رسالة واتساب
+              </button>
+              <button
+                type="button"
+                class="btn btn-bolk mx-2"
+                onclick="blockAlert()"
+              >
+                حظر
+              </button>
+              <button type="button" class="btn btn-add">اضافة ملاحظة</button>
+            </div>
+          </div>
+          <hr />
+          <div class="under-text">
+            <div class="device">
+              <p>الجهاز المستخدم</p>
+              <h6>Iphone 13 promax</h6>
+            </div>
+            <div class="device">
+              <p>نوع الجهاز</p>
+              <h6>IOS</h6>
+            </div>
+            <div class="device">
+              <p>تاريخ آخر نشاط</p>
+              <h6>16:41:21 / 30 - 4 - 2023</h6>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="ranhing-main">
+            <div class="main-ranking">
+              <div class="ranking">
+                <div class="text-ranking">
+                  <h5>ترتيب الطالب على الدفعة</h5>
+                  <h6>120</h6>
+                </div>
+              </div>
+              <div class="img-ranking">
+                <img src="image/ranking.png" alt="" />
+              </div>
+            </div>
+            <div class="main-ranking">
+              <div class="ranking">
+                <div class="text-ranking">
+                  <h4>التقييم العام للطالب</h4>
+                  <h6>جيد جدا</h6>
+                  <a href="">عرض احصائيات الطالب</a>
+                </div>
+              </div>
+              <div class="img-ranking">
+                <img src="image/star-s.png" alt="" />
+              </div>
+            </div>
+            <div class="main-ranking">
+              <div class="ranking">
+                <div class="text-ranking">
+                  <h4>اجمالى رصيد الطالب</h4>
+                  <h6>200 ج .م</h6>
+                  <a href="">شحن الرصيد</a>
+                </div>
+              </div>
+              <div class="img-ranking">
+                <img src="image/rased.png" alt="" />
+              </div>
+            </div>
+            <div class="main-ranking">
+              <div class="ranking">
+                <div class="text-ranking">
+                  <h4>اجمالى نقاط الطالب</h4>
+                  <h6>120</h6>
+                </div>
+              </div>
+              <div class="img-ranking">
+                <img src="image/kas.png" alt="" />
+              </div>
+            </div>
+            <div class="main-ranking">
+              <div class="ranking">
+                <div class="text-ranking">
+                  <h3>الأسألة المحلولة فى بنك الأسألة</h3>
+                  <h6>120</h6>
+                </div>
+              </div>
+              <div class="img-ranking">
+                <img src="image/list.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content_page">
+          <div class="container">
+            <div class="tabs-student">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <!-- Subscriptions -->
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#home-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="home-tab-pane"
+                    aria-selected="true"
+                  >
+                    الاشتراكات
+                  </button>
+                </li>
+                <!-- Quotas -->
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile-tab-pane"
+                    aria-selected="false"
+                  >
+                    الحصص
+                  </button>
+                </li>
+                <!-- exam -->
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="exam-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#exam-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="exam-tab-pane"
+                    aria-selected="false"
+                  >
+                    الامتحانات
+                  </button>
+                </li>
+                <!-- commit -->
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="commit-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#commit-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="commit-tab-pane"
+                    aria-selected="false"
+                  >
+                    التعليقات
+                  </button>
+                </li>
+                <!-- activties -->
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="activities-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#activities-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="activities-tab-pane"
+                    aria-selected="false"
+                  >
+                    النشاطات
+                  </button>
+                </li>
+                <!-- Notes -->
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="Notes-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#Notes-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="Notes-tab-pane"
+                    aria-selected="false"
+                  >
+                    الملاحظات
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="home-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                  tabindex="0"
+                >
+                  <div class="head-namestudent">
+                    <h4>الاشتراكات</h4>
+                    <button type="button" class="btn btn-edit mx-2">
+                      اشتراك فى كورس
+                    </button>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-9 col-md-12 col-12">
+                      <div class="search_topic">
+                        <form>
+                          <div class="input-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="  ابحث باسم الكورس , ... ... ...... .........."
+                            />
+                            <span class="icon_search teacher ditals"
+                              ><i class="bi bi-search"></i
+                            ></span>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-12">
+                      <div class="input-group">
+                        <select
+                          required
+                          class="selectpicker"
+                          multiple
+                          data-selected-text-format="count > 1"
+                          data-icon="bi bi-trash"
+                          data-live-search="true"
+                          data-placeholder=" حالة الكورس: الكل  "
+                        >
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table_expenses table_topic">
+                      <thead>
+                        <tr>
+                          <td>الكود</td>
+                          <td>اسم الكورس</td>
+                          <td>حالة الكورس</td>
+                          <td>حالة الاشتراك</td>
+                          <td>تاريخ الاشتراك</td>
+                          <td>اشترك بواسطة</td>
+                          <td>التحكم</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td><p class="active-tab-student">نشط الآن</p></td>
+                          <td><p class="block">محظور</p></td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin1</td>
+                          <td>
+                            <p class="Subscription activation">
+                              <span><i class="bi bi-check-circle"></i></span
+                              >تفعيل الاشتراك
+                            </p>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td><p class="active-tab-student">نشط الآن</p></td>
+                          <td><p class="block">محظور</p></td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin1</td>
+                          <td>
+                            <p class="Subscription activation">
+                              <span><i class="bi bi-check-circle"></i></span
+                              >تفعيل الاشتراك
+                            </p>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td><p class="active-tab-student">نشط الآن</p></td>
+                          <td><p class="block">محظور</p></td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin1</td>
+                          <td>
+                            <p class="Subscription clos">
+                              <span><i class="bi bi-dash-circle"></i></span>حظر
+                              الاشتراك
+                            </p>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td><p class="active-tab-student">نشط الآن</p></td>
+                          <td><p class="block">محظور</p></td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin1</td>
+                          <td>
+                            <p class="Subscription activation">
+                              <span><i class="bi bi-check-circle"></i></span
+                              >تفعيل الاشتراك
+                            </p>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td><p class="active-tab-student">نشط الآن</p></td>
+                          <td><p class="block">محظور</p></td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin1</td>
+                          <td>
+                            <p class="Subscription clos">
+                              <span><i class="bi bi-dash-circle"></i></span>حظر
+                              الاشتراك
+                            </p>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td><p class="active-tab-student">نشط الآن</p></td>
+                          <td><p class="block">محظور</p></td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin1</td>
+                          <td>
+                            <p class="Subscription activation">
+                              <span><i class="bi bi-check-circle"></i></span
+                              >تفعيل الاشتراك
+                            </p>
+                          </td>
+                        </tr>
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td><p class="active-tab-student">نشط الآن</p></td>
+                          <td><p class="block">محظور</p></td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin1</td>
+                          <td>
+                            <p class="Subscription activation">
+                              <span><i class="bi bi-check-circle"></i></span
+                              >تفعيل الاشتراك
+                            </p>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td><p class="active-tab-student">نشط الآن</p></td>
+                          <td><p class="block">محظور</p></td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin1</td>
+                          <td>
+                            <p class="Subscription clos">
+                              <span><i class="bi bi-dash-circle"></i></span>حظر
+                              الاشتراك
+                            </p>
+                          </td>
+                        </tr>
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="detailsSubscribeModal"
+                          tabindex="-1"
+                          aria-labelledby="detailsSubscribeModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1
+                                  class="modal-title fs-5"
+                                  id="detailsSubscribeModalLabel"
+                                >
+                                  Modal title
+                                </h1>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body"></div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Close
+                                </button>
+                                <button type="button" class="btn btn-primary">
+                                  Save changes
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+               
+                <div
+                  class="tab-pane fade"
+                  id="profile-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                  tabindex="0"
+                >
+                  <div class="head-activities">
+                    <h4>الحصص</h4>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-9 col-md-12 col-12">
+                      <div class="search_topic">
+                        <form>
+                          <div class="input-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="  ابحث باسم الكورس , ... ... ...... .........."
+                            />
+                            <span class="icon_search teacherditals-1"
+                              ><i class="bi bi-search"></i
+                            ></span>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-12">
+                      <div class="input-group">
+                        <select
+                          required
+                          class="selectpicker"
+                          multiple
+                          data-selected-text-format="count > 1"
+                          data-icon="bi bi-trash"
+                          data-live-search="true"
+                          data-placeholder=" كل الكورسات  "
+                        >
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table-responsive table_expenses table_topic">
+                      <thead>
+                        <tr>
+                          <td>الكود</td>
+                          <td>اسم الكورس</td>
+                          <td>الباب</td>
+                          <td>الحصة</td>
+                          <td>المشاهدات</td>
+                          <td>التحكم</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematolo</td>
+                          <td>Course 2</td>
+                          <td>4</td>
+                          <td>
+                            <button type="button" class="btn btn-register">
+                              سجل المشاهدات
+                            </button>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematolo</td>
+                          <td>Course 2</td>
+                          <td>4</td>
+                          <td>
+                            <button type="button" class="btn btn-register">
+                              سجل المشاهدات
+                            </button>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematolo</td>
+                          <td>Course 2</td>
+                          <td>4</td>
+                          <td>
+                            <button type="button" class="btn btn-register">
+                              سجل المشاهدات
+                            </button>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematolo</td>
+                          <td>Course 2</td>
+                          <td>4</td>
+                          <td>
+                            <button type="button" class="btn btn-register">
+                              سجل المشاهدات
+                            </button>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematolo</td>
+                          <td>Course 2</td>
+                          <td>4</td>
+                          <td>
+                            <button type="button" class="btn btn-register">
+                              سجل المشاهدات
+                            </button>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematolo</td>
+                          <td>Course 2</td>
+                          <td>4</td>
+                          <td>
+                            <button type="button" class="btn btn-register">
+                              سجل المشاهدات
+                            </button>
+                          </td>
+                        </tr>
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematolo</td>
+                          <td>Course 2</td>
+                          <td>4</td>
+                          <td>
+                            <button type="button" class="btn btn-register">
+                              سجل المشاهدات
+                            </button>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematolo</td>
+                          <td>Course 2</td>
+                          <td>4</td>
+                          <td>
+                            <button type="button" class="btn btn-register">
+                              سجل المشاهدات
+                            </button>
+                          </td>
+                        </tr>
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="detailsSubscribeModal"
+                          tabindex="-1"
+                          aria-labelledby="detailsSubscribeModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1
+                                  class="modal-title fs-5"
+                                  id="detailsSubscribeModalLabel"
+                                >
+                                  Modal title
+                                </h1>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body"></div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Close
+                                </button>
+                                <button type="button" class="btn btn-primary">
+                                  Save changes
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- Quotas content -->
+                <div
+                  class="tab-pane fade"
+                  id="exam-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="exam-tab"
+                  tabindex="0"
+                >
+                  <div class="head-activities">
+                    <h4>الامتحانات</h4>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-9 col-md-12 col-12">
+                      <div class="search_topic">
+                        <form>
+                          <div class="input-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="  ابحث باسم الكورس , ... ... ...... .........."
+                            />
+                            <span class="icon_search teacherditals-1"
+                              ><i class="bi bi-search"></i
+                            ></span>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-12">
+                      <div class="input-group">
+                        <select
+                          required
+                          class="selectpicker"
+                          multiple
+                          data-selected-text-format="count > 1"
+                          data-icon="bi bi-trash"
+                          data-live-search="true"
+                          data-placeholder=" كل الكورسات  "
+                        >
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table-responsive table_expenses table_topic">
+                      <thead>
+                        <tr>
+                          <td>الكود</td>
+                          <td>اسم الكورس</td>
+                          <td>اسم الامتحان</td>
+                          <td>تاريخ بداية الامتحان</td>
+                          <td>تاريخ نهاية الامتحان</td>
+                          <td>الدرجة</td>
+                          <td>التحكم</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>امتحان تجريبى ك</td>
+                          <td>22 مايو, 2023</td>
+                          <td>22 مايو, 2023</td>
+                          <td>21/3</td>
+                          <td>
+                            <a href=""><i class="bi bi-eye"></i></a>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>امتحان تجريبى ك</td>
+                          <td>22 مايو, 2023</td>
+                          <td>22 مايو, 2023</td>
+                          <td>21/3</td>
+                          <td>
+                            <a href=""><i class="bi bi-eye"></i></a>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>امتحان تجريبى ك</td>
+                          <td>22 مايو, 2023</td>
+                          <td>22 مايو, 2023</td>
+                          <td>21/3</td>
+                          <td>
+                            <a href=""><i class="bi bi-eye"></i></a>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>امتحان تجريبى ك</td>
+                          <td>22 مايو, 2023</td>
+                          <td>22 مايو, 2023</td>
+                          <td>21/3</td>
+                          <td>
+                            <a href=""><i class="bi bi-eye"></i></a>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>امتحان تجريبى ك</td>
+                          <td>22 مايو, 2023</td>
+                          <td>22 مايو, 2023</td>
+                          <td>21/3</td>
+                          <td>
+                            <a href=""><i class="bi bi-eye"></i></a>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>امتحان تجريبى ك</td>
+                          <td>22 مايو, 2023</td>
+                          <td>22 مايو, 2023</td>
+                          <td>21/3</td>
+                          <td>
+                            <a href=""><i class="bi bi-eye"></i></a>
+                          </td>
+                        </tr>
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>امتحان تجريبى ك</td>
+                          <td>22 مايو, 2023</td>
+                          <td>22 مايو, 2023</td>
+                          <td>21/3</td>
+                          <td>
+                            <a href=""><i class="bi bi-eye"></i></a>
+                          </td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>امتحان تجريبى ك</td>
+                          <td>22 مايو, 2023</td>
+                          <td>22 مايو, 2023</td>
+                          <td>21/3</td>
+                          <td>
+                            <a href=""><i class="bi bi-eye"></i></a>
+                          </td>
+                        </tr>
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="detailsSubscribeModal"
+                          tabindex="-1"
+                          aria-labelledby="detailsSubscribeModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1
+                                  class="modal-title fs-5"
+                                  id="detailsSubscribeModalLabel"
+                                >
+                                  Modal title
+                                </h1>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body"></div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Close
+                                </button>
+                                <button type="button" class="btn btn-primary">
+                                  Save changes
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- exam content -->
+                <div
+                  class="tab-pane fade"
+                  id="commit-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="commit-tab"
+                  tabindex="0"
+                >
+                  <div class="head-activities">
+                    <h4>التعليقات</h4>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-9 col-md-12 col-12">
+                      <div class="search_topic">
+                        <form>
+                          <div class="input-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="  ابحث باسم الكورس , ... ... ...... .........."
+                            />
+                            <span class="icon_search teacherditals-1"
+                              ><i class="bi bi-search"></i
+                            ></span>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-12">
+                      <div class="input-group">
+                        <select
+                          required
+                          class="selectpicker"
+                          multiple
+                          data-selected-text-format="count > 1"
+                          data-icon="bi bi-trash"
+                          data-live-search="true"
+                          data-placeholder=" كل الكورسات  "
+                        >
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table-responsive table_expenses table_topic">
+                      <thead>
+                        <tr>
+                          <td>الكود</td>
+                          <td>التعليق</td>
+                          <td>الكورس</td>
+                          <td>الحصة</td>
+                          <td>تاريخ التعليق</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            ممكن اعرف هيكون امتى متاح المذكرة الرابعة عشان نبدأ
+                            نزاكر
+                          </td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematology</td>
+                          <td>22 مايو, 2023</td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            ممكن اعرف هيكون امتى متاح المذكرة الرابعة عشان نبدأ
+                            نزاكر
+                          </td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematology</td>
+                          <td>22 مايو, 2023</td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            ممكن اعرف هيكون امتى متاح المذكرة الرابعة عشان نبدأ
+                            نزاكر
+                          </td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematology</td>
+                          <td>22 مايو, 2023</td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            ممكن اعرف هيكون امتى متاح المذكرة الرابعة عشان نبدأ
+                            نزاكر
+                          </td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematology</td>
+                          <td>22 مايو, 2023</td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            ممكن اعرف هيكون امتى متاح المذكرة الرابعة عشان نبدأ
+                            نزاكر
+                          </td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematology</td>
+                          <td>22 مايو, 2023</td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            ممكن اعرف هيكون امتى متاح المذكرة الرابعة عشان نبدأ
+                            نزاكر
+                          </td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematology</td>
+                          <td>22 مايو, 2023</td>
+                        </tr>
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            ممكن اعرف هيكون امتى متاح المذكرة الرابعة عشان نبدأ
+                            نزاكر
+                          </td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematology</td>
+                          <td>22 مايو, 2023</td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            ممكن اعرف هيكون امتى متاح المذكرة الرابعة عشان نبدأ
+                            نزاكر
+                          </td>
+                          <td>مراجعة اللغة الإنجليزية مع فتحي مجدي</td>
+                          <td>Introduction to Hematology</td>
+                          <td>22 مايو, 2023</td>
+                        </tr>
+
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="detailsSubscribeModal"
+                          tabindex="-1"
+                          aria-labelledby="detailsSubscribeModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1
+                                  class="modal-title fs-5"
+                                  id="detailsSubscribeModalLabel"
+                                >
+                                  Modal title
+                                </h1>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body"></div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Close
+                                </button>
+                                <button type="button" class="btn btn-primary">
+                                  Save changes
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <!-- commit content -->
+                <div
+                  class="tab-pane fade"
+                  id="activities-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="activities-tab"
+                  tabindex="0"
+                >
+                  <div class="head-activities">
+                    <h4>النشاطات</h4>
+                    <button type="button" class="btn btn-edit mx-2">
+                      تسجيل خروج الطالب
+                    </button>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                      <div class="search_topic">
+                        <form>
+                          <div class="input-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="  ابحث هنا ..... , ... ... ...... .........."
+                            />
+                            <span class="icon_search teacherditals-1"
+                              ><i class="bi bi-search"></i
+                            ></span>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table-responsive table_expenses table_topic">
+                      <thead>
+                        <tr>
+                          <td>الكود</td>
+                          <td>تسجيل الدخول</td>
+                          <td>تسجيل الخروج</td>
+                          <td>نوع الجهاز</td>
+                          <td>سبب تسجيل الخروج</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>Android</td>
+                          <td>use different device</td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>Android</td>
+                          <td>use different device</td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>Android</td>
+                          <td>use different device</td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>Android</td>
+                          <td>use different device</td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>Android</td>
+                          <td>use different device</td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>Android</td>
+                          <td>use different device</td>
+                        </tr>
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>Android</td>
+                          <td>use different device</td>
+                        </tr>
+                        <!-- outcome list -->
+
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>22 مايو, 2023 - 8:30 ص</td>
+                          <td>Android</td>
+                          <td>use different device</td>
+                        </tr>
+
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="detailsSubscribeModal"
+                          tabindex="-1"
+                          aria-labelledby="detailsSubscribeModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1
+                                  class="modal-title fs-5"
+                                  id="detailsSubscribeModalLabel"
+                                >
+                                  Modal title
+                                </h1>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body"></div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Close
+                                </button>
+                                <button type="button" class="btn btn-primary">
+                                  Save changes
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div
+                class="tab-pane fade"
+                id="Notes-tab-pane"
+                role="tabpanel"
+                aria-labelledby="activities-tab"
+                tabindex="0"
+              >
+                <div class="head-activities">
+                  <h4>الملاحظات</h4>
+                  
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-12">
+                    <div class="search_topic">
+                      <form>
+                        <div class="input-group">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="  ابحث هنا ..... , ... ... ...... .........."
+                          />
+                          <span class="icon_search teacherditals-1"
+                            ><i class="bi bi-search"></i
+                          ></span>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                  <table class="table-responsive table_expenses table_topic">
+                    <thead>
+                      <tr>
+                        <td>الكود</td>
+                        <td>الملاحظة</td>
+                        <td>تاريخ الاضافة</td>
+                        <td>بواسطة</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- outcome list -->
+                      <tr>
+                        <td>2154202 #</td>
+                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
+                        <td>22 مايو, 2023</td>
+                        <td>Admin A+ 1</td>
+                        
+                      </tr>
+                      <!-- outcome list -->
+
+                      <!-- outcome list -->
+                      <tr>
+                        <td>2154202 #</td>
+                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
+                        <td>22 مايو, 2023</td>
+                        <td>Admin A+ 1</td>
+                        
+                      </tr>
+                      <!-- outcome list -->
+
+                      <!-- outcome list -->
+                      <tr>
+                        <td>2154202 #</td>
+                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
+                        <td>22 مايو, 2023</td>
+                        <td>Admin A+ 1</td>
+                        
+                      </tr>
+                      <!-- outcome list -->
+
+                      <!-- outcome list -->
+                      <tr>
+                        <td>2154202 #</td>
+                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
+                        <td>22 مايو, 2023</td>
+                        <td>Admin A+ 1</td>
+                        
+                      </tr>
+                      <!-- outcome list -->
+
+                      <!-- outcome list -->
+                      <tr>
+                        <td>2154202 #</td>
+                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
+                        <td>22 مايو, 2023</td>
+                        <td>Admin A+ 1</td>
+                        
+                      </tr>
+                      <!-- outcome list -->
+
+                      <!-- outcome list -->
+                      <tr>
+                        <td>2154202 #</td>
+                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
+                        <td>22 مايو, 2023</td>
+                        <td>Admin A+ 1</td>
+                        
+                      </tr>
+
+                      <!-- outcome list -->
+                      <tr>
+                        <td>2154202 #</td>
+                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
+                        <td>22 مايو, 2023</td>
+                        <td>Admin A+ 1</td>
+                        
+                      </tr>
+                      <!-- outcome list -->
+
+                      <!-- outcome list -->
+                      <tr>
+                        <td>2154202 #</td>
+                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
+                        <td>22 مايو, 2023</td>
+                        <td>Admin A+ 1</td>
+                        
+                      </tr>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="detailsSubscribeModal"
+                        tabindex="-1"
+                        aria-labelledby="detailsSubscribeModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="detailsSubscribeModalLabel"
+                              >
+                                Modal title
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button type="button" class="btn btn-primary">
+                                Save changes
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+                <!-- activty content -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+              <div class="col-8 col-md-12 col-12" style="padding-top: 20px; color: #626e7d">
+                <p>عرض 1 - 30 من اجمالى 59</p>
+              </div>
+              <div class="col-4 col-md-12 col-12">
+                <nav class="pagination_section">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a class="page-link" href="#">السابق</a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">التالي </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- show / hide edit menu in card -->
+    <script>
+      function blockAlert() {
+        Swal.fire({
+          html:
+            '<img src="image/block.png" alt="add">' +
+            '<h5 class="swal2-title">   هل أنت متأكد من حظر  الطالب ؟</h5>' +
+            '<p class="swal2-html-container"> فى حالة الضغط على تأكيد الحظر سيتم حظر الطالب من الكورس كاملا ولا يمكنه الاطلاع على محتويات الكورسات التى مشترك بها ايضا</p>',
+
+          showCancelButton: true,
+          focusConfirm: false,
+          confirmButtonText: "تأكيد الحظر",
+          confirmButtonAriaLabel: "Thumbs up, great!",
+          cancelButtonText: "الغاء",
+          cancelButtonAriaLabel: "Thumbs down",
+        });
+      }
+    </script>
+    <script>
+      function toggleMenu(menuId) {
+        var menu = document.getElementById(menuId);
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
+
+      document.addEventListener("click", function (event) {
+        var menu = document.getElementById("drop-menu-info");
+        var target = event.target;
+
+        if (!target.matches(".bi-three-dots-vertical")) {
+          menu.style.display = "none";
+        }
+      });
+    </script>
+    <!-- show / hide edit menu in card -->
+
+    <script>
+      $(document).ready(function () {
+        // Handle click event for the radio button
+        $(".radio-button").on("click", function () {
+          // Remove "active" class from all radio buttons
+          $(".radio-button").removeClass("active");
+          // Add "active" class to the clicked radio button
+          $(this).addClass("active");
+        });
+      });
+    </script>
+    <script>
+      function blockAlert() {
+        Swal.fire({
+          html:
+            '<img src="image/block.png" alt="add">' +
+            '<h5 class="swal2-title"> هل أنت متأكد من حظر  الامتحان ؟</h5>' +
+            '<p class="swal2-html-container"> فى حالة الضغط على تأكيد الحظر سيتم حظر الامتحان من المنصة نهائيا وحذ جميع الأسألة التى يحتويها الامتحان </p>',
+
+          showCancelButton: true,
+
+          confirmButtonText: "تأكيد الحظر",
+          confirmButtonAriaLabel: "Thumbs up, great!",
+          cancelButtonText: "الغاء",
+          cancelButtonAriaLabel: "Thumbs down",
+        });
+      }
+    </script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- main js -->
+
+    <!-- sweet alert -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+      integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- sweet alert -->
+  </body>
+</html>
