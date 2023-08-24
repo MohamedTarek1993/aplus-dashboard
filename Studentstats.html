@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>تفاصيل المدرس</title>
+    <title>احصائيات الطالب</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -398,7 +398,7 @@
           </div>
 
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-12 col-12">
               <div class="main-cricle">
                 <div class="cricle">
                   <h5>المستوي العام لاداء الطالب</h5>
@@ -412,7 +412,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-12 col-12">
               <div class="main-cricle">
                 <div class="cricle">
                   <div class="row">
@@ -446,37 +446,132 @@
           </div>
         </div>
         <div class="content_page">
-            
-        </div>
-
-        <!-- <div class="row">
-              <div class="col-8" style="padding-top: 20px; color: #626e7d">
-                <p>عرض 1 - 30 من اجمالى 59</p>
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+              <div class="Studentperformance">
+                <h4>اداء الطالب فى تحصيل الوقت</h4>
               </div>
-              <div class="col-4">
-                <nav class="pagination_section">
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                      <a class="page-link" href="#">السابق</a>
-                    </li>
-                    <li class="page-item active">
-                      <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">التالي </a>
-                    </li>
-                  </ul>
-                </nav>
+            </div>
+            <div class="col-lg-3 col-md-12 col-12">
+              <div class="Studentperformance">
+                <div class="input-group">
+                  <select
+                    required
+                    class="selectpicker"
+                    multiple
+                    data-selected-text-format="count > 1"
+                    data-icon="bi bi-trash"
+                    data-live-search="true"
+                    data-placeholder=" عرض حسب: هذا الترم  "
+                  >
+                    <option value="1">هذا الترم</option>
+                    <option value="2">هذا العام</option>
+                    <option value="3">اخر شهر</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-12">
+              <div class="Studentperformance">
+                <div class="input-group">
+                  <select
+                    required
+                    class="selectpicker"
+                    multiple
+                    data-selected-text-format="count > 1"
+                    data-icon="bi bi-trash"
+                    data-live-search="true"
+                    data-placeholder=" تصنيف حسب: كل المواد  "
+                  >
+                    <option value="1">0</option>
+                    <option value="2">1</option>
+                    <option value="3">2</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
+        <div class="content_page">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+              <div class="Studentperformance">
+                <h4>اداء الطالب فى الالتزام</h4>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-12">
+              <div class="Studentperformance">
+                <div class="input-group">
+                  <select
+                    required
+                    class="selectpicker"
+                    multiple
+                    data-selected-text-format="count > 1"
+                    data-icon="bi bi-trash"
+                    data-live-search="true"
+                    data-placeholder=" عرض حسب: هذا الترم  "
+                  >
+                    <option value="1">هذا الترم</option>
+                    <option value="2">هذا العام</option>
+                    <option value="3">اخر شهر</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-12">
+              <div class="Studentperformance">
+                <div class="input-group">
+                  <select
+                    required
+                    class="selectpicker"
+                    multiple
+                    data-selected-text-format="count > 1"
+                    data-icon="bi bi-trash"
+                    data-live-search="true"
+                    data-placeholder=" تصنيف حسب: كل المواد  "
+                  >
+                    <option value="1">0</option>
+                    <option value="2">1</option>
+                    <option value="3">2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row foot">
+            <div class="col-8 col-md-8 col-12" style="padding-top: 20px; color: #626e7d">
+              <p>عرض 1 - 30 من اجمالى 59</p>
+            </div>
+            <div class="col-4 col-md-4 col-12">
+              <nav class="pagination_section">
+                <ul class="pagination">
+                  <!-- justify-content-end -->
+                  <li class="page-item">
+                    <a class="page-link" style="width: 80px" href="#">
+                      السابق
+                    </a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" style="width: 80px" href="#">
+                      التالي
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      
+      
       </section>
     </main>
 

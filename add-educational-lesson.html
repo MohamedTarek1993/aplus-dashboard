@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ar" dir="ltr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> اضافة حصة جديدة</title>
+    <title>اضافة حصة جديدة</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -20,9 +19,9 @@
     <!-- ? Favicon -->
     <link rel="icon" href="image/logo.png" type="image" />
     <!-- ? Favicon -->
-</head>
+  </head>
 
-<body>
+  <body>
     <!---------------------- start loader -------------------------------------------->
     <!-- <div id="preloader"></div> -->
     <!---------------------- finish loader -------------------------------------------->
@@ -31,774 +30,1014 @@
     <!---------------------- finish scroll-up -------------------------------------------->
 
     <main class="d-flex sidemobile p-0">
-        <!---------------------- start sidebar -------------------------------------------->
+      <!---------------------- start sidebar -------------------------------------------->
 
-        <section class="sidebar open">
-            <ul class="
-          nav nav-pills
-          flex-column
-          mb-sm-auto mb-0
-          align-items-center align-items-sm-start
-        " id="menu">
-                <div class="image_logo">
-                    <img src="image/logo.png" alt="logo_sidebar" class="logo" />
-                </div>
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="image_logo">
+            <img src="image/logo.png" alt="logo_sidebar" class="logo" />
+          </div>
 
-                <h5>محتوي النظام</h5>
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link align-middle">
-                        <img src="image/home-icon.png" alt="icon" />
-                        <span>الرئيسية</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="courses.html" class="nav-link align-middle">
-                        <img src="/image/course-icon.png" alt="icon" />
-                        <span>الكورسات</span>
-                    </a>
-                </li>
+          <h5>محتوي النظام</h5>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link align-middle">
+              <img src="image/home-icon.png" alt="icon" />
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="courses.html" class="nav-link align-middle">
+              <img src="/image/course-icon.png" alt="icon" />
+              <span>الكورسات</span>
+            </a>
+          </li>
 
-                <li class="nav-item">
-                    <a href="exams.html" class="nav-link align-middle">
-                        <img src="image/exam-icon.png" alt="icon" />
-                        <span> الامتحانات</span>
-                    </a>
-                </li>
-               
+          <li class="nav-item">
+            <a href="exams.html" class="nav-link align-middle">
+              <img src="image/exam-icon.png" alt="icon" />
+              <span> الامتحانات</span>
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a href="question-banks.html" class="nav-link align-middle">
+              <img src="image/icon-bank.png" alt="icon" />
+              <span>بنك الأسألة</span>
+            </a>
+          </li>
 
-                <li class="nav-item">
-                    <a href="question-banks.html" class="nav-link align-middle">
-                        <img src="image/icon-bank.png" alt="icon" />
-                        <span>بنك الأسألة</span>
-                    </a>
-                </li>
+          <li class="nav-item">
+            <a href="subjects.html" class="nav-link align-middle">
+              <img src="image/book-icon.png" alt="icon" />
+              <span> المواد الدراسية</span>
+            </a>
+          </li>
 
-                
-                <li class="nav-item">
-                    <a href="subjects.html" class="nav-link align-middle">
-                        <img src="image/book-icon.png" alt="icon" />
-                        <span> المواد الدراسية</span>
-                    </a>
-                </li>
+          <li class="nav-item">
+            <a
+              href="#submenuAccountant"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="image/scan-barcode-icon.png" alt="icon" />
+              <span> أكود الشراء</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuAccountant"
+              data-bs-parent="#menu"
+            >
+              <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
 
-                <li class="nav-item">
-                    <a href="#submenuAccountant" data-bs-toggle="collapse"
-                        class="nav-link accordion-button align-middle collapsed">
-                        <img src="image/scan-barcode-icon.png" alt="icon" />
-                        <span> أكود الشراء</span>
-                        <i class="fa-solid fa-angle-up"></i>
-                    </a>
-                    <ul class="collapse flex-column" id="submenuAccountant" data-bs-parent="#menu">
-                        <div class="close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-
-                        <li>
-                            <a href="code-book.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> استخراج اكواد للمذكرات</span></a>
-                        </li>
-                        <li>
-                            <a href="code-corse.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> استخراج اكواد للكورسات</span></a>
-                        </li>
-                        <li>
-                            <a href="code-training.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> استخراج اكواد للتدريبات</span></a>
-
-                        </li>
-
-                    </ul>
-                </li>
-                <h5> مستخدمي النظام</h5>
-                <li class="nav-item">
-                    <a href="teacher.html" class="nav-link align-middle">
-                        <img src="image/teacher-icon.png" alt="icon" />
-                        <span> المدرسين</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="students.html" class="nav-link align-middle">
-                        <img src="image/student-icon.png" alt="icon" />
-                        <span> الطلبة</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="lesons.html" class="nav-link align-middle">
-                        <img src="image/house-icon.png" alt="icon" />
-                        <span> سناتر الدروس</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="Systemadministrators.html" class="nav-link align-middle">
-                        <img src="image/director-icon.png" alt="icon" />
-                        <span> مديري النظام</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="powers.html" class="nav-link align-middle">
-                        <img src="image/powers-icon.png" alt="icon" />
-                        <span> الصلاحيات</span>
-                    </a>
-                </li>
-
-
-                <h5> اعدادات النظام</h5>
-
-                <li class="nav-item">
-                    <a href="country.html" class="nav-link align-middle">
-                        <img src="image/country-icon.png" alt="icon" />
-                        <span> الدول</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="governorate.html" class="nav-link align-middle">
-                        <img src="image/country-icon.png" alt="icon" />
-                        <span> المحافظات</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="city.html" class="nav-link align-middle">
-                        <img src="image/country-icon.png" alt="icon" />
-                        <span> المدن</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="universities.html" class="nav-link align-middle">
-                        <img src="image/buildings-icon.png" alt="icon" />
-                        <span> الجامعات</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="colleges.html" class="nav-link align-middle">
-                        <img src="image/colleage-icon.png" alt="icon" />
-                        <span> الكليات</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="main-edu.html" class="nav-link align-middle">
-                        <img src="image/main-edu-icon.png" alt="icon" />
-                        <span> التعليم الاساسي</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="study-teams.html" class="nav-link align-middle">
-                        <img src="image/format-circle.png" alt="icon" />
-                        <span> الفرق الدراسية</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="seting-point.html" class="nav-link align-middle">
-                        <img src="image/buy-crypto-icon.png" alt="icon" />
-                        <span> اعدادات النقاط</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="slider-table.html" class="nav-link align-middle">
-                        <img src="image/slider-icon.png" alt="icon" />
-                        <span> الاسلايدر</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="seting-notifcation.html" class="nav-link align-middle">
-                        <img src="image/notification-bing-icon.png" alt="icon" />
-                        <span> اعدادات الاشعارات</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="setting.html" class="nav-link align-middle">
-                        <img src="image/powers-icon.png" alt="icon" />
-                        <span> الاعدادات العامة</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link align-middle">
-                        <img src="image/logout-icon.png" alt="icon" />
-                        <span> تسجيل الخروج</span>
-                    </a>
-                </li>
-
-
+              <li>
+                <a href="code-book.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للمذكرات</span></a
+                >
+              </li>
+              <li>
+                <a href="code-corse.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للكورسات</span></a
+                >
+              </li>
+              <li>
+                <a href="code-training.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للتدريبات</span></a
+                >
+              </li>
             </ul>
-        </section>
-        <!---------------------- end sidebar -------------------------------------------->
-        <!---------------------- start main content -------------------------------------------->
+          </li>
+          <h5>مستخدمي النظام</h5>
+          <li class="nav-item">
+            <a href="teacher.html" class="nav-link align-middle">
+              <img src="image/teacher-icon.png" alt="icon" />
+              <span> المدرسين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="students.html" class="nav-link align-middle">
+              <img src="image/student-icon.png" alt="icon" />
+              <span> الطلبة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="lesons.html" class="nav-link align-middle">
+              <img src="image/house-icon.png" alt="icon" />
+              <span> سناتر الدروس</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Systemadministrators.html" class="nav-link align-middle">
+              <img src="image/director-icon.png" alt="icon" />
+              <span> مديري النظام</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="powers.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الصلاحيات</span>
+            </a>
+          </li>
 
-        <section class="index_cards">
-            <!---------------------- start nav -------------------------------------------->
-            <nav class="nav_top navbar">
-                <div class="container">
-                    <div class="menu">
-                        <i class="bi bi-list"></i>
-                    </div>
-                    <div class="info">
-                        <div class="notfication" onclick="showNotification()">
-                            <i class="bi bi-bell"></i>
-                            <span class="alerts">
-                                3
-                            </span>
-                        </div>
+          <h5>اعدادات النظام</h5>
 
-                        <div class="img">
-                            <img src="../image/person.png" alt="person">
-                        </div>
-                        <div class="btn-group">
-                            <button class="btn  btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                محمد طارق
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li> <a href="settings.html">اعدادات الحساب</a> </li>
-                                <li onclick="acceptAlert()"> تسجيل الخروج </li>
-                            </ul>
-                        </div>
+          <li class="nav-item">
+            <a href="country.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> الدول</span>
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a href="governorate.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المحافظات</span>
+            </a>
+          </li>
 
-                    </div>
+          <li class="nav-item">
+            <a href="city.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المدن</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="universities.html" class="nav-link align-middle">
+              <img src="image/buildings-icon.png" alt="icon" />
+              <span> الجامعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="colleges.html" class="nav-link align-middle">
+              <img src="image/colleage-icon.png" alt="icon" />
+              <span> الكليات</span>
+            </a>
+          </li>
 
-                </div>
-            </nav>
-            <ul class="notfication_list">
-                <h2>الأشعارات</h2>
-                <i class="bi bi-x close-icon" onclick="hideNotification()"></i>
+          <li class="nav-item">
+            <a href="main-edu.html" class="nav-link align-middle">
+              <img src="image/main-edu-icon.png" alt="icon" />
+              <span> التعليم الاساسي</span>
+            </a>
+          </li>
 
-                <li class="unread" onclick="convertToRead(this)">
-                    <div class="info">
-                        <h6> text</h6>
-                        <span> 22/6/1993</span>
-                    </div>
-                    <div class="delete">
-                        <i class="bi bi-trash"></i>
-                    </div>
-                </li>
-                <li class="read">
-                    <div class="info">
-                        <h6> text</h6>
-                        <span> 22/6/1993</span>
-                    </div>
-                    <div class="delete">
-                        <i class="bi bi-trash"></i>
-                    </div>
-                </li>
-            </ul>
-            <!---------------------- finish nav -------------------------------------------->
-            <!---------------------- start content -------------------------------------------->
-            <div class="content_page">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_topic">
-                            <h4> اضافة حصة جديدة </h4>
+          <li class="nav-item">
+            <a href="study-teams.html" class="nav-link align-middle">
+              <img src="image/format-circle.png" alt="icon" />
+              <span> الفرق الدراسية</span>
+            </a>
+          </li>
 
-                        </div>
+          <li class="nav-item">
+            <a href="seting-point.html" class="nav-link align-middle">
+              <img src="image/buy-crypto-icon.png" alt="icon" />
+              <span> اعدادات النقاط</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="slider-table.html" class="nav-link align-middle">
+              <img src="image/slider-icon.png" alt="icon" />
+              <span> الاسلايدر</span>
+            </a>
+          </li>
 
-                        <!-- first step -->
-                        <div class="form-step-inside  form-step-inside-active">
-                            <div class="container">
-                                <div class="main_topic">
-                                    <h4> التفاصيل العامة </h4>
-                                </div>
-                                <form class="form_topic">
+          <li class="nav-item">
+            <a href="seting-notifcation.html" class="nav-link align-middle">
+              <img src="image/notification-bing-icon.png" alt="icon" />
+              <span> اعدادات الاشعارات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الاعدادات العامة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <img src="image/logout-icon.png" alt="icon" />
+              <span> تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!---------------------- end sidebar -------------------------------------------->
+      <!---------------------- start main content -------------------------------------------->
 
-
-                                    <div class="row">
-                                        <!-- start input -->
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> عنوان الحصة</label>
-                                                <input type="text" class="form-control" placeholder=" ادخل عنوان الحصة">
-                                            </div>
-                                        </div>
-                                        <!-- finish input -->
-
-                                        <!-- start input -->
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> الباب الدراسي</label>
-                                                <select required class="selectpicker"
-                                                    data-placeholder="اختر الباب الدراسي"
-                                                    data-selected-text-format="count > 1" data-icon="bi bi-trash"
-                                                    data-live-search="true">
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <!-- finish input -->
-                                        <!-- start input -->
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> الدرس</label>
-                                                <select required class="selectpicker" data-placeholder="اختر الدرس"
-                                                    data-selected-text-format="count > 1" data-icon="bi bi-trash"
-                                                    data-live-search="true">
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <!-- finish input -->
-
-                                        <!-- start input -->
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> وصف الحصة </label>
-                                                <textarea class="form-control" placeholder="اكتب وصف الحصة"></textarea>
-                                            </div>
-                                        </div>
-                                        <!-- finish input -->
-
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> الحالة السعرية</label>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="priceType" type="radio"
-                                                        id="radio" value="option" onchange="togglePriceStatus()">
-                                                    <label class="form-check-label" for="inlineCheckbox"> مجاني</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="priceType" type="radio"
-                                                        id="radio1" value="option1" onchange="togglePriceStatus()">
-                                                    <label class="form-check-label" for="inlineCheckbox1"> مدفوع</label>
-                                                </div>
-
-
-
-                                            </div>
-                                        </div>
-                                        <div class="course_price" id="togglePrice">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="form-check">
-                                                        <input onchange="togglePriceCan()" class="form-check-input"
-                                                            type="checkbox" value="" id="flexCheckDefault">
-                                                        <label class="form-check-label" for="flexCheckDefault">
-                                                            امكانية الشراء
-                                                        </label>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="course_price" id="togglePricedef">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="input-group">
-                                                        <label class="form-label"> السعر</label>
-                                                        <input type="number" class="form-control"
-                                                            placeholder=" ادخل السعر  ">
-                                                        <span
-                                                            class="badge d-block text-primary w-100 text-end py-2">السعر
-                                                            متاح
-                                                            للطلاب خارج الكورس</span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> نوع الحصة</label>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="priceType" type="radio"
-                                                        id="recordLesson" value="option"
-                                                        onchange="toggleLessonDetials()">
-                                                    <label class="form-check-label" for="inlineCheckbox"> مسجلة</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="priceType" type="radio"
-                                                        id="liveLesson" value="option1"
-                                                        onchange="toggleLessonDetials()">
-                                                    <label class="form-check-label" for="inlineCheckbox1"> لايف</label>
-                                                </div>
-
-
-
-                                            </div>
-                                        </div>
-                                        <!-- lesson detials if recoded class -->
-                                        <div class="course_price" id="lessonDetials">
-                                        
-                                            <div class="col-12">
-                                                <div class="input-group">
-                                                    <label class="form-label"> نوع الفيديو</label>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" name="vedioType" type="radio"
-                                                            id="existVideo" value="option3"
-                                                            onchange="toggleVedioType()">
-                                                        <label class="form-check-label" for="inlineCheckbox3"> فيديو
-                                                            موجود من قبل</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" name="vedioType" type="radio"
-                                                            id="newVideo" value="option4" onchange="toggleVedioType()">
-                                                        <label class="form-check-label" for="inlineCheckbox4"> غير
-                                                            محدد</label>
-                                                    </div>
-
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" name="vedioType" type="radio"
-                                                            id="extenralink" value="option5"
-                                                            onchange="toggleVedioType()">
-                                                        <label class="form-check-label" for="inlineCheckbox5"> لينك
-                                                            خارجي</label>
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-                                            <!-- choise vedio type -->
-                                            <!-- 1-exist video -->
-                                            <div class="course_price" id="existVedioType">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="input-group">
-                                                            <label class="form-label"> الفيديو</label>
-                                                            <select required class="selectpicker"
-                                                                data-placeholder="اختر الفيديو"
-                                                                data-selected-text-format="count > 1"
-                                                                data-icon="bi bi-trash" data-live-search="true">
-                                                                <option value="1">One</option>
-                                                                <option value="2">Two</option>
-                                                                <option value="3">Three</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <!-- 1-exist video -->
-                                            <!-- 2-new video -->
-                                            <div class="course_price" id="newVedioType">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="input-group pt-4">
-                                                            <label class="form-label"> رفع الفيديو</label>
-                                                            <div class="file-upload-wrapper"
-                                                                data-text=" اسحب الفيديو واسقطه هنا اوقم بتحميل فيديو من هنا">
-                                                                <input required name="file-upload-field  form-control"
-                                                                    type="file" class="file-upload-field" value="" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <!-- 2-new video -->
-                                            <!-- 3-external link -->
-                                            <div class="course_price" id="externalVedioType">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="input-group">
-                                                            <label class="form-label"> الفيديو</label>
-                                                            <input type="url" class="form-control"
-                                                                placeholder=" ادخل لينك الفيديو ">
-
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <!-- 3-external link -->
-                                            <!-- choise vedio type -->
-                                        </div>
-                                        <!-- lesson detials if recoded class -->
-                                        <!-- lesson detials if live class -->
-                                        <div class="course_price" id="lessonDetialsLive">
-                                            <!-- start input -->
-                                            <div class="col-12">
-                                                <div class="input-group">
-                                                    <label class="form-label"> Room ID</label>
-                                                    <input type="number" class="form-control"
-                                                        placeholder=" enter room id">
-                                                </div>
-                                            </div>
-                                            <!-- finish input -->
-
-                                            <!-- start input -->
-                                            <div class="col-12">
-                                                <div class="input-group">
-                                                    <label class="form-label"> Password ID </label>
-                                                    <input type="password" class="form-control"
-                                                        placeholder=" enter room id">
-                                                </div>
-                                            </div>
-                                            <!-- finish input -->
-                                            <!-- start input -->
-                                            <div class="col-lg-6  col-12">
-                                                <div class="input-group">
-                                                    <label class="form-label"> تاريخ البداية </label>
-                                                    <input type="date" class="form-control">
-                                                </div>
-                                            </div>
-                                            <!-- finish input -->
-
-                                            <!-- start input -->
-                                            <div class="col-lg-6  col-12">
-                                                <div class="input-group">
-                                                    <label class="form-label"> تاريخ النهاية </label>
-                                                    <input type="date" class="form-control">
-                                                </div>
-                                            </div>
-                                            <!-- finish input -->
-                                        </div>
-                                        <!-- lesson detials if live class -->
-
-                                        <!-- start input -->
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> الترتيب </label>
-                                                <input type="number" class="form-control">
-                                            </div>
-                                        </div>
-                                        <!-- finish input -->
-
-                                        <!-- start input -->
-                                        <div class="col-12">
-                                            <div class="input-group pt-4">
-                                                <label class="form-label"> رفع صورة معبرة</label>
-                                                <div class="file-upload-wrapper"
-                                                    data-text="اسحب الصورة التى تريد اضافتها  او قم بفتحها من هنا">
-                                                    <input required name="file-upload-field form-control" type="file"
-                                                        class="file-upload-field" value="" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- finish input -->
-
-                                        <!-- start input -->
-                                        <div class="col-lg-6  col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> تاريخ البداية </label>
-                                                <input type="date" class="form-control">
-                                            </div>
-                                        </div>
-                                        <!-- finish input -->
-
-                                        <!-- start input -->
-                                        <div class="col-lg-6  col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> تاريخ النهاية </label>
-                                                <input type="date" class="form-control">
-                                            </div>
-                                        </div>
-                                        <!-- finish input -->
-
-
-                                        <div class="col-12">
-                                            <a href="#" class="btn btn-next-inside first">الاضافة والحفظ</a>
-                                        </div>
-                                    </div>
-                                    <!-- main education -->
-                                </form>
-                            </div>
-                        </div>
-                        <!-- first step -->
-                        <!-- second step -->
-                        <div class="form-step-inside ">
-                            <div class="container">
-                                <div class="main_topic">
-                                    <h4> اعدادات الحصة </h4>
-                                </div>
-                                <form class="form_topic">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> عدد المشاهدات المتاحه لكل فيديو</label>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="vedioWatch" type="radio"
-                                                        id="limiteVideo" value="option" onchange="toggleVedioWatch()">
-                                                    <label class="form-check-label" for="inlineCheckbox"> محدد</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="vedioWatch" type="radio"
-                                                        id="unLimitedLesson" value="option1"
-                                                        onchange="toggleVedioWatch()">
-                                                    <label class="form-check-label" for="inlineCheckbox1"> نهائي</label>
-                                                </div>
-
-
-
-                                            </div>
-                                        </div>
-                                        <!-- limit / unLimitedLesson -->
-                                        <div class="course_price" id="toggleVideoWatch">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="input-group">
-                                                        <label class="form-label"> ادخل عدد المشاهدات</label>
-                                                        <input type="number" class="form-control"
-                                                            placeholder="  ادخل عدد المشاهدات  ">
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- limit / unLimitedLesson -->
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> ظهور علامة مائية متحركة</label>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="vedioWatch" type="radio"
-                                                        id="yesWaterMarek" value="option" onchange="toggleWaterMark()">
-                                                    <label class="form-check-label" for="inlineCheckbox"> نعم </label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="vedioWatch" type="radio"
-                                                        id="noWaterMarek" value="option1" onchange="toggleWaterMark()">
-                                                    <label class="form-check-label" for="inlineCheckbox1"> لا</label>
-                                                </div>
-
-
-
-                                            </div>
-                                        </div>
-                                        <!-- yes / no water marker -->
-                                        <div class="course_price" id="toggleWaterMark">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="input-group">
-                                                        <label class="form-label"> كل كام ثانية</label>
-                                                        <input type="number" class="form-control" placeholder="  ">
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- yes / no water marker -->
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> ظهور علامة مائية ثابتة</label>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="vedioWatch" type="radio"
-                                                        id="radio4" value="option">
-                                                    <label class="form-check-label" for="inlineCheckbox"> نعم </label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="vedioWatch" type="radio"
-                                                        id="radio5" value="option1">
-                                                    <label class="form-check-label" for="inlineCheckbox1"> لا</label>
-                                                </div>
-
-
-
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> السماح للمحاكي </label>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="vedioWatch" type="radio"
-                                                        id="radio6" value="option">
-                                                    <label class="form-check-label" for="inlineCheckbox"> نعم </label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="vedioWatch" type="radio"
-                                                        id="radio7" value="option1">
-                                                    <label class="form-check-label" for="inlineCheckbox1"> لا</label>
-                                                </div>
-
-
-
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> يجب استخدام سماعات الأذن </label>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="vedioWatch" type="radio"
-                                                        id="radio8" value="option">
-                                                    <label class="form-check-label" for="inlineCheckbox"> نعم </label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="vedioWatch" type="radio"
-                                                        id="radio9" value="option1">
-                                                    <label class="form-check-label" for="inlineCheckbox1"> لا</label>
-                                                </div>
-
-
-
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> نوع الملف mp3 </label>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="vedioWatch" type="radio"
-                                                        id="radio10" value="option">
-                                                    <label class="form-check-label" for="inlineCheckbox"> نعم </label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="vedioWatch" type="radio"
-                                                        id="radio11" value="option1">
-                                                    <label class="form-check-label" for="inlineCheckbox1"> لا</label>
-                                                </div>
-
-
-
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="button">
-                                                <button class="btn  first" type="button" data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModal">الاضافة والحفظ</button>
-                                                <a href="#" class="btn btn-next-inside second"> رجوع </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-
-                            </div>
-                        </div>
-                        <!-- second step -->
-
-
-                    </div>
-
-
-                </div>
+      <section class="index_cards">
+        <!---------------------- start nav -------------------------------------------->
+        <nav class="nav_top navbar">
+          <div class="container">
+            <div class="menu">
+              <i class="bi bi-list"></i>
             </div>
-            <!---------------------- finish  content -------------------------------------------->
-        </section>
-        <!---------------------- finish main content -------------------------------------------->
+            <div class="info">
+              <div class="notfication" onclick="showNotification()">
+                <i class="bi bi-bell"></i>
+                <span class="alerts"> 3 </span>
+              </div>
+
+              <div class="img">
+                <img src="../image/person.png" alt="person" />
+              </div>
+              <div class="btn-group">
+                <button
+                  class="btn btn-sm dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  محمد طارق
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="settings.html">اعدادات الحساب</a></li>
+                  <li onclick="acceptAlert()">تسجيل الخروج</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <ul class="notfication_list">
+          <h2>الأشعارات</h2>
+          <i class="bi bi-x close-icon" onclick="hideNotification()"></i>
+
+          <li class="unread" onclick="convertToRead(this)">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+          <li class="read">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+        </ul>
+        <!---------------------- finish nav -------------------------------------------->
+        <!---------------------- start content -------------------------------------------->
+        <div class="content_page">
+          <div class="container">
+            <div class="row">
+              <div class="main_topic">
+                <h4>اضافة حصة جديدة</h4>
+              </div>
+
+              <!-- first step -->
+              <div class="form-step-inside form-step-inside-active">
+                <div class="container">
+                  <div class="main_topic">
+                    <h4>التفاصيل العامة</h4>
+                  </div>
+                  <form class="form_topic">
+                    <div class="row">
+                      <!-- start input -->
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> عنوان الحصة</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder=" ادخل عنوان الحصة"
+                          />
+                        </div>
+                      </div>
+                      <!-- finish input -->
+
+                      <!-- start input -->
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> الباب الدراسي</label>
+                          <select
+                            required
+                            class="selectpicker"
+                            data-placeholder="اختر الباب الدراسي"
+                            data-selected-text-format="count > 1"
+                            data-icon="bi bi-trash"
+                            data-live-search="true"
+                          >
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- finish input -->
+                      <!-- start input -->
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> الدرس</label>
+                          <select
+                            required
+                            class="selectpicker"
+                            data-placeholder="اختر الدرس"
+                            data-selected-text-format="count > 1"
+                            data-icon="bi bi-trash"
+                            data-live-search="true"
+                          >
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- finish input -->
+
+                      <!-- start input -->
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> وصف الحصة </label>
+                          <textarea
+                            class="form-control"
+                            placeholder="اكتب وصف الحصة"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <!-- finish input -->
+
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> الحالة السعرية</label>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="priceType"
+                              type="radio"
+                              id="radio"
+                              value="option"
+                              onchange="togglePriceStatus()"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox"
+                            >
+                              مجاني</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="priceType"
+                              type="radio"
+                              id="radio1"
+                              value="option1"
+                              onchange="togglePriceStatus()"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox1"
+                            >
+                              مدفوع</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="course_price" id="togglePrice">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input
+                                onchange="togglePriceCan()"
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault"
+                              >
+                                امكانية الشراء
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="course_price" id="togglePricedef">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="input-group">
+                              <label class="form-label"> السعر</label>
+                              <input
+                                type="number"
+                                class="form-control"
+                                placeholder=" ادخل السعر  "
+                              />
+                              <span
+                                class="badge d-block text-primary w-100 text-end py-2"
+                                >السعر متاح للطلاب خارج الكورس</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> نوع الحصة</label>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="priceType"
+                              type="radio"
+                              id="recordLesson"
+                              value="option"
+                              onchange="toggleLessonDetials()"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox"
+                            >
+                              مسجلة</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="priceType"
+                              type="radio"
+                              id="liveLesson"
+                              value="option1"
+                              onchange="toggleLessonDetials()"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox1"
+                            >
+                              لايف</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <!-- lesson detials if recoded class -->
+                      <div class="course_price" id="lessonDetials">
+                        <div class="col-12">
+                          <div class="input-group">
+                            <label class="form-label"> نوع الفيديو</label>
+                            <div class="form-check form-check-inline">
+                              <input
+                                class="form-check-input"
+                                name="vedioType"
+                                type="radio"
+                                id="existVideo"
+                                value="option3"
+                                onchange="toggleVedioType()"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="inlineCheckbox3"
+                              >
+                                فيديو موجود من قبل</label
+                              >
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input
+                                class="form-check-input"
+                                name="vedioType"
+                                type="radio"
+                                id="newVideo"
+                                value="option4"
+                                onchange="toggleVedioType()"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="inlineCheckbox4"
+                              >
+                                غير محدد</label
+                              >
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                              <input
+                                class="form-check-input"
+                                name="vedioType"
+                                type="radio"
+                                id="extenralink"
+                                value="option5"
+                                onchange="toggleVedioType()"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="inlineCheckbox5"
+                              >
+                                لينك خارجي</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <!-- choise vedio type -->
+                        <!-- 1-exist video -->
+                        <div class="course_price" id="existVedioType">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="input-group">
+                                <label class="form-label"> الفيديو</label>
+                                <select
+                                  required
+                                  class="selectpicker"
+                                  data-placeholder="اختر الفيديو"
+                                  data-selected-text-format="count > 1"
+                                  data-icon="bi bi-trash"
+                                  data-live-search="true"
+                                >
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 1-exist video -->
+                        <!-- 2-new video -->
+                        <div class="course_price" id="newVedioType">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="input-group pt-4">
+                                <label class="form-label"> رفع الفيديو</label>
+                                <div
+                                  class="file-upload-wrapper"
+                                  data-text=" اسحب الفيديو واسقطه هنا اوقم بتحميل فيديو من هنا"
+                                >
+                                  <input
+                                    required
+                                    name="file-upload-field  form-control"
+                                    type="file"
+                                    class="file-upload-field"
+                                    value=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 2-new video -->
+                        <!-- 3-external link -->
+                        <div class="course_price" id="externalVedioType">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="input-group">
+                                <label class="form-label"> الفيديو</label>
+                                <input
+                                  type="url"
+                                  class="form-control"
+                                  placeholder=" ادخل لينك الفيديو "
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 3-external link -->
+                        <!-- choise vedio type -->
+                      </div>
+                      <!-- lesson detials if recoded class -->
+                      <!-- lesson detials if live class -->
+                      <div class="course_price" id="lessonDetialsLive">
+                        <!-- start input -->
+                        <div class="col-12">
+                          <div class="input-group">
+                            <label class="form-label"> Room ID</label>
+                            <input
+                              type="number"
+                              class="form-control"
+                              placeholder=" enter room id"
+                            />
+                          </div>
+                        </div>
+                        <!-- finish input -->
+
+                        <!-- start input -->
+                        <div class="col-12">
+                          <div class="input-group">
+                            <label class="form-label"> Password ID </label>
+                            <input
+                              type="password"
+                              class="form-control"
+                              placeholder=" enter room id"
+                            />
+                          </div>
+                        </div>
+                        <!-- finish input -->
+                        <!-- start input -->
+                        <div class="col-lg-6 col-12">
+                          <div class="input-group">
+                            <label class="form-label"> تاريخ البداية </label>
+                            <input type="date" class="form-control" />
+                          </div>
+                        </div>
+                        <!-- finish input -->
+
+                        <!-- start input -->
+                        <div class="col-lg-6 col-12">
+                          <div class="input-group">
+                            <label class="form-label"> تاريخ النهاية </label>
+                            <input type="date" class="form-control" />
+                          </div>
+                        </div>
+                        <!-- finish input -->
+                      </div>
+                      <!-- lesson detials if live class -->
+
+                      <!-- start input -->
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> الترتيب </label>
+                          <input type="number" class="form-control" />
+                        </div>
+                      </div>
+                      <!-- finish input -->
+
+                      <!-- start input -->
+                      <div class="col-12">
+                        <div class="input-group pt-4">
+                          <label class="form-label"> رفع صورة معبرة</label>
+                          <div
+                            class="file-upload-wrapper"
+                            data-text="اسحب الصورة التى تريد اضافتها  او قم بفتحها من هنا"
+                          >
+                            <input
+                              required
+                              name="file-upload-field form-control"
+                              type="file"
+                              class="file-upload-field"
+                              value=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- finish input -->
+
+                      <!-- start input -->
+                      <div class="col-lg-6 col-12">
+                        <div class="input-group">
+                          <label class="form-label"> تاريخ البداية </label>
+                          <input type="date" class="form-control" />
+                        </div>
+                      </div>
+                      <!-- finish input -->
+
+                      <!-- start input -->
+                      <div class="col-lg-6 col-12">
+                        <div class="input-group">
+                          <label class="form-label"> تاريخ النهاية </label>
+                          <input type="date" class="form-control" />
+                        </div>
+                      </div>
+                      <!-- finish input -->
+
+                      <div class="col-12">
+                        <a href="#" class="btn btn-next-inside first"
+                          >الاضافة والحفظ</a
+                        >
+                      </div>
+                    </div>
+                    <!-- main education -->
+                  </form>
+                </div>
+              </div>
+              <!-- first step -->
+              <!-- second step -->
+              <div class="form-step-inside">
+                <div class="container">
+                  <div class="main_topic">
+                    <h4>اعدادات الحصة</h4>
+                  </div>
+                  <form class="form_topic">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label">
+                            عدد المشاهدات المتاحه لكل فيديو</label
+                          >
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="vedioWatch"
+                              type="radio"
+                              id="limiteVideo"
+                              value="option"
+                              onchange="toggleVedioWatch()"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox"
+                            >
+                              محدد</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="vedioWatch"
+                              type="radio"
+                              id="unLimitedLesson"
+                              value="option1"
+                              onchange="toggleVedioWatch()"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox1"
+                            >
+                              نهائي</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <!-- limit / unLimitedLesson -->
+                      <div class="course_price" id="toggleVideoWatch">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="input-group">
+                              <label class="form-label">
+                                ادخل عدد المشاهدات</label
+                              >
+                              <input
+                                type="number"
+                                class="form-control"
+                                placeholder="  ادخل عدد المشاهدات  "
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- limit / unLimitedLesson -->
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label">
+                            ظهور علامة مائية متحركة</label
+                          >
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="vedioWatch"
+                              type="radio"
+                              id="yesWaterMarek"
+                              value="option"
+                              onchange="toggleWaterMark()"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox"
+                            >
+                              نعم
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="vedioWatch"
+                              type="radio"
+                              id="noWaterMarek"
+                              value="option1"
+                              onchange="toggleWaterMark()"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox1"
+                            >
+                              لا</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <!-- yes / no water marker -->
+                      <div class="course_price" id="toggleWaterMark">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="input-group">
+                              <label class="form-label"> كل كام ثانية</label>
+                              <input
+                                type="number"
+                                class="form-control"
+                                placeholder="  "
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- yes / no water marker -->
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label">
+                            ظهور علامة مائية ثابتة</label
+                          >
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="vedioWatch"
+                              type="radio"
+                              id="radio4"
+                              value="option"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox"
+                            >
+                              نعم
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="vedioWatch"
+                              type="radio"
+                              id="radio5"
+                              value="option1"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox1"
+                            >
+                              لا</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> السماح للمحاكي </label>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="vedioWatch"
+                              type="radio"
+                              id="radio6"
+                              value="option"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox"
+                            >
+                              نعم
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="vedioWatch"
+                              type="radio"
+                              id="radio7"
+                              value="option1"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox1"
+                            >
+                              لا</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label">
+                            يجب استخدام سماعات الأذن
+                          </label>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="vedioWatch"
+                              type="radio"
+                              id="radio8"
+                              value="option"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox"
+                            >
+                              نعم
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="vedioWatch"
+                              type="radio"
+                              id="radio9"
+                              value="option1"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox1"
+                            >
+                              لا</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> نوع الملف mp3 </label>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="vedioWatch"
+                              type="radio"
+                              id="radio10"
+                              value="option"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox"
+                            >
+                              نعم
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="vedioWatch"
+                              type="radio"
+                              id="radio11"
+                              value="option1"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox1"
+                            >
+                              لا</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="button">
+                          <button
+                            class="btn first"
+                            type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                          >
+                            الاضافة والحفظ
+                          </button>
+                          <a href="#" class="btn btn-next-inside second">
+                            رجوع
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- second step -->
+            </div>
+          </div>
+        </div>
+      
+        <!---------------------- finish  content -------------------------------------------->
+      </section>
+      <!---------------------- finish main content -------------------------------------------->
     </main>
     <!---------------------- finish footer -------------------------------------------->
 
     <!---------------------- modal -------------------------------------------->
 
-    <div class="modal modal_assistant fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="content">
-                        <h4> تم اضافة الحصة بنجاح</h4>
-                        <p>لقد قمت الآن باضافة الحصة جديد الى قائمة الكورسات</p>
-                        <div class="button">
-                            <a href="detials-course.html" class="btn first">عرض التفاصيل </a>
-                            <a href="add-lesson.html" class="btn second"> اضافة حصة جديد</a>
-                        </div>
-                    </div>
-                </div>
-
+    <div
+      class="modal modal_assistant fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="content">
+              <h4>تم اضافة الحصة بنجاح</h4>
+              <p>لقد قمت الآن باضافة الحصة جديد الى قائمة الكورسات</p>
+              <div class="button">
+                <a href="detials-course.html" class="btn first"
+                  >عرض التفاصيل
+                </a>
+                <a href="add-lesson.html" class="btn second"> اضافة حصة جديد</a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!---------------------- modal -------------------------------------------->
     <!-- main js -->
@@ -814,173 +1053,164 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- sweet alert -->
 
-
     <!-- upload file -->
     <script>
-        $("form").on("change", ".file-upload-field", function () {
-            $(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, ''));
-        });
+      $("form").on("change", ".file-upload-field", function () {
+        $(this)
+          .parent(".file-upload-wrapper")
+          .attr(
+            "data-text",
+            $(this)
+              .val()
+              .replace(/.*(\/|\\)/, "")
+          );
+      });
     </script>
     <!-- upload file -->
 
     <!-- form withard inside -->
     <script>
-        const prevBtnsIns = document.querySelectorAll(".btn-prev-inside");
-        const nextBtnsIns = document.querySelectorAll(".btn-next-inside");
-        const formStepsIns = document.querySelectorAll(".form-step-inside");
-        let formStepsNumIns = 0;
+      const prevBtnsIns = document.querySelectorAll(".btn-prev-inside");
+      const nextBtnsIns = document.querySelectorAll(".btn-next-inside");
+      const formStepsIns = document.querySelectorAll(".form-step-inside");
+      let formStepsNumIns = 0;
 
-        nextBtnsIns.forEach((btn) => {
-            btn.addEventListener("click", () => {
-                formStepsNumIns++;
-                updateFormStepsIns();
-                // updateProgressbar();
-            });
+      nextBtnsIns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          formStepsNumIns++;
+          updateFormStepsIns();
+          // updateProgressbar();
         });
-        prevBtnsIns.forEach((btn) => {
-            btn.addEventListener("click", () => {
-                formStepsNumIns--;
-                updateFormStepsIns();
-                // updateProgressbar();
-            });
+      });
+      prevBtnsIns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          formStepsNumIns--;
+          updateFormStepsIns();
+          // updateProgressbar();
         });
-        function updateFormStepsIns() {
-            formStepsIns.forEach((formStep) => {
-                formStep.classList.contains("form-step-inside-active") &&
-                    formStep.classList.remove("form-step-inside-active");
-            });
+      });
+      function updateFormStepsIns() {
+        formStepsIns.forEach((formStep) => {
+          formStep.classList.contains("form-step-inside-active") &&
+            formStep.classList.remove("form-step-inside-active");
+        });
 
-            formStepsIns[formStepsNumIns].classList.add("form-step-inside-active");
-        }
+        formStepsIns[formStepsNumIns].classList.add("form-step-inside-active");
+      }
     </script>
     <!-- form withard inside -->
     <!-- show / hide  price status -->
     <script>
+      function togglePriceStatus() {
+        var checkbox = document.getElementById("radio");
+        var checkbox1 = document.getElementById("radio1");
+        var hiddenView = document.getElementById("togglePrice");
 
-        function togglePriceStatus() {
-            var checkbox = document.getElementById('radio');
-            var checkbox1 = document.getElementById('radio1');
-            var hiddenView = document.getElementById('togglePrice');
-
-            if (checkbox1.checked) {
-                // Show the hidden row
-                hiddenView.classList.remove('course_price');
-
-            } else if (checkbox.checked) {
-                // Hide and remove the row
-                hiddenView.classList.add('course_price');
-            }
+        if (checkbox1.checked) {
+          // Show the hidden row
+          hiddenView.classList.remove("course_price");
+        } else if (checkbox.checked) {
+          // Hide and remove the row
+          hiddenView.classList.add("course_price");
         }
-        function togglePriceCan() {
-            var checkboxdef = document.getElementById('flexCheckDefault');
-            var hiddenView = document.getElementById('togglePricedef');
-            if (checkboxdef.checked) {
-                // Show the hidden row
-                hiddenView.classList.remove('course_price');
-
-            }
+      }
+      function togglePriceCan() {
+        var checkboxdef = document.getElementById("flexCheckDefault");
+        var hiddenView = document.getElementById("togglePricedef");
+        if (checkboxdef.checked) {
+          // Show the hidden row
+          hiddenView.classList.remove("course_price");
         }
+      }
     </script>
     <!-- show / hide  price status -->
 
     <!-- show / hide  lesson detials     -->
     <script>
-        function toggleLessonDetials() {
-            var recordLesson = document.getElementById('recordLesson');
-            var liveLesson = document.getElementById('liveLesson');
-            var hiddenRow = document.getElementById('lessonDetials');
-            var hiddenRow2 = document.getElementById('lessonDetialsLive');
+      function toggleLessonDetials() {
+        var recordLesson = document.getElementById("recordLesson");
+        var liveLesson = document.getElementById("liveLesson");
+        var hiddenRow = document.getElementById("lessonDetials");
+        var hiddenRow2 = document.getElementById("lessonDetialsLive");
 
-            if (recordLesson.checked) {
-                // Show the hidden row
-                hiddenRow.classList.remove('course_price');
-                hiddenRow2.classList.add('course_price');
-
-            } else if (liveLesson.checked) {
-                // Hide and remove the row
-                hiddenRow.classList.add('course_price');
-                hiddenRow2.classList.remove('course_price');
-            }
+        if (recordLesson.checked) {
+          // Show the hidden row
+          hiddenRow.classList.remove("course_price");
+          hiddenRow2.classList.add("course_price");
+        } else if (liveLesson.checked) {
+          // Hide and remove the row
+          hiddenRow.classList.add("course_price");
+          hiddenRow2.classList.remove("course_price");
         }
+      }
     </script>
     <!-- show / hide  lesson detials     -->
     <!-- show / hide  Vedio Type -->
     <script>
-        function toggleVedioType() {
-            var existVideo = document.getElementById('existVideo');
-            var newVideo = document.getElementById('newVideo');
-            var extenralink = document.getElementById('extenralink');
-            var existVideoContainer = document.getElementById('existVedioType');
-            var newVedioContainer = document.getElementById('newVedioType');
-            var externalVedioContainer = document.getElementById('externalVedioType');
+      function toggleVedioType() {
+        var existVideo = document.getElementById("existVideo");
+        var newVideo = document.getElementById("newVideo");
+        var extenralink = document.getElementById("extenralink");
+        var existVideoContainer = document.getElementById("existVedioType");
+        var newVedioContainer = document.getElementById("newVedioType");
+        var externalVedioContainer =
+          document.getElementById("externalVedioType");
 
-            if (existVideo.checked) {
-                // Show the hidden row
-                existVideoContainer.classList.remove('course_price');
-                newVedioContainer.classList.add('course_price');
-                externalVedioContainer.classList.add('course_price');
-
-            } else if (newVideo.checked) {
-                // Hide and remove the row
-                existVideoContainer.classList.add('course_price');
-                newVedioContainer.classList.remove('course_price');
-                externalVedioContainer.classList.add('course_price');
-            }
-            else if (extenralink.checked) {
-                // Hide and remove the row
-                existVideoContainer.classList.add('course_price');
-                newVedioContainer.classList.add('course_price');
-                externalVedioContainer.classList.remove('course_price');
-            }
+        if (existVideo.checked) {
+          // Show the hidden row
+          existVideoContainer.classList.remove("course_price");
+          newVedioContainer.classList.add("course_price");
+          externalVedioContainer.classList.add("course_price");
+        } else if (newVideo.checked) {
+          // Hide and remove the row
+          existVideoContainer.classList.add("course_price");
+          newVedioContainer.classList.remove("course_price");
+          externalVedioContainer.classList.add("course_price");
+        } else if (extenralink.checked) {
+          // Hide and remove the row
+          existVideoContainer.classList.add("course_price");
+          newVedioContainer.classList.add("course_price");
+          externalVedioContainer.classList.remove("course_price");
         }
-
+      }
     </script>
     <!-- show / hide  Vedio Type -->
     <!-- show / hide  Vedio watch -->
     <script>
-        function toggleVedioWatch() {
-            var limiteVideo = document.getElementById('limiteVideo');
-            var unLimitedLesson = document.getElementById('unLimitedLesson');
-            var hiddenRow = document.getElementById('toggleVideoWatch');
+      function toggleVedioWatch() {
+        var limiteVideo = document.getElementById("limiteVideo");
+        var unLimitedLesson = document.getElementById("unLimitedLesson");
+        var hiddenRow = document.getElementById("toggleVideoWatch");
 
-            if (limiteVideo.checked) {
-                // Show the hidden row
-                hiddenRow.classList.remove('course_price');
-
-
-            } else if (unLimitedLesson.checked) {
-                // Hide and remove the row
-                hiddenRow.classList.add('course_price');
-
-            }
+        if (limiteVideo.checked) {
+          // Show the hidden row
+          hiddenRow.classList.remove("course_price");
+        } else if (unLimitedLesson.checked) {
+          // Hide and remove the row
+          hiddenRow.classList.add("course_price");
         }
+      }
     </script>
     <!-- show / hide  Vedio watch -->
     <!-- show / hide  water mark -->
     <script>
-        function toggleWaterMark() {
-            var yesWaterMarek = document.getElementById('yesWaterMarek');
-            var noWaterMarek = document.getElementById('noWaterMarek');
-            var hiddenRow = document.getElementById('toggleWaterMark');
+      function toggleWaterMark() {
+        var yesWaterMarek = document.getElementById("yesWaterMarek");
+        var noWaterMarek = document.getElementById("noWaterMarek");
+        var hiddenRow = document.getElementById("toggleWaterMark");
 
-            if (yesWaterMarek.checked) {
-                // Show the hidden row
-                hiddenRow.classList.remove('course_price');
-
-
-            } else if (noWaterMarek.checked) {
-                // Hide and remove the row
-                hiddenRow.classList.add('course_price');
-
-            }
+        if (yesWaterMarek.checked) {
+          // Show the hidden row
+          hiddenRow.classList.remove("course_price");
+        } else if (noWaterMarek.checked) {
+          // Hide and remove the row
+          hiddenRow.classList.add("course_price");
         }
+      }
     </script>
     <!-- show / hide  Vedio watch -->
-
-</body>
-
+  </body>
 </html>
-
 
 <!--     
 

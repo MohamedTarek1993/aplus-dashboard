@@ -48,6 +48,7 @@ tr {
 
 /* end table */
 /* start text */
+
 .text {
   padding: 30px;
 }
@@ -698,6 +699,15 @@ button.btn.btn-warning.log-in:hover {
 }
 
 /* search */
+i.bi.bi-search.index {
+  position: absolute !important;
+  top: -2.5rem !important;
+}
+i.bi.bi-search.more {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.5rem;
+}
 span.icon_search.unversty {
   top: 0.8rem !important;
 }
@@ -1089,7 +1099,7 @@ button.btn.send-massage:hover {
 }
 .wahtsapp {
   font-family: "regular";
-  color: #5E6E77;
+  color: #5e6e77;
   font-size: 0.7rem;
 }
 /* modal charge */
@@ -1097,7 +1107,6 @@ label.form-label.charge {
   color: black !important;
 }
 button.btn.charge {
-  
   background-color: white;
   border: 1px solid #e6ab2f;
   color: #e6ab2f;
@@ -1111,14 +1120,13 @@ button.btn.charge:hover {
   color: white;
 }
 .charge {
- 
   font-family: "regular";
-  color: #5E6E77;
+  color: #5e6e77;
   font-size: 0.7rem;
 }
 .Subscriptions {
   font-family: "regular";
-  color: #5E6E77;
+  color: #5e6e77;
   font-size: 0.7rem;
 }
 label.form-label.Subscriptions {
@@ -1133,19 +1141,17 @@ label.form-label.Subscriptions {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
 }
 .main-ranking-1 {
   background-color: white;
   width: 322px;
   padding: 0.5rem 1rem;
-
 }
 .main-ranking-1 .ranking {
   display: flex;
-    gap: 24px;
+  gap: 24px;
 }
- .text-ranking-1 h5 {
+.text-ranking-1 h5 {
   font-family: "regular";
   font-size: 0.8rem;
 }
@@ -1164,24 +1170,18 @@ label.form-label.Subscriptions {
 .main-cricle {
   padding: 2.1rem 5rem;
   border: 1px solid #d6d6d652;
-  width: fit-content;
-
 }
 
 .text-cricle h5 {
   font-size: 0.6rem;
-  font-family:"regular" ;
+  font-family: "regular";
 }
 .text-cricle span {
   margin-inline-end: 10px;
 }
-.cricle h5 {
-
-}
 .cricle h6 {
-  
-font-size: 0.8rem;
-font-family:"bold" ;
+  font-size: 0.8rem;
+  font-family: "bold";
 }
 
 .main-cricle h5 {
@@ -1195,9 +1195,8 @@ font-family:"bold" ;
 .rate {
   text-align: center;
   position: absolute;
-  left: 204px;
-  top: 195px
-  
+  left: 237px;
+  top: 195px;
 }
 .rate h6 {
   font-family: "regular";
@@ -1212,21 +1211,39 @@ font-family:"bold" ;
 }
 .input-group.nas {
   margin-top: -15px;
-    width: 258px;
+  width: 258px;
 }
 .dropdown-item .text {
   padding: 0 !important;
 }
-canvas#line {
-  height: 210px !important;
-    width: 378px !important;
-}
 canvas#myChart1 {
-  height: 286px !important;
+  height: 300px !important;
   width: 300px !important;
 }
+canvas#line {
+  margin: 0.9rem 0rem;
+}
 
-
+.text-Studentperformance {
+  padding-top: 1rem;
+}
+.Studentperformance h4 {
+  padding: 0.5rem;
+  font-family: "bold";
+  font-size: 1rem;
+}
+.form-control::placeholder {
+  color: rgba(126, 141, 160, 1) !important;
+  padding: 0 !important;
+}
+.textarea.form-control::placeholder {
+  color: rgba(126, 141, 160, 1) !important;
+  padding: 0 !important;
+}
+.input.form-control::placeholder {
+  color: rgba(126, 141, 160, 1) !important;
+  padding: 0 !important;
+}
 
 /* responsive  */
 /* Extra small devices (phones, 600px and down) */
@@ -1362,7 +1379,21 @@ canvas#myChart1 {
   img.name-teacher {
     width: 25% !important;
   }
-  .examination h4 {
+  canvas#myChart1 {
+    width: 130px !important;
+    height: 130px !important;
+  }
+  canvas#line {
+    width: 130px !important;
+    height: 130px !important;
+  }
+  .rate {
+    display: none;
+  }
+  .input-group.nas {
+    width: 246px;
+    margin-right: -76px;
+    margin-top: 10px;
   }
 }
 

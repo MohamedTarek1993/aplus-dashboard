@@ -181,7 +181,7 @@ img.table-img {
 }
 .content_page form table thead td {
     background-color: #EDF5F9;
-    padding: 2rem 2rem;
+   
 }
 .content_page table tr .active{
     background-color: #3d96355c;
@@ -235,6 +235,18 @@ img.table-img {
     justify-content: end;
     margin: 0 -20px;
 }
+.form-control::placeholder {
+    color: 
+    rgba(126, 141, 160, 1) !important;
+    padding: 0 !important;
+  
+  }
+  textarea.form-control::placeholder {
+    color: 
+    rgba(126, 141, 160, 1) !important;
+    padding: 0 !important;
+  
+  }
 
 @media (max-width: 600px) {
     .content_page form .foot{

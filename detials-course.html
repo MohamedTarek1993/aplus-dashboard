@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ar" dir="ltr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> الكورسات</title>
+    <title>الكورسات</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -20,9 +19,9 @@
     <!-- ? Favicon -->
     <link rel="icon" href="image/logo.png" type="image" />
     <!-- ? Favicon -->
-</head>
+  </head>
 
-<body>
+  <body>
     <!---------------------- start loader -------------------------------------------->
     <!-- <div id="preloader"></div> -->
     <!---------------------- finish loader -------------------------------------------->
@@ -31,649 +30,779 @@
     <!---------------------- finish scroll-up -------------------------------------------->
 
     <main class="d-flex sidemobile p-0">
-        <!---------------------- start sidebar -------------------------------------------->
+      <!---------------------- start sidebar -------------------------------------------->
 
-        <section class="sidebar open">
-            <ul class="
-          nav nav-pills
-          flex-column
-          mb-sm-auto mb-0
-          align-items-center align-items-sm-start
-        " id="menu">
-                <div class="image_logo">
-                    <img src="image/logo.png" alt="logo_sidebar" class="logo" />
-                </div>
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="image_logo">
+            <img src="image/logo.png" alt="logo_sidebar" class="logo" />
+          </div>
 
-                <h5>محتوي النظام</h5>
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link align-middle">
-                        <img src="image/home-icon.png" alt="icon" />
-                        <span>الرئيسية</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="courses.html" class="nav-link align-middle">
-                        <img src="/image/course-icon.png" alt="icon" />
-                        <span>الكورسات</span>
-                    </a>
-                </li>
+          <h5>محتوي النظام</h5>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link align-middle">
+              <img src="image/home-icon.png" alt="icon" />
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="courses.html" class="nav-link align-middle">
+              <img src="/image/course-icon.png" alt="icon" />
+              <span>الكورسات</span>
+            </a>
+          </li>
 
-                <li class="nav-item">
-                    <a href="exams.html" class="nav-link align-middle">
-                        <img src="image/exam-icon.png" alt="icon" />
-                        <span> الامتحانات</span>
-                    </a>
-                </li>
-               
+          <li class="nav-item">
+            <a href="exams.html" class="nav-link align-middle">
+              <img src="image/exam-icon.png" alt="icon" />
+              <span> الامتحانات</span>
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a href="question-banks.html" class="nav-link align-middle">
+              <img src="image/icon-bank.png" alt="icon" />
+              <span>بنك الأسألة</span>
+            </a>
+          </li>
 
-                <li class="nav-item">
-                    <a href="question-banks.html" class="nav-link align-middle">
-                        <img src="image/icon-bank.png" alt="icon" />
-                        <span>بنك الأسألة</span>
-                    </a>
-                </li>
+          <li class="nav-item">
+            <a href="subjects.html" class="nav-link align-middle">
+              <img src="image/book-icon.png" alt="icon" />
+              <span> المواد الدراسية</span>
+            </a>
+          </li>
 
-                
-                <li class="nav-item">
-                    <a href="subjects.html" class="nav-link align-middle">
-                        <img src="image/book-icon.png" alt="icon" />
-                        <span> المواد الدراسية</span>
-                    </a>
-                </li>
+          <li class="nav-item">
+            <a
+              href="#submenuAccountant"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="image/scan-barcode-icon.png" alt="icon" />
+              <span> أكود الشراء</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuAccountant"
+              data-bs-parent="#menu"
+            >
+              <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
 
-                <li class="nav-item">
-                    <a href="#submenuAccountant" data-bs-toggle="collapse"
-                        class="nav-link accordion-button align-middle collapsed">
-                        <img src="image/scan-barcode-icon.png" alt="icon" />
-                        <span> أكود الشراء</span>
-                        <i class="fa-solid fa-angle-up"></i>
-                    </a>
-                    <ul class="collapse flex-column" id="submenuAccountant" data-bs-parent="#menu">
-                        <div class="close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-
-                        <li>
-                            <a href="code-book.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> استخراج اكواد للمذكرات</span></a>
-                        </li>
-                        <li>
-                            <a href="code-corse.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> استخراج اكواد للكورسات</span></a>
-                        </li>
-                        <li>
-                            <a href="code-training.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> استخراج اكواد للتدريبات</span></a>
-
-                        </li>
-
-                    </ul>
-                </li>
-                <h5> مستخدمي النظام</h5>
-                <li class="nav-item">
-                    <a href="teacher.html" class="nav-link align-middle">
-                        <img src="image/teacher-icon.png" alt="icon" />
-                        <span> المدرسين</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="students.html" class="nav-link align-middle">
-                        <img src="image/student-icon.png" alt="icon" />
-                        <span> الطلبة</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="lesons.html" class="nav-link align-middle">
-                        <img src="image/house-icon.png" alt="icon" />
-                        <span> سناتر الدروس</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="Systemadministrators.html" class="nav-link align-middle">
-                        <img src="image/director-icon.png" alt="icon" />
-                        <span> مديري النظام</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="powers.html" class="nav-link align-middle">
-                        <img src="image/powers-icon.png" alt="icon" />
-                        <span> الصلاحيات</span>
-                    </a>
-                </li>
-
-
-                <h5> اعدادات النظام</h5>
-
-                <li class="nav-item">
-                    <a href="country.html" class="nav-link align-middle">
-                        <img src="image/country-icon.png" alt="icon" />
-                        <span> الدول</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="governorate.html" class="nav-link align-middle">
-                        <img src="image/country-icon.png" alt="icon" />
-                        <span> المحافظات</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="city.html" class="nav-link align-middle">
-                        <img src="image/country-icon.png" alt="icon" />
-                        <span> المدن</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="universities.html" class="nav-link align-middle">
-                        <img src="image/buildings-icon.png" alt="icon" />
-                        <span> الجامعات</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="colleges.html" class="nav-link align-middle">
-                        <img src="image/colleage-icon.png" alt="icon" />
-                        <span> الكليات</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="main-edu.html" class="nav-link align-middle">
-                        <img src="image/main-edu-icon.png" alt="icon" />
-                        <span> التعليم الاساسي</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="study-teams.html" class="nav-link align-middle">
-                        <img src="image/format-circle.png" alt="icon" />
-                        <span> الفرق الدراسية</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="seting-point.html" class="nav-link align-middle">
-                        <img src="image/buy-crypto-icon.png" alt="icon" />
-                        <span> اعدادات النقاط</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="slider-table.html" class="nav-link align-middle">
-                        <img src="image/slider-icon.png" alt="icon" />
-                        <span> الاسلايدر</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="seting-notifcation.html" class="nav-link align-middle">
-                        <img src="image/notification-bing-icon.png" alt="icon" />
-                        <span> اعدادات الاشعارات</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="setting.html" class="nav-link align-middle">
-                        <img src="image/powers-icon.png" alt="icon" />
-                        <span> الاعدادات العامة</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link align-middle">
-                        <img src="image/logout-icon.png" alt="icon" />
-                        <span> تسجيل الخروج</span>
-                    </a>
-                </li>
-
-
+              <li>
+                <a href="code-book.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للمذكرات</span></a
+                >
+              </li>
+              <li>
+                <a href="code-corse.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للكورسات</span></a
+                >
+              </li>
+              <li>
+                <a href="code-training.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للتدريبات</span></a
+                >
+              </li>
             </ul>
-        </section>
-        <!---------------------- end sidebar -------------------------------------------->
-        <!---------------------- start main content -------------------------------------------->
+          </li>
+          <h5>مستخدمي النظام</h5>
+          <li class="nav-item">
+            <a href="teacher.html" class="nav-link align-middle">
+              <img src="image/teacher-icon.png" alt="icon" />
+              <span> المدرسين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="students.html" class="nav-link align-middle">
+              <img src="image/student-icon.png" alt="icon" />
+              <span> الطلبة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="lesons.html" class="nav-link align-middle">
+              <img src="image/house-icon.png" alt="icon" />
+              <span> سناتر الدروس</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Systemadministrators.html" class="nav-link align-middle">
+              <img src="image/director-icon.png" alt="icon" />
+              <span> مديري النظام</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="powers.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الصلاحيات</span>
+            </a>
+          </li>
 
-        <section class="index_cards">
-            <!---------------------- start nav -------------------------------------------->
-            <nav class="nav_top navbar">
-                <div class="container">
-                    <div class="menu">
-                        <i class="bi bi-list"></i>
-                    </div>
-                    <div class="info">
-                        <div class="notfication" onclick="showNotification()">
-                            <i class="bi bi-bell"></i>
-                            <span class="alerts">
-                                3
-                            </span>
-                        </div>
+          <h5>اعدادات النظام</h5>
 
-                        <div class="img">
-                            <img src="../image/person.png" alt="person">
-                        </div>
-                        <div class="btn-group">
-                            <button class="btn  btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                محمد طارق
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li> <a href="settings.html">اعدادات الحساب</a> </li>
-                                <li onclick="acceptAlert()"> تسجيل الخروج </li>
-                            </ul>
-                        </div>
+          <li class="nav-item">
+            <a href="country.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> الدول</span>
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a href="governorate.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المحافظات</span>
+            </a>
+          </li>
 
-                    </div>
+          <li class="nav-item">
+            <a href="city.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المدن</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="universities.html" class="nav-link align-middle">
+              <img src="image/buildings-icon.png" alt="icon" />
+              <span> الجامعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="colleges.html" class="nav-link align-middle">
+              <img src="image/colleage-icon.png" alt="icon" />
+              <span> الكليات</span>
+            </a>
+          </li>
 
-                </div>
-            </nav>
-            <ul class="notfication_list">
-                <h2>الأشعارات</h2>
-                <i class="bi bi-x close-icon" onclick="hideNotification()"></i>
+          <li class="nav-item">
+            <a href="main-edu.html" class="nav-link align-middle">
+              <img src="image/main-edu-icon.png" alt="icon" />
+              <span> التعليم الاساسي</span>
+            </a>
+          </li>
 
-                <li class="unread" onclick="convertToRead(this)">
-                    <div class="info">
-                        <h6> text</h6>
-                        <span> 22/6/1993</span>
-                    </div>
-                    <div class="delete">
-                        <i class="bi bi-trash"></i>
-                    </div>
-                </li>
-                <li class="read">
-                    <div class="info">
-                        <h6> text</h6>
-                        <span> 22/6/1993</span>
-                    </div>
-                    <div class="delete">
-                        <i class="bi bi-trash"></i>
-                    </div>
-                </li>
-            </ul>
-            <!---------------------- finish nav -------------------------------------------->
-            <!---------------------- start content -------------------------------------------->
-            <div class="content_page">
-                <div class="container">
-                    <div class="live_badge">
-                        <div class="live_part">
-                            <img src="image/live.png" alt="live">
-                            <h6> لايف الان لتسجيل حصة مباشرة على كورس المحاسبة المالية </h6>
-                        </div>
-                        <div class="live_finish">
-                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                انهاء الايف</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="main_topic course_main_topic">
-                            <h4> تفاصيل الكورس </h4>
-                            <div class="button">
-                                <a class="btn first" href="add-exam.html">اضافة امتحان</a>
-                                <a class="btn edit" href="edit-exam.html"> <i class="bi bi-edit"></i> تعديل </a>
-                                <button class="btn delete"> حظر
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- search and filter section -->
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-12 ">
-                            <div class="sidebar_course">
-                                <div class="top_section">
-                                    <div class="img">
-                                        <img src="image/sidbar-course.png" alt="sidebar">
-                                    </div>
-                                    <h4>
-                                        المراجعة النهائية للأناتومي
-                                    </h4>
-                                    <span>د/ محمد عادل , مادة المحاسبة المالية</span>
-                                    <p>الفرقة الرابعة-المحاسبة و إدارة الاعمال-معهد مصر العالي للتجارة والحاسبات
-                                        (السلاب)</p>
-                                    <ul>
-                                        <li><i class="bi bi-calendar"></i> <span>بدأ فى :</span> 22 مايو, 2023</li>
-                                        <li><i class="bi bi-clock"></i> <span>بدأ فى :</span> 50 دقيقة </li>
-                                    </ul>
-                                </div>
-                                <div class="center_scetion">
-                                    <ul>
-                                        <li>
-                                            مساحة الكورس <br />
-                                            <strong>0.3GB</strong>
-                                        </li>
-                                        <li>
-                                            Bandwidth <br />
-                                            <strong>0</strong>
-                                        </li>
-                                        <li>
-                                            اجمالى المشاهدات <br />
-                                            <strong>2000</strong>
-                                        </li>
-                                    </ul>
-                                    <div class="info">
-                                        <div class="list">
-                                            <div class="img">
-                                                <img src="image/1.jpeg" alt="icon">
-                                            </div>
-                                            <h5>اجمالى المذكرات
-                                                <br>
-                                                8
-                                            </h5>
-                                            <a href=""><i class="bi bi-arrow-left-circle-fill"></i></a>
-                                        </div>
+          <li class="nav-item">
+            <a href="study-teams.html" class="nav-link align-middle">
+              <img src="image/format-circle.png" alt="icon" />
+              <span> الفرق الدراسية</span>
+            </a>
+          </li>
 
-                                        <div class="list">
-                                            <div class="img">
-                                                <img src="image/2.jpeg" alt="icon">
-                                            </div>
-                                            <h5> اجمالى الامتحانات
-                                                <br>
-                                                8
-                                            </h5>
-                                            <a href=""><i class="bi bi-arrow-left-circle-fill"></i></a>
-                                        </div>
+          <li class="nav-item">
+            <a href="seting-point.html" class="nav-link align-middle">
+              <img src="image/buy-crypto-icon.png" alt="icon" />
+              <span> اعدادات النقاط</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="slider-table.html" class="nav-link align-middle">
+              <img src="image/slider-icon.png" alt="icon" />
+              <span> الاسلايدر</span>
+            </a>
+          </li>
 
-                                        <div class="list">
-                                            <div class="img">
-                                                <img src="image/3.jpeg" alt="icon">
-                                            </div>
-                                            <h5> الطلاب المشتركين
-                                                <br>
-                                                120
-                                            </h5>
-                                            <a href="#"><i class="bi bi-arrow-left-circle-fill"></i></a>
-                                        </div>
+          <li class="nav-item">
+            <a href="seting-notifcation.html" class="nav-link align-middle">
+              <img src="image/notification-bing-icon.png" alt="icon" />
+              <span> اعدادات الاشعارات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الاعدادات العامة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <img src="image/logout-icon.png" alt="icon" />
+              <span> تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!---------------------- end sidebar -------------------------------------------->
+      <!---------------------- start main content -------------------------------------------->
 
-                                        <div class="list">
-                                            <div class="img">
-                                                <img src="image/4.jpeg" alt="icon">
-                                            </div>
-                                            <h5> الطلاب المحظورين
-                                                <br>
-                                                8
-                                            </h5>
-                                            <a href="#"><i class="bi bi-arrow-left-circle-fill"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-12 ">
-                            <div class="main_topic course_main_topic">
-                                <h4> الأبواب </h4>
-                                <div class="button button_courser_detials">
-                                    <a class="btn second" href="add-chapter.html"> اضافة باب جديد</a>
-                                    <a class="btn second" href="add-educational-note.html"> اضافة مذكرة جديدة </a>
-                                </div>
-                            </div>
-                            <div class="search_topic">
-                                <form>
-                                    <div class="input-group">
-                                        <input class="form-control" type="text" placeholder="ابحث باسم الباب , ...  ">
-                                        <span class="icon_search"><i class="bi bi-search"></i></span>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="card_course_detials">
-                                <div class="main_topic course_main_topic">
-                                    <h4> Introduction to Hematolo </h4>
-                                    <div class="button">
-                                        <a class="btn first" href="add-lesson.html"> اضافة درس جديد</a>
-                                        <a class="btn edit" href="edit-lesson.html"> <i class="bi bi-pencil-square"></i>
-                                            تعديل </a>
-                                        <button class="btn delete"> <i class="bi bi-trash"></i>
-                                            حظر
-                                        </button>
-                                    </div>
-                                </div>
-                                <p>فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث يتم شرح الجزء الاول والاكبر
-                                    من المادة وكيفية الاستفادة منها </p>
-                                <div class="info">
-                                    <ul>
-                                        <li>
-                                            <i class="bi bi-calendar"></i> 4 درس
-                                        </li>
-                                        <li>
-                                            <i class="bi bi-card-list"></i> 2 مزكرة
-                                        </li>
-                                        <li>
-                                            <i class="bi bi-newspaper"></i> 6 امتحان
-                                        </li>
-                                    </ul>
-                                    <div class="x-section" onclick="showLesson()">
-                                        <i class="bi bi-arrow-down-circle"></i>
-                                    </div>
-                                </div>
-                                <div id="lessonDetials" class="lesson_detials">
-                                    <div class="card_course_detials card_lesson_detials">
-                                        <div class="main_topic course_main_topic">
-                                            <h4>DM Revision - Part (1)</h4>
-
-                                            <div class="button dropdown">
-                                                <button type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                                    aria-expanded="false" style="width: 35%;" class="btn first"
-                                                    href="#"> اضافة محتوي جديد</button>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                    <li><a class="dropdown-item"
-                                                            href="add-educational-lesson.html">اضافة حصة جديدة</a></li>
-                                                    <li><a class="dropdown-item" href="add-sheet.html">اضافة شيت </a>
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="add-home-work.html">اضافة
-                                                            واجب</a></li>
-                                                    <li><a class="dropdown-item" href="add-educational-note.html">اضافة
-                                                            مذكرة جديدة
-                                                        </a></li>
-                                                </ul>
-                                                <a style="width: 15%;" class="btn edit" href="#"> <i
-                                                        class="bi bi-pencil-square"></i> </a>
-                                                <a style="width: 15%;" class="btn delete" href="add-newstudent.html"> <i
-                                                        class="bi bi-trash"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <p>فى هذا الدرس نتناول شرحي وفى لمادة المحاسبة المالية حيث يتم شرح الجزء الاول
-                                            والاكبر من المادة وكيفية الاستفادة منها </p>
-                                        <div class="info">
-                                            <ul>
-                                                <li>
-                                                    <i class="bi bi-file-play"></i> 12 حصة
-                                                </li>
-                                                <li>
-                                                    <i class="bi bi-file-play"></i> 2 شيت
-                                                </li>
-                                                <li>
-                                                    <i class="bi bi-card-list"></i> 2 مزكرة
-                                                </li>
-                                                <li>
-                                                    <i class="bi bi-newspaper"></i> 6 امتحان
-                                                </li>
-                                            </ul>
-                                            <div onclick="showLessonDetials()" class="open_lesson_detials y-section">
-                                                <i class="bi bi-arrow-down-circle"></i>
-                                            </div>
-                                        </div>
-
-                                        <!-- start lesson detials -->
-                                        <div class="lesson_detials_all" id="lessonDetialsAll">
-                                            <!-- table -->
-                                            <table class="table-responsive table_topic">
-                                                <thead>
-                                                    <tr>
-                                                        <td>الاسم</td>
-                                                        <td>الترتيب </td>
-                                                        <td> تاريخ البدابة</td>
-                                                        <td> تاريخ النهاية</td>
-                                                        <td> المشاهدات</td>
-                                                        <td> السعر</td>
-                                                        <td> المدة</td>
-                                                        <td>التحكم</td>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <!-- حصة -->
-                                                    <tr>
-                                                        <td> حصة</td>
-                                                        <td>
-                                                            1
-                                                        </td>
-                                                        <td>22 مايو , 2023</td>
-                                                        <td>22 مايو , 2023</td>
-                                                        <td>200</td>
-                                                        <td>200 ج.م </td>
-                                                        <td>30:00 د
-                                                        </td>
-
-                                                        <td class="button">
-                                                            <a class="btn show" href="student-comment.html"> <i
-                                                                    class="bi bi-chat"></i></a>
-                                                            <a class="btn edit" href="edit-educational-lesson.html"> <i
-                                                                    class="bi bi-pencil"></i></a>
-
-                                                            <button onclick="deleteion()" class="btn delete" href="#">
-                                                                <i class="bi bi-box-arrow-left"></i></button>
-
-                                                        </td>
-                                                    </tr>
-                                                    <!-- حصة -->
-                                                    <!-- شيت -->
-                                                    <tr>
-                                                        <td> شيت</td>
-                                                        <td>
-                                                            1
-                                                        </td>
-                                                        <td>22 مايو , 2023</td>
-                                                        <td>22 مايو , 2023</td>
-                                                        <td>200</td>
-                                                        <td>200 ج.م </td>
-                                                        <td>30:00 د
-                                                        </td>
-
-                                                        <td class="button">
-                                                            <a class="btn show" href="student-comment.html"> <i
-                                                                    class="bi bi-chat"></i></a>
-                                                            <a class="btn edit" href="edit-sheet.html"> <i
-                                                                    class="bi bi-pencil"></i></a>
-
-                                                            <button onclick="deleteion()" class="btn delete" href="#">
-                                                                <i class="bi bi-box-arrow-left"></i></button>
-
-                                                        </td>
-                                                    </tr>
-                                                    <!-- شيت -->
-                                                    <!-- مذاكرة -->
-                                                    <tr>
-                                                        <td> مذاكرة</td>
-                                                        <td>
-                                                            1
-                                                        </td>
-                                                        <td>22 مايو , 2023</td>
-                                                        <td>22 مايو , 2023</td>
-                                                        <td>200</td>
-                                                        <td>200 ج.م </td>
-                                                        <td>30:00 د
-                                                        </td>
-
-                                                        <td class="button">
-                                                            <a class="btn show" href="student-comment.html"> <i
-                                                                    class="bi bi-chat"></i></a>
-                                                            <a class="btn edit" href="edit-educational-note.html"> <i
-                                                                    class="bi bi-pencil"></i></a>
-
-                                                            <button onclick="deleteion()" class="btn delete" href="#">
-                                                                <i class="bi bi-box-arrow-left"></i></button>
-
-                                                        </td>
-                                                    </tr>
-                                                    <!-- مذاكرة -->
-                                                    <!-- واجب -->
-                                                    <tr>
-                                                        <td> واجب</td>
-                                                        <td>
-                                                            1
-                                                        </td>
-                                                        <td>22 مايو , 2023</td>
-                                                        <td>22 مايو , 2023</td>
-                                                        <td>200</td>
-                                                        <td>200 ج.م </td>
-                                                        <td>30:00 د
-                                                        </td>
-
-                                                        <td class="button">
-                                                            <a class="btn show" href="student-comment.html"> <i
-                                                                    class="bi bi-chat"></i></a>
-                                                            <a class="btn edit" href="edit-home-work.html"> <i
-                                                                    class="bi bi-pencil"></i></a>
-
-                                                            <button onclick="deleteion()" class="btn delete" href="#">
-                                                                <i class="bi bi-box-arrow-left"></i></button>
-
-                                                        </td>
-                                                    </tr>
-                                                    <!-- واجب -->
-
-
-
-                                                </tbody>
-                                            </table>
-                                            <div onclick="hideLessonDetials()"
-                                                class="open_lesson_detials w-100 text-start">
-                                                <i class="bi bi-arrow-up-circle"></i>
-                                            </div>
-
-                                        </div>
-                                        <!-- start lesson detials -->
-                                    </div>
-                                    <div onclick="hideLesson()" class="text-start w-100  close_lesson">
-                                        <i class="bi bi-arrow-up-circle"></i>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+      <section class="index_cards">
+        <!---------------------- start nav -------------------------------------------->
+        <nav class="nav_top navbar">
+          <div class="container">
+            <div class="menu">
+              <i class="bi bi-list"></i>
             </div>
-            <!---------------------- finish  content -------------------------------------------->
-        </section>
-        <!---------------------- finish main content -------------------------------------------->
+            <div class="info">
+              <div class="notfication" onclick="showNotification()">
+                <i class="bi bi-bell"></i>
+                <span class="alerts"> 3 </span>
+              </div>
+
+              <div class="img">
+                <img src="../image/person.png" alt="person" />
+              </div>
+              <div class="btn-group">
+                <button
+                  class="btn btn-sm dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  محمد طارق
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="settings.html">اعدادات الحساب</a></li>
+                  <li onclick="acceptAlert()">تسجيل الخروج</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <ul class="notfication_list">
+          <h2>الأشعارات</h2>
+          <i class="bi bi-x close-icon" onclick="hideNotification()"></i>
+
+          <li class="unread" onclick="convertToRead(this)">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+          <li class="read">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+        </ul>
+        <!---------------------- finish nav -------------------------------------------->
+        <!---------------------- start content -------------------------------------------->
+        <div class="content_page">
+          <div class="container">
+            <div class="live_badge">
+              <div class="live_part">
+                <img src="image/live.png" alt="live" />
+                <h6>لايف الان لتسجيل حصة مباشرة على كورس المحاسبة المالية</h6>
+              </div>
+              <div class="live_finish">
+                <button
+                  class="btn"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  انهاء الايف
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="main_topic course_main_topic">
+                <h4>تفاصيل الكورس</h4>
+                <div class="button">
+                  <a class="btn first" href="add-exam.html">اضافة امتحان</a>
+                  <a class="btn edit" href="edit-exam.html">
+                    <i class="bi bi-edit"></i> تعديل
+                  </a>
+                  <button class="btn delete">حظر</button>
+                </div>
+              </div>
+            </div>
+            <!-- search and filter section -->
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="sidebar_course">
+                  <div class="top_section">
+                    <div class="img">
+                      <img src="image/sidbar-course.png" alt="sidebar" />
+                    </div>
+                    <h4>المراجعة النهائية للأناتومي</h4>
+                    <span>د/ محمد عادل , مادة المحاسبة المالية</span>
+                    <p>
+                      الفرقة الرابعة-المحاسبة و إدارة الاعمال-معهد مصر العالي
+                      للتجارة والحاسبات (السلاب)
+                    </p>
+                    <ul>
+                      <li>
+                        <i class="bi bi-calendar"></i> <span>بدأ فى :</span> 22
+                        مايو, 2023
+                      </li>
+                      <li>
+                        <i class="bi bi-clock"></i> <span>بدأ فى :</span> 50
+                        دقيقة
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="center_scetion">
+                    <ul>
+                      <li>
+                        مساحة الكورس <br />
+                        <strong>0.3GB</strong>
+                      </li>
+                      <li>
+                        Bandwidth <br />
+                        <strong>0</strong>
+                      </li>
+                      <li>
+                        اجمالى المشاهدات <br />
+                        <strong>2000</strong>
+                      </li>
+                    </ul>
+                    <div class="info">
+                      <div class="list">
+                        <div class="img">
+                          <img src="image/1.jpeg" alt="icon" />
+                        </div>
+                        <h5>
+                          اجمالى المذكرات
+                          <br />
+                          8
+                        </h5>
+                        <a href=""
+                          ><i class="bi bi-arrow-left-circle-fill"></i
+                        ></a>
+                      </div>
+
+                      <div class="list">
+                        <div class="img">
+                          <img src="image/2.jpeg" alt="icon" />
+                        </div>
+                        <h5>
+                          اجمالى الامتحانات
+                          <br />
+                          8
+                        </h5>
+                        <a href=""
+                          ><i class="bi bi-arrow-left-circle-fill"></i
+                        ></a>
+                      </div>
+
+                      <div class="list">
+                        <div class="img">
+                          <img src="image/3.jpeg" alt="icon" />
+                        </div>
+                        <h5>
+                          الطلاب المشتركين
+                          <br />
+                          120
+                        </h5>
+                        <a href="#"
+                          ><i class="bi bi-arrow-left-circle-fill"></i
+                        ></a>
+                      </div>
+
+                      <div class="list">
+                        <div class="img">
+                          <img src="image/4.jpeg" alt="icon" />
+                        </div>
+                        <h5>
+                          الطلاب المحظورين
+                          <br />
+                          8
+                        </h5>
+                        <a href="#"
+                          ><i class="bi bi-arrow-left-circle-fill"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-8 col-12">
+                <div class="main_topic course_main_topic">
+                  <h4>الأبواب</h4>
+                  <div class="button button_courser_detials">
+                    <a class="btn second" href="add-chapter.html">
+                      اضافة باب جديد</a
+                    >
+                    <a class="btn second" href="add-educational-note.html">
+                      اضافة مذكرة جديدة
+                    </a>
+                  </div>
+                </div>
+                <div class="search_topic">
+                  <form>
+                    <div class="input-group">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="ابحث باسم الباب , ...  "
+                      />
+                      <span class="icon_search"
+                        ><i class="bi bi-search"></i
+                      ></span>
+                    </div>
+                  </form>
+                </div>
+                <div class="card_course_detials">
+                  <div class="main_topic course_main_topic">
+                    <h4>Introduction to Hematolo</h4>
+                    <div class="button">
+                      <a class="btn first" href="add-lesson.html">
+                        اضافة درس جديد</a
+                      >
+                      <a class="btn edit" href="edit-lesson.html">
+                        <i class="bi bi-pencil-square"></i> تعديل
+                      </a>
+                      <button class="btn delete">
+                        <i class="bi bi-trash"></i>
+                        حظر
+                      </button>
+                    </div>
+                  </div>
+                  <p>
+                    فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث يتم
+                    شرح الجزء الاول والاكبر من المادة وكيفية الاستفادة منها
+                  </p>
+                  <div class="info">
+                    <ul>
+                      <li><i class="bi bi-calendar"></i> 4 درس</li>
+                      <li><i class="bi bi-card-list"></i> 2 مزكرة</li>
+                      <li><i class="bi bi-newspaper"></i> 6 امتحان</li>
+                    </ul>
+                    <div class="x-section" onclick="showLesson()">
+                      <i class="bi bi-arrow-down-circle"></i>
+                    </div>
+                  </div>
+                  <div id="lessonDetials" class="lesson_detials">
+                    <div class="card_course_detials card_lesson_detials">
+                      <div class="main_topic course_main_topic">
+                        <h4>DM Revision - Part (1)</h4>
+
+                        <div class="button dropdown">
+                          <button
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            style="width: 35%"
+                            class="btn first"
+                            href="#"
+                          >
+                            اضافة محتوي جديد
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="add-educational-lesson.html"
+                                >اضافة حصة جديدة</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="add-sheet.html"
+                                >اضافة شيت
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="add-home-work.html"
+                                >اضافة واجب</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="add-educational-note.html"
+                                >اضافة مذكرة جديدة
+                              </a>
+                            </li>
+                          </ul>
+                          <a style="width: 15%" class="btn edit" href="#">
+                            <i class="bi bi-pencil-square"></i>
+                          </a>
+                          <a
+                            style="width: 15%"
+                            class="btn delete"
+                            href="add-newstudent.html"
+                          >
+                            <i class="bi bi-trash"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <p>
+                        فى هذا الدرس نتناول شرحي وفى لمادة المحاسبة المالية حيث
+                        يتم شرح الجزء الاول والاكبر من المادة وكيفية الاستفادة
+                        منها
+                      </p>
+                      <div class="info">
+                        <ul>
+                          <li><i class="bi bi-file-play"></i> 12 حصة</li>
+                          <li><i class="bi bi-file-play"></i> 2 شيت</li>
+                          <li><i class="bi bi-card-list"></i> 2 مزكرة</li>
+                          <li><i class="bi bi-newspaper"></i> 6 امتحان</li>
+                        </ul>
+                        <div
+                          onclick="showLessonDetials()"
+                          class="open_lesson_detials y-section"
+                        >
+                          <i class="bi bi-arrow-down-circle"></i>
+                        </div>
+                      </div>
+
+                      <!-- start lesson detials -->
+                      <div class="lesson_detials_all" id="lessonDetialsAll">
+                        <!-- table -->
+                        <table class="table-responsive table_topic">
+                          <thead>
+                            <tr>
+                              <td>الاسم</td>
+                              <td>الترتيب</td>
+                              <td>تاريخ البدابة</td>
+                              <td>تاريخ النهاية</td>
+                              <td>المشاهدات</td>
+                              <td>السعر</td>
+                              <td>المدة</td>
+                              <td>التحكم</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <!-- حصة -->
+                            <tr>
+                              <td>حصة</td>
+                              <td>1</td>
+                              <td>22 مايو , 2023</td>
+                              <td>22 مايو , 2023</td>
+                              <td>200</td>
+                              <td>200 ج.م</td>
+                              <td>30:00 د</td>
+
+                              <td class="button">
+                                <a class="btn show" href="student-comment.html">
+                                  <i class="bi bi-chat"></i
+                                ></a>
+                                <a
+                                  class="btn edit"
+                                  href="edit-educational-lesson.html"
+                                >
+                                  <i class="bi bi-pencil"></i
+                                ></a>
+
+                                <button
+                                  onclick="deleteion()"
+                                  class="btn delete"
+                                  href="#"
+                                >
+                                  <i class="bi bi-box-arrow-left"></i>
+                                </button>
+                              </td>
+                            </tr>
+                            <!-- حصة -->
+                            <!-- شيت -->
+                            <tr>
+                              <td>شيت</td>
+                              <td>1</td>
+                              <td>22 مايو , 2023</td>
+                              <td>22 مايو , 2023</td>
+                              <td>200</td>
+                              <td>200 ج.م</td>
+                              <td>30:00 د</td>
+
+                              <td class="button">
+                                <a class="btn show" href="student-comment.html">
+                                  <i class="bi bi-chat"></i
+                                ></a>
+                                <a class="btn edit" href="edit-sheet.html">
+                                  <i class="bi bi-pencil"></i
+                                ></a>
+
+                                <button
+                                  onclick="deleteion()"
+                                  class="btn delete"
+                                  href="#"
+                                >
+                                  <i class="bi bi-box-arrow-left"></i>
+                                </button>
+                              </td>
+                            </tr>
+                            <!-- شيت -->
+                            <!-- مذاكرة -->
+                            <tr>
+                              <td>مذاكرة</td>
+                              <td>1</td>
+                              <td>22 مايو , 2023</td>
+                              <td>22 مايو , 2023</td>
+                              <td>200</td>
+                              <td>200 ج.م</td>
+                              <td>30:00 د</td>
+
+                              <td class="button">
+                                <a class="btn show" href="student-comment.html">
+                                  <i class="bi bi-chat"></i
+                                ></a>
+                                <a
+                                  class="btn edit"
+                                  href="edit-educational-note.html"
+                                >
+                                  <i class="bi bi-pencil"></i
+                                ></a>
+
+                                <button
+                                  onclick="deleteion()"
+                                  class="btn delete"
+                                  href="#"
+                                >
+                                  <i class="bi bi-box-arrow-left"></i>
+                                </button>
+                              </td>
+                            </tr>
+                            <!-- مذاكرة -->
+                            <!-- واجب -->
+                            <tr>
+                              <td>واجب</td>
+                              <td>1</td>
+                              <td>22 مايو , 2023</td>
+                              <td>22 مايو , 2023</td>
+                              <td>200</td>
+                              <td>200 ج.م</td>
+                              <td>30:00 د</td>
+
+                              <td class="button">
+                                <a class="btn show" href="student-comment.html">
+                                  <i class="bi bi-chat"></i
+                                ></a>
+                                <a class="btn edit" href="edit-home-work.html">
+                                  <i class="bi bi-pencil"></i
+                                ></a>
+
+                                <button
+                                  onclick="deleteion()"
+                                  class="btn delete"
+                                  href="#"
+                                >
+                                  <i class="bi bi-box-arrow-left"></i>
+                                </button>
+                              </td>
+                            </tr>
+                            <!-- واجب -->
+                          </tbody>
+                        </table>
+                        <div
+                          onclick="hideLessonDetials()"
+                          class="open_lesson_detials w-100 text-start"
+                        >
+                          <i class="bi bi-arrow-up-circle"></i>
+                        </div>
+                      </div>
+                      <!-- start lesson detials -->
+                    </div>
+                    <div
+                      onclick="hideLesson()"
+                      class="text-start w-100 close_lesson"
+                    >
+                      <i class="bi bi-arrow-up-circle"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content_page">
+          <div class="row foot">
+            <div
+              class="col-8 col-md-8 col-12"
+              style="padding-top: 20px; color: #626e7d"
+            >
+              <p>عرض 1 - 30 من اجمالى 59</p>
+            </div>
+            <div class="col-4 col-md-4 col-12">
+              <nav class="pagination_section">
+                <ul class="pagination">
+                  <!-- justify-content-end -->
+                  <li class="page-item">
+                    <a class="page-link" style="width: 80px" href="#">
+                      السابق
+                    </a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" style="width: 80px" href="#">
+                      التالي
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <!---------------------- finish  content -------------------------------------------->
+      </section>
+      <!---------------------- finish main content -------------------------------------------->
     </main>
     <!---------------------- finish footer -------------------------------------------->
     <!---------------------- modal -------------------------------------------->
 
-    <div class="modal modal_assistant fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div
+      class="modal modal_assistant fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="content">
+              <h4>انهاء الحصة الايف</h4>
+              <p>
+                يمكنك الآن تحديد وقت محدد لانهاء الايف كما يمكنك الانهاء حالا
+              </p>
+              <form class="form_topic">
+                <div class="input-group">
+                  <label class="form-label">ادخل وقت الانتهاء</label>
+                  <input type="datetime-local" class="form-control" />
                 </div>
-                <div class="modal-body">
-                    <div class="content">
-                        <h4> انهاء الحصة الايف </h4>
-                        <p>يمكنك الآن تحديد وقت محدد لانهاء الايف كما يمكنك الانهاء حالا</p>
-                        <form class="form_topic">
-                            <div class="input-group">
-                                <label class="form-label">ادخل وقت الانتهاء</label>
-                                <input type="datetime-local" class="form-control">
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    الانهاء حالا
-                                </label>
-                            </div>
-                            <div class="button">
-                                <a href="detials-course.html" class="btn first"> تأكيد </a>
-
-                            </div>
-                        </form>
-
-                    </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    الانهاء حالا
+                  </label>
                 </div>
-
+                <div class="button">
+                  <a href="detials-course.html" class="btn first"> تأكيد </a>
+                </div>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!---------------------- modal -------------------------------------------->
     <!-- main js -->
@@ -685,81 +814,74 @@
     <script src="js/main.js"></script>
     <!-- main js -->
 
-
     <!-- sweet alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- sweet alert -->
     <!-- show / hide edit menu in card -->
     <script>
-        function toggleMenu(menuId) {
-            var menu = document.getElementById(menuId);
-            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+      function toggleMenu(menuId) {
+        var menu = document.getElementById(menuId);
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
+
+      document.addEventListener("click", function (event) {
+        var menu = document.getElementById("drop-menu-info");
+        var target = event.target;
+
+        if (!target.matches(".bi-three-dots-vertical")) {
+          menu.style.display = "none";
         }
-
-        document.addEventListener('click', function (event) {
-            var menu = document.getElementById('drop-menu-info');
-            var target = event.target;
-
-            if (!target.matches('.bi-three-dots-vertical')) {
-                menu.style.display = 'none';
-            }
-        });
+      });
     </script>
     <!-- show / hide edit menu in card -->
 
-
     <script>
-        function showLesson() {
-            var lessonDetials = document.getElementById('lessonDetials');
-            lessonDetials.classList.remove('hide'); // Remove the 'hide' class to show the section
+      function showLesson() {
+        var lessonDetials = document.getElementById("lessonDetials");
+        lessonDetials.classList.remove("hide"); // Remove the 'hide' class to show the section
 
-            lessonDetials.style.display = 'block';
-            var xSections = document.querySelectorAll('.x-section');
-            xSections.forEach(function (section) {
-                section.style.display = 'none'; // Hide all sections with class 'x-section'
-            });
+        lessonDetials.style.display = "block";
+        var xSections = document.querySelectorAll(".x-section");
+        xSections.forEach(function (section) {
+          section.style.display = "none"; // Hide all sections with class 'x-section'
+        });
+      }
+      function hideLesson() {
+        var lessonDetials = document.getElementById("lessonDetials");
+        var xSections = document.querySelectorAll(".x-section");
 
-        }
-        function hideLesson() {
-            var lessonDetials = document.getElementById('lessonDetials');
-            var xSections = document.querySelectorAll('.x-section');
-
-            setTimeout(function () {
-                lessonDetials.style.display = 'none'; // Hide the section after the animation finishes
-                xSections.forEach(function (section) {
-                    section.style.display = 'block'; // Hide all sections with class 'x-section'
-                });
-            }, 700); // Use the same duration as the CSS transition (0.3s = 300ms)
-        }
+        setTimeout(function () {
+          lessonDetials.style.display = "none"; // Hide the section after the animation finishes
+          xSections.forEach(function (section) {
+            section.style.display = "block"; // Hide all sections with class 'x-section'
+          });
+        }, 700); // Use the same duration as the CSS transition (0.3s = 300ms)
+      }
     </script>
     <!-- show course detials -->
     <script>
-        function showLessonDetials() {
-            var lessonDetials = document.getElementById('lessonDetialsAll');
-            var ySections = document.querySelectorAll('.y-section');
-            lessonDetials.style.display = 'block';
-            lessonDetials.classList.remove('hide'); // Remove the 'hide' class to show the section
-            ySections.forEach(function (section) {
-                section.style.display = 'none'; // Hide all sections with class 'x-section'
-            });
-
-
-        }
-        function hideLessonDetials() {
-            var lessonDetials = document.getElementById('lessonDetialsAll');
-            var ySections = document.querySelectorAll('.y-section');
-            lessonDetials.classList.add('hide'); // Add the 'hide' class to initiate the animation
-            // Wait for the animation to finish before setting display to 'none'
-            setTimeout(function () {
-                lessonDetials.style.display = 'none'; // Hide the section after the animation finishes
-                ySections.forEach(function (section) {
-                    section.style.display = 'block'; // Hide all sections with class 'x-section'
-                });
-            }, 700); // Use the same duration as the CSS transition (0.3s = 300ms)
-        }
+      function showLessonDetials() {
+        var lessonDetials = document.getElementById("lessonDetialsAll");
+        var ySections = document.querySelectorAll(".y-section");
+        lessonDetials.style.display = "block";
+        lessonDetials.classList.remove("hide"); // Remove the 'hide' class to show the section
+        ySections.forEach(function (section) {
+          section.style.display = "none"; // Hide all sections with class 'x-section'
+        });
+      }
+      function hideLessonDetials() {
+        var lessonDetials = document.getElementById("lessonDetialsAll");
+        var ySections = document.querySelectorAll(".y-section");
+        lessonDetials.classList.add("hide"); // Add the 'hide' class to initiate the animation
+        // Wait for the animation to finish before setting display to 'none'
+        setTimeout(function () {
+          lessonDetials.style.display = "none"; // Hide the section after the animation finishes
+          ySections.forEach(function (section) {
+            section.style.display = "block"; // Hide all sections with class 'x-section'
+          });
+        }, 700); // Use the same duration as the CSS transition (0.3s = 300ms)
+      }
     </script>
     <!-- show course detials -->
-
-</body>
-
+  </body>
 </html>
