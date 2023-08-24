@@ -3598,3 +3598,15 @@ p.terms {
     }
   }
 }
+.form-control::placeholder {
+  color: 
+  rgba(126, 141, 160, 1) !important;
+  padding: 0 !important;
+
+}
+textarea.form-control::placeholder {
+  color: 
+  rgba(126, 141, 160, 1) !important;
+  padding: 0 !important;
+
+}

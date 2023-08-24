@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="main-scss/main.min.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css"> -->
 
     <!-- responsive -->
@@ -62,16 +69,14 @@
               <span> الامتحانات</span>
             </a>
           </li>
-          
 
-         <li class="nav-item">
+          <li class="nav-item">
             <a href="bank-que.html" class="nav-link align-middle">
               <img src="image/icon-bank.png" alt="icon" />
               <span>بنك الأسألة</span>
             </a>
           </li>
 
-          
           <li class="nav-item">
             <a href="subjects.html" class="nav-link align-middle">
               <img src="image/book-icon.png" alt="icon" />
@@ -119,7 +124,7 @@
             </ul>
           </li>
           <h5>مستخدمي النظام</h5>
-          <li class="nav-item">
+           <li class="nav-item">
             <a href="teacher.html" class="nav-link align-middle">
               <img src="image/teacher-icon.png" alt="icon" />
               <span> المدرسين</span>
@@ -132,7 +137,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="lesons.html" class="nav-link align-middle">
+            <a href="centers.html" class="nav-link align-middle">
               <img src="image/house-icon.png" alt="icon" />
               <span> سناتر الدروس</span>
             </a>
@@ -302,7 +307,9 @@
               <button type="button" class="btn btn-edit">
                 <span class="edit-icon"><i class="bi bi-pen"></i></span>تعديل
               </button>
-              <button type="button" class="btn btn-bolk">حظر</button>
+              <button type="button" class="btn btn-bolk" onclick="blockAlert()">
+                حظر
+              </button>
             </div>
           </div>
         </div>
@@ -376,9 +383,15 @@
               <div class="content_page">
                 <div class="corses">
                   <h5>الكورسات</h5>
-                  <button type="button" class="btn btn-add">
-                    اضافة كورس جديد
-                  </button>
+                  <a href="add-course.html">
+                    <button
+                      type="button"
+                      class="btn btn-add"
+                      style="margin-bottom: 1rem"
+                    >
+                      اضافة كورس جديد
+                    </button>
+                  </a>
                 </div>
                 <div class="search_topic">
                   <form>
@@ -389,7 +402,7 @@
                         placeholder="   ابحث باسم الباب , ............"
                       />
                       <span class="icon_search"
-                        ><i class="bi bi-search nas-centers"></i
+                        ><i class="bi bi-search centers"></i
                       ></span>
                     </div>
                   </form>
@@ -517,21 +530,42 @@
           </div>
         </div>
 
-        <!-- pagination -->
-        <!-- <nav class="pagination_section">
-          <ul class="pagination justify-content-center">
-            <li class="page-item">
-              <a class="page-link" href="#">Previous</a>
-            </li>
-            <li class="page-item active">
-              <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav> -->
-        <!-- pagination -->
+        <div class="content_page">
+          <div class="row foot">
+            <div
+              class="col-8 col-md-8 col-12"
+              style="padding-top: 20px; color: #626e7d"
+            >
+              <p>عرض 1 - 30 من اجمالى 59</p>
+            </div>
+            <div class="col-4 col-md-4 col-12">
+              <nav class="pagination_section">
+                <ul class="pagination">
+                  <!-- justify-content-end -->
+                  <li class="page-item">
+                    <a class="page-link" style="width: 80px" href="#">
+                      السابق
+                    </a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" style="width: 80px" href="#">
+                      التالي
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
 
         <!---------------------- finish  content -------------------------------------------->
       </section>
@@ -548,7 +582,30 @@
     <!-- main js -->
 
     <!-- sweet alert -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+    integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+      function blockAlert() {
+        Swal.fire({
+          html:
+            '<img src="image/block.png" alt="add">' +
+            '<h5 class="swal2-title"> هل أنت متأكد من حظر  السنتر ؟</h5>' +
+            '<p class="swal2-html-container"> فى حالة الضغط على تأكيد الحظر سيتم حظر السنتر من التطبيق كاملا  </p>',
+
+          showCancelButton: true,
+
+          confirmButtonText: "تأكيد الحظر",
+          confirmButtonAriaLabel: "Thumbs up, great!",
+          cancelButtonText: "الغاء",
+          cancelButtonAriaLabel: "Thumbs down",
+        });
+      }
+    </script>
     <!-- sweet alert -->
     <!-- show / hide edit menu in card -->
     <script>
@@ -579,5 +636,6 @@
         });
       });
     </script>
+   
   </body>
 </html>

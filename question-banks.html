@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ar" dir="ltr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> بنك الأسائلة</title>
+    <title>اختر سؤال او اكثر لاضافته من الاسالة التالية</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -20,9 +19,9 @@
     <!-- ? Favicon -->
     <link rel="icon" href="image/logo.png" type="image" />
     <!-- ? Favicon -->
-</head>
+  </head>
 
-<body>
+  <body>
     <!---------------------- start loader -------------------------------------------->
     <!-- <div id="preloader"></div> -->
     <!---------------------- finish loader -------------------------------------------->
@@ -31,386 +30,417 @@
     <!---------------------- finish scroll-up -------------------------------------------->
 
     <main class="d-flex sidemobile p-0">
-        <!---------------------- start sidebar -------------------------------------------->
+      <!---------------------- start sidebar -------------------------------------------->
 
-        <section class="sidebar open">
-            <ul class="
-          nav nav-pills
-          flex-column
-          mb-sm-auto mb-0
-          align-items-center align-items-sm-start
-        " id="menu">
-                <div class="image_logo">
-                    <img src="image/logo.png" alt="logo_sidebar" class="logo" />
-                </div>
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="image_logo">
+            <img src="image/logo.png" alt="logo_sidebar" class="logo" />
+          </div>
 
-                <h5>محتوي النظام</h5>
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link align-middle">
-                        <img src="image/home-icon.png" alt="icon" />
-                        <span>الرئيسية</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="courses.html" class="nav-link align-middle">
-                        <img src="/image/course-icon.png" alt="icon" />
-                        <span>الكورسات</span>
-                    </a>
-                </li>
+          <h5>محتوي النظام</h5>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link align-middle">
+              <img src="image/home-icon.png" alt="icon" />
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="courses.html" class="nav-link align-middle">
+              <img src="/image/course-icon.png" alt="icon" />
+              <span>الكورسات</span>
+            </a>
+          </li>
 
-                <li class="nav-item">
-                    <a href="exams.html" class="nav-link align-middle">
-                        <img src="image/exam-icon.png" alt="icon" />
-                        <span> الامتحانات</span>
-                    </a>
-                </li>
-               
+          <li class="nav-item">
+            <a href="exams.html" class="nav-link align-middle">
+              <img src="image/exam-icon.png" alt="icon" />
+              <span> الامتحانات</span>
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a href="question-banks.html" class="nav-link align-middle">
+              <img src="image/icon-bank.png" alt="icon" />
+              <span>بنك الأسألة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="subjects.html" class="nav-link align-middle">
+              <img src="image/book-icon.png" alt="icon" />
+              <span> المواد الدراسية</span>
+            </a>
+          </li>
 
-                <li class="nav-item">
-                    <a href="question-banks.html" class="nav-link align-middle">
-                        <img src="image/icon-bank.png" alt="icon" />
-                        <span>بنك الأسألة</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="subjects.html" class="nav-link align-middle">
-                        <img src="image/book-icon.png" alt="icon" />
-                        <span> المواد الدراسية</span>
-                    </a>
-                </li>
+          <li class="nav-item">
+            <a
+              href="#submenuAccountant"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="image/scan-barcode-icon.png" alt="icon" />
+              <span> أكود الشراء</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuAccountant"
+              data-bs-parent="#menu"
+            >
+              <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
 
-                <li class="nav-item">
-                    <a href="#submenuAccountant" data-bs-toggle="collapse"
-                        class="nav-link accordion-button align-middle collapsed">
-                        <img src="image/scan-barcode-icon.png" alt="icon" />
-                        <span> أكود الشراء</span>
-                        <i class="fa-solid fa-angle-up"></i>
-                    </a>
-                    <ul class="collapse flex-column" id="submenuAccountant" data-bs-parent="#menu">
-                        <div class="close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-
-                        <li>
-                            <a href="code-book.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> استخراج اكواد للمذكرات</span></a>
-                        </li>
-                        <li>
-                            <a href="code-corse.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> استخراج اكواد للكورسات</span></a>
-                        </li>
-                        <li>
-                            <a href="code-training.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> استخراج اكواد للتدريبات</span></a>
-
-                        </li>
-
-                    </ul>
-                </li>
-                <h5> مستخدمي النظام</h5>
-                <li class="nav-item">
-                    <a href="teacher.html" class="nav-link align-middle">
-                        <img src="image/teacher-icon.png" alt="icon" />
-                        <span> المدرسين</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="students.html" class="nav-link align-middle">
-                        <img src="image/student-icon.png" alt="icon" />
-                        <span> الطلبة</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="lesons.html" class="nav-link align-middle">
-                        <img src="image/house-icon.png" alt="icon" />
-                        <span> سناتر الدروس</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="Systemadministrators.html" class="nav-link align-middle">
-                        <img src="image/director-icon.png" alt="icon" />
-                        <span> مديري النظام</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="powers.html" class="nav-link align-middle">
-                        <img src="image/powers-icon.png" alt="icon" />
-                        <span> الصلاحيات</span>
-                    </a>
-                </li>
-
-
-                <h5> اعدادات النظام</h5>
-
-                <li class="nav-item">
-                    <a href="country.html" class="nav-link align-middle">
-                        <img src="image/country-icon.png" alt="icon" />
-                        <span> الدول</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="governorate.html" class="nav-link align-middle">
-                        <img src="image/country-icon.png" alt="icon" />
-                        <span> المحافظات</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="city.html" class="nav-link align-middle">
-                        <img src="image/country-icon.png" alt="icon" />
-                        <span> المدن</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="universities.html" class="nav-link align-middle">
-                        <img src="image/buildings-icon.png" alt="icon" />
-                        <span> الجامعات</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="colleges.html" class="nav-link align-middle">
-                        <img src="image/colleage-icon.png" alt="icon" />
-                        <span> الكليات</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="main-edu.html" class="nav-link align-middle">
-                        <img src="image/main-edu-icon.png" alt="icon" />
-                        <span> التعليم الاساسي</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="study-teams.html" class="nav-link align-middle">
-                        <img src="image/format-circle.png" alt="icon" />
-                        <span> الفرق الدراسية</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="seting-point.html" class="nav-link align-middle">
-                        <img src="image/buy-crypto-icon.png" alt="icon" />
-                        <span> اعدادات النقاط</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="slider-table.html" class="nav-link align-middle">
-                        <img src="image/slider-icon.png" alt="icon" />
-                        <span> الاسلايدر</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="seting-notifcation.html" class="nav-link align-middle">
-                        <img src="image/notification-bing-icon.png" alt="icon" />
-                        <span> اعدادات الاشعارات</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="setting.html" class="nav-link align-middle">
-                        <img src="image/powers-icon.png" alt="icon" />
-                        <span> الاعدادات العامة</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link align-middle">
-                        <img src="image/logout-icon.png" alt="icon" />
-                        <span> تسجيل الخروج</span>
-                    </a>
-                </li>
-
-
+              <li>
+                <a href="code-book.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للمذكرات</span></a
+                >
+              </li>
+              <li>
+                <a href="code-corse.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للكورسات</span></a
+                >
+              </li>
+              <li>
+                <a href="code-training.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للتدريبات</span></a
+                >
+              </li>
             </ul>
-        </section>
-        <!---------------------- end sidebar -------------------------------------------->
-        <!---------------------- start main content -------------------------------------------->
+          </li>
+          <h5>مستخدمي النظام</h5>
+           <li class="nav-item">
+            <a href="teacher.html" class="nav-link align-middle">
+              <img src="image/teacher-icon.png" alt="icon" />
+              <span> المدرسين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="students.html" class="nav-link align-middle">
+              <img src="image/student-icon.png" alt="icon" />
+              <span> الطلبة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="centers.html" class="nav-link align-middle">
+              <img src="image/house-icon.png" alt="icon" />
+              <span> سناتر الدروس</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Systemadministrators.html" class="nav-link align-middle">
+              <img src="image/director-icon.png" alt="icon" />
+              <span> مديري النظام</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="powers.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الصلاحيات</span>
+            </a>
+          </li>
 
-        <section class="index_cards">
-            <!---------------------- start nav -------------------------------------------->
-            <nav class="nav_top navbar">
-                <div class="container">
-                    <div class="menu">
-                        <i class="bi bi-list"></i>
-                    </div>
-                    <div class="info">
-                        <div class="notfication" onclick="showNotification()">
-                            <i class="bi bi-bell"></i>
-                            <span class="alerts">
-                                3
-                            </span>
-                        </div>
+          <h5>اعدادات النظام</h5>
 
-                        <div class="img">
-                            <img src="../image/person.png" alt="person">
-                        </div>
-                        <div class="btn-group">
-                            <button class="btn  btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                محمد طارق
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li> <a href="settings.html">اعدادات الحساب</a> </li>
-                                <li onclick="acceptAlert()"> تسجيل الخروج </li>
-                            </ul>
-                        </div>
+          <li class="nav-item">
+            <a href="country.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> الدول</span>
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a href="governorate.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المحافظات</span>
+            </a>
+          </li>
 
-                    </div>
+          <li class="nav-item">
+            <a href="city.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المدن</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="universities.html" class="nav-link align-middle">
+              <img src="image/buildings-icon.png" alt="icon" />
+              <span> الجامعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="colleges.html" class="nav-link align-middle">
+              <img src="image/colleage-icon.png" alt="icon" />
+              <span> الكليات</span>
+            </a>
+          </li>
 
-                </div>
-            </nav>
-            <ul class="notfication_list">
-                <h2>الأشعارات</h2>
-                <i class="bi bi-x close-icon" onclick="hideNotification()"></i>
+          <li class="nav-item">
+            <a href="main-edu.html" class="nav-link align-middle">
+              <img src="image/main-edu-icon.png" alt="icon" />
+              <span> التعليم الاساسي</span>
+            </a>
+          </li>
 
-                <li class="unread" onclick="convertToRead(this)">
-                    <div class="info">
-                        <h6> text</h6>
-                        <span> 22/6/1993</span>
-                    </div>
-                    <div class="delete">
-                        <i class="bi bi-trash"></i>
-                    </div>
-                </li>
-                <li class="read">
-                    <div class="info">
-                        <h6> text</h6>
-                        <span> 22/6/1993</span>
-                    </div>
-                    <div class="delete">
-                        <i class="bi bi-trash"></i>
-                    </div>
-                </li>
-            </ul>
-            <!---------------------- finish nav -------------------------------------------->
-            <!---------------------- start content -------------------------------------------->
-            <div class="content_page">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_topic course_main_topic">
-                            <h4>
-                                اختر سؤال او اكثر لاضافته من الاسالة التالية </h4>
-                            <button type="button" class="btn first"> الاختيار عشوائي</button>
-                        </div>
+          <li class="nav-item">
+            <a href="study-teams.html" class="nav-link align-middle">
+              <img src="image/format-circle.png" alt="icon" />
+              <span> الفرق الدراسية</span>
+            </a>
+          </li>
 
-                    </div>
-                    <div class="row">
-                        <div class="table_scroll">
-                            <table class="table-responsive table_expenses table_topic">
-                                <thead>
-                                    <tr>
-                                        <td> </td>
-                                        <td class="w-25"> نص السؤال </td>
-                                        <td> الصورة</td>
-                                        <td> الاجابة 1</td>
-                                        <td> الاجابة 2</td>
-                                        <td> الاجابة
-                                            3</td>
-                                        <td> الاجابة
-                                            4</td>
-                                        <td></td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- outcome list -->
-                                    <tr>
-                                        <td>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                            </div>
-                                        </td>
-                                        <td> describes the structure and organization of plant cells, tissues and organs
-                                            in relation to their development and function. </td>
-                                        <td> <img src="image/course1.png" alt=""></td>
-                                        <td> Plant Anatomy</td>
-                                        <td>Pharmacognosy</td>
-                                        <td>Medical Ethnobotany</td>
-                                        <td>Phytochemistery</td>
-                                        <td class="button">
+          <li class="nav-item">
+            <a href="seting-point.html" class="nav-link align-middle">
+              <img src="image/buy-crypto-icon.png" alt="icon" />
+              <span> اعدادات النقاط</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="slider-table.html" class="nav-link align-middle">
+              <img src="image/slider-icon.png" alt="icon" />
+              <span> الاسلايدر</span>
+            </a>
+          </li>
 
-                                            <a class="btn edit mt-4" href="edit-question.html"> <i
-                                                    class="bi bi-eye"></i></a>
+          <li class="nav-item">
+            <a href="seting-notifcation.html" class="nav-link align-middle">
+              <img src="image/notification-bing-icon.png" alt="icon" />
+              <span> اعدادات الاشعارات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الاعدادات العامة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <img src="image/logout-icon.png" alt="icon" />
+              <span> تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!---------------------- end sidebar -------------------------------------------->
+      <!---------------------- start main content -------------------------------------------->
 
-                                        </td>
-
-                                    </tr>
-                                    <!-- outcome list -->
-
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- filter student section -->
-                        <div class="filter_chose">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-2 col-12">
-                                    <h6> تم اختيار 4 من الأسألة المتاحة على الأبواب المختارة </h6>
-                                </div>
-                                <div class="col-lg-8 col-md-10 col-12">
-                                    <div class="button">
-                                        <a href="sheet-question.html" class="btn first">  التأكيد و المتابعة  </a>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- filter student section -->
-                        <!-- pagination -->
-                        <nav class="pagination_section">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                            </ul>
-                        </nav>
-                        <!-- pagination -->
-                    </div>
-
-                    <div class="button">
-                        <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" style="padding: 1%;"
-                            href="add-question.html" class="btn first">اضافة سؤال جديد</button>
-                        <button style="padding: 1%; margin-inline-start: 2%;" type="button" class="btn second"> رفع
-                            الامتحان الآن</button>
-
-                    </div>
-                </div>
+      <section class="index_cards">
+        <!---------------------- start nav -------------------------------------------->
+        <nav class="nav_top navbar">
+          <div class="container">
+            <div class="menu">
+              <i class="bi bi-list"></i>
             </div>
-            <!---------------------- finish  content -------------------------------------------->
-        </section>
-        <!---------------------- finish main content -------------------------------------------->
+            <div class="info">
+              <div class="notfication" onclick="showNotification()">
+                <i class="bi bi-bell"></i>
+                <span class="alerts"> 3 </span>
+              </div>
+
+              <div class="img">
+                <img src="../image/person.png" alt="person" />
+              </div>
+              <div class="btn-group">
+                <button
+                  class="btn btn-sm dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  محمد طارق
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="settings.html">اعدادات الحساب</a></li>
+                  <li onclick="acceptAlert()">تسجيل الخروج</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <ul class="notfication_list">
+          <h2>الأشعارات</h2>
+          <i class="bi bi-x close-icon" onclick="hideNotification()"></i>
+
+          <li class="unread" onclick="convertToRead(this)">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+          <li class="read">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+        </ul>
+        <!---------------------- finish nav -------------------------------------------->
+        <!---------------------- start content -------------------------------------------->
+        <div class="content_page">
+          <div class="container">
+            <div class="row">
+              <div class="main_topic course_main_topic">
+                <h4>اختر سؤال او اكثر لاضافته من الاسالة التالية</h4>
+                <button type="button" class="btn first">الاختيار عشوائي</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="table_scroll">
+                <table class="table-responsive table_expenses table_topic">
+                  <thead>
+                    <tr>
+                      <td></td>
+                      <td class="w-25">نص السؤال</td>
+                      <td>الصورة</td>
+                      <td>الاجابة 1</td>
+                      <td>الاجابة 2</td>
+                      <td>الاجابة 3</td>
+                      <td>الاجابة 4</td>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- outcome list -->
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                        </div>
+                      </td>
+                      <td>
+                        describes the structure and organization of plant cells,
+                        tissues and organs in relation to their development and
+                        function.
+                      </td>
+                      <td><img src="image/course1.png" alt="" /></td>
+                      <td>Plant Anatomy</td>
+                      <td>Pharmacognosy</td>
+                      <td>Medical Ethnobotany</td>
+                      <td>Phytochemistery</td>
+                      <td class="button">
+                        <a class="btn edit mt-4" href="edit-question.html">
+                          <i class="bi bi-eye"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <!-- outcome list -->
+                  </tbody>
+                </table>
+              </div>
+              <!-- filter student section -->
+              <div class="filter_chose">
+                <div class="row">
+                  <div class="col-lg-4 col-md-2 col-12">
+                    <h6>تم اختيار 4 من الأسألة المتاحة على الأبواب المختارة</h6>
+                  </div>
+                  <div class="col-lg-8 col-md-10 col-12">
+                    <div class="button">
+                      <a href="sheet-question.html" class="btn first">
+                        التأكيد و المتابعة
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- filter student section -->
+              <!-- pagination -->
+              <nav class="pagination_section">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#">Previous</a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- pagination -->
+            </div>
+
+            <div class="button">
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                type="button"
+                style="padding: 1%"
+                href="add-question.html"
+                class="btn first"
+              >
+                اضافة سؤال جديد
+              </button>
+              <button
+                style="padding: 1%; margin-inline-start: 2%"
+                type="button"
+                class="btn second"
+              >
+                رفع الامتحان الآن
+              </button>
+            </div>
+          </div>
+        </div>
+        <!---------------------- finish  content -------------------------------------------->
+      </section>
+      <!---------------------- finish main content -------------------------------------------->
     </main>
     <!---------------------- finish footer -------------------------------------------->
     <!---------------------- modal -------------------------------------------->
 
-    <div class="modal modal_assistant fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
+    <div
+      class="modal modal_assistant fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="content">
+              <h4>اضافة اسالة الامتحان</h4>
 
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="content">
-                        <h4> اضافة اسالة الامتحان </h4>
-
-                        <div class="button">
-                            <a href="question-banks.html" class="btn first"> اضافة من بنك الاسألة </a>
-                            <a href="add-question.html" class="btn second"> اضافة سؤال جديد</a>
-                        </div>
-                    </div>
-                </div>
-
+              <div class="button">
+                <a href="question-banks.html" class="btn first">
+                  اضافة من بنك الاسألة
+                </a>
+                <a href="add-question.html" class="btn second">
+                  اضافة سؤال جديد</a
+                >
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!---------------------- modal -------------------------------------------->
     <!-- main js -->
@@ -422,11 +452,8 @@
     <script src="js/main.js"></script>
     <!-- main js -->
 
-
     <!-- sweet alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- sweet alert -->
-
-</body>
-
+  </body>
 </html>

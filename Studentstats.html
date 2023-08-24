@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>تفاصيل الامتحان</title>
+    <title>احصائيات الطالب</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -299,161 +299,389 @@
         <!---------------------- start content -------------------------------------------->
         <div class="container">
           <div class="main_topic">
-            <h4>تفاصيل الامتحان للطالب أحمد ابراهيم</h4>
-            <a href="studentdetails.html" style="text-decoration: underline"
-              >العودة لتفاصيل الطالب</a
-            >
+            <h4>احصائيات الطالب</h4>
           </div>
-        </div>
-        <div class="content_page">
-          <div class="container">
-            <div class="main-deatils">
-              <div class="text-details">
-                <div class="examination">
-                  <h4>امتحان تجريبي على اللغة الانجليزية الفصل الاول</h4>
-                  <p>مراجعة اللغة الإنجليزية مع فتحي مجدي</p>
+          <div class="Studentstats">
+            <div class="main-ranking-1">
+              <div class="ranking">
+                <div class="img-ranking">
+                  <img src="image/ranking.png" alt="" />
                 </div>
-                <div class="details">
-                  <div class="date">
-                    <img src="image/calendar.png" alt="" />
-                    <p>تاريخ البداية :</p>
-                    <h6>22 مايو, 2023</h6>
-                  </div>
-                  <div class="date">
-                    <img src="image/calendar.png" alt="" />
-                    <p>تاريخ البداية :</p>
-                    <h6>22 مايو, 2023</h6>
-                  </div>
-                  <div class="date">
-                    <img src="image/calendar.png" alt="" />
-                    <p>تاريخ البداية :</p>
-                    <h6>22 مايو, 2023</h6>
-                  </div>
-                  <div class="date">
-                    <img src="image/clock.png" alt="" />
-                    <p>المدة المستغرقة:</p>
-                    <h6>50 دقيقة</h6>
-                  </div>
+                <div class="text-ranking-1">
+                  <h5>ترتيب الطالب على الدفعة</h5>
+                  <h6>120</h6>
                 </div>
               </div>
-              <div class="card-star">
-                <img src="image/star.png" alt="" />
-                <h6>الدرجة النهائية للطالب</h6>
-                <h4>22 / 40</h4>
+            </div>
+            <div class="main-ranking-1">
+              <div class="ranking">
+                <div class="img-ranking">
+                  <img src="image/star-s.png" alt="" />
+                </div>
+                <div class="text-ranking">
+                  <h4>التقييم العام للطالب</h4>
+                  <h6>جيد جدا</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-ranking-1">
+              <div class="ranking">
+                <div class="img-ranking">
+                  <img src="image/kas.png" alt="" />
+                </div>
+                <div class="text-ranking">
+                  <h4>اجمالى نقاط الطالب</h4>
+                  <h6>120</h6>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="content_page">
-          <div class="cards-total">
-            <div class="mid-cards">
-              <div class="total-cards">
-                <h6>اجمالى اسألة الامتحان</h6>
-                <h4>20 سؤال</h4>
+          <div class="Studentperformance">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-12">
+                <div class="text-Studentperformance">
+                  <h4>اداء الطالب فى الحل</h4>
+                </div>
               </div>
-              <div class="img-exame">
-                <img src="image/task-square.png" alt="" />
+              <div class="col-lg-3 col-md-5 col-12">
+                <form
+                  class="form_topic"
+                  style="padding-inline-end: 0; margin-top: 0"
+                >
+                  <!-- input group -->
+                  <div class="input-group">
+                    <select
+                      required
+                      class="selectpicker"
+                      multiple
+                      data-selected-text-format="count > 1"
+                      data-icon="bi bi-trash"
+                      data-live-search="true"
+                      data-placeholder=" عرض حسب: هذا الترم  "
+                    >
+                      <option value="1">هذا الترم</option>
+                      <option value="2">هذا العام</option>
+                      <option value="3">اخر شهر</option>
+                    </select>
+                  </div>
+                </form>
+                <!-- input group -->
               </div>
-            </div>
-            <div class="mid-cards">
-              <div class="total-cards">
-                <h6>اجمالى اسألة الامتحان</h6>
-                <h4>20 سؤال</h4>
+              <div class="col-lg-3 col-md-5 col-12">
+                <form
+                  class="form_topic"
+                  style="padding-inline-end: 0; margin-top: 0"
+                >
+                  <!-- input group -->
+                  <div class="input-group">
+                    <select
+                      required
+                      class="selectpicker"
+                      multiple
+                      data-selected-text-format="count > 1"
+                      data-icon="bi bi-trash"
+                      data-live-search="true"
+                      data-placeholder=" تصنيف حسب: كل المواد  "
+                    >
+                      <option value="1">الاسألة المحلولة</option>
+                      <option value="2">الأسألة الصح</option>
+                      <option value="3">نسبة الصح الى الاسألة المحلولة</option>
+                    </select>
+                  </div>
+                </form>
+                <!-- input group -->
               </div>
-              <div class="img-exame">
-                <img src="image/clipboard-tick.png" alt="" />
-              </div>
-            </div>
-            <div class="mid-cards">
-              <div class="total-cards">
-                <h6>اجمالى اسألة الامتحان</h6>
-                <h4>20 سؤال</h4>
-              </div>
-              <div class="img-exame">
-                <img src="image/clipboard-close.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="main_topic">
-            <h4>الاسألة و الإجابات للطالب</h4>
-          </div>
-          <div class="main-cards">
-            <div class="text-lastcards">
-              <h4>
-                <span class="img-card"><img src="image/pop.png" alt="" /></span>
-                father bought a/an ........ villa, the nearest house is 2
-                kilometers away.
-              </h4>
-              <h5>الاجابة :</h5>
-              <h6>Isolated</h6>
-            </div>
-            <div class="side-text">
-              <h3>
-                <span><img src="image/timer.png" alt="" /></span>وقت الاجابة :
-                2:24:00
-              </h3>
-            </div>
-          </div>
-          <div class="main-cards">
-            <div class="text-lastcards">
-              <h4>
-                <span class="img-card"><img src="image/pop.png" alt="" /></span>
-                father bought a/an ........ villa, the nearest house is 2
-                kilometers away.
-              </h4>
-              <h5>الاجابة :</h5>
-              <h6 class="text-danger">Isolated</h6>
-              <h5>الاجابة الصحيحة :</h5>
-              <h6>Isolated</h6>
-            </div>
-            <div class="side-text">
-              <h3>
-                <span><img src="image/timer.png" alt="" /></span>وقت الاجابة :
-                2:24:00
-              </h3>
             </div>
           </div>
-          <div class="container">
-            <div class="row foot">
-              <div
-                class="col-8 col-md-8 col-12"
-                style="padding-top: 20px; color: #626e7d"
-              >
-                <p>عرض 1 - 30 من اجمالى 59</p>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+              <div class="main-cricle">
+                <div class="cricle">
+                  <h5>المستوي العام لاداء الطالب</h5>
+                  <div class="rate">
+                    <h4>80%</h4>
+                    <h6>جيد جدا</h6>
+                  </div>
+                  <div class="cricle-img">
+                    <canvas id="myChart1"></canvas>
+                  </div>
+                </div>
               </div>
-              <div class="col-4 col-md-4 col-12">
-                <nav class="pagination_section">
-                  <ul class="pagination">
-                    <!-- justify-content-end -->
-                    <li class="page-item">
-                      <a class="page-link" style="width: 80px" href="#">
-                        السابق
-                      </a>
-                    </li>
-                    <li class="page-item active">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" style="width: 80px" href="#">
-                        التالي
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12">
+              <div class="main-cricle">
+                <div class="cricle">
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <h5>عدد الاسالة المحلولة</h5>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="input-group nas">
+                        <select
+                          required
+                          class="selectpicker"
+                          data-placeholder=" تصنيف حسب: الأسالة المحلولة "
+                          data-selected-text-format="count > 1"
+                          data-icon="bi bi-trash"
+                          data-live-search="true"
+                        >
+                          <option value="1">حضور الحصص الايف</option>
+                          <option value="2">حضور الحصص المسجلة</option>
+                          <option value="3">حضور الامتحانات والشيتات</option>
+                          <option value="3">حل الواجب</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="line">
+                  <canvas id="line"></canvas>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="content_page">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+              <div class="Studentperformance">
+                <h4>اداء الطالب فى تحصيل الوقت</h4>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-12">
+              <div class="Studentperformance">
+                <div class="input-group">
+                  <select
+                    required
+                    class="selectpicker"
+                    multiple
+                    data-selected-text-format="count > 1"
+                    data-icon="bi bi-trash"
+                    data-live-search="true"
+                    data-placeholder=" عرض حسب: هذا الترم  "
+                  >
+                    <option value="1">هذا الترم</option>
+                    <option value="2">هذا العام</option>
+                    <option value="3">اخر شهر</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-12">
+              <div class="Studentperformance">
+                <div class="input-group">
+                  <select
+                    required
+                    class="selectpicker"
+                    multiple
+                    data-selected-text-format="count > 1"
+                    data-icon="bi bi-trash"
+                    data-live-search="true"
+                    data-placeholder=" تصنيف حسب: كل المواد  "
+                  >
+                    <option value="1">0</option>
+                    <option value="2">1</option>
+                    <option value="3">2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content_page">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+              <div class="Studentperformance">
+                <h4>اداء الطالب فى الالتزام</h4>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-12">
+              <div class="Studentperformance">
+                <div class="input-group">
+                  <select
+                    required
+                    class="selectpicker"
+                    multiple
+                    data-selected-text-format="count > 1"
+                    data-icon="bi bi-trash"
+                    data-live-search="true"
+                    data-placeholder=" عرض حسب: هذا الترم  "
+                  >
+                    <option value="1">هذا الترم</option>
+                    <option value="2">هذا العام</option>
+                    <option value="3">اخر شهر</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-12">
+              <div class="Studentperformance">
+                <div class="input-group">
+                  <select
+                    required
+                    class="selectpicker"
+                    multiple
+                    data-selected-text-format="count > 1"
+                    data-icon="bi bi-trash"
+                    data-live-search="true"
+                    data-placeholder=" تصنيف حسب: كل المواد  "
+                  >
+                    <option value="1">0</option>
+                    <option value="2">1</option>
+                    <option value="3">2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row foot">
+            <div class="col-8 col-md-8 col-12" style="padding-top: 20px; color: #626e7d">
+              <p>عرض 1 - 30 من اجمالى 59</p>
+            </div>
+            <div class="col-4 col-md-4 col-12">
+              <nav class="pagination_section">
+                <ul class="pagination">
+                  <!-- justify-content-end -->
+                  <li class="page-item">
+                    <a class="page-link" style="width: 80px" href="#">
+                      السابق
+                    </a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" style="width: 80px" href="#">
+                      التالي
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      
+      
       </section>
     </main>
 
     <!-- show / hide edit menu in card -->
+    <script src="js/chart.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const ctx = document.getElementById("myChart1").getContext("2d");
+        const labels = ["اداء الطالب في الحل", "اداء الطلاب العام فى الحل"];
+        const data = {
+          labels: labels,
+          datasets: [
+            {
+              label: "My Dataset",
+              data: [12, 19],
+              backgroundColor: [
+                "rgba(230, 171, 47, 0.23)", // Color for Branch 1
+                "rgba(230, 171, 47, 1)", // Color for Branch 2
+              ],
+              borderColor: [
+                "rgba(230, 171, 47, 0.23)", // Border color for Branch 1
+                "rgba(230, 171, 47, 1)", // Border color for Branch 2
+              ],
+              borderWidth: 1,
+            },
+          ],
+        };
+        const config = {
+          type: "doughnut",
+          data: data,
+          options: {
+            responsive: true,
+            animations: {
+              tension: {
+                duration: 4000,
+                easing: "linear",
+                from: 1,
+                to: 0,
+                loop: true,
+              },
+            },
+            interaction: {
+              intersect: false,
+            },
+            scales: {
+              x: {
+                stacked: false,
+                display: false,
+              },
+              y: {
+                stacked: false,
+                display: false,
+              },
+            },
+          },
+        };
+        const myChart = new Chart(ctx, config);
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const ctx = document.getElementById("line").getContext("2d");
+        const labels = ["Jan", "Feb", "Mar", "aPR", "May", "JUN", "JUL"];
+        const data = {
+          labels: labels,
+          datasets: [
+            {
+              label: "التقدير العام : جيد",
+              data: [1000, 2000, 3000, 4000, 5000],
+              borderColor: "rgb(230, 171, 47, 1)",
+              tension: 0.1,
+            },
+          ],
+        };
+        const config = {
+          type: "line",
+          data: data,
+          options: {
+            responsive: true,
+            animations: {
+              tension: {
+                duration: 4000,
+                easing: "linear",
+                from: 1,
+                to: 0,
+                loop: true,
+              },
+            },
+            interaction: {
+              intersect: false,
+            },
+            scales: {
+              x: {
+                stacked: false,
+                grid: {
+                  display: false,
+                },
+              },
+              y: {
+                stacked: false,
+                grid: {
+                  display: false,
+                },
+              },
+            },
+          },
+        };
+        const myChart = new Chart(ctx, config);
+      });
+    </script>
     <script>
       function toggleMenu(menuId) {
         var menu = document.getElementById(menuId);
