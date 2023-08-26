@@ -1021,6 +1021,7 @@ i.bi.bi-search.detialsexam {
 .text-ranking a {
   color: #06456b;
   text-decoration: underline;
+  font-family: "regular";
 }
 .text-ranking a:hover {
   color: blue;
@@ -1163,75 +1164,59 @@ label.form-label.Subscriptions {
   font-family: bold;
 }
 /* Studentperformance */
-.text-Studentperformance h4 {
-  font-family: "bold";
-  font-size: 1.2rem;
+.text-prefarnce{
+  padding: 0.8rem 0.8rem;
 }
-.main-cricle {
-  padding: 2.1rem 5rem;
-  border: 1px solid #d6d6d652;
-}
-
-.text-cricle h5 {
-  font-size: 0.6rem;
-  font-family: "regular";
-}
-.text-cricle span {
-  margin-inline-end: 10px;
-}
-.cricle h6 {
-  font-size: 0.8rem;
-  font-family: "bold";
-}
-
-.main-cricle h5 {
-  margin-inline-start: -70px;
-  font-size: 0.8rem;
-  font-family: "bold";
-}
-.main-cricle {
+  .text-prefarnce h4 {
+    font-family: "bold";
+    font-size: 1.2rem;
+  }
+  .line-student {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+.cricle-student {
   position: relative;
+  padding: 2.3rem 6rem;
+
+  padding-top: 2rem;
+  border: 1px solid #d6d6d698;
 }
 .rate {
-  text-align: center;
   position: absolute;
-  left: 237px;
-  top: 195px;
+  top: 51%;
+    right: 44%;
+  text-align: center;
 }
-.rate h6 {
-  font-family: "regular";
-  color: #5e6e77a9;
+.rate h3 {
+  font-size: 1.5rem!important;
+  font-family: 'bold';
 }
-.rate h4 {
-  font-family: "bold";
-}
-.line {
-  height: 254px;
-  width: 340px;
-}
-.input-group.nas {
-  margin-top: -15px;
-  width: 258px;
-}
-.dropdown-item .text {
-  padding: 0 !important;
-}
-canvas#myChart1 {
-  height: 300px !important;
-  width: 300px !important;
-}
-canvas#line {
-  margin: 0.9rem 0rem;
+.cricle-student h4 {
+    font-size: 1rem;
+    font-family: 'bold';
 }
 
-.text-Studentperformance {
-  padding-top: 1rem;
-}
-.Studentperformance h4 {
-  padding: 0.5rem;
-  font-family: "bold";
+.line-student h4 {
   font-size: 1rem;
+  font-family: 'bold';
 }
+.liner {
+  padding: 5rem 1rem;
+  padding-top: 2rem;
+  border: 1px solid #d6d6d662;
+}
+.selcet-time {
+  display: flex;
+  gap: 10px;
+}
+.text-time h4 {
+  font-size: 1rem;
+  font-family: 'bold';
+}
+
 .form-control::placeholder {
   color: rgba(126, 141, 160, 1) !important;
   padding: 0 !important;
@@ -1244,6 +1229,33 @@ canvas#line {
   color: rgba(126, 141, 160, 1) !important;
   padding: 0 !important;
 }
+.table_expenses thead tr {
+  background-color: #edf5f9 !important;
+  border: 1px solid #bfbfbf63 !important;
+
+}
+span.text {
+  padding: 0 !important;
+}
+.time-5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.accordion-item:first-of-type {
+  margin-top: 20px !important;
+  
+}
+.student-stats .accordion-header .row {
+  width: 100%;
+  text-align: start;
+}
+.student-stats .accordion-header .content_page {
+  width: 100%;
+  text-align: start;
+}
+
 
 /* responsive  */
 /* Extra small devices (phones, 600px and down) */
@@ -1379,23 +1391,76 @@ canvas#line {
   img.name-teacher {
     width: 25% !important;
   }
-  canvas#myChart1 {
-    width: 130px !important;
-    height: 130px !important;
-  }
-  canvas#line {
-    width: 130px !important;
-    height: 130px !important;
-  }
-  .rate {
-    display: none;
-  }
+  
+  
+ 
   .input-group.nas {
     width: 246px;
     margin-right: -76px;
     margin-top: 10px;
   }
-}
+ 
+  /* studentdetails*/
+
+  .text-student h4 {
+    font-size: 0.8rem;
+  }
+  .text-student h6 {
+    font-size: 0.6rem;
+  }
+  .text-student p {
+    font-size: 0.6rem;
+  }
+  .botton {
+    margin-top: -46px;
+  }
+  button.btn.btn-wahts.mx-1 {
+    font-size: 0.6rem;
+  }
+
+  .under-text {
+    display: inline;
+  }
+  .main-ranking {
+    width: 100%;
+  }
+  
+  ul#myTab {
+    font-size: 0.7rem;
+  }
+  .text-ranking h6 {
+    font-size: 0.8rem;
+  }
+  .text-ranking a {
+    font-size: 0.8rem;
+  }
+  .dropdown.bootstrap-select.show-tick {
+    padding: 0.1rem !important;
+  }
+  .rate {
+    display: none;
+  }
+  .text-time h4 {
+    font-size: 0.7rem;
+  }
+  .selcet-time {
+    display: block;
+  }
+  .cricle-student h4 {
+    font-size: 0.7rem;
+  }
+  .line-student h4 {
+    font-size: 0.7rem;
+  }
+  canvas#myChart1 {
+    width: 100% !important;
+    height: 200px !important;
+  }
+  .cricle-student {
+    padding: 2rem!important;
+  }
+  }
+  
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (max-width: 992px) {
