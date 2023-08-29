@@ -524,7 +524,7 @@ form {
   }
 
   &::placeholder {
-    color: var(--color-text);
+   color: #7E8DA0 !important;
     font-family: "light" !important;
     font-size: 0.9rem;
   }
@@ -760,7 +760,7 @@ input {
         }
 
         span {
-          display: inline-block;
+          display: inline-block !important;
         }
 
         img {
@@ -857,10 +857,11 @@ input {
 
     h5 {
       color: #CFDBE2;
-      font-size: 1.2rem;
+      font-size: 0.8rem;
       font-family: 'bold';
       text-align: center;
-      padding-inline-start: 2%;
+      padding-inline-start: 7px;
+      
     }
 
     .nav-item {
@@ -873,16 +874,17 @@ input {
 
       .nav-link {
         text-align: start;
-        padding: 1rem 1.2rem;
-        font-size: 0.85rem;
-        background-color: transparent;
-        margin-bottom: 0;
+    padding: 1rem 1.2rem;
+    font-size: .85rem;
+    background-color: rgba(0,0,0,0);
+    margin-bottom: 0;
+   
 
         span {
           color: #CFDBE2;
           margin: 0 5%;
           font-family: "regular";
-          font-size: 0.8rem;
+          font-size: 0.6rem;
           display: none;
         }
 
@@ -3598,15 +3600,4 @@ p.terms {
     }
   }
 }
-.form-control::placeholder {
-  color: 
-  rgba(126, 141, 160, 1) !important;
-  padding: 0 !important;
 
-}
-textarea.form-control::placeholder {
-  color: 
-  rgba(126, 141, 160, 1) !important;
-  padding: 0 !important;
-
-}

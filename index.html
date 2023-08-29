@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="main-scss/main.min.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css"> -->
 
     <!-- responsive -->
@@ -189,7 +190,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="study-teams.html" class="nav-link align-middle">
+                    <a href="subjects.html" class="nav-link align-middle">
                         <img src="image/format-circle.png" alt="icon" />
                         <span> الفرق الدراسية</span>
                     </a>
@@ -420,15 +421,31 @@
                                             <li><i class="bi bi-collection"></i> 200 طالب منضم</li>
                                         </div>
                                     </a>
-                                    <div class="edit">
-                                        <span onclick="toggleMenu('drop-menu-info')"><i
-                                                class="bi bi-three-dots-vertical"></i></span>
-                                    </div>
-                                    <ul id="drop-menu-info" class="drop_menu_info">
-                                        <li><a href="edit-course.html">تعديل الكورس</a></li>
-                                        <li><a href="detials-course.html"> عرض التفاصيل</a></li>
-                                        <li><a onclick="deleteion()"> حذف الكورس</a></li>
-                                    </ul>
+                                    <div class="dropdown">
+                                        <button
+                                          class="btn dropdown-toggle-1"
+                                          type="button"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li>
+                                            <a class="dropdown-item" href="edit-course.html">
+                                              تعديل الكورس</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item" href="detials-course.html"
+                                              >عرض التفاصيل
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item"> حذف الكورس</a>
+                                          </li>
+                                        </ul>
+                                      </div>
                                 </div>
                             </div>
                         </div>
@@ -449,15 +466,31 @@
                                             <li><i class="bi bi-collection"></i> 200 طالب منضم</li>
                                         </div>
                                     </a>
-                                    <div class="edit">
-                                        <span onclick="toggleMenu('drop-menu-info')"><i
-                                                class="bi bi-three-dots-vertical"></i></span>
-                                    </div>
-                                    <ul id="drop-menu-info" class="drop_menu_info">
-                                        <li><a href="edit-course.html">تعديل الكورس</a></li>
-                                        <li><a href="detials-course.html"> عرض التفاصيل</a></li>
-                                        <li><a onclick="deleteion()"> حذف الكورس</a></li>
-                                    </ul>
+                                    <div class="dropdown">
+                                        <button
+                                          class="btn dropdown-toggle-1"
+                                          type="button"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li>
+                                            <a class="dropdown-item" href="edit-course.html">
+                                              تعديل الكورس</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item" href="detials-course.html"
+                                              >عرض التفاصيل
+                                            </a>
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item"> حذف الكورس</a>
+                                          </li>
+                                        </ul>
+                                      </div>
                                 </div>
                             </div>
                         </div>
