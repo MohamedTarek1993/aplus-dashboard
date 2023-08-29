@@ -185,11 +185,37 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="main-edu.html" class="nav-link align-middle">
-              <img src="image/main-edu-icon.png" alt="icon" />
+            <li class="nav-item">
+            <a
+              href="#submenuAccountant"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="image/scan-barcode-icon.png" alt="icon" />
               <span> التعليم الاساسي</span>
+              <i class="fa-solid fa-angle-up"></i>
             </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuAccountant"
+              data-bs-parent="#menu"
+            >
+              
+
+              <li>
+                <a href="educationalstages.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> المراحل التعليمية</span></a
+                >
+              </li>
+              <li>
+                <a href="Addaneducationalstage.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> اضافة مرحلة تعليمية</span></a
+                >
+              </li>
+           
+            </ul>
           </li>
 
           <li class="nav-item">
@@ -439,39 +465,42 @@
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-              <div class="content_page">
-                <div class="time-5">
-                  <div class="text-time">
+                  
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="text-prefarnce">
                     <h4>اداء الطالب فى تحصيل الوقت</h4>
                   </div>
-                  <div class="selcet-time">
-                    <div class="form-group">
-                      <select
-                        id="inputState"
-                        class="form-control select2 selectpicker"
-                      >
-                        <option selected>عرض حسب: هذا الترم</option>
-                        <option>هذا الترم</option>
-                        <option>هذا العام</option>
-                        <option>اخر شهر</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <select
-                        id="inputState"
-                        class="form-control select2 selectpicker"
-                      >
-                        <option selected>تصنيف حسب: كل المواد</option>
-                        <option>هذا الترم</option>
-                        <option>هذا العام</option>
-                        <option>اخر شهر</option>
-                      </select>
-                    </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <select
+                      id="inputState"
+                      class="form-control select2 selectpicker"
+                    >
+                      <option selected>عرض حسب: هذا الترم</option>
+                      <option>هذا الترم</option>
+                      <option>هذا العام</option>
+                      <option>اخر شهر</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <select
+                      id="inputState"
+                      class="form-control select2 selectpicker"
+                    >
+                      <option selected>تصنيف حسب: كل المواد</option>
+                      <option>...</option>
+                      <option>....</option>
+                      <option>.....</option>
+                    </select>
                   </div>
                 </div>
               </div>
-              </button>
-            </h2>
+            </button>
+          </h2>
             <div
               id="collapseTwo"
               class="accordion-collapse collapse"
@@ -532,39 +561,41 @@
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-              <div class="content_page">
-                <div class="time-5">
-                  <div class="text-time">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="text-prefarnce">
                     <h4>اداء الطالب فى الالتزام</h4>
                   </div>
-                  <div class="selcet-time">
-                    <div class="form-group">
-                      <select
-                        id="inputState"
-                        class="form-control select2 selectpicker"
-                      >
-                        <option selected>عرض حسب: هذا الترم</option>
-                        <option>هذا الترم</option>
-                        <option>هذا العام</option>
-                        <option>اخر شهر</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <select
-                        id="inputState"
-                        class="form-control select2 selectpicker"
-                      >
-                        <option selected>تصنيف حسب: كل المواد</option>
-                        <option>هذا الترم</option>
-                        <option>هذا العام</option>
-                        <option>اخر شهر</option>
-                      </select>
-                    </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <select
+                      id="inputState"
+                      class="form-control select2 selectpicker"
+                    >
+                      <option selected>عرض حسب: هذا الترم</option>
+                      <option>هذا الترم</option>
+                      <option>هذا العام</option>
+                      <option>اخر شهر</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <select
+                      id="inputState"
+                      class="form-control select2 selectpicker"
+                    >
+                      <option selected>تصنيف حسب: كل المواد</option>
+                      <option>...</option>
+                      <option>....</option>
+                      <option>.....</option>
+                    </select>
                   </div>
                 </div>
               </div>
-              </button>
-            </h2>
+            </button>
+          </h2>
             <div
               id="collapseThree"
               class="accordion-collapse collapse"
@@ -806,6 +837,7 @@
           type: "line",
           data: data,
           options: {
+            maintainAspectRatio: false,
             responsive: true,
             animations: {
               tension: {
@@ -857,6 +889,7 @@
           type: "line",
           data: data,
           options: {
+            maintainAspectRatio: false,
             responsive: true,
             animations: {
               tension: {
@@ -908,6 +941,7 @@
           type: "line",
           data: data,
           options: {
+            maintainAspectRatio: false,
             responsive: true,
             animations: {
               tension: {

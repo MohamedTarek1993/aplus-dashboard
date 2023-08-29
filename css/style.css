@@ -1169,7 +1169,7 @@ label.form-label.Subscriptions {
 }
   .text-prefarnce h4 {
     font-family: "bold";
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
   .line-student {
     display: flex;
@@ -1208,14 +1208,7 @@ label.form-label.Subscriptions {
   padding-top: 2rem;
   border: 1px solid #d6d6d662;
 }
-.selcet-time {
-  display: flex;
-  gap: 10px;
-}
-.text-time h4 {
-  font-size: 1rem;
-  font-family: 'bold';
-}
+
 
 .form-control::placeholder {
   color: rgba(126, 141, 160, 1) !important;
@@ -1255,17 +1248,53 @@ span.text {
   width: 100%;
   text-align: start;
 }
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color:#e6ac2f69 !important;
+}
+a.dropdown-item {
+  font-family: "regular" !important;
+}
+span.icon_search.course {
+  margin-top: -41px;
+    margin-right: -9px;
+}
 
 
 /* responsive  */
 /* Extra small devices (phones, 600px and down) */
+
+  
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (max-width: 1500px) {
+}
 @media (max-width: 600px) {
+  button.btn.first.question{
+    width: 52% !important;
+  
+
+  }
+  span.icon_search.course { 
+    margin-top: -41px;
+    margin-right: -9px;
+}
+   
+  
+  .button .second {
+    margin-bottom: 20px;
+    width: 20% !important;
+  }
   .main_topic h4 {
     font-size: 0.8rem;
   }
   a.btn.first {
     font-size: 0.5rem !important;
-    width: 36% !important;
+    width: 50% !important;
     padding: 0.5rem !important;
   }
   .table-responsive thead tr th {
@@ -1459,13 +1488,25 @@ span.text {
   .cricle-student {
     padding: 2rem!important;
   }
+  canvas#line{
+    width: 100% !important;
+    height: 200px !important;
   }
-  
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media (max-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media (max-width: 1500px) {
+  canvas#line-1{
+    width: 100% !important;
+    height: 200px !important;
+  }
+  canvas#line-2{
+    width: 100% !important;
+    height: 200px !important;
+  }
+  .button .second {
+    width: 50% !important;
+    font-size: 0.7rem !important;
+    margin-top: 23px;
+    padding: 0.3rem !important;
+  }
+  .table_topic tbody tr td .btn{
+    font-size: 0.6rem;
+  } 
 }
