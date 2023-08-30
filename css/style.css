@@ -48,6 +48,7 @@ tr {
 
 /* end table */
 /* start text */
+
 .text {
   padding: 30px;
 }
@@ -132,6 +133,7 @@ tr {
 }
 .modal-header h1 {
   font-family: "bold";
+  font-size: 0.8rem !important;
 }
 /* model one */
 
@@ -691,13 +693,21 @@ button.btn.btn-warning.log-in:hover {
   border-color: transparent;
   border-bottom: 2px solid #e6ab2f !important;
   font-family: "bold";
- 
 }
 .nav-link:hover .active {
   font-family: bold;
 }
 
 /* search */
+i.bi.bi-search.index {
+  position: absolute !important;
+  top: -2.5rem !important;
+}
+i.bi.bi-search.more {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.5rem;
+}
 span.icon_search.unversty {
   top: 0.8rem !important;
 }
@@ -920,23 +930,23 @@ i.bi.bi-search.detialsexam {
   flex-wrap: wrap;
 }
 .text-student h6 {
-    color: #5e6e776b;
-    font-family: "regular";
-    font-size: 0.8rem;
+  color: #5e6e776b;
+  font-family: "regular";
+  font-size: 0.8rem;
 }
 
 .text-student h4 {
-    font-family: "bold";
-    font-size: 1.4rem;
+  font-family: "bold";
+  font-size: 1.4rem;
 }
 .text-student p {
-    width: 64%;
-    font-family: "regular";
-    font-size: 0.8rem;
+  width: 64%;
+  font-family: "regular";
+  font-size: 0.8rem;
 }
 
 .active-student h6 {
-    margin-right: -21rem;
+  margin-right: -21rem;
   color: green;
   background-color: rgba(0, 128, 0, 0.103);
   width: fit-content;
@@ -946,141 +956,345 @@ i.bi.bi-search.detialsexam {
   font-size: 0.8rem;
 }
 .main-student {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .btn-wahts {
-    background-color: white;
-    color: green;
-    border: 1px solid green;
+  background-color: white;
+  color: green;
+  border: 1px solid green;
 }
 .btn-wahts:hover {
-    background-color: green;
-    color: white;
+  background-color: green;
+  color: white;
 }
 .under-text {
-    display: flex;
-    gap: 66px;
-    margin-right: 87px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 66px;
+  margin-right: 87px;
+  flex-wrap: wrap;
 }
 .under-text .device p {
-    color: #5e6e7770;
-    font-size: 0.6rem;
-    font-family: "regular";
-    
+  color: #5e6e7770;
+  font-size: 0.6rem;
+  font-family: "regular";
 }
 .under-text .device h6 {
-    font-size: 0.7rem;
-    font-family: "regular";
-    padding-top: 0.6rem;
+  font-size: 0.7rem;
+  font-family: "regular";
+  padding-top: 0.6rem;
 }
 .main-ranking {
-    background-color: white;
-    width: fit-content;
-    padding: 1.2rem 1rem;
-    border-radius: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  background-color: white;
+  width: fit-content;
+  padding: 1.2rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .text-ranking h5 {
-    width: 114px;
-    font-size: 0.9rem;
-    font-family: "regular";
+  width: 114px;
+  font-size: 0.9rem;
+  font-family: "regular";
 }
 .text-ranking h6 {
-    font-size: 1rem;
-    font-family: "bold";
+  font-size: 1rem;
+  font-family: "bold";
 }
 .ranhing-main {
-    display: flex;
-     gap: 11px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 11px;
+  flex-wrap: wrap;
 }
 .text-ranking h4 {
-    font-size: 0.8rem;
-    font-family: "regular";
+  font-size: 0.8rem;
+  font-family: "regular";
 }
 .text-ranking h3 {
-    width: 135px;
-    font-size: 0.8rem;
-    font-family: "regular";
+  width: 135px;
+  font-size: 0.8rem;
+  font-family: "regular";
 }
 .text-ranking a {
-    color: #06456B;
-    text-decoration: underline;
+  color: #06456b;
+  text-decoration: underline;
+  font-family: "regular";
 }
 .text-ranking a:hover {
-    color:blue;
+  color: blue;
 }
 .head-namestudent {
-    padding: 2rem 0.5rem;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+  padding: 2rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 p.block {
-    background-color: rgba(255, 0, 0, 0.116);
+  background-color: rgba(255, 0, 0, 0.116);
   color: red;
   padding: 0.4rem;
   border-radius: 50px;
-
 }
 p.active-tab-student {
-    background-color: rgba(0, 128, 0, 0.11);
-    color: green;
-    padding: 0.4rem 1rem;
-    border-radius: 50px;
-    width: fit-content;
-    margin-right: 3.2rem;
+  background-color: rgba(0, 128, 0, 0.11);
+  color: green;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  width: fit-content;
+  margin-right: 3.2rem;
 }
 p.Subscription.activation {
-    background-color: green;
-    color: white;
-    padding: 0.75rem 0.5rem;
-    font-size: 0.65rem;
+  background-color: green;
+  color: white;
+  padding: 0.75rem 0.5rem;
+  font-size: 0.65rem;
 }
 .Subscription.activation i {
-    padding-right: 0.2rem;
-    margin-inline-end: 0.4rem;
+  padding-right: 0.2rem;
+  margin-inline-end: 0.4rem;
 }
 p.Subscription.clos {
-    background-color: red;
-    color: white;
-    padding: 0.75rem 0.5rem;
-    font-size: 0.65rem;
-} 
+  background-color: red;
+  color: white;
+  padding: 0.75rem 0.5rem;
+  font-size: 0.65rem;
+}
 .Subscription.clos i {
-    padding-right: 0.2rem;
-    margin-inline-end: 0.4rem;
+  padding-right: 0.2rem;
+  margin-inline-end: 0.4rem;
 }
 .btn-register {
-    background-color: #06456B;
-    color: white;
-    padding: 0.5rem !important;
+  background-color: #06456b;
+  color: white;
+  padding: 0.5rem !important;
 }
 .btn-register:hover {
   background-color: white;
-  color: #06456B;
-  border: 1px solid #06456B;
-
+  color: #06456b;
+  border: 1px solid #06456b;
 }
 .head-activities {
   font-family: bold;
 }
+/* modal whats app */
+button.btn.send-massage {
+  margin-top: 25px;
+  background-color: white;
+  border: 1px solid #e6ab2f;
+  color: #e6ab2f;
+  font-family: "regular";
+  font-size: 0.7rem;
+  padding: 0.8rem 3rem;
+}
+
+button.btn.send-massage:hover {
+  background-color: #e6ab2f;
+  border: 1px solid #e6ab2f;
+  color: white;
+}
+.massage {
+  margin-top: 20px;
+}
+.wahtsapp {
+  font-family: "regular";
+  color: #5e6e77;
+  font-size: 0.7rem;
+}
+/* modal charge */
+label.form-label.charge {
+  color: black !important;
+}
+button.btn.charge {
+  background-color: white;
+  border: 1px solid #e6ab2f;
+  color: #e6ab2f;
+  font-family: "regular";
+  font-size: 0.7rem;
+  padding: 0.8rem 3rem;
+}
+button.btn.charge:hover {
+  background-color: #e6ab2f;
+  border: 1px solid #e6ab2f;
+  color: white;
+}
+.charge {
+  font-family: "regular";
+  color: #5e6e77;
+  font-size: 0.7rem;
+}
+.Subscriptions {
+  font-family: "regular";
+  color: #5e6e77;
+  font-size: 0.7rem;
+}
+label.form-label.Subscriptions {
+  margin-top: 17px;
+  color: black !important;
+  font-size: 0.8rem;
+}
+/* Student stats */
+.Studentstats {
+  display: flex;
+  gap: 44px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main-ranking-1 {
+  background-color: white;
+  width: 322px;
+  padding: 0.5rem 1rem;
+}
+.main-ranking-1 .ranking {
+  display: flex;
+  gap: 24px;
+}
+.text-ranking-1 h5 {
+  font-family: "regular";
+  font-size: 0.8rem;
+}
+.main-ranking-1 {
+  padding: 1.5rem 3rem !important;
+  border-radius: 15px;
+}
+.text-ranking-1 h6 {
+  font-family: bold;
+}
+/* Studentperformance */
+.text-prefarnce{
+  padding: 0.8rem 0.8rem;
+}
+  .text-prefarnce h4 {
+    font-family: "bold";
+    font-size: 0.9rem;
+  }
+  .line-student {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+.cricle-student {
+  position: relative;
+  padding: 2.3rem 6rem;
+
+  padding-top: 2rem;
+  border: 1px solid #d6d6d698;
+}
+.rate {
+  position: absolute;
+  top: 51%;
+    right: 44%;
+  text-align: center;
+}
+.rate h3 {
+  font-size: 1.5rem!important;
+  font-family: 'bold';
+}
+.cricle-student h4 {
+    font-size: 1rem;
+    font-family: 'bold';
+}
+
+.line-student h4 {
+  font-size: 1rem;
+  font-family: 'bold';
+}
+.liner {
+  padding: 5rem 1rem;
+  padding-top: 2rem;
+  border: 1px solid #d6d6d662;
+}
+
+
+.form-control::placeholder {
+  color: rgba(126, 141, 160, 1) !important;
+  padding: 0 !important;
+}
+.textarea.form-control::placeholder {
+  color: rgba(126, 141, 160, 1) !important;
+  padding: 0 !important;
+}
+.input.form-control::placeholder {
+  color: rgba(126, 141, 160, 1) !important;
+  padding: 0 !important;
+}
+.table_expenses thead tr {
+  background-color: #edf5f9 !important;
+  border: 1px solid #bfbfbf63 !important;
+
+}
+span.text {
+  padding: 0 !important;
+}
+.time-5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.accordion-item:first-of-type {
+  margin-top: 20px !important;
+  
+}
+.student-stats .accordion-header .row {
+  width: 100%;
+  text-align: start;
+}
+.student-stats .accordion-header .content_page {
+  width: 100%;
+  text-align: start;
+}
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color:#e6ac2f69 !important;
+}
+a.dropdown-item {
+  font-family: "regular" !important;
+}
+span.icon_search.course {
+  margin-top: -41px;
+    margin-right: -9px;
+}
+
 
 /* responsive  */
 /* Extra small devices (phones, 600px and down) */
+
+  
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (max-width: 1500px) {
+}
 @media (max-width: 600px) {
+  button.btn.first.question{
+    width: 52% !important;
+  
+
+  }
+  span.icon_search.course { 
+    margin-top: -41px;
+    margin-right: -9px;
+}
+   
+  
+  .button .second {
+    margin-bottom: 20px;
+    width: 20% !important;
+  }
   .main_topic h4 {
     font-size: 0.8rem;
   }
   a.btn.first {
     font-size: 0.5rem !important;
-    width: 36% !important;
+    width: 50% !important;
     padding: 0.5rem !important;
   }
   .table-responsive thead tr th {
@@ -1206,14 +1420,93 @@ p.Subscription.clos {
   img.name-teacher {
     width: 25% !important;
   }
-  .examination h4 {
+  
+  
+ 
+  .input-group.nas {
+    width: 246px;
+    margin-right: -76px;
+    margin-top: 10px;
   }
-}
+ 
+  /* studentdetails*/
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media (max-width: 992px) {
-}
+  .text-student h4 {
+    font-size: 0.8rem;
+  }
+  .text-student h6 {
+    font-size: 0.6rem;
+  }
+  .text-student p {
+    font-size: 0.6rem;
+  }
+  .botton {
+    margin-top: -46px;
+  }
+  button.btn.btn-wahts.mx-1 {
+    font-size: 0.6rem;
+  }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media (max-width: 1500px) {
+  .under-text {
+    display: inline;
+  }
+  .main-ranking {
+    width: 100%;
+  }
+  
+  ul#myTab {
+    font-size: 0.7rem;
+  }
+  .text-ranking h6 {
+    font-size: 0.8rem;
+  }
+  .text-ranking a {
+    font-size: 0.8rem;
+  }
+  .dropdown.bootstrap-select.show-tick {
+    padding: 0.1rem !important;
+  }
+  .rate {
+    display: none;
+  }
+  .text-time h4 {
+    font-size: 0.7rem;
+  }
+  .selcet-time {
+    display: block;
+  }
+  .cricle-student h4 {
+    font-size: 0.7rem;
+  }
+  .line-student h4 {
+    font-size: 0.7rem;
+  }
+  canvas#myChart1 {
+    width: 100% !important;
+    height: 200px !important;
+  }
+  .cricle-student {
+    padding: 2rem!important;
+  }
+  canvas#line{
+    width: 100% !important;
+    height: 200px !important;
+  }
+  canvas#line-1{
+    width: 100% !important;
+    height: 200px !important;
+  }
+  canvas#line-2{
+    width: 100% !important;
+    height: 200px !important;
+  }
+  .button .second {
+    width: 50% !important;
+    font-size: 0.7rem !important;
+    margin-top: 23px;
+    padding: 0.3rem !important;
+  }
+  .table_topic tbody tr td .btn{
+    font-size: 0.6rem;
+  } 
 }

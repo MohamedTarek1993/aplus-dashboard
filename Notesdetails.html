@@ -100,9 +100,7 @@
               id="submenuAccountant"
               data-bs-parent="#menu"
             >
-              <div class="close">
-                <i class="fa-solid fa-xmark"></i>
-              </div>
+              
 
               <li>
                 <a href="code-book.html" class="nav-link">
@@ -125,7 +123,7 @@
             </ul>
           </li>
           <h5>مستخدمي النظام</h5>
-          <li class="nav-item">
+           <li class="nav-item">
             <a href="teacher.html" class="nav-link align-middle">
               <img src="image/teacher-icon.png" alt="icon" />
               <span> المدرسين</span>
@@ -138,7 +136,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="lesons.html" class="nav-link align-middle">
+            <a href="centers.html" class="nav-link align-middle">
               <img src="image/house-icon.png" alt="icon" />
               <span> سناتر الدروس</span>
             </a>
@@ -191,15 +189,41 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="main-edu.html" class="nav-link align-middle">
-              <img src="image/main-edu-icon.png" alt="icon" />
+            <li class="nav-item">
+            <a
+              href="#submenuAccountant"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="image/scan-barcode-icon.png" alt="icon" />
               <span> التعليم الاساسي</span>
+              <i class="fa-solid fa-angle-up"></i>
             </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuAccountant"
+              data-bs-parent="#menu"
+            >
+              
+
+              <li>
+                <a href="educationalstages.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> المراحل التعليمية</span></a
+                >
+              </li>
+              <li>
+                <a href="Addaneducationalstage.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> اضافة مرحلة تعليمية</span></a
+                >
+              </li>
+           
+            </ul>
           </li>
 
           <li class="nav-item">
-            <a href="study-teams.html" class="nav-link align-middle">
+            <a href="subjects.html" class="nav-link align-middle">
               <img src="image/format-circle.png" alt="icon" />
               <span> الفرق الدراسية</span>
             </a>
@@ -388,7 +412,48 @@
                         </button>
                         <ul class="dropdown-menu">
                           <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="add-notes.html">
+                              تفاصيل المذكره</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              onclick="blockAlert()"
+                            >
+                              حذف المذكره
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- outcome list -->
+
+                  <!-- outcome list -->
+                  <tr>
+                    <td>2154202 #</td>
+                    <td>مذكرةمراجعة 1</td>
+                    <td>Endocrine -مراجعة سريعة</td>
+                    <td>
+                      فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث
+                      يتم شرح الجزء الاول والاكبر من
+                    </td>
+                    <td>مجاني</td>
+                    <td>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle-1"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="bi bi-three-dots-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="add-notes.html">
                               تفاصيل المذكره</a
                             >
                           </li>
@@ -470,7 +535,7 @@
                         </button>
                         <ul class="dropdown-menu">
                           <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="add-notes.html">
                               تفاصيل المذكره</a
                             >
                           </li>
@@ -511,7 +576,7 @@
                         </button>
                         <ul class="dropdown-menu">
                           <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="add-notes.html">
                               تفاصيل المذكره</a
                             >
                           </li>
@@ -552,7 +617,7 @@
                         </button>
                         <ul class="dropdown-menu">
                           <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="add-notes.html">
                               تفاصيل المذكره</a
                             >
                           </li>
@@ -593,7 +658,7 @@
                         </button>
                         <ul class="dropdown-menu">
                           <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="add-notes.html">
                               تفاصيل المذكره</a
                             >
                           </li>
@@ -634,48 +699,7 @@
                         </button>
                         <ul class="dropdown-menu">
                           <li>
-                            <a class="dropdown-item" href="#">
-                              تفاصيل المذكره</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item"
-                              href="#"
-                              onclick="blockAlert()"
-                            >
-                              حذف المذكره
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <!-- outcome list -->
-
-                  <!-- outcome list -->
-                  <tr>
-                    <td>2154202 #</td>
-                    <td>مذكرةمراجعة 1</td>
-                    <td>Endocrine -مراجعة سريعة</td>
-                    <td>
-                      فى هذا الباب نتناول شرحي وفى لمادة المحاسبة المالية حيث
-                      يتم شرح الجزء الاول والاكبر من
-                    </td>
-                    <td>مجاني</td>
-                    <td>
-                      <div class="dropdown">
-                        <button
-                          class="btn dropdown-toggle-1"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <i class="bi bi-three-dots-vertical"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="add-notes.html">
                               تفاصيل المذكره</a
                             >
                           </li>
@@ -737,30 +761,35 @@
               </table>
             </div>
 
-            <div class="row">
+            <div class="row foot">
               <div
-                class="col-8 col-md-12 col-12"
+                class="col-8 col-md-8 col-12"
                 style="padding-top: 20px; color: #626e7d"
               >
                 <p>عرض 1 - 30 من اجمالى 59</p>
               </div>
-              <div class="col-4 col-md-12 col-12">
+              <div class="col-4 col-md-4 col-12">
                 <nav class="pagination_section">
-                  <ul class="pagination justify-content-center">
+                  <ul class="pagination">
+                    <!-- justify-content-end -->
                     <li class="page-item">
-                      <a class="page-link" href="#">السابق</a>
+                      <a class="page-link" style="width: 80px" href="#">
+                        السابق
+                      </a>
                     </li>
                     <li class="page-item active">
-                      <a class="page-link" href="#">1</a>
+                      <a class="page-link" href="#">3</a>
                     </li>
                     <li class="page-item">
                       <a class="page-link" href="#">2</a>
                     </li>
                     <li class="page-item">
-                      <a class="page-link" href="#">3</a>
+                      <a class="page-link" href="#">1</a>
                     </li>
                     <li class="page-item">
-                      <a class="page-link" href="#">التالي </a>
+                      <a class="page-link" style="width: 80px" href="#">
+                        التالي
+                      </a>
                     </li>
                   </ul>
                 </nav>

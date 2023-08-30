@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ar" dir="ltr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> الكورسات</title>
+    <title>تعديل الكورس</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -20,9 +19,9 @@
     <!-- ? Favicon -->
     <link rel="icon" href="image/logo.png" type="image" />
     <!-- ? Favicon -->
-</head>
+  </head>
 
-<body>
+  <body>
     <!---------------------- start loader -------------------------------------------->
     <!-- <div id="preloader"></div> -->
     <!---------------------- finish loader -------------------------------------------->
@@ -31,595 +30,756 @@
     <!---------------------- finish scroll-up -------------------------------------------->
 
     <main class="d-flex sidemobile p-0">
-        <!---------------------- start sidebar -------------------------------------------->
+      <!---------------------- start sidebar -------------------------------------------->
 
-        <section class="sidebar open">
-            <ul class="
-          nav nav-pills
-          flex-column
-          mb-sm-auto mb-0
-          align-items-center align-items-sm-start
-        " id="menu">
-                <div class="image_logo">
-                    <img src="image/logo.png" alt="logo_sidebar" class="logo" />
-                </div>
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="image_logo">
+            <img src="image/logo.png" alt="logo_sidebar" class="logo" />
+          </div>
 
-                <h5>محتوي النظام</h5>
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link align-middle">
-                        <img src="image/home-icon.png" alt="icon" />
-                        <span>الرئيسية</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="courses.html" class="nav-link align-middle">
-                        <img src="/image/course-icon.png" alt="icon" />
-                        <span>الكورسات</span>
-                    </a>
-                </li>
+          <h5>محتوي النظام</h5>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link align-middle">
+              <img src="image/home-icon.png" alt="icon" />
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="courses.html" class="nav-link align-middle">
+              <img src="/image/course-icon.png" alt="icon" />
+              <span>الكورسات</span>
+            </a>
+          </li>
 
-                <li class="nav-item">
-                    <a href="exams.html" class="nav-link align-middle">
-                        <img src="image/exam-icon.png" alt="icon" />
-                        <span> الامتحانات</span>
-                    </a>
-                </li>
-               
+          <li class="nav-item">
+            <a href="exams.html" class="nav-link align-middle">
+              <img src="image/exam-icon.png" alt="icon" />
+              <span> الامتحانات</span>
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a href="question-banks.html" class="nav-link align-middle">
+              <img src="image/icon-bank.png" alt="icon" />
+              <span>بنك الأسألة</span>
+            </a>
+          </li>
 
-                <li class="nav-item">
-                    <a href="question-banks.html" class="nav-link align-middle">
-                        <img src="image/icon-bank.png" alt="icon" />
-                        <span>بنك الأسألة</span>
-                    </a>
-                </li>
+          <li class="nav-item">
+            <a href="subjects.html" class="nav-link align-middle">
+              <img src="image/book-icon.png" alt="icon" />
+              <span> المواد الدراسية</span>
+            </a>
+          </li>
 
-                
-                <li class="nav-item">
-                    <a href="subjects.html" class="nav-link align-middle">
-                        <img src="image/book-icon.png" alt="icon" />
-                        <span> المواد الدراسية</span>
-                    </a>
-                </li>
+          <li class="nav-item">
+            <a
+              href="#submenuAccountant"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="image/scan-barcode-icon.png" alt="icon" />
+              <span> أكود الشراء</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuAccountant"
+              data-bs-parent="#menu"
+            >
+              
 
-                <li class="nav-item">
-                    <a href="#submenuAccountant" data-bs-toggle="collapse"
-                        class="nav-link accordion-button align-middle collapsed">
-                        <img src="image/scan-barcode-icon.png" alt="icon" />
-                        <span> أكود الشراء</span>
-                        <i class="fa-solid fa-angle-up"></i>
-                    </a>
-                    <ul class="collapse flex-column" id="submenuAccountant" data-bs-parent="#menu">
-                        <div class="close">
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-
-                        <li>
-                            <a href="code-book.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> استخراج اكواد للمذكرات</span></a>
-                        </li>
-                        <li>
-                            <a href="code-corse.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> استخراج اكواد للكورسات</span></a>
-                        </li>
-                        <li>
-                            <a href="code-training.html" class="nav-link">
-                                <i class="fa-solid fa-circle dot"></i>
-                                <span> استخراج اكواد للتدريبات</span></a>
-
-                        </li>
-
-                    </ul>
-                </li>
-                <h5> مستخدمي النظام</h5>
-                <li class="nav-item">
-                    <a href="teacher.html" class="nav-link align-middle">
-                        <img src="image/teacher-icon.png" alt="icon" />
-                        <span> المدرسين</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="students.html" class="nav-link align-middle">
-                        <img src="image/student-icon.png" alt="icon" />
-                        <span> الطلبة</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="lesons.html" class="nav-link align-middle">
-                        <img src="image/house-icon.png" alt="icon" />
-                        <span> سناتر الدروس</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="Systemadministrators.html" class="nav-link align-middle">
-                        <img src="image/director-icon.png" alt="icon" />
-                        <span> مديري النظام</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="powers.html" class="nav-link align-middle">
-                        <img src="image/powers-icon.png" alt="icon" />
-                        <span> الصلاحيات</span>
-                    </a>
-                </li>
-
-
-                <h5> اعدادات النظام</h5>
-
-                <li class="nav-item">
-                    <a href="country.html" class="nav-link align-middle">
-                        <img src="image/country-icon.png" alt="icon" />
-                        <span> الدول</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="governorate.html" class="nav-link align-middle">
-                        <img src="image/country-icon.png" alt="icon" />
-                        <span> المحافظات</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="city.html" class="nav-link align-middle">
-                        <img src="image/country-icon.png" alt="icon" />
-                        <span> المدن</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="universities.html" class="nav-link align-middle">
-                        <img src="image/buildings-icon.png" alt="icon" />
-                        <span> الجامعات</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="colleges.html" class="nav-link align-middle">
-                        <img src="image/colleage-icon.png" alt="icon" />
-                        <span> الكليات</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="main-edu.html" class="nav-link align-middle">
-                        <img src="image/main-edu-icon.png" alt="icon" />
-                        <span> التعليم الاساسي</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="study-teams.html" class="nav-link align-middle">
-                        <img src="image/format-circle.png" alt="icon" />
-                        <span> الفرق الدراسية</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="seting-point.html" class="nav-link align-middle">
-                        <img src="image/buy-crypto-icon.png" alt="icon" />
-                        <span> اعدادات النقاط</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="slider-table.html" class="nav-link align-middle">
-                        <img src="image/slider-icon.png" alt="icon" />
-                        <span> الاسلايدر</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="seting-notifcation.html" class="nav-link align-middle">
-                        <img src="image/notification-bing-icon.png" alt="icon" />
-                        <span> اعدادات الاشعارات</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="setting.html" class="nav-link align-middle">
-                        <img src="image/powers-icon.png" alt="icon" />
-                        <span> الاعدادات العامة</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link align-middle">
-                        <img src="image/logout-icon.png" alt="icon" />
-                        <span> تسجيل الخروج</span>
-                    </a>
-                </li>
-
-
+              <li>
+                <a href="code-book.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للمذكرات</span></a
+                >
+              </li>
+              <li>
+                <a href="code-corse.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للكورسات</span></a
+                >
+              </li>
+              <li>
+                <a href="code-training.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للتدريبات</span></a
+                >
+              </li>
             </ul>
-        </section>
-        <!---------------------- end sidebar -------------------------------------------->
-        <!---------------------- start main content -------------------------------------------->
+          </li>
+          <h5>مستخدمي النظام</h5>
+           <li class="nav-item">
+            <a href="teacher.html" class="nav-link align-middle">
+              <img src="image/teacher-icon.png" alt="icon" />
+              <span> المدرسين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="students.html" class="nav-link align-middle">
+              <img src="image/student-icon.png" alt="icon" />
+              <span> الطلبة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="centers.html" class="nav-link align-middle">
+              <img src="image/house-icon.png" alt="icon" />
+              <span> سناتر الدروس</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Systemadministrators.html" class="nav-link align-middle">
+              <img src="image/director-icon.png" alt="icon" />
+              <span> مديري النظام</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="powers.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الصلاحيات</span>
+            </a>
+          </li>
 
-        <section class="index_cards">
-            <!---------------------- start nav -------------------------------------------->
-            <nav class="nav_top navbar">
-                <div class="container">
-                    <div class="menu">
-                        <i class="bi bi-list"></i>
-                    </div>
-                    <div class="info">
-                        <div class="notfication" onclick="showNotification()">
-                            <i class="bi bi-bell"></i>
-                            <span class="alerts">
-                                3
-                            </span>
-                        </div>
+          <h5>اعدادات النظام</h5>
 
-                        <div class="img">
-                            <img src="../image/person.png" alt="person">
-                        </div>
-                        <div class="btn-group">
-                            <button class="btn  btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                محمد طارق
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li> <a href="settings.html">اعدادات الحساب</a> </li>
-                                <li onclick="acceptAlert()"> تسجيل الخروج </li>
-                            </ul>
-                        </div>
+          <li class="nav-item">
+            <a href="country.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> الدول</span>
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a href="governorate.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المحافظات</span>
+            </a>
+          </li>
 
-                    </div>
+          <li class="nav-item">
+            <a href="city.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المدن</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="universities.html" class="nav-link align-middle">
+              <img src="image/buildings-icon.png" alt="icon" />
+              <span> الجامعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="colleges.html" class="nav-link align-middle">
+              <img src="image/colleage-icon.png" alt="icon" />
+              <span> الكليات</span>
+            </a>
+          </li>
 
-                </div>
-            </nav>
-            <ul class="notfication_list">
-                <h2>الأشعارات</h2>
-                <i class="bi bi-x close-icon" onclick="hideNotification()"></i>
+            <li class="nav-item">
+            <a
+              href="#submenuAccountant"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="image/scan-barcode-icon.png" alt="icon" />
+              <span> التعليم الاساسي</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuAccountant"
+              data-bs-parent="#menu"
+            >
+              
 
-                <li class="unread" onclick="convertToRead(this)">
-                    <div class="info">
-                        <h6> text</h6>
-                        <span> 22/6/1993</span>
-                    </div>
-                    <div class="delete">
-                        <i class="bi bi-trash"></i>
-                    </div>
-                </li>
-                <li class="read">
-                    <div class="info">
-                        <h6> text</h6>
-                        <span> 22/6/1993</span>
-                    </div>
-                    <div class="delete">
-                        <i class="bi bi-trash"></i>
-                    </div>
-                </li>
+              <li>
+                <a href="educationalstages.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> المراحل التعليمية</span></a
+                >
+              </li>
+              <li>
+                <a href="Addaneducationalstage.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> اضافة مرحلة تعليمية</span></a
+                >
+              </li>
+           
             </ul>
-            <!---------------------- finish nav -------------------------------------------->
-            <!---------------------- start content -------------------------------------------->
-            <div class="content_page">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_topic">
-                            <h4> تعديل الكورس </h4>
+          </li>
 
-                        </div>
+          <li class="nav-item">
+            <a href="subjects.html" class="nav-link align-middle">
+              <img src="image/format-circle.png" alt="icon" />
+              <span> الفرق الدراسية</span>
+            </a>
+          </li>
 
-                        <!-- first step -->
-                        <div class="form-step-inside  form-step-inside-active">
-                            <div class="container">
-                                <div class="main_topic">
-                                    <h4> التفاصيل العامة </h4>
-                                </div>
-                                <form class="form_topic">
+          <li class="nav-item">
+            <a href="seting-point.html" class="nav-link align-middle">
+              <img src="image/buy-crypto-icon.png" alt="icon" />
+              <span> اعدادات النقاط</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="slider-table.html" class="nav-link align-middle">
+              <img src="image/slider-icon.png" alt="icon" />
+              <span> الاسلايدر</span>
+            </a>
+          </li>
 
+          <li class="nav-item">
+            <a href="seting-notifcation.html" class="nav-link align-middle">
+              <img src="image/notification-bing-icon.png" alt="icon" />
+              <span> اعدادات الاشعارات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الاعدادات العامة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <img src="image/logout-icon.png" alt="icon" />
+              <span> تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!---------------------- end sidebar -------------------------------------------->
+      <!---------------------- start main content -------------------------------------------->
 
-                                    <div class="row">
-                                        <!-- start input -->
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> اسم الكورس</label>
-                                                <input type="text" class="form-control" placeholder="ادخل  اسم الكورس">
-                                            </div>
-                                        </div>
-                                        <!-- finish input -->
-
-                                        <!-- start input -->
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> المدرس</label>
-                                                <select required class="selectpicker" data-placeholder="اختر المدرس"
-                                                    data-selected-text-format="count > 1" data-icon="bi bi-trash"
-                                                    data-live-search="true">
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <!-- finish input -->
-                                        <!-- start input -->
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> المادة</label>
-                                                <select required class="selectpicker" data-placeholder="اختر المادة"
-                                                    data-selected-text-format="count > 1" data-icon="bi bi-trash"
-                                                    data-live-search="true">
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <!-- finish input -->
-                                        <!-- start input -->
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> المرحلة التعليمية</label>
-                                                <select required class="selectpicker" multiple
-                                                    data-placeholder="اختر المادة" data-selected-text-format="count > 1"
-                                                    data-icon="bi bi-trash" data-live-search="true">
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <!-- finish input -->
-
-                                        <!-- start input -->
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> وصف الكورس</label>
-                                                <textarea class="form-control" placeholder="اكتب وصف للكورس"></textarea>
-                                            </div>
-                                        </div>
-                                        <!-- finish input -->
-
-                                        <!-- start input -->
-                                        <div class="col-12">
-                                            <div class="input-group pt-4">
-                                                <label class="form-label"> رفع صورة معبرة</label>
-                                                <div class="file-upload-wrapper"
-                                                    data-text="اسحب الصورة التى تريد اضافتها  او قم بفتحها من هنا">
-                                                    <input required name="file-upload-field form-control" type="file"
-                                                        class="file-upload-field" value="" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- finish input -->
-
-                                        <div class="col-12">
-                                            <a href="#" class="btn btn-next-inside first">الاضافة والحفظ</a>
-                                        </div>
-                                    </div>
-                                    <!-- main education -->
-                                </form>
-                            </div>
-                        </div>
-                        <!-- first step -->
-                        <!-- second step -->
-                        <div class="form-step-inside ">
-                            <div class="container">
-                                <div class="main_topic">
-                                    <h4> نظام الاشتراك </h4>
-                                </div>
-                                <form class="form_topic">
-                                    <!-- start input -->
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> نظام الاشتراك</label>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="priceTypes" type="radio"
-                                                        id="radio1" value="option1">
-                                                    <label class="form-check-label" for="inlineCheckbox1"> شهري </label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="priceTypes" type="radio"
-                                                        id="radio2" value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2"> كورس
-                                                        كامل</label>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> الحالة السعرية</label>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="priceType" type="radio"
-                                                        id="radio4" value="option4" onchange="togglePrice()">
-                                                    <label class="form-check-label" for="inlineCheckbox1"> مجاني</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="priceType" type="radio"
-                                                        id="radio5" value="option5" onchange="togglePrice()">
-                                                    <label class="form-check-label" for="inlineCheckbox2"> مدفوع</label>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="course_price" id="coursePrice">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="input-group">
-                                                        <label class="form-label"> أدخل سعر الكورس </label>
-                                                        <input type="text" class="form-control">
-                                                        <span class="text-primary mt-1 d-block w-100">عند اضافة السعر
-                                                            يساوي
-                                                            0 يعني انه سيتم دفع التكلفة داخل السنتر ولا يسمح له بالدفع
-                                                            اونلاين</span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> المذكرات داخل الكورس بسعر اضافي داخل الكورس
-                                                    ؟</label>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="priceTypes" type="radio"
-                                                        id="radio1" value="option1">
-                                                    <label class="form-check-label" for="inlineCheckbox1"> نعم </label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="priceTypes" type="radio"
-                                                        id="radio2" value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">
-                                                        لا</label>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- finish input -->
-
-                                    <div class="col-12">
-                                        <a href="#" class="btn btn-next-inside first">الاضافة والحفظ</a>
-                                        <a href="#" class="btn btn-prev-inside second"> الرجوع</a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- second step -->
-
-                        <!-- third step -->
-                        <div class="form-step-inside ">
-                            <div class="container">
-                                <div class="main_topic">
-                                    <h4> أعدادات الكورس </h4>
-                                </div>
-                                <form class="form_topic">
-                                    <!-- start input -->
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> عرض الكورس على الصفحة الرئيسية</label>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="priceTypes" type="radio"
-                                                        id="radio3" value="option3">
-                                                    <label class="form-check-label" for="inlineCheckbox3"> نعم </label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="priceTypes" type="radio"
-                                                        id="radio6" value="option6">
-                                                    <label class="form-check-label" for="inlineCheckbox6"> لا
-                                                    </label>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> مدة ظهور الرقم علي الفديو بالثواني </label>
-                                                <input type="number" class="form-control">
-
-
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> تاريخ البداية</label>
-                                                <input type="date" class="form-control">
-
-
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> تاريخ النهاية</label>
-                                                <input type="date" class="form-control">
-
-
-                                            </div>
-                                        </div>
-
-
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> نطق بصمة الصوت</label>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="priceType" type="radio"
-                                                        id="radio8" value="option8" onchange="toggleVoice()">
-                                                    <label class="form-check-label" for="inlineCheckbox8"> نعم</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="priceType" type="radio"
-                                                        id="radio7" value="option7" onchange="toggleVoice()">
-                                                    <label class="form-check-label" for="inlineCheckbox7"> لا</label>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                        <div class="course_price" id="voicePrice">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="input-group">
-                                                        <label class="form-label"> عدد مرات النطق </label>
-                                                        <input type="number" class="form-control">
-
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <div class="input-group">
-                                                <label class="form-label"> عدد المشاهدات المتاحه لكل فيديو</label>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="viewType" type="radio"
-                                                        id="radio9" value="option9" onchange="toggleView()">
-                                                    <label class="form-check-label" for="inlineCheckbox9"> محدد</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" name="viewType" type="radio"
-                                                        id="radio10" value="option10" onchange="toggleView()">
-                                                    <label class="form-check-label" for="inlineCheckbox10"> غير
-                                                        محدد</label>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                        <div class=" course_price" id="viewVideo">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="input-group">
-                                                        <label class="form-label"> العدد </label>
-                                                        <input type="number" class="form-control">
-
-
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
-
-                                    </div>
-                                    <!-- finish input -->
-
-                                    <div class="col-12">
-                                        <button type="button" class="btn btn-next-inside first">الاضافة والحفظ</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- third step -->
-                    </div>
-
-
-                </div>
+      <section class="index_cards">
+        <!---------------------- start nav -------------------------------------------->
+        <nav class="nav_top navbar">
+          <div class="container">
+            <div class="menu">
+              <i class="bi bi-list"></i>
             </div>
-            <!---------------------- finish  content -------------------------------------------->
-        </section>
-        <!---------------------- finish main content -------------------------------------------->
+            <div class="info">
+              <div class="notfication" onclick="showNotification()">
+                <i class="bi bi-bell"></i>
+                <span class="alerts"> 3 </span>
+              </div>
+
+              <div class="img">
+                <img src="../image/person.png" alt="person" />
+              </div>
+              <div class="btn-group">
+                <button
+                  class="btn btn-sm dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  محمد طارق
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="settings.html">اعدادات الحساب</a></li>
+                  <li onclick="acceptAlert()">تسجيل الخروج</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <ul class="notfication_list">
+          <h2>الأشعارات</h2>
+          <i class="bi bi-x close-icon" onclick="hideNotification()"></i>
+
+          <li class="unread" onclick="convertToRead(this)">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+          <li class="read">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+        </ul>
+        <!---------------------- finish nav -------------------------------------------->
+        <!---------------------- start content -------------------------------------------->
+        <div class="content_page">
+          <div class="container">
+            <div class="row">
+              <div class="main_topic">
+                <h4>تعديل الكورس</h4>
+              </div>
+
+              <!-- first step -->
+              <div class="form-step-inside form-step-inside-active">
+                <div class="container">
+                  <div class="main_topic">
+                    <h4>التفاصيل العامة</h4>
+                  </div>
+                  <form class="form_topic">
+                    <div class="row">
+                      <!-- start input -->
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> اسم الكورس</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="ادخل  اسم الكورس"
+                          />
+                        </div>
+                      </div>
+                      <!-- finish input -->
+
+                      <!-- start input -->
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> المدرس</label>
+                          <select
+                            required
+                            class="selectpicker"
+                            data-placeholder="اختر المدرس"
+                            data-selected-text-format="count > 1"
+                            data-icon="bi bi-trash"
+                            data-live-search="true"
+                          >
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- finish input -->
+                      <!-- start input -->
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> المادة</label>
+                          <select
+                            required
+                            class="selectpicker"
+                            data-placeholder="اختر المادة"
+                            data-selected-text-format="count > 1"
+                            data-icon="bi bi-trash"
+                            data-live-search="true"
+                          >
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- finish input -->
+                      <!-- start input -->
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> المرحلة التعليمية</label>
+                          <select
+                            required
+                            class="selectpicker"
+                            multiple
+                            data-placeholder="اختر المادة"
+                            data-selected-text-format="count > 1"
+                            data-icon="bi bi-trash"
+                            data-live-search="true"
+                          >
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- finish input -->
+
+                      <!-- start input -->
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> وصف الكورس</label>
+                          <textarea
+                            class="form-control"
+                            placeholder="اكتب وصف للكورس"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <!-- finish input -->
+
+                      <!-- start input -->
+                      <div class="col-12">
+                        <div class="input-group pt-4">
+                          <label class="form-label"> رفع صورة معبرة</label>
+                          <div
+                            class="file-upload-wrapper"
+                            data-text="اسحب الصورة التى تريد اضافتها  او قم بفتحها من هنا"
+                          >
+                            <input
+                              required
+                              name="file-upload-field form-control"
+                              type="file"
+                              class="file-upload-field"
+                              value=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- finish input -->
+
+                      <div class="col-12">
+                        <a href="#" class="btn btn-next-inside first"
+                          >الاضافة والحفظ</a
+                        >
+                      </div>
+                    </div>
+                    <!-- main education -->
+                  </form>
+                </div>
+              </div>
+              <!-- first step -->
+              <!-- second step -->
+              <div class="form-step-inside">
+                <div class="container">
+                  <div class="main_topic">
+                    <h4>نظام الاشتراك</h4>
+                  </div>
+                  <form class="form_topic">
+                    <!-- start input -->
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> نظام الاشتراك</label>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="priceTypes"
+                              type="radio"
+                              id="radio1"
+                              value="option1"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox1"
+                            >
+                              شهري
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="priceTypes"
+                              type="radio"
+                              id="radio2"
+                              value="option2"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox2"
+                            >
+                              كورس كامل</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> الحالة السعرية</label>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="priceType"
+                              type="radio"
+                              id="radio4"
+                              value="option4"
+                              onchange="togglePrice()"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox1"
+                            >
+                              مجاني</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="priceType"
+                              type="radio"
+                              id="radio5"
+                              value="option5"
+                              onchange="togglePrice()"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox2"
+                            >
+                              مدفوع</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="course_price" id="coursePrice">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="input-group">
+                              <label class="form-label">
+                                أدخل سعر الكورس
+                              </label>
+                              <input type="text" class="form-control" />
+                              <span class="text-primary mt-1 d-block w-100"
+                                >عند اضافة السعر يساوي 0 يعني انه سيتم دفع
+                                التكلفة داخل السنتر ولا يسمح له بالدفع
+                                اونلاين</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label">
+                            المذكرات داخل الكورس بسعر اضافي داخل الكورس ؟</label
+                          >
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="priceTypes"
+                              type="radio"
+                              id="radio1"
+                              value="option1"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox1"
+                            >
+                              نعم
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="priceTypes"
+                              type="radio"
+                              id="radio2"
+                              value="option2"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox2"
+                            >
+                              لا</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- finish input -->
+
+                    <div class="col-12">
+                      <a href="#" class="btn btn-next-inside first"
+                        >الاضافة والحفظ</a
+                      >
+                      <a href="#" class="btn btn-prev-inside second"> الرجوع</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- second step -->
+
+              <!-- third step -->
+              <div class="form-step-inside">
+                <div class="container">
+                  <div class="main_topic">
+                    <h4>أعدادات الكورس</h4>
+                  </div>
+                  <form class="form_topic">
+                    <!-- start input -->
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label">
+                            عرض الكورس على الصفحة الرئيسية</label
+                          >
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="priceTypes"
+                              type="radio"
+                              id="radio3"
+                              value="option3"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox3"
+                            >
+                              نعم
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="priceTypes"
+                              type="radio"
+                              id="radio6"
+                              value="option6"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox6"
+                            >
+                              لا
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 col-12">
+                        <div class="input-group">
+                          <label class="form-label">
+                            مدة ظهور الرقم علي الفديو بالثواني
+                          </label>
+                          <input type="number" class="form-control" />
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-12">
+                        <div class="input-group">
+                          <label class="form-label"> تاريخ البداية</label>
+                          <input type="date" class="form-control" />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 col-12">
+                        <div class="input-group">
+                          <label class="form-label"> تاريخ النهاية</label>
+                          <input type="date" class="form-control" />
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label"> نطق بصمة الصوت</label>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="priceType"
+                              type="radio"
+                              id="radio8"
+                              value="option8"
+                              onchange="toggleVoice()"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox8"
+                            >
+                              نعم</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="priceType"
+                              type="radio"
+                              id="radio7"
+                              value="option7"
+                              onchange="toggleVoice()"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox7"
+                            >
+                              لا</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="course_price" id="voicePrice">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="input-group">
+                              <label class="form-label"> عدد مرات النطق </label>
+                              <input type="number" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <div class="input-group">
+                          <label class="form-label">
+                            عدد المشاهدات المتاحه لكل فيديو</label
+                          >
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="viewType"
+                              type="radio"
+                              id="radio9"
+                              value="option9"
+                              onchange="toggleView()"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox9"
+                            >
+                              محدد</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input
+                              class="form-check-input"
+                              name="viewType"
+                              type="radio"
+                              id="radio10"
+                              value="option10"
+                              onchange="toggleView()"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="inlineCheckbox10"
+                            >
+                              غير محدد</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="course_price" id="viewVideo">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="input-group">
+                              <label class="form-label"> العدد </label>
+                              <input type="number" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- finish input -->
+
+                    <div class="col-12">
+                      <button type="button" class="btn btn-next-inside first">
+                        الاضافة والحفظ
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- third step -->
+            </div>
+          </div>
+        </div>
+     
+        <!---------------------- finish  content -------------------------------------------->
+      </section>
+      <!---------------------- finish main content -------------------------------------------->
     </main>
     <!---------------------- finish footer -------------------------------------------->
-
 
     <!-- main js -->
 
@@ -630,107 +790,106 @@
     <script src="js/main.js"></script>
     <!-- main js -->
 
-
     <!-- sweet alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- sweet alert -->
 
     <!-- form withard inside -->
     <script>
-        const prevBtnsIns = document.querySelectorAll(".btn-prev-inside");
-        const nextBtnsIns = document.querySelectorAll(".btn-next-inside");
-        const formStepsIns = document.querySelectorAll(".form-step-inside");
-        let formStepsNumIns = 0;
+      const prevBtnsIns = document.querySelectorAll(".btn-prev-inside");
+      const nextBtnsIns = document.querySelectorAll(".btn-next-inside");
+      const formStepsIns = document.querySelectorAll(".form-step-inside");
+      let formStepsNumIns = 0;
 
-        nextBtnsIns.forEach((btn) => {
-            btn.addEventListener("click", () => {
-                formStepsNumIns++;
-                updateFormStepsIns();
-                // updateProgressbar();
-            });
+      nextBtnsIns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          formStepsNumIns++;
+          updateFormStepsIns();
+          // updateProgressbar();
         });
-        prevBtnsIns.forEach((btn) => {
-            btn.addEventListener("click", () => {
-                formStepsNumIns--;
-                updateFormStepsIns();
-                // updateProgressbar();
-            });
+      });
+      prevBtnsIns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          formStepsNumIns--;
+          updateFormStepsIns();
+          // updateProgressbar();
         });
-        function updateFormStepsIns() {
-            formStepsIns.forEach((formStep) => {
-                formStep.classList.contains("form-step-inside-active") &&
-                    formStep.classList.remove("form-step-inside-active");
-            });
+      });
+      function updateFormStepsIns() {
+        formStepsIns.forEach((formStep) => {
+          formStep.classList.contains("form-step-inside-active") &&
+            formStep.classList.remove("form-step-inside-active");
+        });
 
-            formStepsIns[formStepsNumIns].classList.add("form-step-inside-active");
-        }
+        formStepsIns[formStepsNumIns].classList.add("form-step-inside-active");
+      }
     </script>
     <!-- form withard inside -->
     <!-- upload file -->
     <script>
-        $("form").on("change", ".file-upload-field", function () {
-            $(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, ''));
-        });
+      $("form").on("change", ".file-upload-field", function () {
+        $(this)
+          .parent(".file-upload-wrapper")
+          .attr(
+            "data-text",
+            $(this)
+              .val()
+              .replace(/.*(\/|\\)/, "")
+          );
+      });
     </script>
     <!-- upload file -->
     <!-- show / hide  course -->
     <script>
+      function togglePrice() {
+        var checkbox5 = document.getElementById("radio5");
+        var checkbox4 = document.getElementById("radio4");
+        var hiddenRow = document.getElementById("coursePrice");
 
-        function togglePrice() {
-            var checkbox5 = document.getElementById('radio5');
-            var checkbox4 = document.getElementById('radio4');
-            var hiddenRow = document.getElementById('coursePrice');
-
-            if (checkbox5.checked) {
-                // Show the hidden row
-                hiddenRow.classList.remove('course_price');
-
-            } else if (checkbox4.checked) {
-                // Hide and remove the row
-                hiddenRow.classList.add('course_price');
-            }
+        if (checkbox5.checked) {
+          // Show the hidden row
+          hiddenRow.classList.remove("course_price");
+        } else if (checkbox4.checked) {
+          // Hide and remove the row
+          hiddenRow.classList.add("course_price");
         }
+      }
     </script>
     <!-- show / hide  course -->
     <!-- show / hide  voice -->
     <script>
+      function toggleVoice() {
+        var checkbox7 = document.getElementById("radio7");
+        var checkbox8 = document.getElementById("radio8");
+        var hiddenView = document.getElementById("voicePrice");
 
-        function toggleVoice() {
-            var checkbox7 = document.getElementById('radio7');
-            var checkbox8 = document.getElementById('radio8');
-            var hiddenView = document.getElementById('voicePrice');
-
-            if (checkbox8.checked) {
-                // Show the hidden row
-                hiddenView.classList.remove('course_price');
-
-            } else if (checkbox7.checked) {
-                // Hide and remove the row
-                hiddenView.classList.add('course_price');
-            }
+        if (checkbox8.checked) {
+          // Show the hidden row
+          hiddenView.classList.remove("course_price");
+        } else if (checkbox7.checked) {
+          // Hide and remove the row
+          hiddenView.classList.add("course_price");
         }
+      }
     </script>
     <!-- show / hide  voice -->
 
     <!-- show / hide  vedio watch -->
     <script>
+      function toggleView() {
+        var checkbox9 = document.getElementById("radio9");
+        var checkbox10 = document.getElementById("radio10");
+        var hiddenRow = document.getElementById("viewVideo");
 
-        function toggleView() {
-            var checkbox9 = document.getElementById('radio9');
-            var checkbox10 = document.getElementById('radio10');
-            var hiddenRow = document.getElementById('viewVideo');
-
-            if (checkbox9.checked) {
-                // Show the hidden row
-                hiddenRow.classList.remove('course_price');
-
-            } else if (checkbox10.checked) {
-                // Hide and remove the row
-                hiddenRow.classList.add('course_price');
-            }
+        if (checkbox9.checked) {
+          // Show the hidden row
+          hiddenRow.classList.remove("course_price");
+        } else if (checkbox10.checked) {
+          // Hide and remove the row
+          hiddenRow.classList.add("course_price");
         }
+      }
     </script>
     <!-- show / hide  voice -->
-</body>
-
+  </body>
 </html>

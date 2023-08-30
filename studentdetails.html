@@ -98,9 +98,7 @@
               id="submenuAccountant"
               data-bs-parent="#menu"
             >
-              <div class="close">
-                <i class="fa-solid fa-xmark"></i>
-              </div>
+              
 
               <li>
                 <a href="code-book.html" class="nav-link">
@@ -123,7 +121,7 @@
             </ul>
           </li>
           <h5>مستخدمي النظام</h5>
-          <li class="nav-item">
+           <li class="nav-item">
             <a href="teacher.html" class="nav-link align-middle">
               <img src="image/teacher-icon.png" alt="icon" />
               <span> المدرسين</span>
@@ -136,7 +134,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="lesons.html" class="nav-link align-middle">
+            <a href="centers.html" class="nav-link align-middle">
               <img src="image/house-icon.png" alt="icon" />
               <span> سناتر الدروس</span>
             </a>
@@ -189,15 +187,41 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="main-edu.html" class="nav-link align-middle">
-              <img src="image/main-edu-icon.png" alt="icon" />
+            <li class="nav-item">
+            <a
+              href="#submenuAccountant"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="image/scan-barcode-icon.png" alt="icon" />
               <span> التعليم الاساسي</span>
+              <i class="fa-solid fa-angle-up"></i>
             </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuAccountant"
+              data-bs-parent="#menu"
+            >
+              
+
+              <li>
+                <a href="educationalstages.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> المراحل التعليمية</span></a
+                >
+              </li>
+              <li>
+                <a href="Addaneducationalstage.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> اضافة مرحلة تعليمية</span></a
+                >
+              </li>
+           
+            </ul>
           </li>
 
           <li class="nav-item">
-            <a href="study-teams.html" class="nav-link align-middle">
+            <a href="subjects.html" class="nav-link align-middle">
               <img src="image/format-circle.png" alt="icon" />
               <span> الفرق الدراسية</span>
             </a>
@@ -236,6 +260,16 @@
           </li>
         </ul>
       </section>
+      <style>
+        @media (max-width: 600px) {
+          .table_topic tbody tr td{
+            min-width: 170px;
+          }
+          .img-ranking {
+            margin-inline-start: 95px;
+          }
+        }
+      </style>
       <!---------------------- end sidebar -------------------------------------------->
       <!---------------------- start main content -------------------------------------------->
 
@@ -321,20 +355,43 @@
               </div>
             </div>
             <div class="botton">
-              <button type="button" class="btn btn-edit mx-2">
-                <span><i class="bi bi-pencil-fill"></i></span>تعديل
-              </button>
-              <button type="button" class="btn btn-wahts mx-2">
-                <span><i class="bi bi-whatsapp"></i></span>رسالة واتساب
+              <button type="button" class="btn btn-edit mx-1">
+                <span
+                  ><i
+                    class="bi bi-pencil-fill"
+                    style="margin-inline-end: 0.4rem"
+                    ;
+                  ></i></span
+                >تعديل
               </button>
               <button
                 type="button"
-                class="btn btn-bolk mx-2"
+                class="btn btn-wahts mx-1"
+                data-bs-toggle="modal"
+                data-bs-target="#wahtsapp"
+              >
+                <span
+                  ><i
+                    class="bi bi-whatsapp"
+                    style="margin-inline-end: 0.4rem"
+                  ></i></span
+                >رسالة واتساب
+              </button>
+              <button
+                type="button"
+                class="btn btn-bolk mx-1"
                 onclick="blockAlert()"
               >
                 حظر
               </button>
-              <button type="button" class="btn btn-add">اضافة ملاحظة</button>
+              <button
+                type="button"
+                class="btn btn-add"
+                data-bs-toggle="modal"
+                data-bs-target="#add"
+              >
+                اضافة ملاحظة
+              </button>
             </div>
           </div>
           <hr />
@@ -371,7 +428,7 @@
                 <div class="text-ranking">
                   <h4>التقييم العام للطالب</h4>
                   <h6>جيد جدا</h6>
-                  <a href="">عرض احصائيات الطالب</a>
+                  <a href="Studentstats.html">عرض احصائيات الطالب</a>
                 </div>
               </div>
               <div class="img-ranking">
@@ -383,7 +440,9 @@
                 <div class="text-ranking">
                   <h4>اجمالى رصيد الطالب</h4>
                   <h6>200 ج .م</h6>
-                  <a href="">شحن الرصيد</a>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#charge"
+                    >شحن الرصيد</a
+                  >
                 </div>
               </div>
               <div class="img-ranking">
@@ -519,7 +578,12 @@
                 >
                   <div class="head-namestudent">
                     <h4>الاشتراكات</h4>
-                    <button type="button" class="btn btn-edit mx-2">
+                    <button
+                      type="button"
+                      class="btn btn-edit"
+                      data-bs-toggle="modal"
+                      data-bs-target="#Subscriptions"
+                    >
                       اشتراك فى كورس
                     </button>
                   </div>
@@ -749,7 +813,7 @@
                     </table>
                   </div>
                 </div>
-               
+
                 <div
                   class="tab-pane fade"
                   id="profile-tab-pane"
@@ -816,9 +880,9 @@
                           <td>Course 2</td>
                           <td>4</td>
                           <td>
-                            <button type="button" class="btn btn-register">
-                              سجل المشاهدات
-                            </button>
+                           <a href="viwes.html"> <button type="button" class="btn btn-register">
+                            سجل المشاهدات
+                          </button></a>
                           </td>
                         </tr>
                         <!-- outcome list -->
@@ -831,9 +895,9 @@
                           <td>Course 2</td>
                           <td>4</td>
                           <td>
-                            <button type="button" class="btn btn-register">
+                            <a href="viwes.html"> <button type="button" class="btn btn-register">
                               سجل المشاهدات
-                            </button>
+                            </button></a>
                           </td>
                         </tr>
                         <!-- outcome list -->
@@ -846,9 +910,9 @@
                           <td>Course 2</td>
                           <td>4</td>
                           <td>
-                            <button type="button" class="btn btn-register">
+                            <a href="viwes.html"> <button type="button" class="btn btn-register">
                               سجل المشاهدات
-                            </button>
+                            </button></a>
                           </td>
                         </tr>
                         <!-- outcome list -->
@@ -861,9 +925,9 @@
                           <td>Course 2</td>
                           <td>4</td>
                           <td>
-                            <button type="button" class="btn btn-register">
+                            <a href="viwes.html"> <button type="button" class="btn btn-register">
                               سجل المشاهدات
-                            </button>
+                            </button></a>
                           </td>
                         </tr>
                         <!-- outcome list -->
@@ -876,9 +940,9 @@
                           <td>Course 2</td>
                           <td>4</td>
                           <td>
-                            <button type="button" class="btn btn-register">
+                            <a href="viwes.html"> <button type="button" class="btn btn-register">
                               سجل المشاهدات
-                            </button>
+                            </button></a>
                           </td>
                         </tr>
                         <!-- outcome list -->
@@ -891,9 +955,9 @@
                           <td>Course 2</td>
                           <td>4</td>
                           <td>
-                            <button type="button" class="btn btn-register">
+                            <a href="viwes.html"> <button type="button" class="btn btn-register">
                               سجل المشاهدات
-                            </button>
+                            </button></a>
                           </td>
                         </tr>
 
@@ -905,9 +969,9 @@
                           <td>Course 2</td>
                           <td>4</td>
                           <td>
-                            <button type="button" class="btn btn-register">
+                            <a href="viwes.html"> <button type="button" class="btn btn-register">
                               سجل المشاهدات
-                            </button>
+                            </button></a>
                           </td>
                         </tr>
                         <!-- outcome list -->
@@ -920,9 +984,9 @@
                           <td>Course 2</td>
                           <td>4</td>
                           <td>
-                            <button type="button" class="btn btn-register">
+                            <a href="viwes.html"> <button type="button" class="btn btn-register">
                               سجل المشاهدات
-                            </button>
+                            </button></a>
                           </td>
                         </tr>
                         <!-- Modal -->
@@ -1554,222 +1618,461 @@
                   </div>
                 </div>
                 <div
-                class="tab-pane fade"
-                id="Notes-tab-pane"
-                role="tabpanel"
-                aria-labelledby="activities-tab"
-                tabindex="0"
-              >
-                <div class="head-activities">
-                  <h4>الملاحظات</h4>
-                  
-                </div>
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-12">
-                    <div class="search_topic">
-                      <form>
-                        <div class="input-group">
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="  ابحث هنا ..... , ... ... ...... .........."
-                          />
-                          <span class="icon_search teacherditals-1"
-                            ><i class="bi bi-search"></i
-                          ></span>
-                        </div>
-                      </form>
+                  class="tab-pane fade"
+                  id="Notes-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="activities-tab"
+                  tabindex="0"
+                >
+                  <div class="head-activities">
+                    <h4>الملاحظات</h4>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                      <div class="search_topic">
+                        <form>
+                          <div class="input-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="  ابحث هنا ..... , ... ... ...... .........."
+                            />
+                            <span class="icon_search teacherditals-1"
+                              ><i class="bi bi-search"></i
+                            ></span>
+                          </div>
+                        </form>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="table-responsive">
-                  <table class="table-responsive table_expenses table_topic">
-                    <thead>
-                      <tr>
-                        <td>الكود</td>
-                        <td>الملاحظة</td>
-                        <td>تاريخ الاضافة</td>
-                        <td>بواسطة</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <!-- outcome list -->
-                      <tr>
-                        <td>2154202 #</td>
-                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
-                        <td>22 مايو, 2023</td>
-                        <td>Admin A+ 1</td>
-                        
-                      </tr>
-                      <!-- outcome list -->
+                  <div class="table-responsive">
+                    <table class="table-responsive table_expenses table_topic">
+                      <thead>
+                        <tr>
+                          <td>الكود</td>
+                          <td>الملاحظة</td>
+                          <td>تاريخ الاضافة</td>
+                          <td>بواسطة</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع
+                            الادارة وله اتاحة الاستخدام
+                          </td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin A+ 1</td>
+                        </tr>
+                        <!-- outcome list -->
 
-                      <!-- outcome list -->
-                      <tr>
-                        <td>2154202 #</td>
-                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
-                        <td>22 مايو, 2023</td>
-                        <td>Admin A+ 1</td>
-                        
-                      </tr>
-                      <!-- outcome list -->
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع
+                            الادارة وله اتاحة الاستخدام
+                          </td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin A+ 1</td>
+                        </tr>
+                        <!-- outcome list -->
 
-                      <!-- outcome list -->
-                      <tr>
-                        <td>2154202 #</td>
-                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
-                        <td>22 مايو, 2023</td>
-                        <td>Admin A+ 1</td>
-                        
-                      </tr>
-                      <!-- outcome list -->
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع
+                            الادارة وله اتاحة الاستخدام
+                          </td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin A+ 1</td>
+                        </tr>
+                        <!-- outcome list -->
 
-                      <!-- outcome list -->
-                      <tr>
-                        <td>2154202 #</td>
-                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
-                        <td>22 مايو, 2023</td>
-                        <td>Admin A+ 1</td>
-                        
-                      </tr>
-                      <!-- outcome list -->
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع
+                            الادارة وله اتاحة الاستخدام
+                          </td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin A+ 1</td>
+                        </tr>
+                        <!-- outcome list -->
 
-                      <!-- outcome list -->
-                      <tr>
-                        <td>2154202 #</td>
-                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
-                        <td>22 مايو, 2023</td>
-                        <td>Admin A+ 1</td>
-                        
-                      </tr>
-                      <!-- outcome list -->
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع
+                            الادارة وله اتاحة الاستخدام
+                          </td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin A+ 1</td>
+                        </tr>
+                        <!-- outcome list -->
 
-                      <!-- outcome list -->
-                      <tr>
-                        <td>2154202 #</td>
-                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
-                        <td>22 مايو, 2023</td>
-                        <td>Admin A+ 1</td>
-                        
-                      </tr>
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع
+                            الادارة وله اتاحة الاستخدام
+                          </td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin A+ 1</td>
+                        </tr>
 
-                      <!-- outcome list -->
-                      <tr>
-                        <td>2154202 #</td>
-                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
-                        <td>22 مايو, 2023</td>
-                        <td>Admin A+ 1</td>
-                        
-                      </tr>
-                      <!-- outcome list -->
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع
+                            الادارة وله اتاحة الاستخدام
+                          </td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin A+ 1</td>
+                        </tr>
+                        <!-- outcome list -->
 
-                      <!-- outcome list -->
-                      <tr>
-                        <td>2154202 #</td>
-                        <td>هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع الادارة وله اتاحة الاستخدام</td>
-                        <td>22 مايو, 2023</td>
-                        <td>Admin A+ 1</td>
-                        
-                      </tr>
+                        <!-- outcome list -->
+                        <tr>
+                          <td>2154202 #</td>
+                          <td>
+                            هذا الطالب متاح له استخدام جهاز تابلت حيث تواصل مع
+                            الادارة وله اتاحة الاستخدام
+                          </td>
+                          <td>22 مايو, 2023</td>
+                          <td>Admin A+ 1</td>
+                        </tr>
 
-                      <!-- Modal -->
-                      <div
-                        class="modal fade"
-                        id="detailsSubscribeModal"
-                        tabindex="-1"
-                        aria-labelledby="detailsSubscribeModalLabel"
-                        aria-hidden="true"
-                      >
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h1
-                                class="modal-title fs-5"
-                                id="detailsSubscribeModalLabel"
-                              >
-                                Modal title
-                              </h1>
-                              <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                              ></button>
-                            </div>
-                            <div class="modal-body"></div>
-                            <div class="modal-footer">
-                              <button
-                                type="button"
-                                class="btn btn-secondary"
-                                data-bs-dismiss="modal"
-                              >
-                                Close
-                              </button>
-                              <button type="button" class="btn btn-primary">
-                                Save changes
-                              </button>
+                        <!-- Modal -->
+                        <div
+                          class="modal fade"
+                          id="detailsSubscribeModal"
+                          tabindex="-1"
+                          aria-labelledby="detailsSubscribeModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1
+                                  class="modal-title fs-5"
+                                  id="detailsSubscribeModalLabel"
+                                >
+                                  Modal title
+                                </h1>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body"></div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Close
+                                </button>
+                                <button type="button" class="btn btn-primary">
+                                  Save changes
+                                </button>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </tbody>
-                  </table>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-              </div>
                 <!-- activty content -->
               </div>
             </div>
           </div>
         </div>
-
-        <div class="row">
-              <div class="col-8 col-md-12 col-12" style="padding-top: 20px; color: #626e7d">
-                <p>عرض 1 - 30 من اجمالى 59</p>
-              </div>
-              <div class="col-4 col-md-12 col-12">
-                <nav class="pagination_section">
-                  <ul class="pagination justify-content-center">
+        <!-- pagenaion -->
+    <div class="content_page">
+      <div class="row foot">
+        <div class="col-8 col-md-8col-12" style="padding-top: 20px; color: #626e7d">
+            <p>عرض 1 - 30 من اجمالى 59</p>
+        </div>
+        <div class="col-4 col-md-4 col-12">
+            <nav class="pagination_section">
+                <ul class="pagination "> <!-- justify-content-end -->
                     <li class="page-item">
-                      <a class="page-link" href="#">السابق</a>
+                        <a class="page-link" style="width: 80px;" href="#"> السابق </a>
                     </li>
                     <li class="page-item active">
-                      <a class="page-link" href="#">1</a>
+                        <a class="page-link" href="#">3</a>
                     </li>
                     <li class="page-item">
-                      <a class="page-link" href="#">2</a>
+                        <a class="page-link" href="#">2</a>
                     </li>
                     <li class="page-item">
-                      <a class="page-link" href="#">3</a>
+                        <a class="page-link" href="#">1</a>
                     </li>
                     <li class="page-item">
-                      <a class="page-link" href="#">التالي </a>
+                        <a class="page-link" style="width: 80px;" href="#"> التالي 
+                        </a>
                     </li>
-                  </ul>
-                </nav>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </div>
+        <!-- pagenaion -->
+      </section>
+    </main>
+    <!-- model whats app -->
+    <div
+      class="modal fade"
+      id="wahtsapp"
+      tabindex="-1"
+      aria-labelledby="detailsSubscribeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="detailsSubscribeModalLabel">
+              رسالة واتس
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="wahtsapp">
+              <p>سيتم ارسال الرسالة على الواتساب الخاص بالطالب</p>
+            </div>
+            <div class="massage">
+              <div class="form-group">
+                <label>الرسالة</label>
+                <textarea
+                  name=""
+                  class="form-control"
+                  id=""
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <button type="button" class="btn send-massage">
+                  ارسال الرسالة
+                </button>
               </div>
             </div>
           </div>
+          <div class="modal-footer"></div>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
+    <!-- model charge -->
+    <div
+      class="modal fade"
+      id="charge"
+      tabindex="-1"
+      aria-labelledby="detailsSubscribeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="detailsSubscribeModalLabel">
+              شحن الرصيد للطالب
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="charge">
+              <p>
+                يمكنك اضافة القيمة التى تريد تزويد شحن <br />رصيد الطالب بها
+              </p>
+            </div>
+            <div class="massage">
+              <div class="col-12">
+                <div class="input-group">
+                  <label class="form-label charge"> قيمة الشحن</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="ادخل القيمة التى تريد اضافتها"
+                  />
+                </div>
+              </div>
+              <button type="button" class="btn charge">حفظ</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+    <!-- model charge -->
+    <!-- model add -->
+
+    <!-- model add -->
+    <div
+      class="modal fade"
+      id="add"
+      tabindex="-1"
+      aria-labelledby="detailsSubscribeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="detailsSubscribeModalLabel">
+              اضافة ملاحظة للطالب
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="wahtsapp">
+              <p>
+                هنا يمكنك اضافة بعض الملاحظات الخاصة بالطالب <br />والتى تظهر فى
+                البيانات الخاصة به
+              </p>
+            </div>
+            <div class="massage">
+              <div class="form-group">
+                <label>ملاحظاتك</label>
+                <textarea
+                  name=""
+                  class="form-control"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="اكتب ملاحظاتك هنا ....."
+                ></textarea>
+                <button type="button" class="btn send-massage">حفظ</button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+    <!-- model Subscriptions -->
+    <div
+      class="modal fade"
+      id="Subscriptions"
+      tabindex="-1"
+      aria-labelledby="detailsSubscribeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="detailsSubscribeModalLabel">
+              اشتراك الطالب فى كورس
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="Subscriptions">
+              <p>
+                ادخل البيانات التالية لاستكمال ضم الطالب الى كورس<br />
+                محدد او المزيد من الكورسات التى تحددها
+              </p>
+            </div>
+            <div class="Subscriptions">
+              <div class="col-12">
+                <div class="input-group">
+                  <label class="form-label Subscriptions">
+                    تحديد الاشتراك</label
+                  >
+                  <select
+                    required
+                    class="selectpicker"
+                    data-placeholder="    اختر  "
+                    data-selected-text-format="count > 1"
+                    data-icon="bi bi-trash"
+                    data-live-search="true"
+                  >
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="Subscriptions-2">
+              <div class="col-12">
+                <div class="input-group">
+                  <label class="form-label Subscriptions"> الكورسات</label>
+                  <select
+                    required
+                    class="selectpicker"
+                    data-placeholder="    اختر الكورسات ....   "
+                    data-selected-text-format="count > 1"
+                    data-icon="bi bi-trash"
+                    data-live-search="true"
+                  >
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="Subscriptions-2">
+              <div class="col-12">
+                <div class="input-group">
+                  <label class="form-label Subscriptions"> مدة الاشتراك</label>
+                  <select
+                    required
+                    class="selectpicker"
+                    data-placeholder="    اختر  "
+                    data-selected-text-format="count > 1"
+                    data-icon="bi bi-trash"
+                    data-live-search="true"
+                  >
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <button type="button" class="btn charge">حفظ</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+    <!-- model Subscriptions -->
 
     <!-- show / hide edit menu in card -->
-    <script>
-      function blockAlert() {
-        Swal.fire({
-          html:
-            '<img src="image/block.png" alt="add">' +
-            '<h5 class="swal2-title">   هل أنت متأكد من حظر  الطالب ؟</h5>' +
-            '<p class="swal2-html-container"> فى حالة الضغط على تأكيد الحظر سيتم حظر الطالب من الكورس كاملا ولا يمكنه الاطلاع على محتويات الكورسات التى مشترك بها ايضا</p>',
 
-          showCancelButton: true,
-          focusConfirm: false,
-          confirmButtonText: "تأكيد الحظر",
-          confirmButtonAriaLabel: "Thumbs up, great!",
-          cancelButtonText: "الغاء",
-          cancelButtonAriaLabel: "Thumbs down",
-        });
-      }
-    </script>
     <script>
       function toggleMenu(menuId) {
         var menu = document.getElementById(menuId);
@@ -1803,8 +2106,8 @@
         Swal.fire({
           html:
             '<img src="image/block.png" alt="add">' +
-            '<h5 class="swal2-title"> هل أنت متأكد من حظر  الامتحان ؟</h5>' +
-            '<p class="swal2-html-container"> فى حالة الضغط على تأكيد الحظر سيتم حظر الامتحان من المنصة نهائيا وحذ جميع الأسألة التى يحتويها الامتحان </p>',
+            '<h5 class="swal2-title"> هل أنت متأكد من حظر  الطالب ؟</h5>' +
+            '<p class="swal2-html-container"> فى حالة الضغط على تأكيد الحظر سيتم حظر الطالب من التطبيق كاملا ولا يمكنه الاطلاع على الكورسات التى مشترك بها ايضا </p>',
 
           showCancelButton: true,
 
