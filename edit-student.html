@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> اضافة صلاحية جديدة</title>
+    <title> add-student</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -67,7 +67,12 @@
                         <span> الامتحانات</span>
                     </a>
                 </li>
-               
+                <li class="nav-item">
+                    <a href="groups.html" class="nav-link align-middle">
+                        <img src="image/groups-icon.png" alt="icon" />
+                        <span> الجروبات</span>
+                    </a>
+                </li>
 
 
                 <li class="nav-item">
@@ -77,9 +82,46 @@
                     </a>
                 </li>
 
-                
                 <li class="nav-item">
-                    <a href="subjects.html" class="nav-link align-middle">
+                    <a href="#submenulibrary" data-bs-toggle="collapse"
+                        class="nav-link accordion-button align-middle collapsed">
+                        <img src="image/exam-icon.png" alt="icon" />
+                        <span> بنك اسالة المرحلة الاساسية </span>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </a>
+                    <ul class="collapse flex-column" id="submenulibrary" data-bs-parent="#menu">
+                        <div class="close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <li>
+                            <a href="unites-main-bank.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> الوحدات </span></a>
+                        </li>
+                        <li>
+                            <a href="lessons-main-bank.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> الدروس </span></a>
+                        </li>
+                        <li>
+                            <a href="parts-main-bank.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> القطع </span></a>
+                        </li>
+                        <li>
+                            <a href="sec-bank-main-bank.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> بنك اسالة ثانوي </span></a>
+                        </li>
+                        <li>
+                            <a href="sec-exam-main-bank.html" class="nav-link">
+                                <i class="fa-solid fa-circle dot"></i>
+                                <span> امتحانات ثانوي </span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="celander.html" class="nav-link align-middle">
                         <img src="image/book-icon.png" alt="icon" />
                         <span> المواد الدراسية</span>
                     </a>
@@ -98,17 +140,17 @@
                         </div>
 
                         <li>
-                            <a href="code-book.html" class="nav-link">
+                            <a href="extract-code-books.html" class="nav-link">
                                 <i class="fa-solid fa-circle dot"></i>
                                 <span> استخراج اكواد للمذكرات</span></a>
                         </li>
                         <li>
-                            <a href="code-corse.html" class="nav-link">
+                            <a href="extract-code-courses.html" class="nav-link">
                                 <i class="fa-solid fa-circle dot"></i>
                                 <span> استخراج اكواد للكورسات</span></a>
                         </li>
                         <li>
-                            <a href="code-training.html" class="nav-link">
+                            <a href="extract-code-practice.html" class="nav-link">
                                 <i class="fa-solid fa-circle dot"></i>
                                 <span> استخراج اكواد للتدريبات</span></a>
 
@@ -118,7 +160,7 @@
                 </li>
                 <h5> مستخدمي النظام</h5>
                 <li class="nav-item">
-                    <a href="teacher.html" class="nav-link align-middle">
+                    <a href="teachers.html" class="nav-link align-middle">
                         <img src="image/teacher-icon.png" alt="icon" />
                         <span> المدرسين</span>
                     </a>
@@ -130,13 +172,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="lesons.html" class="nav-link align-middle">
+                    <a href="lesson-center.html" class="nav-link align-middle">
                         <img src="image/house-icon.png" alt="icon" />
                         <span> سناتر الدروس</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="Systemadministrators.html" class="nav-link align-middle">
+                    <a href="director.html" class="nav-link align-middle">
                         <img src="image/director-icon.png" alt="icon" />
                         <span> مديري النظام</span>
                     </a>
@@ -199,26 +241,26 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="seting-point.html" class="nav-link align-middle">
+                    <a href="point-settings.html" class="nav-link align-middle">
                         <img src="image/buy-crypto-icon.png" alt="icon" />
                         <span> اعدادات النقاط</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="slider-table.html" class="nav-link align-middle">
+                    <a href="slider.html" class="nav-link align-middle">
                         <img src="image/slider-icon.png" alt="icon" />
                         <span> الاسلايدر</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="seting-notifcation.html" class="nav-link align-middle">
+                    <a href="notfication-seting.html" class="nav-link align-middle">
                         <img src="image/notification-bing-icon.png" alt="icon" />
                         <span> اعدادات الاشعارات</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="setting.html" class="nav-link align-middle">
+                    <a href="general-settengs.html" class="nav-link align-middle">
                         <img src="image/powers-icon.png" alt="icon" />
                         <span> الاعدادات العامة</span>
                     </a>
@@ -272,6 +314,7 @@
 
                 </div>
             </nav>
+           
             <!---------------------- End nav -------------------------------------------->
 
             <!---------------------- start content -------------------------------------------->
@@ -279,23 +322,45 @@
                 <div class="container">
                     <form>
                         <div class="row">
-                            <h4> اضافة صلاحية جديدة</h4>
+                            <h4> تعديل بيانات الطالب </h4>
                             <div class="col-lg-8 col-md-10 col-12">
                                 <div class="form-group">
-                                    <label for="formGroupExampleInput"> اسم الصلاحية</label>
+                                    <label for="formGroupExampleInput"> اسم الطالب</label>
                                     <input type="text" class="form-control" id="formGroupExampleInput"
-                                        placeholder="ادخل الاسم">
+                                        placeholder="أحمد ابراهيم">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput"> رقم الهاتف</label>
+                                    <input type="number" class="form-control" id="formGroupExampleInput"
+                                        placeholder="0102544545212">
                                 </div>
                                 <div class="form-group ">
-                                    <label for="inputtext"> اختر الصلاحيات </label>
+                                    <label for="inputtext"> النوع </label>
                                     <select id="inputState" class="form-control select2 selectpicker">
-                                        <option selected> اختر الصلاحية</option>
+                                        <option selected> ذكر</option>
                                         <option> ,,,</option>
                                         <option>...</option>
                                         <option>...</option>
                                     </select>
                                 </div>
-                             
+                                <div class="form-group ">
+                                    <label for="inputtext"> المستوي التعليمي </label>
+                                    <select id="inputState" class="form-control select2 selectpicker">
+                                        <option selected> جامعي</option>
+                                        <option> ,,,</option>
+                                        <option>...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group ">
+                                    <label for="inputtext"> المرحلة التعليمية</label>
+                                    <select id="inputState" class="form-control select2 selectpicker">
+                                        <option selected> الفرقة الاولى , حاسبات ومعلومات</option>
+                                        <option> ,,,</option>
+                                        <option>...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
                         <!-- finish input -->
                         <div class="col-lg-12">
                             <button type="button" class="btn save btn-warning">حفظ</button>
@@ -303,7 +368,7 @@
                     </form>
                 </div>
             </div>
-          
+         
             <!---------------------- finish  content -------------------------------------------->
         </section>
         <!---------------------- finish main content -------------------------------------------->
