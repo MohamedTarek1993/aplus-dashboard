@@ -782,6 +782,11 @@ i.bi.bi-search.detialsexam {
   top: -2rem;
   right: 0.2rem;
 }
+i.bi.bi-search.detials {
+  position: absolute;
+  top: -2.5rem;
+  left: -0.5rem;
+}
 /* exam-details */
 .main-deatils {
   display: flex;
@@ -1260,6 +1265,28 @@ span.icon_search.course {
     margin-right: -9px;
 }
 
+canvas#line {
+  display: block !important;
+box-sizing: border-box !important;
+height: 224px !important;
+width: 100% !important;
+}
+canvas#line-1{
+  display: block !important;
+box-sizing: border-box !important;
+height: 205px !important;
+width: 100% !important;
+
+}
+canvas#line-2{
+  display: block !important;
+box-sizing: border-box !important;
+height: 205px !important;
+width: 100% !important;
+
+}
+
+
 
 /* responsive  */
 /* Extra small devices (phones, 600px and down) */
@@ -1490,7 +1517,7 @@ span.icon_search.course {
   }
   canvas#line{
     width: 100% !important;
-    height: 200px !important;
+    height: 170px !important;
   }
   canvas#line-1{
     width: 100% !important;
@@ -1509,4 +1536,26 @@ span.icon_search.course {
   .table_topic tbody tr td .btn{
     font-size: 0.6rem;
   } 
+  .sidebar .nav-pills {
+    background-color: #06456b;
+    padding: 1rem 0;
+
+  }
+  .sidebar .image_logo .logo{
+    width: 50%;
+  }
+  .sidebar .svg-inline--fa {
+    color: white !important;
+  }
+  .sidebar .image_logo {
+    width: 100%;
+    height: 50px;
+  }
+  .sidebar .nav-pills .nav-item .nav-link {
+    padding: 0.3rem;
+  }
+  .sidebar .nav-pills .nav-item .nav-link img{
+    width: 10%;
+    height: 15px;
+  }
 }
