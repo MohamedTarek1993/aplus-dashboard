@@ -1285,6 +1285,14 @@ height: 205px !important;
 width: 100% !important;
 
 }
+label.btn.btn-outline-primary {
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 4rem;
+}
+label.btn.btn-outline-primary.nas{
+  margin: 0.5rem 1rem;
+    padding: 0.5rem 4.4rem;
+}
 
 
 
