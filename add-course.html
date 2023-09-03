@@ -412,6 +412,45 @@
                           ></textarea>
                         </div>
                       </div>
+                      <!-- commission -->
+                      <div class="input-group">
+                        <input type="radio" class="btn-check" name="status" id="online" autocomplete="off" checked >
+                        <label class="btn btn-outline-primary" for="online">online</label>
+                        
+                        <input type="radio" class="btn-check" name="status" id="center" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="center">center</label>
+                      </div>
+                      <div class="input-group">
+                        <input type="radio" class="btn-check" name="fixed" id="fixed" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary nas" for="fixed">ثابت</label>
+                        <input type="radio" class="btn-check" name="fixed" id="percentage" autocomplete="off">
+                        <label class="btn btn-outline-primary nas " for="percentage">نسبه</label>
+                      </div>
+                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    
+                       
+
+                        <div class="fixed">
+                          <label for="">fixed</label>
+                          <input  class="form-control" type="text">
+                        </div>
+                        <div class="percentage" style="display: none;">
+                          <label for="">percentage</label>
+                          <input  class="form-control" type="text">
+                        </div>
+                      <script>
+                        $('.div_entrega_outro').hide();
+                        $("#fixed").click(function() {
+                          $('.fixed').show();
+                          $('.percentage').hide();
+                        });
+                        
+                        $("#percentage").click(function() {
+                          $('.percentage').show();
+                          $('.fixed').hide();
+                        });
+                      </script>
+                      <!-- commssion -->
                       <!-- finish input -->
 
                       <!-- start input -->
