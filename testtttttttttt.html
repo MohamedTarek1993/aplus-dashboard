@@ -313,469 +313,244 @@
         <div class="content_page">
           <div class="container">
             <div class="row">
-              <div class="main_topic">
-                <h4>اضافة حصة جديدة</h4>
-              </div>
-
-              <section class="wizard-section">
-                <div class="row no-gutters">
-                  <div class="form-wizard">
-                    <form action="" method="post" role="form">
-                      <fieldset class="wizard-fieldset show">
-                        <h5>التفاصيل العامة</h5>
-                        <div class="form-group">
-                          <label for="fname" class="wizard-form-text-label"
-                            >عنوان الحصة</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control wizard-required"
-                            id="fname"
-                            placeholder="ادخل عنوان الحصة"
-                          />
-                          <div class="wizard-form-error"></div>
-                        </div>
-                        <div class="form-group">
-                          <label for="lname" class="wizard-form-text-label">الباب الدراسي </label>
-                          <select
-                            required
-                            class="form-control selectpicker"
-                            data-placeholder="اختر الباب الدراسي"
-                            data-selected-text-format="count > 1"
-                            data-icon="bi bi-trash"
-                            data-live-search="true"
-                          >
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                          <div class="wizard-form-error"></div>
-                        </div>
-                        <div class="form-group">
-                          <label for="lname" class="wizard-form-text-label">الدرس </label>
-                          <select
-                            required
-                            class="form-control selectpicker"
-                            data-placeholder="اختر الدرس"
-                            data-selected-text-format="count > 1"
-                            data-icon="bi bi-trash"
-                            data-live-search="true"
-                          >
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                          <div class="wizard-form-error"></div>
-                        </div>
-                        <div class="form-group">
-                          <label for="fname" class="wizard-form-text-label"
-                            >وصف الحصة</label
-                          >
-                          <textarea
-                            class="form-control wizard-required"
-                            placeholder="اكتب وصف الحصة"
-                          ></textarea>
-                          <div class="wizard-form-error"></div>
-                        </div>
-                        <div class="form-group">
-                          <label for="lname" class="wizard-form-text-label"
-                            >الحالة السعرية
-                          </label>
-                          <div class="form-check form-check-inline">
-                            <input
-                              class="form-check-input"
-                              name="priceType"
-                              type="radio"
-                              id="radio"
-                              value="option"
-                              onchange="togglePriceStatus()"
-                            />
-                            <label class="form-check-label" for="radio">
-                              مجاني</label
-                            >
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input
-                              class="form-check-input"
-                              name="priceType"
-                              type="radio"
-                              id="radio1"
-                              value="option1"
-                              onchange="togglePriceStatus()"
-                            />
-                            <label class="form-check-label" for="radio1">
-                              مدفوع</label
-                            >
-                            <div class="wizard-form-error"></div>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label for="lname" class="wizard-form-text-label"
-                            >نوع الحصة
-                          </label>
-                          <div class="form-check form-check-inline">
-                            <input
-                              class="form-check-input"
-                              name="kindleson"
-                              type="radio"
-                              id="radio2"
-                              value="option"
-                              onchange="togglePriceStatus()"
-                            />
-                            <label
-                              for="radio2"
-                              class="form-check-label"
-                              for="radio"
-                            >
-                              مسجلة</label
-                            >
-                            <div class="wizard-form-error"></div>
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input
-                              class="form-check-input"
-                              name="kindleson"
-                              type="radio"
-                              id="radio3"
-                              value="option1"
-                              onchange="togglePriceStatus()"
-                            />
-                            <label
-                              for="radio3"
-                              class="form-check-label"
-                              for="radio1"
-                            >
-                              لايف</label
-                            >
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label for="fname" class="wizard-form-text-label"
-                            >الترتيب</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control wizard-required"
-                            id="fname"
-                          />
-                          <div class="wizard-form-error"></div>
-                        </div>
-                        <div class="form-group">
-                          <label for="fname" class="wizard-form-text-label">
-                            رفع صورة معبرة</label
-                          >
-                          <div
-                            class="file-upload-wrapper"
-                            data-text="اسحب الصورة التى تريد اضافتها  او قم بفتحها من هنا"
-                          >
-                            <input
-                              required
-                              name="file-upload-field form-control"
-                              type="file"
-                              class="file-upload-field"
-                              value=""
-                            />
-                          </div>
-                          <div class="wizard-form-error"></div>
-                        </div>
-                        <div class="row">
-                          <div class="col-5">
-                            <div class="form-group">
-                              <label for="zcode" class="wizard-form-text-label"
-                                >تاريخ البداية</label
-                              >
-                              <input
-                                type="date"
-                                class="form-control wizard-required"
-                                id="zcode"
-                              />
-
-                              <div class="wizard-form-error"></div>
-                            </div>
-                          </div>
-                          <div class="col-5">
-                            <div class="form-group">
-                              <label for="zcode" class="wizard-form-text-label"
-                                >تاريخ النهاية
-                              </label>
-                              <input
-                                type="date"
-                                class="form-control wizard-required"
-                                id="zcode"
-                              />
-
-                              <div class="wizard-form-error"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group clearfix">
-                          <a
-                            href="javascript:;"
-                            class="form-wizard-next-btn float-right"
-                            >الاضافة والحفظ</a
-                          >
-                        </div>
-                      </fieldset>
-                      <fieldset class="wizard-fieldset">
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="form-group">
-                              <label for="fname" class="wizard-form-text-label"
-                                >عدد المشاهدات المتاحه لكل فيديو</label
-                              >
-                              <input
-                                type="text"
-                                class="form-control wizard-required"
-                                id="fname"
-                                placeholder="ادخل عدد المشاهدات المتاحه لكل فيديو"
-                              />
-                              <div class="wizard-form-error"></div>
-                            </div>
-                          </div>
-                          <!-- limit / unLimitedLesson -->
-                          <div class="course_price" id="toggleVideoWatch">
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label
-                                    for="fname"
-                                    class="wizard-form-text-label"
-                                    >ادخل عدد المشاهدات</label
-                                  >
-                                  <input
-                                    type="text"
-                                    class="form-control wizard-required"
-                                    id="fname"
-                                    placeholder="ادخل عدد المشاهدات"
-                                  />
-                                  <div class="wizard-form-error"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- limit / unLimitedLesson -->
-                          <div class="col-12">
-                            <div class="input-group">
-                              <label class="form-label">
-                                ظهور علامة مائية متحركة</label
-                              >
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  name="vedioWatch"
-                                  type="radio"
-                                  id="yesWaterMarek"
-                                  value="option"
-                                  onchange="toggleWaterMark()"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="inlineCheckbox"
-                                >
-                                  نعم
-                                </label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  name="vedioWatch"
-                                  type="radio"
-                                  id="noWaterMarek"
-                                  value="option1"
-                                  onchange="toggleWaterMark()"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="inlineCheckbox1"
-                                >
-                                  لا</label
-                                >
-                              </div>
-                            </div>
-                          </div>
-                          <!-- yes / no water marker -->
-                          <div class="course_price" id="toggleWaterMark">
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <label
-                                    for="fname"
-                                    class="wizard-form-text-label"
-                                    >كل كام ثانية</label
-                                  >
-                                  <input
-                                    type="text"
-                                    class="form-control wizard-required"
-                                    id="fname"
-                                  />
-                                  <div class="wizard-form-error"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- yes / no water marker -->
-                          <div class="col-12">
-                            <div class="input-group">
-                              <label class="form-label">
-                                ظهور علامة مائية ثابتة</label
-                              >
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  name="vedioWatch"
-                                  type="radio"
-                                  id="radio4"
-                                  value="option"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="inlineCheckbox"
-                                >
-                                  نعم
-                                </label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  name="vedioWatch"
-                                  type="radio"
-                                  id="radio5"
-                                  value="option1"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="inlineCheckbox1"
-                                >
-                                  لا</label
-                                >
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <div class="input-group">
-                              <label class="form-label"> السماح للمحاكي </label>
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  name="vedioWatch"
-                                  type="radio"
-                                  id="radio6"
-                                  value="option"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="inlineCheckbox"
-                                >
-                                  نعم
-                                </label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  name="vedioWatch"
-                                  type="radio"
-                                  id="radio7"
-                                  value="option1"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="inlineCheckbox1"
-                                >
-                                  لا</label
-                                >
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <div class="input-group">
-                              <label class="form-label">
-                                يجب استخدام سماعات الأذن
-                              </label>
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  name="vedioWatch"
-                                  type="radio"
-                                  id="radio8"
-                                  value="option"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="inlineCheckbox"
-                                >
-                                  نعم
-                                </label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  name="vedioWatch"
-                                  type="radio"
-                                  id="radio9"
-                                  value="option1"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="inlineCheckbox1"
-                                >
-                                  لا</label
-                                >
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <div class="input-group">
-                              <label class="form-label"> نوع الملف mp3 </label>
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  name="vedioWatch"
-                                  type="radio"
-                                  id="radio10"
-                                  value="option"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="inlineCheckbox"
-                                >
-                                  نعم
-                                </label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input
-                                  class="form-check-input"
-                                  name="vedioWatch"
-                                  type="radio"
-                                  id="radio11"
-                                  value="option1"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="inlineCheckbox1"
-                                >
-                                  لا</label
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group clearfix">
-                          <a
-                            href="javascript:;"
-                            class="form-wizard-previous-btn float-left"
-                            >Previous</a
-                          >
-                          <a
-                            href="javascript:;"
-                            class="form-wizard-submit float-right"
-                            >Submit</a
-                          >
-                        </div>
-                      </fieldset>
-                    </form>
-                  </div>
+              <div class="col-lg-9">
+                <div class="main_topic">
+                  <h4>اضافة حصة جديدة</h4>
                 </div>
-              </section>
+
+                <section class="wizard-section">
+                  <div class="row no-gutters">
+                    <div class="form-wizard">
+                      <form action="" method="post" role="form">
+                        <fieldset class="wizard-fieldset show">
+                          <div class="main_topic">
+                            <h4>التفاصيل العامة</h4>
+                          </div>
+                          <div class="form-group">
+                            <label class="wizard-form-text-label">
+                              عنوان الحصة</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control wizard-required"
+                              placeholder=" ادخل عنوان الحصة"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label"> الباب الدراسي </label>
+
+                            <input
+                              type="text"
+                              class="form-control wizard-required"
+                              id="lname"
+                              placeholder=" ادخل الباب الدراسي"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label"> الدرس </label>
+
+                            <input
+                              type="text"
+                              class="form-control wizard-required"
+                              id="lname"
+                              placeholder=" ادخل الدرس
+                            "
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label"> وصف الحصة </label>
+
+                            <textarea
+                              class="form-control"
+                              placeholder="اكتب وصف الحصة"
+                            ></textarea>
+
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label"> الحالة السعرية</label>
+                            <div class="form-check form-check-inline">
+                              <input
+                                class="form-check-input"
+                                name="priceType"
+                                type="radio"
+                                id="radio"
+                                value="option"
+                                onchange="togglePriceStatus()"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="inlineCheckbox"
+                              >
+                                مجاني</label
+                              >
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input
+                                class="form-check-input"
+                                name="priceType"
+                                type="radio"
+                                id="radio1"
+                                value="option1"
+                                onchange="togglePriceStatus()"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="inlineCheckbox1"
+                              >
+                                مدفوع</label
+                              >
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="form-label"> نوع الحصة </label>
+                            <div class="form-check form-check-inline">
+                              <input
+                                class="form-check-input"
+                                name="priceType"
+                                type="radio"
+                                id="radio"
+                                value="option"
+                                onchange="togglePriceStatus()"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="inlineCheckbox"
+                              >
+                                مسجلة</label
+                              >
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input
+                                class="form-check-input"
+                                name="priceType"
+                                type="radio"
+                                id="radio1"
+                                value="option1"
+                                onchange="togglePriceStatus()"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="inlineCheckbox1"
+                              >
+                                لايف</label
+                              >
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <label class="form-label"> الترتيب</label>
+                            <input type="text" class="form-control" />
+                            <div class="form-group">
+                              <label class="form-label"> رفع صورة معبرة</label>
+                              <div
+                                class="file-upload-wrapper"
+                                data-text="اسحب الصورة التى تريد اضافتها  او قم بفتحها من هنا"
+                              >
+                                <input
+                                  required
+                                  name="file-upload-field form-control"
+                                  type="file"
+                                  class="file-upload-field"
+                                  value=""
+                                />
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label class="form-label">
+                                      تاريخ البداية
+                                    </label>
+                                    <input type="date" class="form-control" />
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label class="form-label">
+                                      تاريخ الانتهاء
+                                    </label>
+                                    <input type="date" class="form-control" />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="form-group clearfix">
+                            <a
+                              href="javascript:;"
+                              class="form-wizard-next-btn float-right"
+                              >الحفظ والمتابعة</a
+                            >
+                          </div>
+                        </fieldset>
+                        <fieldset class="wizard-fieldset">
+                          <h5>Account Information</h5>
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              class="form-control wizard-required"
+                              id="email"
+                            />
+                            <label for="email" class="wizard-form-text-label"
+                              >Email*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control wizard-required"
+                              id="username"
+                            />
+                            <label for="username" class="wizard-form-text-label"
+                              >User Name*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="password"
+                              class="form-control wizard-required"
+                              id="pwd"
+                            />
+                            <label for="pwd" class="wizard-form-text-label"
+                              >Password*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                            <span class="wizard-password-eye"
+                              ><i class="far fa-eye"></i
+                            ></span>
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="password"
+                              class="form-control wizard-required"
+                              id="cpwd"
+                            />
+                            <label for="cpwd" class="wizard-form-text-label"
+                              >Confirm Password*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="form-group clearfix">
+                            <a
+                              href="javascript:;"
+                              class="form-wizard-previous-btn float-left"
+                              >Previous</a
+                            >
+                            <a
+                              href="javascript:;"
+                              class="form-wizard-submit float-right"
+                              >Submit</a
+                            >
+                          </div>
+                        </fieldset>
+                      </form>
+                    </div>
+                  </div>
+                </section>
+              </div>
             </div>
           </div>
         </div>
