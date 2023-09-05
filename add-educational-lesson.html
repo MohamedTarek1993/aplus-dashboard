@@ -1102,8 +1102,19 @@
 
       nextBtnsIns.forEach((btn) => {
         btn.addEventListener("click", () => {
-          formStepsNumIns++;
-          updateFormStepsIns();
+        var tmpThis = $(".form-control");
+        // console.log(tmpThis)
+        tmpThis.each(function(index, element) {
+          if (tmpThis == "") {
+            jQuery(".form-control").parent().addClass("focus-input");
+          }
+          else {
+            formStepsNumIns++;
+            updateFormStepsIns();
+          }
+          // var value = $(element).val(); // Use .val() to get the value of an input element
+          // console.log("Value of element " + index + ": " + value);
+        });
           // updateProgressbar();
         });
       });
@@ -1236,16 +1247,3 @@
     <!-- show / hide  Vedio watch -->
   </body>
 </html>
-
-<!--     
-
-function wc_get_page_permalink( $page, $fallback = null ) {
-	$page_id   = wc_get_page_id( $page );
-	$permalink = 0 < $page_id ? get_permalink( $page_id ) : '';
-
-	if ( ! $permalink ) {
-		$permalink = is_null( $fallback ) ? get_home_url() : $fallback;
-	}
-
-	return apply_filters( 'woocommerce_get_' . $page . '_page_permalink', $permalink );
-} -->
