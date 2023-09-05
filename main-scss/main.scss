@@ -519,13 +519,14 @@ iframe {
   text-align: center;
 }
 .form-wizard .form-wizard-next-btn, .form-wizard .form-wizard-previous-btn, .form-wizard .form-wizard-submit {
-  background-color: #d65470;
+  background-color: #06456b;
   color: #ffffff;
   display: inline-block;
   min-width: 100px;
   min-width: 120px;
   padding: 10px;
   text-align: center;
+  font-family: "regular";
 }
 .form-wizard .form-wizard-next-btn:hover, .form-wizard .form-wizard-next-btn:focus, .form-wizard .form-wizard-previous-btn:hover, .form-wizard .form-wizard-previous-btn:focus, .form-wizard .form-wizard-submit:hover, .form-wizard .form-wizard-submit:focus {
   color: #ffffff;
@@ -553,8 +554,8 @@ iframe {
 }
 .form-wizard .form-control {
   font-weight: 300;
-  height: auto !important;
-  padding: 15px;
+  padding: 0.7rem;
+  font-size: 0.8rem;
   color: #888888;
   background-color: #f1f1f1;
   border: none;
@@ -565,19 +566,21 @@ iframe {
 .form-wizard .form-group {
   position: relative;
   margin: 25px 0;
+  width: 70%;
 }
 .form-wizard .wizard-form-text-label {
-  position: absolute;
-  left: 10px;
-  top: 16px;
-  transition: 0.2s linear all;
+  width: 100%;
+  font-size: 1rem;
+  color: var(--color-primary);
+  font-family: "medium";
+  margin-bottom: .5rem;
 }
-.form-wizard .focus-input .wizard-form-text-label {
-  color: #d65470;
-  top: -18px;
-  transition: 0.2s linear all;
-  font-size: 12px;
-}
+// .form-wizard .focus-input .wizard-form-text-label {
+//   color: #d65470;
+//   top: -18px;
+//   transition: 0.2s linear all;
+//   font-size: 12px;
+// }
 .form-wizard .form-wizard-steps {
   margin: 30px 0;
 }
@@ -671,14 +674,14 @@ iframe {
     top: 58%;
   }
 }
-.focus-input {
-  .form-label {
-    color: #dc3545 !important;
-  }
-  .form-control {
-    border: 1px solid #dc3545 !important;
-  }
-}
+// .focus-input {
+//   .form-label {
+//     color: #dc3545 !important;
+//   }
+//   .form-control {
+//     border: 1px solid #dc3545 !important;
+//   }
+// }
 
 form {
   .file-upload-wrapper {
@@ -764,6 +767,7 @@ form {
 
 .form-group .bootstrap-select {
   border: 1px solid #9a9a9a;
+  padding: 0.2rem;
   
 }
 
