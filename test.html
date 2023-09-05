@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اضافة حصة جديدة</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="main-scss/main.min.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css"> -->
+
+    <!-- responsive -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="image/logo.png" type="image" />
+    <!-- ? Favicon -->
+  </head>
+
+  <body>
+    <!---------------------- start loader -------------------------------------------->
+    <!-- <div id="preloader"></div> -->
+    <!---------------------- finish loader -------------------------------------------->
+    <!---------------------- start scroll-up -------------------------------------------->
+    <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
+    <!---------------------- finish scroll-up -------------------------------------------->
+
+    <main class="d-flex sidemobile p-0">
+      <!---------------------- start sidebar -------------------------------------------->
+
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="image_logo">
+            <img src="image/logo.png" alt="logo_sidebar" class="logo" />
+          </div>
+
+          <h5>محتوي النظام</h5>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link align-middle">
+              <img src="image/home-icon.png" alt="icon" />
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="courses.html" class="nav-link align-middle">
+              <img src="/image/course-icon.png" alt="icon" />
+              <span>الكورسات</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="exams.html" class="nav-link align-middle">
+              <img src="image/exam-icon.png" alt="icon" />
+              <span> الامتحانات</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="question-banks.html" class="nav-link align-middle">
+              <img src="image/icon-bank.png" alt="icon" />
+              <span>بنك الأسألة</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="subjects.html" class="nav-link align-middle">
+              <img src="image/book-icon.png" alt="icon" />
+              <span> المواد الدراسية</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="#submenuAccountant"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="image/scan-barcode-icon.png" alt="icon" />
+              <span> أكود الشراء</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuAccountant"
+              data-bs-parent="#menu"
+            >
+              <li>
+                <a href="code-book.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للمذكرات</span></a
+                >
+              </li>
+              <li>
+                <a href="code-corse.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للكورسات</span></a
+                >
+              </li>
+              <li>
+                <a href="code-training.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للتدريبات</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <h5>مستخدمي النظام</h5>
+          <li class="nav-item">
+            <a href="teacher.html" class="nav-link align-middle">
+              <img src="image/teacher-icon.png" alt="icon" />
+              <span> المدرسين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="students.html" class="nav-link align-middle">
+              <img src="image/student-icon.png" alt="icon" />
+              <span> الطلبة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="centers.html" class="nav-link align-middle">
+              <img src="image/house-icon.png" alt="icon" />
+              <span> سناتر الدروس</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Systemadministrators.html" class="nav-link align-middle">
+              <img src="image/director-icon.png" alt="icon" />
+              <span> مديري النظام</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="powers.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الصلاحيات</span>
+            </a>
+          </li>
+
+          <h5>اعدادات النظام</h5>
+
+          <li class="nav-item">
+            <a href="country.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> الدول</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="governorate.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المحافظات</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="city.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المدن</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="universities.html" class="nav-link align-middle">
+              <img src="image/buildings-icon.png" alt="icon" />
+              <span> الجامعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="colleges.html" class="nav-link align-middle">
+              <img src="image/colleage-icon.png" alt="icon" />
+              <span> الكليات</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="#submenuAccountant"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="image/scan-barcode-icon.png" alt="icon" />
+              <span> التعليم الاساسي</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuAccountant"
+              data-bs-parent="#menu"
+            >
+              <li>
+                <a href="educationalstages.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> المراحل التعليمية</span></a
+                >
+              </li>
+              <li>
+                <a href="Addaneducationalstage.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> اضافة مرحلة تعليمية</span></a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="subjects.html" class="nav-link align-middle">
+              <img src="image/format-circle.png" alt="icon" />
+              <span> الفرق الدراسية</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="seting-point.html" class="nav-link align-middle">
+              <img src="image/buy-crypto-icon.png" alt="icon" />
+              <span> اعدادات النقاط</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="slider-table.html" class="nav-link align-middle">
+              <img src="image/slider-icon.png" alt="icon" />
+              <span> الاسلايدر</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="seting-notifcation.html" class="nav-link align-middle">
+              <img src="image/notification-bing-icon.png" alt="icon" />
+              <span> اعدادات الاشعارات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الاعدادات العامة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <img src="image/logout-icon.png" alt="icon" />
+              <span> تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!---------------------- end sidebar -------------------------------------------->
+      <!---------------------- start main content -------------------------------------------->
+
+      <section class="index_cards">
+        <!---------------------- start nav -------------------------------------------->
+        <nav class="nav_top navbar">
+          <div class="container">
+            <div class="menu">
+              <i class="bi bi-list"></i>
+            </div>
+            <div class="info">
+              <div class="notfication" onclick="showNotification()">
+                <i class="bi bi-bell"></i>
+                <span class="alerts"> 3 </span>
+              </div>
+
+              <div class="img">
+                <img src="../image/person.png" alt="person" />
+              </div>
+              <div class="btn-group">
+                <button
+                  class="btn btn-sm dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  محمد طارق
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="settings.html">اعدادات الحساب</a></li>
+                  <li onclick="acceptAlert()">تسجيل الخروج</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <ul class="notfication_list">
+          <h2>الأشعارات</h2>
+          <i class="bi bi-x close-icon" onclick="hideNotification()"></i>
+
+          <li class="unread" onclick="convertToRead(this)">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+          <li class="read">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+        </ul>
+        <!---------------------- finish nav -------------------------------------------->
+        <!---------------------- start content -------------------------------------------->
+        <div class="content_page">
+          <div class="container">
+            <div class="row">
+              <div class="main_topic">
+                <h4>اضافة حصة جديدة</h4>
+              </div>
+
+              <section class="wizard-section">
+                <div class="row no-gutters">
+                    <div class="form-wizard">
+                      <form action="" method="post" role="form">
+                        <fieldset class="wizard-fieldset show">
+                          <h5>التفاصيل العامة</h5>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control wizard-required"
+                              id="fname"
+                            />
+                            <label for="fname" class="wizard-form-text-label"
+                              >First Name*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control wizard-required"
+                              id="lname"
+                            />
+                            <label for="lname" class="wizard-form-text-label"
+                              >Last Name*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="form-group">
+                            Gender
+                            <div class="wizard-form-radio">
+                              <input
+                                name="radio-name"
+                                id="radio1"
+                                type="radio"
+                              />
+                              <label for="radio1">Male</label>
+                            </div>
+                            <div class="wizard-form-radio">
+                              <input
+                                name="radio-name"
+                                id="radio2"
+                                type="radio"
+                              />
+                              <label for="radio2">Female</label>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control wizard-required"
+                              id="zcode"
+                            />
+                            <label for="zcode" class="wizard-form-text-label"
+                              >Zip Code*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="form-group clearfix">
+                            <a
+                              href="javascript:;"
+                              class="form-wizard-next-btn float-right"
+                              >Next</a
+                            >
+                          </div>
+                        </fieldset>
+                        <fieldset class="wizard-fieldset">
+                          <h5>Account Information</h5>
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              class="form-control wizard-required"
+                              id="email"
+                            />
+                            <label for="email" class="wizard-form-text-label"
+                              >Email*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control wizard-required"
+                              id="username"
+                            />
+                            <label for="username" class="wizard-form-text-label"
+                              >User Name*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="password"
+                              class="form-control wizard-required"
+                              id="pwd"
+                            />
+                            <label for="pwd" class="wizard-form-text-label"
+                              >Password*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                            <span class="wizard-password-eye"
+                              ><i class="far fa-eye"></i
+                            ></span>
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="password"
+                              class="form-control wizard-required"
+                              id="cpwd"
+                            />
+                            <label for="cpwd" class="wizard-form-text-label"
+                              >Confirm Password*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="form-group clearfix">
+                            <a
+                              href="javascript:;"
+                              class="form-wizard-previous-btn float-left"
+                              >Previous</a
+                            >
+                            <a
+                              href="javascript:;"
+                              class="form-wizard-next-btn float-right"
+                              >Next</a
+                            >
+                          </div>
+                        </fieldset>
+                        <fieldset class="wizard-fieldset">
+                          <h5>Bank Information</h5>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control wizard-required"
+                              id="bname"
+                            />
+                            <label for="bname" class="wizard-form-text-label"
+                              >Bank Name*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control wizard-required"
+                              id="brname"
+                            />
+                            <label for="brname" class="wizard-form-text-label"
+                              >Branch Name*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control wizard-required"
+                              id="acname"
+                            />
+                            <label for="acname" class="wizard-form-text-label"
+                              >Account Name*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control wizard-required"
+                              id="acon"
+                            />
+                            <label for="acon" class="wizard-form-text-label"
+                              >Account Number*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="form-group clearfix">
+                            <a
+                              href="javascript:;"
+                              class="form-wizard-previous-btn float-left"
+                              >Previous</a
+                            >
+                            <a
+                              href="javascript:;"
+                              class="form-wizard-next-btn float-right"
+                              >Next</a
+                            >
+                          </div>
+                        </fieldset>
+                        <fieldset class="wizard-fieldset">
+                          <h5>Payment Information</h5>
+                          <div class="form-group">
+                            Payment Type
+                            <div class="wizard-form-radio">
+                              <input
+                                name="radio-name"
+                                id="mastercard"
+                                type="radio"
+                              />
+                              <label for="mastercard">Master Card</label>
+                            </div>
+                            <div class="wizard-form-radio">
+                              <input
+                                name="radio-name"
+                                id="visacard"
+                                type="radio"
+                              />
+                              <label for="visacard">Visa Card</label>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control wizard-required"
+                              id="honame"
+                            />
+                            <label for="honame" class="wizard-form-text-label"
+                              >Holder Name*</label
+                            >
+                            <div class="wizard-form-error"></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control wizard-required"
+                                  id="cardname"
+                                />
+                                <label
+                                  for="cardname"
+                                  class="wizard-form-text-label"
+                                  >Card Number*</label
+                                >
+                                <div class="wizard-form-error"></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control wizard-required"
+                                  id="cvc"
+                                />
+                                <label for="cvc" class="wizard-form-text-label"
+                                  >CVC*</label
+                                >
+                                <div class="wizard-form-error"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">Expiry Date</div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                              <div class="form-group">
+                                <select class="form-control">
+                                  <option value="">Date</option>
+                                  <option value="">1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                  <option value="">4</option>
+                                  <option value="">5</option>
+                                  <option value="">6</option>
+                                  <option value="">7</option>
+                                  <option value="">8</option>
+                                  <option value="">9</option>
+                                  <option value="">10</option>
+                                  <option value="">11</option>
+                                  <option value="">12</option>
+                                  <option value="">13</option>
+                                  <option value="">14</option>
+                                  <option value="">15</option>
+                                  <option value="">16</option>
+                                  <option value="">17</option>
+                                  <option value="">18</option>
+                                  <option value="">19</option>
+                                  <option value="">20</option>
+                                  <option value="">21</option>
+                                  <option value="">22</option>
+                                  <option value="">23</option>
+                                  <option value="">24</option>
+                                  <option value="">25</option>
+                                  <option value="">26</option>
+                                  <option value="">27</option>
+                                  <option value="">28</option>
+                                  <option value="">29</option>
+                                  <option value="">30</option>
+                                  <option value="">31</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                              <div class="form-group">
+                                <select class="form-control">
+                                  <option value="">Month</option>
+                                  <option value="">jan</option>
+                                  <option value="">Feb</option>
+                                  <option value="">March</option>
+                                  <option value="">April</option>
+                                  <option value="">May</option>
+                                  <option value="">June</option>
+                                  <option value="">Jully</option>
+                                  <option value="">August</option>
+                                  <option value="">Sept</option>
+                                  <option value="">Oct</option>
+                                  <option value="">Nov</option>
+                                  <option value="">Dec</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                              <div class="form-group">
+                                <select class="form-control">
+                                  <option value="">Years</option>
+                                  <option value="">2019</option>
+                                  <option value="">2020</option>
+                                  <option value="">2021</option>
+                                  <option value="">2022</option>
+                                  <option value="">2023</option>
+                                  <option value="">2024</option>
+                                  <option value="">2025</option>
+                                  <option value="">2026</option>
+                                  <option value="">2027</option>
+                                  <option value="">2028</option>
+                                  <option value="">2029</option>
+                                  <option value="">2030</option>
+                                  <option value="">2031</option>
+                                  <option value="">2032</option>
+                                  <option value="">2033</option>
+                                  <option value="">2034</option>
+                                  <option value="">2035</option>
+                                  <option value="">2036</option>
+                                  <option value="">2037</option>
+                                  <option value="">2038</option>
+                                  <option value="">2039</option>
+                                  <option value="">2040</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group clearfix">
+                            <a
+                              href="javascript:;"
+                              class="form-wizard-previous-btn float-left"
+                              >Previous</a
+                            >
+                            <a
+                              href="javascript:;"
+                              class="form-wizard-submit float-right"
+                              >Submit</a
+                            >
+                          </div>
+                        </fieldset>
+                      </form>
+                    </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <!---------------------- finish  content -------------------------------------------->
+      </section>
+      <!---------------------- finish main content -------------------------------------------->
+    </main>
+    <!---------------------- finish footer -------------------------------------------->
+
+    <!---------------------- modal -------------------------------------------->
+
+    <div
+      class="modal modal_assistant fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="content">
+              <h4>تم اضافة الحصة بنجاح</h4>
+              <p>لقد قمت الآن باضافة الحصة جديد الى قائمة الكورسات</p>
+              <div class="button">
+                <a href="detials-course.html" class="btn first"
+                  >عرض التفاصيل
+                </a>
+                <a href="add-lesson.html" class="btn second"> اضافة حصة جديد</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------- modal -------------------------------------------->
+    <!-- main js -->
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- main js -->
+
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- sweet alert -->
+
+    <!-- upload file -->
+    <script>
+      $("form").on("change", ".file-upload-field", function () {
+        $(this)
+          .parent(".file-upload-wrapper")
+          .attr(
+            "data-text",
+            $(this)
+              .val()
+              .replace(/.*(\/|\\)/, "")
+          );
+      });
+    </script>
+    <!-- upload file -->
+
+    <!-- form withard inside -->
+    <script>
+      jQuery(document).ready(function () {
+        // click on next button
+        jQuery(".form-wizard-next-btn").click(function () {
+          var parentFieldset = jQuery(this).parents(".wizard-fieldset");
+          var currentActiveStep = jQuery(this)
+            .parents(".form-wizard")
+            .find(".form-wizard-steps .active");
+          var next = jQuery(this);
+          var nextWizardStep = true;
+          parentFieldset.find(".wizard-required").each(function () {
+            var thisValue = jQuery(this).val();
+
+            if (thisValue == "") {
+              jQuery(this).siblings(".wizard-form-error").slideDown();
+              nextWizardStep = false;
+            } else {
+              jQuery(this).siblings(".wizard-form-error").slideUp();
+            }
+          });
+          if (nextWizardStep) {
+            next.parents(".wizard-fieldset").removeClass("show", "400");
+            currentActiveStep
+              .removeClass("active")
+              .addClass("activated")
+              .next()
+              .addClass("active", "400");
+            next
+              .parents(".wizard-fieldset")
+              .next(".wizard-fieldset")
+              .addClass("show", "400");
+            jQuery(document)
+              .find(".wizard-fieldset")
+              .each(function () {
+                if (jQuery(this).hasClass("show")) {
+                  var formAtrr = jQuery(this).attr("data-tab-content");
+                  jQuery(document)
+                    .find(".form-wizard-steps .form-wizard-step-item")
+                    .each(function () {
+                      if (jQuery(this).attr("data-attr") == formAtrr) {
+                        jQuery(this).addClass("active");
+                        var innerWidth = jQuery(this).innerWidth();
+                        var position = jQuery(this).position();
+                        jQuery(document)
+                          .find(".form-wizard-step-move")
+                          .css({ left: position.left, width: innerWidth });
+                      } else {
+                        jQuery(this).removeClass("active");
+                      }
+                    });
+                }
+              });
+          }
+        });
+        //click on previous button
+        jQuery(".form-wizard-previous-btn").click(function () {
+          var counter = parseInt(jQuery(".wizard-counter").text());
+          var prev = jQuery(this);
+          var currentActiveStep = jQuery(this)
+            .parents(".form-wizard")
+            .find(".form-wizard-steps .active");
+          prev.parents(".wizard-fieldset").removeClass("show", "400");
+          prev
+            .parents(".wizard-fieldset")
+            .prev(".wizard-fieldset")
+            .addClass("show", "400");
+          currentActiveStep
+            .removeClass("active")
+            .prev()
+            .removeClass("activated")
+            .addClass("active", "400");
+          jQuery(document)
+            .find(".wizard-fieldset")
+            .each(function () {
+              if (jQuery(this).hasClass("show")) {
+                var formAtrr = jQuery(this).attr("data-tab-content");
+                jQuery(document)
+                  .find(".form-wizard-steps .form-wizard-step-item")
+                  .each(function () {
+                    if (jQuery(this).attr("data-attr") == formAtrr) {
+                      jQuery(this).addClass("active");
+                      var innerWidth = jQuery(this).innerWidth();
+                      var position = jQuery(this).position();
+                      jQuery(document)
+                        .find(".form-wizard-step-move")
+                        .css({ left: position.left, width: innerWidth });
+                    } else {
+                      jQuery(this).removeClass("active");
+                    }
+                  });
+              }
+            });
+        });
+        //click on form submit button
+        jQuery(document).on(
+          "click",
+          ".form-wizard .form-wizard-submit",
+          function () {
+            var parentFieldset = jQuery(this).parents(".wizard-fieldset");
+            var currentActiveStep = jQuery(this)
+              .parents(".form-wizard")
+              .find(".form-wizard-steps .active");
+            parentFieldset.find(".wizard-required").each(function () {
+              var thisValue = jQuery(this).val();
+              if (thisValue == "") {
+                jQuery(this).siblings(".wizard-form-error").slideDown();
+              } else {
+                jQuery(this).siblings(".wizard-form-error").slideUp();
+              }
+            });
+          }
+        );
+        // focus on input field check empty or not
+        jQuery(".form-control")
+          .on("focus", function () {
+            var tmpThis = jQuery(this).val();
+            if (tmpThis == "") {
+              jQuery(this).parent().addClass("focus-input");
+            } else if (tmpThis != "") {
+              jQuery(this).parent().addClass("focus-input");
+            }
+          })
+          .on("blur", function () {
+            var tmpThis = jQuery(this).val();
+            if (tmpThis == "") {
+              jQuery(this).parent().removeClass("focus-input");
+              jQuery(this).siblings(".wizard-form-error").slideDown("3000");
+            } else if (tmpThis != "") {
+              jQuery(this).parent().addClass("focus-input");
+              jQuery(this).siblings(".wizard-form-error").slideUp("3000");
+            }
+          });
+      });
+    </script>
+    <!-- form withard inside -->
+    <!-- show / hide  price status -->
+    <script>
+      function togglePriceStatus() {
+        var checkbox = document.getElementById("radio");
+        var checkbox1 = document.getElementById("radio1");
+        var hiddenView = document.getElementById("togglePrice");
+
+        if (checkbox1.checked) {
+          // Show the hidden row
+          hiddenView.classList.remove("course_price");
+        } else if (checkbox.checked) {
+          // Hide and remove the row
+          hiddenView.classList.add("course_price");
+        }
+      }
+      function togglePriceCan() {
+        var checkboxdef = document.getElementById("flexCheckDefault");
+        var hiddenView = document.getElementById("togglePricedef");
+        if (checkboxdef.checked) {
+          // Show the hidden row
+          hiddenView.classList.remove("course_price");
+        }
+      }
+    </script>
+    <!-- show / hide  price status -->
+
+    <!-- show / hide  lesson detials     -->
+    <script>
+      function toggleLessonDetials() {
+        var recordLesson = document.getElementById("recordLesson");
+        var liveLesson = document.getElementById("liveLesson");
+        var hiddenRow = document.getElementById("lessonDetials");
+        var hiddenRow2 = document.getElementById("lessonDetialsLive");
+
+        if (recordLesson.checked) {
+          // Show the hidden row
+          hiddenRow.classList.remove("course_price");
+          hiddenRow2.classList.add("course_price");
+        } else if (liveLesson.checked) {
+          // Hide and remove the row
+          hiddenRow.classList.add("course_price");
+          hiddenRow2.classList.remove("course_price");
+        }
+      }
+    </script>
+    <!-- show / hide  lesson detials     -->
+    <!-- show / hide  Vedio Type -->
+    <script>
+      function toggleVedioType() {
+        var existVideo = document.getElementById("existVideo");
+        var newVideo = document.getElementById("newVideo");
+        var extenralink = document.getElementById("extenralink");
+        var existVideoContainer = document.getElementById("existVedioType");
+        var newVedioContainer = document.getElementById("newVedioType");
+        var externalVedioContainer =
+          document.getElementById("externalVedioType");
+
+        if (existVideo.checked) {
+          // Show the hidden row
+          existVideoContainer.classList.remove("course_price");
+          newVedioContainer.classList.add("course_price");
+          externalVedioContainer.classList.add("course_price");
+        } else if (newVideo.checked) {
+          // Hide and remove the row
+          existVideoContainer.classList.add("course_price");
+          newVedioContainer.classList.remove("course_price");
+          externalVedioContainer.classList.add("course_price");
+        } else if (extenralink.checked) {
+          // Hide and remove the row
+          existVideoContainer.classList.add("course_price");
+          newVedioContainer.classList.add("course_price");
+          externalVedioContainer.classList.remove("course_price");
+        }
+      }
+    </script>
+    <!-- show / hide  Vedio Type -->
+    <!-- show / hide  Vedio watch -->
+    <script>
+      function toggleVedioWatch() {
+        var limiteVideo = document.getElementById("limiteVideo");
+        var unLimitedLesson = document.getElementById("unLimitedLesson");
+        var hiddenRow = document.getElementById("toggleVideoWatch");
+
+        if (limiteVideo.checked) {
+          // Show the hidden row
+          hiddenRow.classList.remove("course_price");
+        } else if (unLimitedLesson.checked) {
+          // Hide and remove the row
+          hiddenRow.classList.add("course_price");
+        }
+      }
+    </script>
+    <!-- show / hide  Vedio watch -->
+    <!-- show / hide  water mark -->
+    <script>
+      function toggleWaterMark() {
+        var yesWaterMarek = document.getElementById("yesWaterMarek");
+        var noWaterMarek = document.getElementById("noWaterMarek");
+        var hiddenRow = document.getElementById("toggleWaterMark");
+
+        if (yesWaterMarek.checked) {
+          // Show the hidden row
+          hiddenRow.classList.remove("course_price");
+        } else if (noWaterMarek.checked) {
+          // Hide and remove the row
+          hiddenRow.classList.add("course_price");
+        }
+      }
+    </script>
+    <!-- show / hide  Vedio watch -->
+  </body>
+</html>
