@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اضافة حصة جديدة</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="main-scss/main.min.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css"> -->
+
+    <!-- responsive -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="image/logo.png" type="image" />
+    <!-- ? Favicon -->
+  </head>
+
+  <body>
+    <!---------------------- start loader -------------------------------------------->
+    <!-- <div id="preloader"></div> -->
+    <!---------------------- finish loader -------------------------------------------->
+    <!---------------------- start scroll-up -------------------------------------------->
+    <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
+    <!---------------------- finish scroll-up -------------------------------------------->
+
+    <main class="d-flex sidemobile p-0">
+      <!---------------------- start sidebar -------------------------------------------->
+
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="image_logo">
+            <img src="image/logo.png" alt="logo_sidebar" class="logo" />
+          </div>
+
+          <h5>محتوي النظام</h5>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link align-middle">
+              <img src="image/home-icon.png" alt="icon" />
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="courses.html" class="nav-link align-middle">
+              <img src="/image/course-icon.png" alt="icon" />
+              <span>الكورسات</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="exams.html" class="nav-link align-middle">
+              <img src="image/exam-icon.png" alt="icon" />
+              <span> الامتحانات</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="question-banks.html" class="nav-link align-middle">
+              <img src="image/icon-bank.png" alt="icon" />
+              <span>بنك الأسألة</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="subjects.html" class="nav-link align-middle">
+              <img src="image/book-icon.png" alt="icon" />
+              <span> المواد الدراسية</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="#submenuAccountant"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="image/scan-barcode-icon.png" alt="icon" />
+              <span> أكود الشراء</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuAccountant"
+              data-bs-parent="#menu"
+            >
+              <li>
+                <a href="code-book.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للمذكرات</span></a
+                >
+              </li>
+              <li>
+                <a href="code-corse.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للكورسات</span></a
+                >
+              </li>
+              <li>
+                <a href="code-training.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> استخراج اكواد للتدريبات</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <h5>مستخدمي النظام</h5>
+          <li class="nav-item">
+            <a href="teacher.html" class="nav-link align-middle">
+              <img src="image/teacher-icon.png" alt="icon" />
+              <span> المدرسين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="students.html" class="nav-link align-middle">
+              <img src="image/student-icon.png" alt="icon" />
+              <span> الطلبة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="centers.html" class="nav-link align-middle">
+              <img src="image/house-icon.png" alt="icon" />
+              <span> سناتر الدروس</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Systemadministrators.html" class="nav-link align-middle">
+              <img src="image/director-icon.png" alt="icon" />
+              <span> مديري النظام</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="powers.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الصلاحيات</span>
+            </a>
+          </li>
+
+          <h5>اعدادات النظام</h5>
+
+          <li class="nav-item">
+            <a href="country.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> الدول</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="governorate.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المحافظات</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="city.html" class="nav-link align-middle">
+              <img src="image/country-icon.png" alt="icon" />
+              <span> المدن</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="universities.html" class="nav-link align-middle">
+              <img src="image/buildings-icon.png" alt="icon" />
+              <span> الجامعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="colleges.html" class="nav-link align-middle">
+              <img src="image/colleage-icon.png" alt="icon" />
+              <span> الكليات</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="#submenuAccountant"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="image/scan-barcode-icon.png" alt="icon" />
+              <span> التعليم الاساسي</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuAccountant"
+              data-bs-parent="#menu"
+            >
+              <li>
+                <a href="educationalstages.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> المراحل التعليمية</span></a
+                >
+              </li>
+              <li>
+                <a href="Addaneducationalstage.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span> اضافة مرحلة تعليمية</span></a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="subjects.html" class="nav-link align-middle">
+              <img src="image/format-circle.png" alt="icon" />
+              <span> الفرق الدراسية</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="seting-point.html" class="nav-link align-middle">
+              <img src="image/buy-crypto-icon.png" alt="icon" />
+              <span> اعدادات النقاط</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="slider-table.html" class="nav-link align-middle">
+              <img src="image/slider-icon.png" alt="icon" />
+              <span> الاسلايدر</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="seting-notifcation.html" class="nav-link align-middle">
+              <img src="image/notification-bing-icon.png" alt="icon" />
+              <span> اعدادات الاشعارات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="image/powers-icon.png" alt="icon" />
+              <span> الاعدادات العامة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle">
+              <img src="image/logout-icon.png" alt="icon" />
+              <span> تسجيل الخروج</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!---------------------- end sidebar -------------------------------------------->
+      <!---------------------- start main content -------------------------------------------->
+
+      <section class="index_cards">
+        <!---------------------- start nav -------------------------------------------->
+        <nav class="nav_top navbar">
+          <div class="container">
+            <div class="menu">
+              <i class="bi bi-list"></i>
+            </div>
+            <div class="info">
+              <div class="notfication" onclick="showNotification()">
+                <i class="bi bi-bell"></i>
+                <span class="alerts"> 3 </span>
+              </div>
+
+              <div class="img">
+                <img src="../image/person.png" alt="person" />
+              </div>
+              <div class="btn-group">
+                <button
+                  class="btn btn-sm dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  محمد طارق
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a href="settings.html">اعدادات الحساب</a></li>
+                  <li onclick="acceptAlert()">تسجيل الخروج</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <ul class="notfication_list">
+          <h2>الأشعارات</h2>
+          <i class="bi bi-x close-icon" onclick="hideNotification()"></i>
+
+          <li class="unread" onclick="convertToRead(this)">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+          <li class="read">
+            <div class="info">
+              <h6>text</h6>
+              <span> 22/6/1993</span>
+            </div>
+            <div class="delete">
+              <i class="bi bi-trash"></i>
+            </div>
+          </li>
+        </ul>
+        <!---------------------- finish nav -------------------------------------------->
+         <!---------------------- start content -------------------------------------------->
+    <div class="content_page">
+      <div class="container">
+          <div class="row">
+              <div class="main_topic">
+                  <h4>اضافة حصة جديدة</h4>
+              </div>
+              <section class="wizard-section">
+                  <div class="row no-gutters">
+                      <div class="form-wizard">
+                          <form method="POST" class="form_topic"
+                              action="{{ route('admin.chapterLesson.sessions.store', $lesson->id) }}"
+                              enctype="multipart/form-data" method="POST">
+                              <!-- @csrf
+                              @method('POST') -->
+                              <fieldset class="wizard-fieldset show">
+                                  <h5>التفاصيل العامة</h5>
+                                  <!-- start input -->
+                                  <div class="form-group">
+                                      <label for="title" class="wizard-form-text-label"> عنوان الحصة </label>
+                                      <input type="text" class="form-control wizard-required" name="title"
+                                          value="{{ old('title') }}" id="title" placeholder="ادخل عنوان الحصة" />
+
+                                      <div class="wizard-form-error"></div>
+                                  </div>
+                                  <!-- finish input -->
+                                  <!-- start input -->
+                                  <div class="form-group">
+                                      <label for="chapter_id" class="wizard-form-text-label"> الباب الدراسي </label>
+                                      <select required class="form-control selectpicker"
+                                          data-placeholder="اختر الباب الدراسي" data-selected-text-format="count > 1"
+                                          data-icon="bi bi-trash" data-live-search="true" name="chapter_id"
+                                          id="chapter_id">
+
+                                          <option value="{{ $lesson->chapter_id }}" selected> {{ $lesson->chapter->name }}
+                                          </option>
+
+                                      </select>
+                                      <div class="wizard-form-error"></div>
+                                  </div>
+                                  <!-- finish input -->
+                                  <div class="form-group">
+                                      <!-- start input -->
+                                      <label for="lesson_id" class="wizard-form-text-label"> الدرس </label>
+                                      <select required class="form-control selectpicker" data-placeholder="اختر الدرس"
+                                          data-selected-text-format="count > 1" data-icon="bi bi-trash"
+                                          data-live-search="true" name="lesson_id" id="lesson_id">
+
+                                          <option value="{{ $lesson->id }}" selected>{{ $lesson->title }}</option>
+
+                                      </select>
+                                      <div class="wizard-form-error"></div>
+                                  </div>
+                                  <!-- finish input -->
+                                  <!-- start input -->
+                                  <div class="form-group">
+                                      <label for="note" class="wizard-form-text-label">وصف الحصة</label>
+                                      <textarea class="form-control wizard-required" id="note" name="note" placeholder="اكتب وصف الحصة">{{ old('note') }}</textarea>
+                                      <div class="wizard-form-error"></div>
+                                  </div>
+                                  <!-- finish input -->
+                                  <!-- begin is_free  -->
+                                  <div class="form-group">
+                                      <label class="wizard-form-text-label"> الحالة السعرية </label>
+                                      <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                          <input class="form-check-input" name="is_free" type="radio" id="yes_is_free"
+                                              value="1" onchange="togglePriceStatus()" />
+                                          <label class="form-check-label mx-2" for="yes_is_free">
+                                              مجاني</label>
+                                      </div>
+                                      <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                          <input class="form-check-input" name="is_free" type="radio" id="no_is_free"
+                                              value="0" onchange="togglePriceStatus()" />
+                                          <label class="form-check-label mx-2" for="no_is_free">
+                                              مدفوع</label>
+                                          <div class="wizard-form-error"></div>
+                                      </div>
+                                  </div>
+                                  <div class="course_price" id="toggleCanBuy">
+                                      <div class="row">
+                                          <div class="col-12">
+                                              <div class="form-check">
+                                                  {{-- onchange="togglePriceCan()" --}}
+                                                  <input class="form-check-input" type="checkbox" name="can_buy"
+                                                      value="1" id="can_buy" />
+                                                  <label class="form-check-label mx-2" for="can_buy">
+                                                      امكانية الشراء
+                                                  </label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="course_price" id="togglePrice">
+                                      <div class="row">
+                                          <div class="col-12">
+                                              <div class="form-group">
+                                                  <label class="form-label" for="price"> السعر</label>
+                                                  <input type="text" class="form-control" name="price"
+                                                      placeholder=" ادخل السعر  " id="price" value="0" />
+                                                  <span class="badge d-block text-primary w-100 text-end py-2">السعر متاح
+                                                      للطلاب خارج الكورس</span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- finish is_free  -->
+
+                                  <!-- start live or recorded toggle  -->
+                                  <div class="form-group">
+                                      <label for="lname" class="wizard-form-text-label">نوع الحصة
+                                      </label>
+                                      <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                          <input class="form-check-input" name="live" type="radio"
+                                              id="recordSession" value="0" onchange="toggleSessionDetails()" />
+                                          <label for="recordSession" class="form-check-label mx-2">
+                                              مسجلة</label>
+                                          <div class="wizard-form-error"></div>
+                                      </div>
+                                      <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                          <input class="form-check-input" name="live" type="radio"
+                                              id="liveSession" value="1" onchange="toggleSessionDetails()" />
+                                          <label for="liveSession" class="form-check-label mx-2">
+                                              لايف</label>
+                                      </div>
+                                  </div>
+                                  <!-- lesson Details if recoded class -->
+                                  <div class="course_price" id="sessionDetails">
+                                      <div class="col-12">
+                                          <div class="form-group">
+                                              <label class="form-label"> نوع الفيديو</label>
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="is_existing" type="radio"
+                                                      id="existVideo" value="existVideo" onchange="toggleVedioType()" />
+                                                  <label class="form-check-label mx-2" for="inlineCheckbox3">
+                                                      فيديو موجود من قبل</label>
+                                              </div>
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="is_existing" type="radio"
+                                                      id="newVideo" value="newVideo" onchange="toggleVedioType()" />
+                                                  <label class="form-check-label mx-2" for="inlineCheckbox4">
+                                                      غير محدد</label>
+                                              </div>
+
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="is_existing" type="radio"
+                                                      id="youtubeVideo" value="youtubeVideo" onchange="toggleVedioType()" />
+                                                  <label class="form-check-label mx-2" for="inlineCheckbox5">
+                                                      لينك خارجي</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- choise vedio type -->
+                                      <!-- 1-exist video -->
+                                      <div class="course_price" id="existVedioType">
+                                          <div class="row">
+                                              <div class="col-12">
+                                                  <div class="form-group">
+                                                      <label class="form-label"> الفيديو</label>
+                                                      <!-- @role('teacher') -->
+                                                          <select class="selectpicker"
+                                                              data-placeholder="اختر الفيديو"
+                                                              data-selected-text-format="count > 1" data-icon="bi bi-trash"
+                                                              data-live-search="true" name="session_id" id="session_id">
+                                                              <!-- @foreach (auth()->user()->teacher_courses as $course)
+                                                                  @foreach ($course->sessions()->where('live', 0)->get() as $session) -->
+                                                                      <option value="{{ $session->id }}">
+                                                                          {{ $session->title }}
+                                                                      </option>
+                                                                  <!-- @endforeach
+                                                              @endforeach -->
+                                                          </select>
+                                                      <!-- @endrole -->
+                                                      <!-- @hasanyrole('superadmin|center')
+                                                          @php
+                                                              $sessions = \App\Models\Course::find($lesson->chapter->course_id)
+                                                                  ->sessions()
+                                                                  ->where('live', 0)
+                                                                  ->get();
+                                                          @endphp
+                                                          <select class="selectpicker"
+                                                              data-placeholder="اختر الفيديو"
+                                                              data-selected-text-format="count > 1" data-icon="bi bi-trash"
+                                                              data-live-search="true" name="session_id" id="session_id">
+                                                              @isset($sessions)
+                                                                  @foreach ($sessions as $session)
+                                                                      <option value="{{ $session->id }}">{{ $session->title }}
+                                                                      </option>
+                                                                  @endforeach
+                                                              @endisset
+                                                          </select>
+                                                      @endhasanyrole -->
+
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                      <!-- 1-exist video -->
+                                      <!-- 2-new video -->
+                                      <div class="course_price" id="newVedioType">
+                                          <div class="row">
+                                              <div class="col-12">
+                                                  <div class="input-group pt-4">
+                                                      <label class="form-label"> رفع الفيديو</label>
+                                                      <div class="file-upload-wrapper"
+                                                          data-text=" اسحب الفيديو واسقطه هنا اوقم بتحميل فيديو من هنا">
+                                                          <input name="file" type="file"
+                                                              class="file-upload-field  form-control"
+                                                              title="الفيديو الجديد " />
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- 2-new video -->
+                                      <!-- 3-external link -->
+                                      <div class="course_price" id="externalVedioType">
+                                          <div class="row">
+                                              <div class="col-12">
+                                                  <div class="form-group">
+                                                      <label class="form-label"> لينك اليوتيوب</label>
+                                                      <!-- {{-- <input type="hidden" name=""> --}} -->
+                                                      <input type="text" class="form-control" name="youtube_link"
+                                                          placeholder=" ادخل لينك الفيديو " />
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- 3-external link -->
+                                      <!-- choise vedio type -->
+                                  </div>
+                                  <!-- lesson Details if recoded class -->
+                                  <!-- start lesson Details if live class -->
+                                  <div class="course_price" id="sessionDetailsLive">
+                                      <!-- start input -->
+                                      <div class="col-12">
+                                          <div class="form-group">
+                                              <label class="form-label"> Room ID</label>
+                                              <input type="text" class="form-control" name="live_room"
+                                                  placeholder=" enter room id" />
+                                          </div>
+                                      </div>
+                                      <!-- finish input -->
+
+                                      <!-- start input -->
+                                      <div class="col-12">
+                                          <div class="form-group">
+                                              <label class="form-label"> Room Password </label>
+                                              <input type="password" class="form-control" name="live_password"
+                                                  placeholder=" enter room id" />
+                                          </div>
+                                      </div>
+                                      <!-- finish input -->
+                                  </div>
+                                  <!-- finish lesson Details if live class -->
+
+                                  <!-- start input -->
+                                  <div class="form-group">
+                                      <label for="sort" class="wizard-form-text-label">الترتيب</label>
+                                      <input type="text" class="form-control wizard-required" name="order_by_id"
+                                          id="sort" />
+                                      <div class="wizard-form-error"></div>
+                                  </div>
+                                  <!-- finish input -->
+                                  <!-- start input -->
+                                  <div class="form-group">
+                                      <label class="wizard-form-text-label">
+                                          رفع صورة معبرة</label>
+                                      <div class="file-upload-wrapper"
+                                          data-text="اسحب الصورة التى تريد اضافتها  او قم بفتحها من هنا">
+                                          <input type="file" class="file-upload-field" name="image"
+                                              title="صورة معبرة للحصة" />
+                                      </div>
+                                      <div class="wizard-form-error"></div>
+                                  </div>
+                                  <!-- finish input -->
+                                  <div class="row">
+                                      <div class="col-5">
+                                          <div class="form-group">
+                                              <label for="start_date" class="wizard-form-text-label">تاريخ
+                                                  البداية</label>
+                                              <input type="date" class="form-control wizard-required"
+                                                  id="start_date" name="start_date" />
+
+                                              <div class="wizard-form-error"></div>
+                                          </div>
+                                      </div>
+                                      <div class="col-5">
+                                          <div class="form-group">
+                                              <label for="end_date" class="wizard-form-text-label">تاريخ النهاية
+                                              </label>
+                                              <input type="date" class="form-control wizard-required" id="end_date"
+                                                  name="end_date" />
+
+                                              <div class="wizard-form-error"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="form-group clearfix">
+                                      <a href="javascript:;" class="form-wizard-next-btn float-right">الاضافة والحفظ</a>
+                                  </div>
+                              </fieldset>
+                              <fieldset class="wizard-fieldset">
+                                  <div class="row">
+                                      <div class="col-12">
+                                          <div class="form-group">
+
+                                              <label class="wizard-form-text-label">عدد المشاهدات
+                                                  المتاحه لكل
+                                                  فيديو</label>
+
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="videoWatchCount" type="radio"
+                                                      id="limitedVideoAnimation" value="1"
+                                                      onchange="toggleVedioWatch()" />
+                                                  <label class="form-check-label mx-2" for="inlineCheckbox">
+                                                      محدد</label>
+                                              </div>
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="videoWatchCount" type="radio"
+                                                      id="unLimitedAnimation" value="0"
+                                                      onchange="toggleVedioWatch()" />
+                                                  <label class="form-check-label mx-2" for="inlineCheckbox1">
+                                                      لا نهائي </label>
+                                              </div>
+                                              <div class="wizard-form-error"></div>
+                                          </div>
+                                      </div>
+                                      <!-- limit / unLimitedLesson -->
+                                      <div class="course_price" id="toggleVideoWatch">
+                                          <div class="row">
+                                              <div class="col-12">
+                                                  <div class="form-group">
+                                                      <label for="watch_count" class="wizard-form-text-label">ادخل
+                                                          عدد
+                                                          المشاهدات</label>
+                                                      <input type="text" class="form-control wizard-required"
+                                                          id="watch_count" name="watch_count"
+                                                          placeholder="ادخل عدد المشاهدات" />
+                                                      <!-- {{-- <div class="wizard-form-error"></div> --}} -->
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- limit / unLimitedLesson -->
+
+                                      <!-- start yes / no transparent water marker -->
+                                      <div class="col-12">
+                                          <div class="input-group">
+                                              <label class="form-label">
+                                                  ظهور علامة مائية
+                                                  متحركة</label>
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="transparentWaterMark"
+                                                      type="radio" id="yesWaterMarek" value="1"
+                                                      onchange="toggleWaterMark()" />
+                                                  <label class="form-check-label mx-2" for="yesWaterMarek">
+                                                      نعم
+                                                  </label>
+                                              </div>
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="transparentWaterMark"
+                                                      type="radio" id="noWaterMarek" value="0"
+                                                      onchange="toggleWaterMark()" />
+                                                  <label class="form-check-label mx-2" for="noWaterMarek">
+                                                      لا</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="course_price" id="toggleWaterMarkAnimationNumber">
+                                          <div class="row">
+                                              <div class="col-12">
+                                                  <div class="input-group">
+                                                      <label class="form-label"> رقم الانيميشن</label>
+                                                      <input type="number" id="animation" class="form-control"
+                                                          name="animation" min="0" />
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="course_price" id="toggleWaterMarkVoiceSignature">
+                                          <div class="row">
+                                              <div class="col-12">
+                                                  <div class="form-group">
+                                                      <label class="wizard-form-text-label">نطق بصمة الصوت كل كام ثانية</label>
+                                                      <input value="{{ $lesson->chapter->course->voice_signature }}"
+                                                          type="number" class="form-control wizard-required"
+                                                          name="voice_signature" />
+                                                      <!-- {{-- <div class="wizard-form-error"></div> --}} -->
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- finish  yes / no transparent water marker -->
+
+                                      <!-- start yes / no static water marker -->
+                                      <div class="col-12">
+                                          <div class="input-group">
+                                              <label class="form-label">
+                                                  ظهور علامة مائية
+                                                  ثابتة</label>
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="staticWaterMark" type="radio"
+                                                      id="yesStaticWaterMark" value="1"
+                                                      onchange="toggleStaticWaterMark()" />
+                                                  <label class="form-check-label mx-2" for="yesStaticWaterMark">
+                                                      نعم
+                                                  </label>
+                                              </div>
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="staticWaterMark" type="radio"
+                                                      id="noStaticWaterMark" value="0"
+                                                      onchange="toggleStaticWaterMark()" />
+                                                  <label class="form-check-label mx-2" for="noStaticWaterMark">
+                                                      لا</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- start input -->
+                                      <div class="course_price" id="WaterMarkImage">
+                                          <div class="row">
+                                              <div class="col-12">
+                                                  <div class="input-group pt-4">
+                                                      <label class="form-label"> رفع صورة للعلامة المائية الثابتة</label>
+                                                      <div class="file-upload-wrapper"
+                                                          data-text="اسحب الصورة التى تريد اضافتها  او قم بفتحها من هنا">
+                                                          <input type="file" class="file-upload-field"
+                                                              name="WaterMarkImage" />
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- finish input -->
+                                      <!-- finish yes / no static water marker -->
+
+
+                                      <!-- start privacy / video settings -->
+                                      <div class="col-12">
+                                          <div class="input-group">
+                                              <label class="form-label"> بصمة الصوت</label>
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="is_fingerprint" type="radio"
+                                                      id="is_fingerprint1" value="1" />
+                                                  <label class="form-check-label mx-2" for="inlineCheckbox">
+                                                      نعم
+                                                  </label>
+                                              </div>
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="is_fingerprint" type="radio"
+                                                      id="is_fingerprint0" value="0" />
+                                                  <label class="form-check-label mx-2" for="inlineCheckbox1">
+                                                      لا</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-12">
+                                          <div class="input-group">
+                                              <label class="form-label">
+                                                  السماح للمحاكي
+                                              </label>
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="is_phone" type="radio"
+                                                      id="yes_is_phone" value="1" />
+                                                  <label class="form-check-label mx-2" for="yes_is_phone">
+                                                      نعم
+                                                  </label>
+                                              </div>
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="is_phone" type="radio"
+                                                      id="no_is_phone" value="0" />
+                                                  <label class="form-check-label mx-2" for="no_is_phone">
+                                                      لا</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-12">
+                                          <div class="input-group">
+                                              <label class="form-label">
+                                                  يجب استخدام
+                                                  سماعات الأذن
+                                              </label>
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="is_handphone" type="radio"
+                                                      id="yes_is_handphone" value="1" />
+                                                  <label class="form-check-label mx-2" for="yes_is_handphone">
+                                                      نعم
+                                                  </label>
+                                              </div>
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="is_handphone" type="radio"
+                                                      id="no_is_handphone" value="0" />
+                                                  <label class="form-check-label mx-2" for="no_is_handphone">
+                                                      لا</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-12">
+                                          <div class="input-group">
+                                              <label class="form-label">
+                                                  نوع الملف mp3
+                                              </label>
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="is_mp3" type="radio"
+                                                      id="yes_is_mp3" value="1" />
+                                                  <label class="form-check-label mx-2" for="yes_is_mp3">
+                                                      نعم
+                                                  </label>
+                                              </div>
+                                              <div class="form-check form-check-inline d-inline-flex align-items-center">
+                                                  <input class="form-check-input" name="is_mp3" type="radio"
+                                                      id="no_is_mp3" value="0" />
+                                                  <label class="form-check-label mx-2" for="no_is_mp3">
+                                                      لا</label>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="form-group clearfix">
+                                      <a href="javascript:;" class="form-wizard-previous-btn float-left">رجوع </a>
+                                      <!-- {{-- <a href="javascript:;" class="form-wizard-submit float-right">Submit</a> --}} -->
+                                      <button type="submit" class="form-wizard-submit float-right">الحفظ
+                                          والرفع</button></button>
+
+                                  </div>
+                              </fieldset>
+                          </form>
+                      </div>
+                  </div>
+              </section>
+
+
+
+          </div>
+      </div>
+  </div>
+
+  <!---------------------- finish  content -------------------------------------------->
+      </section>
+      <!---------------------- finish main content -------------------------------------------->
+    </main>
+    <!---------------------- finish footer -------------------------------------------->
+
+    <!---------------------- modal -------------------------------------------->
+
+    <div
+      class="modal modal_assistant fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="content">
+              <h4>تم اضافة الحصة بنجاح</h4>
+              <p>لقد قمت الآن باضافة الحصة جديد الى قائمة الكورسات</p>
+              <div class="button">
+                <a href="detials-course.html" class="btn first"
+                  >عرض التفاصيل
+                </a>
+                <a href="add-lesson.html" class="btn second"> اضافة حصة جديد</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------- modal -------------------------------------------->
+    <!-- main js -->
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- main js -->
+
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- sweet alert -->
+
+    <!-- return max of the lesson -->
+    <!-- <script>
+        $(document).ready(function() {
+            var lessonId = {{ $lesson->id }};
+            console.log(lessonId);
+            $.ajax({
+                url: `/admin/lastOrderLessonSession/${lessonId}`,
+                type: 'get',
+                success: function(data) {
+                    $('#sort').val(parseInt(data) + 1);
+                }
+            });
+        });
+    </script> -->
+    <!-- return max of the lesson -->
+
+    <!-- upload file -->
+    <script>
+        $("form").on("change", ".file-upload-field", function() {
+            $(this)
+                .parent(".file-upload-wrapper")
+                .attr(
+                    "data-text",
+                    $(this)
+                    .val()
+                    .replace(/.*(\/|\\)/, "")
+                );
+        });
+    </script>
+    <!-- upload file -->
+
+    <!-- form withard inside -->
+    <script>
+        jQuery(document).ready(function() {
+            // click on next button
+            jQuery(".form-wizard-next-btn").click(function() {
+                var parentFieldset = jQuery(this).parents(".wizard-fieldset");
+                var currentActiveStep = jQuery(this)
+                    .parents(".form-wizard")
+                    .find(".form-wizard-steps .active");
+                var next = jQuery(this);
+                var nextWizardStep = true;
+                parentFieldset.find(".wizard-required").each(function() {
+                    var thisValue = jQuery(this).val();
+
+                    if (thisValue == "") {
+                        jQuery(this).siblings(".wizard-form-error").slideDown();
+                        nextWizardStep = false;
+                    } else {
+                        jQuery(this).siblings(".wizard-form-error").slideUp();
+                    }
+                });
+                if (nextWizardStep) {
+                    next.parents(".wizard-fieldset").removeClass("show", "400");
+                    currentActiveStep
+                        .removeClass("active")
+                        .addClass("activated")
+                        .next()
+                        .addClass("active", "400");
+                    next
+                        .parents(".wizard-fieldset")
+                        .next(".wizard-fieldset")
+                        .addClass("show", "400");
+                    jQuery(document)
+                        .find(".wizard-fieldset")
+                        .each(function() {
+                            if (jQuery(this).hasClass("show")) {
+                                var formAtrr = jQuery(this).attr("data-tab-content");
+                                jQuery(document)
+                                    .find(".form-wizard-steps .form-wizard-step-item")
+                                    .each(function() {
+                                        if (jQuery(this).attr("data-attr") == formAtrr) {
+                                            jQuery(this).addClass("active");
+                                            var innerWidth = jQuery(this).innerWidth();
+                                            var position = jQuery(this).position();
+                                            jQuery(document)
+                                                .find(".form-wizard-step-move")
+                                                .css({
+                                                    left: position.left,
+                                                    width: innerWidth
+                                                });
+                                        } else {
+                                            jQuery(this).removeClass("active");
+                                        }
+                                    });
+                            }
+                        });
+                }
+            });
+            //click on previous button
+            jQuery(".form-wizard-previous-btn").click(function() {
+                var counter = parseInt(jQuery(".wizard-counter").text());
+                var prev = jQuery(this);
+                var currentActiveStep = jQuery(this)
+                    .parents(".form-wizard")
+                    .find(".form-wizard-steps .active");
+                prev.parents(".wizard-fieldset").removeClass("show", "400");
+                prev
+                    .parents(".wizard-fieldset")
+                    .prev(".wizard-fieldset")
+                    .addClass("show", "400");
+                currentActiveStep
+                    .removeClass("active")
+                    .prev()
+                    .removeClass("activated")
+                    .addClass("active", "400");
+                jQuery(document)
+                    .find(".wizard-fieldset")
+                    .each(function() {
+                        if (jQuery(this).hasClass("show")) {
+                            var formAtrr = jQuery(this).attr("data-tab-content");
+                            jQuery(document)
+                                .find(".form-wizard-steps .form-wizard-step-item")
+                                .each(function() {
+                                    if (jQuery(this).attr("data-attr") == formAtrr) {
+                                        jQuery(this).addClass("active");
+                                        var innerWidth = jQuery(this).innerWidth();
+                                        var position = jQuery(this).position();
+                                        jQuery(document)
+                                            .find(".form-wizard-step-move")
+                                            .css({
+                                                left: position.left,
+                                                width: innerWidth
+                                            });
+                                    } else {
+                                        jQuery(this).removeClass("active");
+                                    }
+                                });
+                        }
+                    });
+            });
+            //click on form submit button
+            jQuery(document).on(
+                "click",
+                ".form-wizard .form-wizard-submit",
+                function() {
+                    var parentFieldset = jQuery(this).parents(".wizard-fieldset");
+                    var currentActiveStep = jQuery(this)
+                        .parents(".form-wizard")
+                        .find(".form-wizard-steps .active");
+                    parentFieldset.find(".wizard-required").each(function() {
+                        var thisValue = jQuery(this).val();
+                        if (thisValue == "") {
+                            jQuery(this).siblings(".wizard-form-error").slideDown();
+                        } else {
+                            jQuery(this).siblings(".wizard-form-error").slideUp();
+                        }
+                    });
+                }
+            );
+            // focus on input field check empty or not
+            jQuery(".form-control")
+                .on("focus", function() {
+                    var tmpThis = jQuery(this).val();
+                    if (tmpThis == "") {
+                        jQuery(this).parent().addClass("focus-input");
+                    } else if (tmpThis != "") {
+                        jQuery(this).parent().addClass("focus-input");
+                    }
+                })
+                .on("blur", function() {
+                    var tmpThis = jQuery(this).val();
+                    if (tmpThis == "") {
+                        jQuery(this).parent().removeClass("focus-input");
+                        jQuery(this).siblings(".wizard-form-error").slideDown("3000");
+                    } else if (tmpThis != "") {
+                        jQuery(this).parent().addClass("focus-input");
+                        jQuery(this).siblings(".wizard-form-error").slideUp("3000");
+                    }
+                });
+        });
+    </script>
+    <!-- form withard inside -->
+    <!-- show / hide  price status -->
+    <script>
+        function togglePriceStatus() {
+            var yes_is_free = document.getElementById("yes_is_free");
+            var no_is_free = document.getElementById("no_is_free");
+            var hiddenViewCanBuy = document.getElementById("toggleCanBuy");
+            var hiddenViewPrice = document.getElementById("togglePrice");
+
+            if (yes_is_free.checked) {
+                // Show the hidden row
+                hiddenViewCanBuy.classList.add("course_price");
+                hiddenViewPrice.classList.add("course_price");
+            } else if (no_is_free.checked) {
+                hiddenViewCanBuy.classList.remove("course_price");
+                hiddenViewPrice.classList.remove("course_price");
+                // Hide and remove the row
+            }
+        }
+
+        function togglePriceCan() {
+            var toggleCanBuy = document.getElementById("can_buy");
+            var hiddenView = document.getElementById("togglePrice");
+            if (toggleCanBuy.checked) {
+                // Show the hidden row
+                hiddenView.classList.remove("course_price");
+            } else {
+                hiddenView.classList.add("course_price");
+            }
+        }
+    </script>
+    <!-- show / hide  price status -->
+
+    <!-- show / hide  lesson Details     -->
+    <script>
+        function toggleSessionDetails() {
+            var recordSession = document.getElementById("recordSession");
+            var liveSession = document.getElementById("liveSession");
+            var hiddenRow = document.getElementById("sessionDetails");
+            var hiddenRow2 = document.getElementById("sessionDetailsLive");
+
+            if (recordSession.checked) {
+                // Show the hidden row
+                hiddenRow.classList.remove("course_price");
+                hiddenRow2.classList.add("course_price");
+            } else if (liveSession.checked) {
+                // Hide and remove the row
+                hiddenRow.classList.add("course_price");
+                hiddenRow2.classList.remove("course_price");
+            }
+        }
+    </script>
+    <!-- show / hide  lesson Details     -->
+    <!-- show / hide  Vedio Type -->
+    <script>
+        function toggleVedioType() {
+            var existVideo = document.getElementById("existVideo");
+            var newVideo = document.getElementById("newVideo");
+            var youtubeVideo = document.getElementById("youtubeVideo");
+            var existVideoContainer = document.getElementById("existVedioType");
+            var newVedioContainer = document.getElementById("newVedioType");
+            var externalVedioContainer = document.getElementById("externalVedioType");
+
+            if (existVideo.checked) {
+                // Show the hidden row
+                existVideoContainer.classList.remove("course_price");
+                newVedioContainer.classList.add("course_price");
+                externalVedioContainer.classList.add("course_price");
+            } else if (newVideo.checked) {
+                // Hide and remove the row
+                existVideoContainer.classList.add("course_price");
+                newVedioContainer.classList.remove("course_price");
+                externalVedioContainer.classList.add("course_price");
+            } else if (youtubeVideo.checked) {
+                // Hide and remove the row
+                existVideoContainer.classList.add("course_price");
+                newVedioContainer.classList.add("course_price");
+                externalVedioContainer.classList.remove("course_price");
+                // externalVedioContainer.append(`<input hidden name="is_youtube" value="1" />`);
+            }
+        }
+    </script>
+    <!-- show / hide  Vedio Type -->
+    <!-- show / hide  Vedio watch -->
+    <script>
+        function toggleVedioWatch() {
+            var limitedVideoAnimation = document.getElementById("limitedVideoAnimation");
+            var unLimitedAnimation = document.getElementById("unLimitedAnimation");
+            var hiddenRow = document.getElementById("toggleVideoWatch");
+
+            if (limitedVideoAnimation.checked) {
+                // Show the hidden row
+                hiddenRow.classList.remove("course_price");
+            } else if (unLimitedAnimation.checked) {
+                // Hide and remove the row
+                hiddenRow.classList.add("course_price");
+            }
+        }
+    </script>
+    <!-- show / hide  Vedio watch -->
+    <!-- show / hide  water mark -->
+    <script>
+        function toggleWaterMark() {
+            var yesWaterMarek = document.getElementById("yesWaterMarek");
+            var noWaterMarek = document.getElementById("noWaterMarek");
+            var hiddenRowAnimationNumber = document.getElementById("toggleWaterMarkAnimationNumber");
+            var hiddenRowVoiceSignature = document.getElementById("toggleWaterMarkVoiceSignature");
+
+            if (yesWaterMarek.checked) {
+                // Show the hidden row
+                hiddenRowAnimationNumber.classList.remove("course_price");
+                hiddenRowVoiceSignature.classList.remove("course_price");
+            } else if (noWaterMarek.checked) {
+                // Hide and remove the row
+                hiddenRowAnimationNumber.classList.add("course_price");
+                hiddenRowVoiceSignature.classList.add("course_price");
+            }
+        }
+    </script>
+
+    <!-- show / hide  Vedio watch -->
+    <!-- show / hide static water mark -->
+    <script>
+        function toggleStaticWaterMark() {
+            var yesStaticWaterMark = document.getElementById("yesStaticWaterMark");
+            var noStaticWaterMark = document.getElementById("noStaticWaterMark");
+
+            var hiddenRowVoiceSignature = document.getElementById("WaterMarkImage");
+
+            if (yesStaticWaterMark.checked) {
+                // Show the hidden row
+                hiddenRowVoiceSignature.classList.remove("course_price");
+            } else if (noStaticWaterMark.checked) {
+                // Hide and remove the row
+                hiddenRowVoiceSignature.classList.add("course_price");
+            }
+        }
+    </script>
+
+    <!-- show / hide static water mark -->
+  </body>
+</html>
