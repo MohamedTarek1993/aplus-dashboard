@@ -1289,10 +1289,114 @@ label.btn.btn-outline-primary {
   margin: 0.5rem 1rem;
   padding: 0.5rem 4rem;
 }
-label.btn.btn-outline-primary.nas{
-  margin: 0.5rem 1rem;
-    padding: 0.5rem 4.4rem;
+
+
+label.btn.btn-outline-primary.online {
+
+color: #5E6E77;
+border: 1px solid #5E6E77;
+font-family:"regular" ;
+ 
 }
+
+.btn-check:active+.btn-outline-primary, .btn-check:checked+.btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active{
+  background-color: unset;
+  border: 1px solid #E6AB2F !important;
+  color: black;
+  font-family: bold;
+}
+label.btn.btn-outline-primary.online:hover {
+  background-color: unset;
+}
+
+.account h5 {
+  font-family: bold;
+
+}
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  border-radius: 10px !important;
+}
+.course-pri {
+  color: #06456B !important;
+}
+.form-step-inside::before {
+  content: "1";
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #06446b1e;
+  border-radius: 50%;
+  border: 1px solid #06446b ;
+  color: #06446b;
+  font-family: bold;
+  z-index: 50 !important;
+}
+.form-step-inside-gig::before {
+  content: "2";
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #06446b1e;
+  border-radius: 50%;
+  border: 1px solid #06446b ;
+  color: #06446b;
+  font-family: bold;
+  z-index: 50 !important;
+}
+.form-step-inside-hih::before {
+  content: "3";
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #06446b1e;
+  border-radius: 50%;
+  border: 1px solid #06446b ;
+  color: #06446b;
+  font-family: bold;
+  z-index: 50 !important;
+}
+/* .form-step-inside::after {
+  content: "";
+  width: 1px;
+  height: 49.9%;
+  background-color: #06446b;
+  position: absolute;
+  top: 217px;
+  right: 57px;
+ 
+ 
+}
+.form-step-inside-gig::after {
+  content: "";
+    width: 1px;
+    height: 14%;
+    background-color: #06446b;
+    position: absolute;
+    top: 1308px;
+    right: 57px;
+    
+} */
+.step {
+  position: relative;
+}
+.step::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+ 
+  height: calc(100% - 40px);
+  background-color: #06446b4d;
+ left: 20px;
+ top: 40px;
+}
+
+
 
 
 
